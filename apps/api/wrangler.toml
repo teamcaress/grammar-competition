@@ -1,0 +1,41 @@
+name = "grammar-trainer-api"
+main = "src/index.ts"
+compatibility_date = "2025-02-01"
+workers_dev = true
+
+[vars]
+ALLOWED_ORIGIN = "http://localhost:5173"
+COOKIE_NAME = "gc_session"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "grammar_trainer_dev"
+database_id = "REPLACE_WITH_DEV_DATABASE_ID"
+migrations_dir = "migrations"
+
+[env.dev]
+name = "grammar-trainer-api-dev"
+
+[env.dev.vars]
+ALLOWED_ORIGIN = "https://grammar-trainer-web-dev.pages.dev"
+COOKIE_NAME = "gc_session"
+
+[[env.dev.d1_databases]]
+binding = "DB"
+database_name = "grammar_trainer_dev"
+database_id = "REPLACE_WITH_DEV_DATABASE_ID"
+migrations_dir = "migrations"
+
+[env.production]
+name = "grammar-trainer-api-prod"
+
+[env.production.vars]
+ALLOWED_ORIGIN = "https://grammar-trainer-web.pages.dev"
+COOKIE_NAME = "gc_session"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "grammar_trainer_prod"
+database_id = "REPLACE_WITH_PROD_DATABASE_ID"
+migrations_dir = "migrations"
+

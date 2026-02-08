@@ -1,0 +1,330 @@
+[
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The survey closed on Friday, the analysts began coding responses on Monday.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The survey closed on Friday; the analysts began coding responses on Monday.",
+      "C": "The survey closed on Friday the analysts began coding responses on Monday.",
+      "D": "The survey closed on Friday: and the analysts began coding responses on Monday."
+    },
+    "correct_answer": "B",
+    "explanation": "A semicolon correctly joins two related independent clauses.",
+    "difficulty": 1,
+    "tags": ["comma_splice", "semicolon_fix"],
+    "source_card_id": "boundary_comma_splice_id",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "variation_boundary_comma_splice_easy_v1"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "best_choice",
+    "prompt": "Which revision best corrects the sentence? \"Although the archive added metadata tags, retrieval times dropped by 30 percent, the digital team still audited each record manually.\"",
+    "choices": {
+      "A": "Although the archive added metadata tags, retrieval times dropped by 30 percent; the digital team still audited each record manually.",
+      "B": "Although the archive added metadata tags, retrieval times dropped by 30 percent, and the digital team still audited each record manually.",
+      "C": "Although the archive added metadata tags and retrieval times dropped by 30 percent, the digital team still audited each record manually.",
+      "D": "Although the archive added metadata tags; retrieval times dropped by 30 percent, the digital team still audited each record manually."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C turns the first part into a compound dependent clause and keeps one clear independent clause after the comma.",
+    "difficulty": 3,
+    "tags": ["complex_clause", "boundary_logic"],
+    "source_card_id": "boundary_comma_splice_id",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "variation_boundary_comma_splice_hard_v1"
+  },
+
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "revision",
+    "prompt": "The panel identified two priorities: data security and equitable access.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The panel identified: two priorities, data security and equitable access.",
+      "C": "The panel identified two priorities, data security: and equitable access.",
+      "D": "The panel identified two priorities data security and equitable access:"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before the colon is complete, and the colon introduces the listed priorities.",
+    "difficulty": 1,
+    "tags": ["colon", "list_introduction"],
+    "source_card_id": "punct_colon_complete_before",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "variation_punct_colon_easy_v1"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "error_id",
+    "prompt": "The committee's recommendation was: to expand advising, to add evening labs, and to publish annual metrics.",
+    "choices": {
+      "A": "committee's recommendation",
+      "B": "was:",
+      "C": "to expand advising",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "A colon should not follow a linking verb when the clause before it is incomplete.",
+    "difficulty": 3,
+    "tags": ["colon_misuse", "complete_clause_requirement"],
+    "source_card_id": "punct_colon_complete_before",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "variation_punct_colon_hard_v1"
+  },
+
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The list of required documents includes proof of residency.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The list of required documents include proof of residency.",
+      "C": "The list of required documents have included proof of residency.",
+      "D": "The list of required documents including proof of residency."
+    },
+    "correct_answer": "A",
+    "explanation": "The singular subject \"list\" requires the singular verb \"includes.\"",
+    "difficulty": 1,
+    "tags": ["subject_verb_agreement", "head_noun"],
+    "source_card_id": "agree_subject_verb_prep_phrase",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "variation_agree_subject_verb_easy_v1"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "best_choice",
+    "prompt": "Choose the best verb: \"A series of policy briefs on zoning, transportation, and utilities ____ submitted to the council before the deadline.\"",
+    "choices": {
+      "A": "were",
+      "B": "was",
+      "C": "have been",
+      "D": "are"
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is \"series,\" which is singular in this construction.",
+    "difficulty": 3,
+    "tags": ["subject_verb_agreement", "series_singular"],
+    "source_card_id": "agree_subject_verb_prep_phrase",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "variation_agree_subject_verb_hard_v1"
+  },
+
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "After reading the proposal, the chair approved the revised budget.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "After reading the proposal, the revised budget was approved by the chair.",
+      "C": "After reading the proposal, approval was given to the revised budget by the chair.",
+      "D": "After reading the proposal, there was approval of the revised budget."
+    },
+    "correct_answer": "A",
+    "explanation": "The introductory phrase correctly modifies \"the chair.\"",
+    "difficulty": 1,
+    "tags": ["dangling_modifier", "introductory_phrase"],
+    "source_card_id": "modifier_dangling_intro",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "variation_modifier_dangling_easy_v1"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "While scanning the files, several duplicate records were identified by the intern and the supervisor.",
+    "choices": {
+      "A": "While scanning the files",
+      "B": "several duplicate records",
+      "C": "were identified by the intern and the supervisor",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The noun after the comma should be the scanner, but \"records\" cannot perform the action.",
+    "difficulty": 3,
+    "tags": ["dangling_modifier", "illogical_subject"],
+    "source_card_id": "modifier_dangling_intro",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "variation_modifier_dangling_hard_v1"
+  },
+
+  {
+    "unit": "Parallelism",
+    "subtopic": "Series Consistency",
+    "card_type": "revision",
+    "prompt": "The program aims to increase retention, improve advising, and expand mentorship.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The program aims at increasing retention, improve advising, and expand mentorship.",
+      "C": "The program aims to increase retention, improving advising, and to expand mentorship.",
+      "D": "The program aims to increase retention, improve advising, and expanding mentorship."
+    },
+    "correct_answer": "A",
+    "explanation": "All three list items are parallel infinitive phrases.",
+    "difficulty": 1,
+    "tags": ["parallelism", "infinitive_series"],
+    "source_card_id": "parallel_series_infinitive",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "variation_parallel_series_easy_v1"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Series Consistency",
+    "card_type": "best_choice",
+    "prompt": "Which choice best preserves parallel structure? \"The analyst promised to verify the records, to update the model, and ____\"",
+    "choices": {
+      "A": "that the report would be delivered by Friday.",
+      "B": "to deliver the report by Friday.",
+      "C": "delivering the report by Friday.",
+      "D": "the report delivery by Friday."
+    },
+    "correct_answer": "B",
+    "explanation": "The third item should match the infinitive pattern established by the first two items.",
+    "difficulty": 3,
+    "tags": ["parallelism", "infinitive_pattern"],
+    "source_card_id": "parallel_series_infinitive",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "variation_parallel_series_hard_v1"
+  },
+
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "The first draft met the page limit. ____, it omitted two required citations.",
+    "choices": {
+      "A": "Similarly",
+      "B": "For example",
+      "C": "However",
+      "D": "Therefore"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence contrasts with the first sentence's positive statement.",
+    "difficulty": 1,
+    "tags": ["transition", "contrast"],
+    "source_card_id": "rhetoric_transition_contrast",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "variation_rhetoric_transition_easy_v1"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "The revised protocol reduced missing data by 40 percent. In addition, three key variables still had inconsistent definitions across sites.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The revised protocol reduced missing data by 40 percent. Therefore, three key variables still had inconsistent definitions across sites.",
+      "C": "The revised protocol reduced missing data by 40 percent. However, three key variables still had inconsistent definitions across sites.",
+      "D": "The revised protocol reduced missing data by 40 percent. For example, three key variables still had inconsistent definitions across sites."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence introduces a limitation, so a contrast transition is required.",
+    "difficulty": 3,
+    "tags": ["transition_logic", "contrast_signal"],
+    "source_card_id": "rhetoric_transition_contrast",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "variation_rhetoric_transition_hard_v1"
+  },
+
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Economy Principle",
+    "card_type": "revision",
+    "prompt": "Because the budget was reduced, the department postponed the field study.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Due to the fact that the budget was reduced, the department postponed the field study.",
+      "C": "Because of the circumstance that the budget was reduced, the department postponed the field study.",
+      "D": "Given the fact of budget reduction, the department postponed the field study."
+    },
+    "correct_answer": "A",
+    "explanation": "Choice A is already concise and clear; other options are wordier without adding meaning.",
+    "difficulty": 1,
+    "tags": ["concision", "economy_principle"],
+    "source_card_id": "economy_because_of_fact",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and the Principle of Economy",
+    "skill_code": "variation_economy_easy_v1"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Economy Principle",
+    "card_type": "error_id",
+    "prompt": "The committee reached a final consensus agreement after the last meeting.",
+    "choices": {
+      "A": "committee reached",
+      "B": "final consensus agreement",
+      "C": "after the last meeting",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Consensus\" already implies agreement, and \"final\" is often redundant in this context.",
+    "difficulty": 3,
+    "tags": ["redundancy", "wordiness"],
+    "source_card_id": "economy_because_of_fact",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and the Principle of Economy",
+    "skill_code": "variation_economy_hard_v1"
+  },
+
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "The policy team is interested in testing a shorter intake survey.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The policy team is interested at testing a shorter intake survey.",
+      "C": "The policy team is interested to testing a shorter intake survey.",
+      "D": "The policy team is interested on testing a shorter intake survey."
+    },
+    "correct_answer": "A",
+    "explanation": "The idiomatic expression is \"interested in.\"",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition_pair"],
+    "source_card_id": "diction_idiom_interested_in",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "variation_diction_idiom_easy_v1"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Choose the idiomatically correct revision: \"The final memo is consistent ____ last quarter's compliance guidance.\"",
+    "choices": {
+      "A": "to",
+      "B": "for",
+      "C": "with",
+      "D": "at"
+    },
+    "correct_answer": "C",
+    "explanation": "The correct idiomatic construction is \"consistent with.\"",
+    "difficulty": 3,
+    "tags": ["idiom", "preposition_choice"],
+    "source_card_id": "diction_idiom_interested_in",
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "variation_diction_idiom_hard_v1"
+  }
+]
+

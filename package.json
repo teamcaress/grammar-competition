@@ -1,0 +1,23 @@
+{
+  "name": "grammar-competition",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @grammar/web\" \"npm run dev --workspace @grammar/api\"",
+    "dev:web": "npm run dev --workspace @grammar/web",
+    "dev:api": "npm run dev --workspace @grammar/api",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "validate:cards": "node scripts/validate-cards.mjs",
+    "report:cards": "node scripts/cards-coverage-report.mjs",
+    "merge:cards": "node scripts/merge-card-datasets.mjs",
+    "check:blueprint": "node scripts/cards-blueprint-check.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

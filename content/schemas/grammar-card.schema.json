@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grammar-trainer.local/schemas/grammar-card.schema.json",
+  "title": "GrammarCard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "unit",
+    "subtopic",
+    "card_type",
+    "prompt",
+    "choices",
+    "correct_answer",
+    "explanation",
+    "difficulty",
+    "tags"
+  ],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtopic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "card_type": {
+      "type": "string",
+      "enum": ["revision", "error_id", "best_choice"]
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choices": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B", "C", "D"],
+      "properties": {
+        "A": { "type": "string", "minLength": 1 },
+        "B": { "type": "string", "minLength": 1 },
+        "C": { "type": "string", "minLength": 1 },
+        "D": { "type": "string", "minLength": 1 }
+      }
+    },
+    "correct_answer": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_card_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exam_targets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["SAT", "ACT"]
+      }
+    },
+    "source_section": {
+      "type": "string",
+      "minLength": 1
+    },
+    "skill_code": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "minLength": 3
+    }
+  }
+}

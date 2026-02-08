@@ -1,0 +1,19 @@
+{
+  "name": "@grammar/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --config wrangler.toml --local --port 8787",
+    "deploy:dev": "wrangler deploy --config wrangler.toml --env dev",
+    "deploy:prod": "wrangler deploy --config wrangler.toml --env production",
+    "db:migrate": "wrangler d1 migrations apply grammar_trainer_dev --local --config wrangler.toml",
+    "db:migrate:remote": "wrangler d1 migrations apply grammar_trainer_dev --remote --config wrangler.toml"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.4.0"
+  }
+}
+

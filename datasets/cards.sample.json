@@ -1,0 +1,40 @@
+[
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The committee reviewed the findings, it requested a revised draft.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The committee reviewed the findings; it requested a revised draft.",
+      "C": "The committee reviewed the findings it requested a revised draft.",
+      "D": "The committee reviewed the findings: and it requested a revised draft."
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses cannot be joined by a comma alone; a semicolon correctly joins them.",
+    "difficulty": 2,
+    "tags": ["comma_splice", "independent_clauses"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries",
+    "skill_code": "boundary_comma_splice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Coordinated Lists",
+    "card_type": "error_id",
+    "prompt": "The internship emphasizes drafting policy briefs, to analyze data, and public speaking.",
+    "choices": {
+      "A": "drafting policy briefs",
+      "B": "to analyze data",
+      "C": "and public speaking",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "List elements should match in grammatical form; 'to analyze' should match the gerund pattern.",
+    "difficulty": 2,
+    "tags": ["parallelism", "list_structure"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_form"
+  }
+]
