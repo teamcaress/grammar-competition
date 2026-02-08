@@ -10,7 +10,7 @@ COOKIE_NAME = "gc_session"
 [[d1_databases]]
 binding = "DB"
 database_name = "grammar_trainer_dev"
-database_id = "REPLACE_WITH_DEV_DATABASE_ID"
+database_id = "3a1c0048-0e95-4e8d-845b-34d9959d4f1c"
 migrations_dir = "migrations"
 
 [env.dev]
@@ -23,7 +23,7 @@ COOKIE_NAME = "gc_session"
 [[env.dev.d1_databases]]
 binding = "DB"
 database_name = "grammar_trainer_dev"
-database_id = "REPLACE_WITH_DEV_DATABASE_ID"
+database_id = "3a1c0048-0e95-4e8d-845b-34d9959d4f1c"
 migrations_dir = "migrations"
 
 [env.production]
@@ -36,6 +36,5 @@ COOKIE_NAME = "gc_session"
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "grammar_trainer_prod"
-database_id = "REPLACE_WITH_PROD_DATABASE_ID"
+database_id = "568fbfb1-a2ad-47d5-ad22-5d46a77caebe"
 migrations_dir = "migrations"
-
