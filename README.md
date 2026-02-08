@@ -129,6 +129,7 @@ Contract docs:
 - `docs/card-import-contract.md`
 - `docs/satact-content-blueprint.md`
 - `docs/act-prep-carding-guide.md`
+- `docs/cloudflare-deploy.md`
 - `content/schemas/grammar-card.schema.json`
 
 Current seed datasets:

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev --config wrangler.toml --local --port 8787",
+    "typecheck": "tsc --noEmit",
     "deploy:dev": "wrangler deploy --config wrangler.toml --env dev",
     "deploy:prod": "wrangler deploy --config wrangler.toml --env production",
     "db:migrate": "wrangler d1 migrations apply grammar_trainer_dev --local --config wrangler.toml",
@@ -16,4 +17,3 @@
     "wrangler": "^4.4.0"
   }
 }
-
