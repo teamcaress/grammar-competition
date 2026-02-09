@@ -1,7 +1,7 @@
-import dns from "node:dns";
 import fs from "node:fs";
 import crypto from "node:crypto";
 import pg from "pg";
+import { poolConfigFromDatabaseUrl } from "../src/pg.js";
 
 const { Pool } = pg;
 
@@ -41,11 +41,7 @@ const makeCardId = (card: SeedCard): string => {
   return `card_${digest}`;
 };
 
-dns.setDefaultResultOrder("ipv4first");
-
-const ssl =
-  databaseUrl.includes("supabase.co") ? ({ rejectUnauthorized: false } as const) : undefined;
-const pool = new Pool({ connectionString: databaseUrl, ssl });
+const pool = new Pool(await poolConfigFromDatabaseUrl(databaseUrl));
 
 const main = async () => {
   const client = await pool.connect();

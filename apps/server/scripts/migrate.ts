@@ -1,8 +1,8 @@
-import dns from "node:dns";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import pg from "pg";
+import { poolConfigFromDatabaseUrl } from "../src/pg.js";
 
 const { Pool } = pg;
 
@@ -26,11 +26,7 @@ if (migrationFiles.length === 0) {
   process.exit(1);
 }
 
-dns.setDefaultResultOrder("ipv4first");
-
-const ssl =
-  databaseUrl.includes("supabase.co") ? ({ rejectUnauthorized: false } as const) : undefined;
-const pool = new Pool({ connectionString: databaseUrl, ssl });
+const pool = new Pool(await poolConfigFromDatabaseUrl(databaseUrl));
 
 const main = async () => {
   const client = await pool.connect();

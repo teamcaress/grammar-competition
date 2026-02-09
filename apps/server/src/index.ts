@@ -73,7 +73,7 @@ if (!sessionSecret || sessionSecret.trim().length < 16) {
   throw new Error("SESSION_SECRET is required and must be at least 16 chars.");
 }
 
-const { pool } = createDb();
+const { pool } = await createDb();
 
 const app = express();
 app.set("trust proxy", 1);

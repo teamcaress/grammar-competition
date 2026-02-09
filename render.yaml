@@ -9,6 +9,8 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 20
+      - key: NODE_OPTIONS
+        value: --dns-result-order=ipv4first
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
@@ -20,4 +22,3 @@ services:
       # Set only if you plan to host the web UI on a different domain than this API.
       # - key: ALLOWED_ORIGIN
       #   value: https://your-frontend.example.com
-
