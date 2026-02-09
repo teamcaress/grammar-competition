@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "workspaces": [
     "apps/web",
-    "apps/api"
+    "apps/api",
+    "apps/server"
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace @grammar/web\" \"npm run dev --workspace @grammar/api\"",
     "dev:web": "npm run dev --workspace @grammar/web",
     "dev:api": "npm run dev --workspace @grammar/api",
+    "dev:server": "npm run dev --workspace @grammar/server",
     "build": "npm run build --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "validate:cards": "node scripts/validate-cards.mjs",
