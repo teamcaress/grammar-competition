@@ -69,3 +69,25 @@ Then verify app flow manually:
 - dashboard metrics
 - leaderboard tabs
 
+## 7) GitHub Actions Automation (API)
+
+Workflow file:
+
+- `.github/workflows/deploy-api.yml`
+
+Behavior:
+
+- Push to `main` (when API files change): deploys `dev`
+- Manual run (`workflow_dispatch`): choose `dev` or `production`
+
+Required GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CF_SESSION_SECRET_DEV`
+- `CF_SESSION_SECRET_PROD`
+
+Recommended setup:
+
+- Configure a GitHub `production` Environment with required reviewers.
+- The workflow already targets this environment for production deploys.
