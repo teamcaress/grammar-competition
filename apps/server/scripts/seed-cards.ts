@@ -1,3 +1,4 @@
+import dns from "node:dns";
 import fs from "node:fs";
 import crypto from "node:crypto";
 import pg from "pg";
@@ -39,6 +40,8 @@ const makeCardId = (card: SeedCard): string => {
   const digest = crypto.createHash("sha256").update(base).digest("hex").slice(0, 24);
   return `card_${digest}`;
 };
+
+dns.setDefaultResultOrder("ipv4first");
 
 const ssl =
   databaseUrl.includes("supabase.co") ? ({ rejectUnauthorized: false } as const) : undefined;

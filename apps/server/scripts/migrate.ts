@@ -1,3 +1,4 @@
+import dns from "node:dns";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -24,6 +25,8 @@ if (migrationFiles.length === 0) {
   console.error(`No .sql files found in ${migrationsDir}`);
   process.exit(1);
 }
+
+dns.setDefaultResultOrder("ipv4first");
 
 const ssl =
   databaseUrl.includes("supabase.co") ? ({ rejectUnauthorized: false } as const) : undefined;
