@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: grammar-trainer
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build --workspace @grammar/web && npm run build --workspace @grammar/server && npm run db:migrate --workspace @grammar/server
+    startCommand: npm run start --workspace @grammar/server
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: COOKIE_NAME
+        value: gc_session
+      # Set only if you plan to host the web UI on a different domain than this API.
+      # - key: ALLOWED_ORIGIN
+      #   value: https://your-frontend.example.com
+

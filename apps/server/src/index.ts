@@ -1,7 +1,8 @@
 import express from "express";
-import cors from "cors";
 import cookieParser from "cookie-parser";
 import crypto from "node:crypto";
+import fs from "node:fs";
+import path from "node:path";
 import { createDb } from "./db.js";
 import { createSessionToken, verifySessionToken, type SessionPayload } from "./session.js";
 
@@ -61,7 +62,10 @@ const asyncHandler =
   };
 
 const cookieName = process.env.COOKIE_NAME ?? "gc_session";
-const allowedOrigin = process.env.ALLOWED_ORIGIN ?? "http://localhost:5173";
+// Optional. If set, cross-origin browser requests must match this exact origin.
+// If unset and you serve web+api from the same host (Render), same-origin calls will work
+// (they typically do not include an Origin header).
+const allowedOrigin = process.env.ALLOWED_ORIGIN ?? "";
 const sessionSecret = process.env.SESSION_SECRET ?? "";
 const port = Number(process.env.PORT ?? 8787);
 
@@ -75,14 +79,38 @@ const app = express();
 app.set("trust proxy", 1);
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: allowedOrigin,
-    credentials: true,
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["content-type"]
-  })
-);
+
+// Minimal CORS (only needed when the web app is hosted on a different origin than the API).
+app.use((req, res, next) => {
+  const origin = req.header("origin");
+  if (!origin) {
+    next();
+    return;
+  }
+
+  if (allowedOrigin && origin === allowedOrigin) {
+    res.header("Access-Control-Allow-Origin", origin);
+    res.header("Vary", "Origin");
+    res.header("Access-Control-Allow-Credentials", "true");
+    res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+    res.header("Access-Control-Allow-Headers", "content-type");
+
+    if (req.method === "OPTIONS") {
+      res.status(204).end();
+      return;
+    }
+
+    next();
+    return;
+  }
+
+  if (req.method === "OPTIONS") {
+    res.status(204).end();
+    return;
+  }
+
+  res.status(403).json({ error: "Origin not allowed." });
+});
 
 type UnitMasteryRow = {
   unit_id: string;
@@ -662,6 +690,32 @@ app.get(
     res.json({ ok: true, db: "reachable" });
   })
 );
+
+const resolveWebDistDir = (): string | null => {
+  const candidates = [
+    process.env.WEB_DIST_DIR,
+    // Render build from repo root.
+    path.resolve(process.cwd(), "apps/web/dist"),
+    // Running from apps/server.
+    path.resolve(process.cwd(), "../web/dist")
+  ].filter((value): value is string => typeof value === "string" && value.length > 0);
+
+  for (const candidate of candidates) {
+    const indexPath = path.join(candidate, "index.html");
+    if (fs.existsSync(indexPath)) return candidate;
+  }
+  return null;
+};
+
+const webDistDir = resolveWebDistDir();
+if (webDistDir) {
+  // Serve the built SPA alongside the API from one host (simplest for Render).
+  app.use(express.static(webDistDir, { index: false }));
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api/")) return next();
+    res.sendFile(path.join(webDistDir, "index.html"));
+  });
+}
 
 app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(error);

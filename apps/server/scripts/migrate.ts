@@ -25,7 +25,9 @@ if (migrationFiles.length === 0) {
   process.exit(1);
 }
 
-const pool = new Pool({ connectionString: databaseUrl, ssl: { rejectUnauthorized: false } });
+const ssl =
+  databaseUrl.includes("supabase.co") ? ({ rejectUnauthorized: false } as const) : undefined;
+const pool = new Pool({ connectionString: databaseUrl, ssl });
 
 const main = async () => {
   const client = await pool.connect();
@@ -52,4 +54,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

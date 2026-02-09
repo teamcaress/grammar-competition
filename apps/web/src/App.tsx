@@ -1,6 +1,8 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
-const apiBase = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8787";
+// If VITE_API_BASE_URL is unset (typical when serving web+api from the same host),
+// we default to same-origin and call `/api/...`.
+const apiBase = import.meta.env.VITE_API_BASE_URL ?? "";
 
 type AppStage =
   | "checking"
