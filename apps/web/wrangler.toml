@@ -6,7 +6,7 @@ pages_build_output_dir = "./dist"
 VITE_API_BASE_URL = "http://localhost:8787"
 
 [env.dev.vars]
-VITE_API_BASE_URL = "https://grammar-trainer-api-dev.example.workers.dev"
+VITE_API_BASE_URL = "https://grammar-trainer-api-dev.neal-caren.workers.dev"
 
 [env.production.vars]
-VITE_API_BASE_URL = "https://grammar-trainer-api.example.workers.dev"
+VITE_API_BASE_URL = "https://grammar-trainer-api-prod.neal-caren.workers.dev"
