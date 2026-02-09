@@ -26,7 +26,9 @@ if (migrationFiles.length === 0) {
   process.exit(1);
 }
 
-const pool = new Pool(await poolConfigFromDatabaseUrl(databaseUrl));
+const config = await poolConfigFromDatabaseUrl(databaseUrl);
+console.log(`[migrate] connecting host=${String(config.host)} port=${String(config.port)} ssl=${config.ssl ? "yes" : "no"}`);
+const pool = new Pool(config);
 
 const main = async () => {
   const client = await pool.connect();
