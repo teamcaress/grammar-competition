@@ -3,7 +3,9 @@ services:
     name: grammar-trainer
     runtime: node
     plan: free
-    buildCommand: npm ci && npm run build --workspace @grammar/web && npm run build --workspace @grammar/server && npm run db:migrate --workspace @grammar/server
+    # Render build nodes may not have IPv6 egress to Supabase, so do not run DB migrations at build time.
+    # Run migrations from your local machine (or via Supabase SQL editor) instead.
+    buildCommand: npm ci && npm run build --workspace @grammar/web && npm run build --workspace @grammar/server
     startCommand: npm run start --workspace @grammar/server
     healthCheckPath: /api/health
     envVars:
