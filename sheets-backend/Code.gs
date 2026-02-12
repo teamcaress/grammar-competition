@@ -14,7 +14,9 @@ function doGet(e) {
   var action = (e.parameter.action || "").toString();
   var result;
 
-  if (action === "getUserData") {
+  if (action === "getPlayerNames") {
+    result = handleGetPlayerNames();
+  } else if (action === "getUserData") {
     result = handleGetUserData(e.parameter.user || "");
   } else if (action === "getLeaderboard") {
     result = handleGetLeaderboard(e.parameter.range || "today");
@@ -295,6 +297,24 @@ function handleGetLeaderboard(range) {
   });
 
   return { range: range, rows: rows };
+}
+
+/* ------------------------------------------------------------------ */
+/*  getPlayerNames                                                     */
+/* ------------------------------------------------------------------ */
+
+function handleGetPlayerNames() {
+  var sheet = getSheet("Users");
+  if (!sheet) return { names: [] };
+
+  var data = sheet.getDataRange().getValues();
+  var names = [];
+  for (var i = 1; i < data.length; i++) {
+    var n = data[i][0].toString().trim();
+    if (n) names.push(n);
+  }
+  names.sort(function(a, b) { return a.toLowerCase().localeCompare(b.toLowerCase()); });
+  return { names: names };
 }
 
 /* ------------------------------------------------------------------ */

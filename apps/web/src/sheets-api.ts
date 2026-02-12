@@ -28,6 +28,13 @@ type GetLeaderboardResponse = {
   rows: LeaderboardRow[];
 };
 
+export async function getPlayerNames(): Promise<string[]> {
+  const url = `${sheetsUrl}?action=getPlayerNames`;
+  const res = await fetch(url);
+  const data = (await res.json()) as { names?: string[] };
+  return data.names ?? [];
+}
+
 export async function login(
   name: string,
   pin: string

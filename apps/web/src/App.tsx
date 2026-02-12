@@ -12,6 +12,7 @@ import {
   type DashboardData,
 } from "./game-logic";
 import {
+  getPlayerNames,
   login,
   joinGame,
   getUserData,
@@ -66,6 +67,7 @@ export function App() {
   const [selectedChoice, setSelectedChoice] = useState<ChoiceKey | null>(null);
   const [cardStartedAtMs, setCardStartedAtMs] = useState(0);
 
+  const [playerNames, setPlayerNames] = useState<string[]>([]);
   const [loginName, setLoginName] = useState("");
   const [loginPin, setLoginPin] = useState("");
   const [isJoinMode, setIsJoinMode] = useState(false);
@@ -80,11 +82,14 @@ export function App() {
   const pointsEarned = history.reduce((sum, item) => sum + item.pointsAwarded, 0);
   const weakSkills = useMemo(() => countWeakSubtopics(history), [history]);
 
-  // Initialize cards on mount
+  // Initialize cards and fetch player names on mount
   useEffect(() => {
     initCards()
       .then(() => setCardsReady(true))
       .catch((err) => setGlobalError(`Failed to load cards: ${err}`));
+    getPlayerNames()
+      .then((names) => setPlayerNames(names))
+      .catch(() => {});
   }, []);
 
   function refreshDashboard(states: Map<string, CardState>, score: DailyScore | undefined) {
@@ -104,6 +109,9 @@ export function App() {
     try {
       const authFn = isJoinMode ? joinGame : login;
       const { user } = await authFn(name, pin);
+      if (isJoinMode) {
+        setPlayerNames((prev) => [...prev, user].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())));
+      }
       const { cardStates: states, dailyScore: score } = await getUserData(user);
       setUserName(user);
       setCardStates(states);
@@ -282,14 +290,28 @@ export function App() {
           >
             <label className="block">
               <span className="mb-1 block text-xs font-medium text-slate-600">Name</span>
-              <input
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                type="text"
-                autoComplete="username"
-                value={loginName}
-                onChange={(e) => setLoginName(e.target.value)}
-                disabled={isLoading}
-              />
+              {isJoinMode ? (
+                <input
+                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                  type="text"
+                  autoComplete="username"
+                  value={loginName}
+                  onChange={(e) => setLoginName(e.target.value)}
+                  disabled={isLoading}
+                />
+              ) : (
+                <select
+                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                  value={loginName}
+                  onChange={(e) => setLoginName(e.target.value)}
+                  disabled={isLoading}
+                >
+                  <option value="">Choose your name</option>
+                  {playerNames.map((n) => (
+                    <option key={n} value={n}>{n}</option>
+                  ))}
+                </select>
+              )}
             </label>
             <label className="block">
               <span className="mb-1 block text-xs font-medium text-slate-600">PIN</span>
