@@ -155,18 +155,21 @@ function handleGetUserData(user) {
     }
   }
 
-  // Find today's DailyScores row
+  // Sum today's DailyScores rows (there may be duplicates from race conditions)
   if (dsSheet) {
     var dsData = dsSheet.getDataRange().getValues();
+    var totalPoints = 0;
+    var totalAnswers = 0;
+    var found = false;
     for (var j = 1; j < dsData.length; j++) {
       if (dsData[j][0].toString().trim().toLowerCase() === userLower && toDateKey(dsData[j][1]) === today) {
-        dailyScore = {
-          date: today,
-          points: Number(dsData[j][2]),
-          answers_count: Number(dsData[j][3])
-        };
-        break;
+        totalPoints += Number(dsData[j][2]);
+        totalAnswers += Number(dsData[j][3]);
+        found = true;
       }
+    }
+    if (found) {
+      dailyScore = { date: today, points: totalPoints, answers_count: totalAnswers };
     }
   }
 
@@ -189,6 +192,15 @@ function handleSaveAnswer(body) {
 
   if (!user || !cardId) return { error: "user and card_id are required" };
 
+  // Lock to prevent race conditions from concurrent fire-and-forget saves
+  var lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try { return _doSaveAnswer(user, cardId, newBox, dueDate, correctStreak, totalAttempts, lastSeenAt, pointsAwarded);
+  } finally { lock.releaseLock(); }
+}
+
+function _doSaveAnswer(user, cardId, newBox, dueDate, correctStreak, totalAttempts, lastSeenAt, pointsAwarded) {
   var userLower = user.trim().toLowerCase();
 
   // Upsert CardState
