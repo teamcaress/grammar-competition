@@ -64,13 +64,21 @@ function todayKey() {
   return y + "-" + m + "-" + day;
 }
 
-/** Convert a cell value (possibly a Date object) to "YYYY-MM-DD" string. */
+/** Convert a cell value (possibly a Date object) to "YYYY-MM-DD" string (UTC). */
 function toDateKey(val) {
   if (val instanceof Date) {
-    var y = val.getFullYear();
-    var m = ("0" + (val.getMonth() + 1)).slice(-2);
-    var d = ("0" + val.getDate()).slice(-2);
+    var y = val.getUTCFullYear();
+    var m = ("0" + (val.getUTCMonth() + 1)).slice(-2);
+    var d = ("0" + val.getUTCDate()).slice(-2);
     return y + "-" + m + "-" + d;
+  }
+  return val.toString();
+}
+
+/** Convert a cell value (possibly a Date object) to an ISO 8601 string. */
+function toIsoString(val) {
+  if (val instanceof Date) {
+    return val.toISOString();
   }
   return val.toString();
 }
@@ -106,10 +114,10 @@ function handleGetUserData(user) {
         cardStates.push({
           card_id: csData[i][1],
           box: Number(csData[i][2]),
-          due_date: csData[i][3].toString(),
+          due_date: toIsoString(csData[i][3]),
           correct_streak: Number(csData[i][4]),
           total_attempts: Number(csData[i][5]),
-          last_seen_at: csData[i][6].toString()
+          last_seen_at: toIsoString(csData[i][6])
         });
       }
     }
