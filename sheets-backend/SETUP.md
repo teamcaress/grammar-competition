@@ -10,7 +10,25 @@
    |---|---|---|---|---|---|---|
    | user | card_id | box | due_date | correct_streak | total_attempts | last_seen_at |
 
-4. Create a second tab named **DailyScores**.
+4. Create a second tab named **Users**.
+5. Add these headers in row 1:
+
+   | A | B |
+   |---|---|
+   | name | pin |
+
+6. Add the initial players:
+
+   | name | pin |
+   |---|---|
+   | Neal | 0413 |
+   | Amie | 0221 |
+   | Baxter | 07101 |
+   | Lula | 0115 |
+
+   **Important:** Format columns A and B as **Plain Text** (select the columns, then Format > Number > Plain text) so PINs with leading zeros aren't treated as numbers.
+
+7. Create a third tab named **DailyScores**.
 5. Add these headers in row 1:
 
    | A | B | C | D |

@@ -12,13 +12,13 @@ import {
   type DashboardData,
 } from "./game-logic";
 import {
+  login,
+  joinGame,
   getUserData,
   saveAnswerFireAndForget,
   getLeaderboard,
   type LeaderboardRow,
 } from "./sheets-api";
-
-const FAMILY = ["Neal", "Amie", "Baxter", "Lula"] as const;
 
 type AppStage = "login" | "home" | "practice" | "summary" | "leaderboard";
 
@@ -66,6 +66,10 @@ export function App() {
   const [selectedChoice, setSelectedChoice] = useState<ChoiceKey | null>(null);
   const [cardStartedAtMs, setCardStartedAtMs] = useState(0);
 
+  const [loginName, setLoginName] = useState("");
+  const [loginPin, setLoginPin] = useState("");
+  const [isJoinMode, setIsJoinMode] = useState(false);
+
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
   const [isLeaderboardLoading, setIsLeaderboardLoading] = useState(false);
@@ -88,18 +92,26 @@ export function App() {
     setDashboard(d);
   }
 
-  async function handleNamePick(name: string) {
+  async function handleLogin() {
+    const name = loginName.trim();
+    const pin = loginPin.trim();
+    if (!name || !pin) {
+      setGlobalError("Enter your name and PIN.");
+      return;
+    }
     setGlobalError(null);
     setIsLoading(true);
     try {
-      const { cardStates: states, dailyScore: score } = await getUserData(name);
-      setUserName(name);
+      const authFn = isJoinMode ? joinGame : login;
+      const { user } = await authFn(name, pin);
+      const { cardStates: states, dailyScore: score } = await getUserData(user);
+      setUserName(user);
       setCardStates(states);
       setDailyScore(score);
       refreshDashboard(states, score);
       setStage("home");
     } catch (error) {
-      setGlobalError(error instanceof Error ? error.message : "Could not load user data.");
+      setGlobalError(error instanceof Error ? error.message : "Could not sign in.");
     } finally {
       setIsLoading(false);
     }
@@ -258,23 +270,72 @@ export function App() {
 
       {stage === "login" ? (
         <section className="mt-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-          <h2 className="text-base font-semibold">Who are you?</h2>
-          <div className="mt-3 grid grid-cols-2 gap-3">
-            {FAMILY.map((name) => (
-              <button
-                key={name}
-                type="button"
-                className="rounded-lg bg-ink px-3 py-3 text-sm font-semibold text-white disabled:opacity-50"
+          <h2 className="text-base font-semibold">
+            {isJoinMode ? "Join the Game" : "Sign In"}
+          </h2>
+          <form
+            className="mt-3 space-y-3"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void handleLogin();
+            }}
+          >
+            <label className="block">
+              <span className="mb-1 block text-xs font-medium text-slate-600">Name</span>
+              <input
+                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                type="text"
+                autoComplete="username"
+                value={loginName}
+                onChange={(e) => setLoginName(e.target.value)}
                 disabled={isLoading}
-                onClick={() => void handleNamePick(name)}
-              >
-                {name}
-              </button>
-            ))}
-          </div>
-          {isLoading ? (
-            <p className="mt-3 text-center text-xs text-slate-500">Loading...</p>
-          ) : null}
+              />
+            </label>
+            <label className="block">
+              <span className="mb-1 block text-xs font-medium text-slate-600">PIN</span>
+              <input
+                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                type="password"
+                inputMode="numeric"
+                autoComplete="current-password"
+                value={loginPin}
+                onChange={(e) => setLoginPin(e.target.value)}
+                disabled={isLoading}
+              />
+            </label>
+            <button
+              className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
+              type="submit"
+              disabled={isLoading}
+            >
+              {isLoading ? "Loading..." : isJoinMode ? "Create Account" : "Sign In"}
+            </button>
+          </form>
+          <p className="mt-3 text-center text-xs text-slate-500">
+            {isJoinMode ? (
+              <>
+                Already have an account?{" "}
+                <button
+                  type="button"
+                  className="font-semibold text-accent"
+                  onClick={() => { setIsJoinMode(false); setGlobalError(null); }}
+                >
+                  Sign In
+                </button>
+              </>
+            ) : (
+              <>
+                New player?{" "}
+                <button
+                  type="button"
+                  className="font-semibold text-accent"
+                  onClick={() => { setIsJoinMode(true); setGlobalError(null); }}
+                >
+                  Join the Game
+                </button>
+              </>
+            )}
+          </p>
         </section>
       ) : null}
 

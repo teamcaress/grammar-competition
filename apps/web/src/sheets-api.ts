@@ -28,6 +28,34 @@ type GetLeaderboardResponse = {
   rows: LeaderboardRow[];
 };
 
+export async function login(
+  name: string,
+  pin: string
+): Promise<{ user: string }> {
+  const res = await fetch(sheetsUrl, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({ action: "login", name, pin }),
+  });
+  const data = (await res.json()) as { ok?: boolean; user?: string; error?: string };
+  if (data.error) throw new Error(data.error);
+  return { user: data.user ?? name };
+}
+
+export async function joinGame(
+  name: string,
+  pin: string
+): Promise<{ user: string }> {
+  const res = await fetch(sheetsUrl, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({ action: "joinGame", name, pin }),
+  });
+  const data = (await res.json()) as { ok?: boolean; user?: string; error?: string };
+  if (data.error) throw new Error(data.error);
+  return { user: data.user ?? name };
+}
+
 export async function getUserData(
   user: string
 ): Promise<{ cardStates: Map<string, CardState>; dailyScore: DailyScore | undefined }> {

@@ -40,6 +40,10 @@ function doPost(e) {
 
   if (action === "saveAnswer") {
     result = handleSaveAnswer(body);
+  } else if (action === "login") {
+    result = handleLogin(body);
+  } else if (action === "joinGame") {
+    result = handleJoinGame(body);
   } else {
     result = { error: "Unknown action" };
   }
@@ -291,4 +295,52 @@ function handleGetLeaderboard(range) {
   });
 
   return { range: range, rows: rows };
+}
+
+/* ------------------------------------------------------------------ */
+/*  login                                                              */
+/* ------------------------------------------------------------------ */
+
+function handleLogin(body) {
+  var name = (body.name || "").toString().trim();
+  var pin = (body.pin || "").toString().trim();
+  if (!name || !pin) return { error: "Name and PIN are required" };
+
+  var sheet = getSheet("Users");
+  if (!sheet) return { error: "Users sheet not found" };
+
+  var data = sheet.getDataRange().getValues();
+  for (var i = 1; i < data.length; i++) {
+    if (data[i][0].toString().trim().toLowerCase() === name.toLowerCase() &&
+        data[i][1].toString().trim() === pin) {
+      return { ok: true, user: data[i][0].toString().trim() };
+    }
+  }
+
+  return { error: "Invalid name or PIN" };
+}
+
+/* ------------------------------------------------------------------ */
+/*  joinGame                                                           */
+/* ------------------------------------------------------------------ */
+
+function handleJoinGame(body) {
+  var name = (body.name || "").toString().trim();
+  var pin = (body.pin || "").toString().trim();
+  if (!name) return { error: "Name is required" };
+  if (!pin || pin.length < 3 || pin.length > 8) return { error: "PIN must be 3\u20138 digits" };
+  if (!/^\d+$/.test(pin)) return { error: "PIN must be digits only" };
+
+  var sheet = getSheet("Users");
+  if (!sheet) return { error: "Users sheet not found" };
+
+  var data = sheet.getDataRange().getValues();
+  for (var i = 1; i < data.length; i++) {
+    if (data[i][0].toString().trim().toLowerCase() === name.toLowerCase()) {
+      return { error: "Name already taken" };
+    }
+  }
+
+  sheet.appendRow([name, pin]);
+  return { ok: true, user: name };
 }
