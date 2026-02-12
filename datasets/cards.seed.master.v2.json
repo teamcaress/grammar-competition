@@ -240,7 +240,7 @@
     "difficulty": 1,
     "tags": [
       "apostrophe",
-      "its_vs_its"
+      "its_vs_it's"
     ],
     "exam_targets": [
       "SAT",
@@ -283,10 +283,10 @@
       "A": "Each of the interns",
       "B": "submitted",
       "C": "their final reflection",
-      "D": "before noon"
+      "D": "NO ERROR"
     },
-    "correct_answer": "C",
-    "explanation": "\"Each\" is singular, so the pronoun should be singular (his or her / their in strict test contexts often marked).",
+    "correct_answer": "D",
+    "explanation": "Singular \"they/their\" is accepted in modern standard English and on current SAT/ACT tests when referring to indefinite pronouns like \"each.\" No error.",
     "difficulty": 2,
     "tags": [
       "pronoun_antecedent",
@@ -411,7 +411,7 @@
       "D": "NO ERROR"
     },
     "correct_answer": "A",
-    "explanation": "\"Nearly\" should modify \"three hours,\" not \"recorded.\"",
+    "explanation": "\"Nearly\" is misplaced: it appears to modify \"recorded\" (suggesting the scientist almost recorded but didn't), when the intended meaning is duration. Moving it to \"for nearly three hours\" fixes the ambiguity.",
     "difficulty": 2,
     "tags": [
       "misplaced_modifier",
@@ -556,12 +556,12 @@
     "prompt": "The revised protocol was more effective for reducing delays than lowering costs.",
     "choices": {
       "A": "NO CHANGE",
-      "B": "The revised protocol was more effective at reducing delays than lowering costs.",
+      "B": "The revised protocol was more effective to reduce delays than lowering costs.",
       "C": "The revised protocol was more effective at reducing delays than at lowering costs.",
       "D": "The revised protocol more effectively reduced delays than lowering costs."
     },
     "correct_answer": "C",
-    "explanation": "Comparative elements should match grammatically: \"at reducing\" and \"at lowering.\"",
+    "explanation": "Comparative elements should match grammatically. Only C repeats the preposition \"at\" on both sides: \"at reducing delays\" and \"at lowering costs.\"",
     "difficulty": 2,
     "tags": [
       "comparison",
@@ -1055,10 +1055,10 @@
       "A": "Everyone in the seminar",
       "B": "submitted",
       "C": "their draft",
-      "D": "before class"
+      "D": "NO ERROR"
     },
-    "correct_answer": "C",
-    "explanation": "\"Everyone\" is singular in formal test grammar, so singular pronoun agreement is expected.",
+    "correct_answer": "D",
+    "explanation": "Singular \"they/their\" is accepted in modern standard English and on current SAT/ACT tests when referring to indefinite pronouns like \"everyone.\" No error.",
     "difficulty": 2,
     "tags": [
       "indefinite_pronoun",
@@ -1336,7 +1336,7 @@
     "difficulty": 1,
     "tags": [
       "apostrophe",
-      "its_vs_its"
+      "its_vs_it's"
     ],
     "exam_targets": [
       "ACT",
