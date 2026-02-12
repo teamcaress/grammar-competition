@@ -246,7 +246,7 @@ export function App() {
         <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
           SAT/ACT Grammar Trainer
         </p>
-        <h1 className="mt-1 text-xl font-bold text-ink">Phone Practice MVP</h1>
+        <h1 className="mt-1 text-xl font-bold text-ink">Grammar Showdown</h1>
       </header>
 
       {globalError ? (
@@ -336,7 +336,7 @@ export function App() {
           </div>
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <h3 className="text-sm font-semibold">Unit Mastery</h3>
+            <h3 className="text-sm font-semibold">Unit Progress</h3>
             {dashboard?.unit_mastery?.length ? (
               <ul className="mt-2 space-y-2 text-xs text-slate-700">
                 {dashboard.unit_mastery.slice(0, 4).map((unit) => (
@@ -513,7 +513,7 @@ export function App() {
                       <p className="text-sm font-semibold text-slate-900">{row.points} pts</p>
                     </div>
                     <p className="mt-1 text-xs text-slate-600">
-                      Mastered: {row.mastered} · Streak: {row.streak}
+                      Completed: {row.mastered} · Streak: {row.streak}
                     </p>
                   </li>
                 ))}
