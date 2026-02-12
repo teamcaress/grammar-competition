@@ -375,6 +375,13 @@ export function App() {
               Remaining: {queue.length} · Answered: {totalAnswered}
             </p>
             <p className="mt-3 text-sm leading-6 text-slate-900">{currentCard.prompt}</p>
+            <p className="mt-2 text-xs font-medium italic text-slate-500">
+              {currentCard.card_type === "error_id"
+                ? "Which part, if any, contains an error?"
+                : currentCard.card_type === "revision"
+                  ? "Choose the best version of the sentence."
+                  : "Choose the best option."}
+            </p>
           </div>
 
           <div className="space-y-2">

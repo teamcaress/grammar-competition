@@ -1,9 +1,12 @@
 import rawCards from "./data/cards.json";
 
+export type CardType = "error_id" | "revision" | "best_choice";
+
 export type Card = {
   id: string;
   unit: string;
   subtopic: string;
+  card_type: CardType;
   prompt: string;
   choices: Record<string, string>;
   correct_answer: string;
@@ -14,6 +17,7 @@ export type Card = {
 type RawCard = {
   unit: string;
   subtopic: string;
+  card_type: string;
   prompt: string;
   choices: Record<string, string>;
   correct_answer: string;
@@ -46,6 +50,7 @@ export async function initCards(): Promise<void> {
       id,
       unit: raw.unit,
       subtopic: raw.subtopic,
+      card_type: raw.card_type as CardType,
       prompt: raw.prompt,
       choices: raw.choices,
       correct_answer: raw.correct_answer,
