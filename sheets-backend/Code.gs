@@ -64,6 +64,17 @@ function todayKey() {
   return y + "-" + m + "-" + day;
 }
 
+/** Convert a cell value (possibly a Date object) to "YYYY-MM-DD" string. */
+function toDateKey(val) {
+  if (val instanceof Date) {
+    var y = val.getFullYear();
+    var m = ("0" + (val.getMonth() + 1)).slice(-2);
+    var d = ("0" + val.getDate()).slice(-2);
+    return y + "-" + m + "-" + d;
+  }
+  return val.toString();
+}
+
 function shiftDateKey(dateKey, delta) {
   var parts = dateKey.split("-");
   var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2]));
@@ -108,7 +119,7 @@ function handleGetUserData(user) {
   if (dsSheet) {
     var dsData = dsSheet.getDataRange().getValues();
     for (var j = 1; j < dsData.length; j++) {
-      if (dsData[j][0] === user && dsData[j][1] === today) {
+      if (dsData[j][0] === user && toDateKey(dsData[j][1]) === today) {
         dailyScore = {
           date: today,
           points: Number(dsData[j][2]),
@@ -167,7 +178,7 @@ function handleSaveAnswer(body) {
   var dsData = dsSheet.getDataRange().getValues();
   var dsRow = -1;
   for (var j = 1; j < dsData.length; j++) {
-    if (dsData[j][0] === user && dsData[j][1] === today) {
+    if (dsData[j][0] === user && toDateKey(dsData[j][1]) === today) {
       dsRow = j + 1;
       break;
     }
@@ -204,7 +215,7 @@ function handleGetLeaderboard(range) {
     var dsData = dsSheet.getDataRange().getValues();
     for (var i = 1; i < dsData.length; i++) {
       var u = dsData[i][0].toString();
-      var dateVal = dsData[i][1].toString();
+      var dateVal = toDateKey(dsData[i][1]);
       var pts = Number(dsData[i][2]);
 
       // Track active dates for streak (always, regardless of range)
