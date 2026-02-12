@@ -1,50 +1,27 @@
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { initCards, getCards, getCardById } from "./cards";
+import {
+  selectSessionCards,
+  processAnswer,
+  computeDashboard,
+  type CardState,
+  type DailyScore,
+  type SessionCard,
+  type AnswerResult,
+  type DashboardData,
+} from "./game-logic";
+import {
+  getUserData,
+  saveAnswerFireAndForget,
+  getLeaderboard,
+  type LeaderboardRow,
+} from "./sheets-api";
 
-// If VITE_API_BASE_URL is unset (typical when serving web+api from the same host),
-// we default to same-origin and call `/api/...`.
-const apiBase = import.meta.env.VITE_API_BASE_URL ?? "";
+const FAMILY = ["Neal", "Amie", "Baxter", "Lula"] as const;
 
-type AppStage =
-  | "checking"
-  | "login"
-  | "home"
-  | "practice"
-  | "summary"
-  | "leaderboard";
-
-type User = {
-  id: string;
-  display_name: string;
-  room_id: string;
-};
+type AppStage = "login" | "home" | "practice" | "summary" | "leaderboard";
 
 type ChoiceKey = "A" | "B" | "C" | "D";
-
-type SessionCard = {
-  id: string;
-  unit_id: string;
-  subtopic: string;
-  prompt: string;
-  choices: Record<string, string>;
-  explanation: string;
-  difficulty: number;
-  source: "due" | "new" | "near_due";
-  current_box: number | null;
-  due_date: string | null;
-};
-
-type AnswerResponse = {
-  card_id: string;
-  is_new_card: boolean;
-  correct: boolean;
-  explanation: string;
-  new_box: number;
-  due_date: string;
-  requeue_in_session: boolean;
-  points_awarded: number;
-  daily_points: number;
-  answers_today: number;
-};
 
 type AnswerHistoryItem = {
   cardId: string;
@@ -55,56 +32,7 @@ type AnswerHistoryItem = {
   subtopic: string;
 };
 
-type DashboardResponse = {
-  due_count: number;
-  daily_points: number;
-  answers_today: number;
-  unit_mastery: Array<{
-    unit_id: string;
-    total_cards: number;
-    seen_cards: number;
-    mastered_cards: number;
-    mastery_ratio: number;
-  }>;
-};
-
 type LeaderboardRange = "today" | "week" | "all";
-type LeaderboardRow = {
-  display_name: string;
-  points: number;
-  mastered: number;
-  streak: number;
-};
-
-async function apiRequest<T>(path: string, init?: RequestInit): Promise<T> {
-  const headers = new Headers(init?.headers);
-  if (init?.body && !headers.has("content-type")) {
-    headers.set("content-type", "application/json");
-  }
-
-  const response = await fetch(`${apiBase}${path}`, {
-    ...init,
-    credentials: "include",
-    headers
-  });
-
-  let payload: unknown = null;
-  try {
-    payload = await response.json();
-  } catch {
-    payload = null;
-  }
-
-  if (!response.ok) {
-    const message =
-      payload && typeof payload === "object" && "error" in payload
-        ? String((payload as { error?: unknown }).error ?? "Request failed")
-        : "Request failed";
-    throw new Error(message);
-  }
-
-  return payload as T;
-}
 
 function countWeakSubtopics(history: AnswerHistoryItem[]): Array<{ key: string; misses: number }> {
   const missesByKey = new Map<string, number>();
@@ -120,21 +48,23 @@ function countWeakSubtopics(history: AnswerHistoryItem[]): Array<{ key: string; 
 }
 
 export function App() {
-  const [stage, setStage] = useState<AppStage>("checking");
-  const [user, setUser] = useState<User | null>(null);
-  const [roomCode, setRoomCode] = useState("");
-  const [displayName, setDisplayName] = useState("");
+  const [stage, setStage] = useState<AppStage>("login");
+  const [userName, setUserName] = useState<string | null>(null);
+  const [cardsReady, setCardsReady] = useState(false);
   const [sessionSize, setSessionSize] = useState(12);
   const [globalError, setGlobalError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const [cardStates, setCardStates] = useState<Map<string, CardState>>(new Map());
+  const [dailyScore, setDailyScore] = useState<DailyScore | undefined>(undefined);
+  const [dashboard, setDashboard] = useState<DashboardData | null>(null);
+
   const [queue, setQueue] = useState<SessionCard[]>([]);
   const [history, setHistory] = useState<AnswerHistoryItem[]>([]);
-  const [pendingAnswer, setPendingAnswer] = useState<AnswerResponse | null>(null);
+  const [pendingAnswer, setPendingAnswer] = useState<AnswerResult | null>(null);
   const [selectedChoice, setSelectedChoice] = useState<ChoiceKey | null>(null);
   const [cardStartedAtMs, setCardStartedAtMs] = useState(0);
-  const [dailyPoints, setDailyPoints] = useState(0);
-  const [dashboard, setDashboard] = useState<DashboardResponse | null>(null);
+
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
   const [isLeaderboardLoading, setIsLeaderboardLoading] = useState(false);
@@ -143,177 +73,88 @@ export function App() {
   const totalAnswered = history.length;
   const totalCorrect = history.filter((item) => item.correct).length;
   const pointsEarned = history.reduce((sum, item) => sum + item.pointsAwarded, 0);
-
   const weakSkills = useMemo(() => countWeakSubtopics(history), [history]);
 
-  async function loadDashboard() {
-    const result = await apiRequest<DashboardResponse>("/api/dashboard", {
-      method: "GET"
-    });
-    setDashboard(result);
-    setDailyPoints(result.daily_points);
-  }
-
-  async function loadLeaderboard(range: LeaderboardRange) {
-    setIsLeaderboardLoading(true);
-    try {
-      const result = await apiRequest<{ range: LeaderboardRange; rows: LeaderboardRow[] }>(
-        `/api/leaderboard?range=${range}`,
-        { method: "GET" }
-      );
-      setLeaderboardRows(result.rows ?? []);
-    } finally {
-      setIsLeaderboardLoading(false);
-    }
-  }
-
+  // Initialize cards on mount
   useEffect(() => {
-    void (async () => {
-      try {
-        const me = await apiRequest<{
-          id: string;
-          display_name: string;
-          room_id: string;
-        }>("/api/me", { method: "GET" });
-        setUser(me);
-        setStage("home");
-        try {
-          await loadDashboard();
-        } catch (error) {
-          setGlobalError(
-            error instanceof Error ? error.message : "Could not load dashboard."
-          );
-        }
-      } catch {
-        setStage("login");
-      }
-    })();
+    initCards()
+      .then(() => setCardsReady(true))
+      .catch((err) => setGlobalError(`Failed to load cards: ${err}`));
   }, []);
 
-  async function handleLogin(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function refreshDashboard(states: Map<string, CardState>, score: DailyScore | undefined) {
+    const d = computeDashboard(getCards(), states, score);
+    setDashboard(d);
+  }
+
+  async function handleNamePick(name: string) {
     setGlobalError(null);
     setIsLoading(true);
-
     try {
-      const result = await apiRequest<{
-        user_id: string;
-        display_name: string;
-        room_id: string;
-      }>("/api/login", {
-        method: "POST",
-        body: JSON.stringify({
-          room_code: roomCode,
-          display_name: displayName
-        })
-      });
-
-      setUser({
-        id: result.user_id,
-        display_name: result.display_name,
-        room_id: result.room_id
-      });
+      const { cardStates: states, dailyScore: score } = await getUserData(name);
+      setUserName(name);
+      setCardStates(states);
+      setDailyScore(score);
+      refreshDashboard(states, score);
       setStage("home");
-      try {
-        await loadDashboard();
-      } catch (error) {
-        setGlobalError(
-          error instanceof Error ? error.message : "Could not load dashboard."
-        );
-      }
     } catch (error) {
-      setGlobalError(error instanceof Error ? error.message : "Could not log in.");
+      setGlobalError(error instanceof Error ? error.message : "Could not load user data.");
     } finally {
       setIsLoading(false);
     }
   }
 
-  async function startPractice() {
+  function startPractice() {
     setGlobalError(null);
-    setIsLoading(true);
-
-    try {
-      const result = await apiRequest<{
-        cards: SessionCard[];
-      }>("/api/session/start", {
-        method: "POST",
-        body: JSON.stringify({ size: sessionSize })
-      });
-
-      const cards = result.cards ?? [];
-      if (cards.length === 0) {
-        setGlobalError(
-          "No cards were returned. Import cards first or try a different unit."
-        );
-        setStage("home");
-        return;
-      }
-
-      setQueue(cards);
-      setHistory([]);
-      setPendingAnswer(null);
-      setSelectedChoice(null);
-      setDailyPoints(0);
-      setCardStartedAtMs(Date.now());
-      setStage("practice");
-    } catch (error) {
-      setGlobalError(error instanceof Error ? error.message : "Could not start session.");
-      setStage("home");
-    } finally {
-      setIsLoading(false);
+    const cards = selectSessionCards(getCards(), cardStates, sessionSize);
+    if (cards.length === 0) {
+      setGlobalError("No cards available. Try again later.");
+      return;
     }
+    setQueue(cards);
+    setHistory([]);
+    setPendingAnswer(null);
+    setSelectedChoice(null);
+    setCardStartedAtMs(Date.now());
+    setStage("practice");
   }
 
-  async function submitAnswer(choice: ChoiceKey) {
+  function submitAnswer(choice: ChoiceKey) {
     if (!currentCard || pendingAnswer) return;
 
-    setIsLoading(true);
-    setGlobalError(null);
+    const card = getCardById(currentCard.id);
+    if (!card) return;
+
     setSelectedChoice(choice);
 
-    try {
-      const result = await apiRequest<AnswerResponse>("/api/session/answer", {
-        method: "POST",
-        body: JSON.stringify({
-          card_id: currentCard.id,
-          choice,
-          response_ms: Math.max(0, Date.now() - cardStartedAtMs)
-        })
+    const { answerResult, newCardState, newDailyScore } = processAnswer(
+      card,
+      choice,
+      cardStates,
+      dailyScore
+    );
+
+    // Update local state immediately
+    setCardStates((prev) => {
+      const next = new Map(prev);
+      next.set(card.id, newCardState);
+      return next;
+    });
+    setDailyScore(newDailyScore);
+    setPendingAnswer(answerResult);
+
+    // Fire-and-forget save to Google Sheets
+    if (userName) {
+      saveAnswerFireAndForget({
+        user: userName,
+        card_id: card.id,
+        box: newCardState.box,
+        due_date: newCardState.due_date,
+        correct_streak: newCardState.correct_streak,
+        total_attempts: newCardState.total_attempts,
+        last_seen_at: newCardState.last_seen_at,
+        points_awarded: answerResult.points_awarded,
       });
-
-      setPendingAnswer(result);
-      setDailyPoints(result.daily_points);
-    } catch (error) {
-      setGlobalError(error instanceof Error ? error.message : "Could not submit answer.");
-      setSelectedChoice(null);
-    } finally {
-      setIsLoading(false);
-    }
-  }
-
-  async function openLeaderboard() {
-    setGlobalError(null);
-    const initialRange: LeaderboardRange = "today";
-    setLeaderboardRange(initialRange);
-    try {
-      await loadLeaderboard(initialRange);
-      setStage("leaderboard");
-    } catch (error) {
-      setGlobalError(
-        error instanceof Error ? error.message : "Could not load leaderboard."
-      );
-    }
-  }
-
-  async function changeLeaderboardRange(range: LeaderboardRange) {
-    setGlobalError(null);
-    setLeaderboardRange(range);
-    try {
-      await loadLeaderboard(range);
-    } catch (error) {
-      setGlobalError(
-        error instanceof Error ? error.message : "Could not load leaderboard."
-      );
     }
   }
 
@@ -325,8 +166,8 @@ export function App() {
       choice: selectedChoice,
       correct: pendingAnswer.correct,
       pointsAwarded: pendingAnswer.points_awarded,
-      unitId: currentCard.unit_id,
-      subtopic: currentCard.subtopic
+      unitId: currentCard.unit,
+      subtopic: currentCard.subtopic,
     };
 
     const remaining = queue.slice(1);
@@ -345,27 +186,55 @@ export function App() {
     }
   }
 
-  async function resetToHome() {
+  function resetToHome() {
     setQueue([]);
     setHistory([]);
     setPendingAnswer(null);
     setSelectedChoice(null);
     setGlobalError(null);
-    try {
-      await loadDashboard();
-    } catch (error) {
-      setGlobalError(
-        error instanceof Error ? error.message : "Could not refresh dashboard."
-      );
-    }
+    refreshDashboard(cardStates, dailyScore);
     setStage("home");
   }
 
-  if (stage === "checking") {
+  async function openLeaderboard() {
+    setGlobalError(null);
+    const initialRange: LeaderboardRange = "today";
+    setLeaderboardRange(initialRange);
+    setIsLeaderboardLoading(true);
+    try {
+      const result = await getLeaderboard(initialRange);
+      setLeaderboardRows(result.rows ?? []);
+      setStage("leaderboard");
+    } catch (error) {
+      setGlobalError(
+        error instanceof Error ? error.message : "Could not load leaderboard."
+      );
+    } finally {
+      setIsLeaderboardLoading(false);
+    }
+  }
+
+  async function changeLeaderboardRange(range: LeaderboardRange) {
+    setGlobalError(null);
+    setLeaderboardRange(range);
+    setIsLeaderboardLoading(true);
+    try {
+      const result = await getLeaderboard(range);
+      setLeaderboardRows(result.rows ?? []);
+    } catch (error) {
+      setGlobalError(
+        error instanceof Error ? error.message : "Could not load leaderboard."
+      );
+    } finally {
+      setIsLeaderboardLoading(false);
+    }
+  }
+
+  if (!cardsReady) {
     return (
       <main className="mx-auto min-h-screen max-w-md px-4 py-8">
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-          <p className="text-sm text-slate-700">Checking session...</p>
+          <p className="text-sm text-slate-700">Loading cards...</p>
         </section>
       </main>
     );
@@ -378,7 +247,6 @@ export function App() {
           SAT/ACT Grammar Trainer
         </p>
         <h1 className="mt-1 text-xl font-bold text-ink">Phone Practice MVP</h1>
-        <p className="mt-1 text-xs text-slate-500">API: {apiBase}</p>
       </header>
 
       {globalError ? (
@@ -389,40 +257,23 @@ export function App() {
 
       {stage === "login" ? (
         <section className="mt-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-          <h2 className="text-base font-semibold">Join Room</h2>
-          <form className="mt-3 space-y-3" onSubmit={handleLogin}>
-            <label className="block">
-              <span className="mb-1 block text-xs font-medium text-slate-600">Room Code</span>
-              <input
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                value={roomCode}
-                onChange={(event) => setRoomCode(event.target.value)}
-                placeholder="ROOM123"
-                required
-                minLength={4}
-                maxLength={32}
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1 block text-xs font-medium text-slate-600">Display Name</span>
-              <input
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                value={displayName}
-                onChange={(event) => setDisplayName(event.target.value)}
-                placeholder="Alex"
-                required
-                minLength={2}
-                maxLength={32}
-              />
-            </label>
-            <button
-              className="w-full rounded-lg bg-ink px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
-              type="submit"
-              disabled={isLoading}
-            >
-              {isLoading ? "Signing in..." : "Continue"}
-            </button>
-          </form>
+          <h2 className="text-base font-semibold">Who are you?</h2>
+          <div className="mt-3 grid grid-cols-2 gap-3">
+            {FAMILY.map((name) => (
+              <button
+                key={name}
+                type="button"
+                className="rounded-lg bg-ink px-3 py-3 text-sm font-semibold text-white disabled:opacity-50"
+                disabled={isLoading}
+                onClick={() => void handleNamePick(name)}
+              >
+                {name}
+              </button>
+            ))}
+          </div>
+          {isLoading ? (
+            <p className="mt-3 text-center text-xs text-slate-500">Loading...</p>
+          ) : null}
         </section>
       ) : null}
 
@@ -430,9 +281,8 @@ export function App() {
         <section className="mt-4 space-y-3">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <p className="text-sm text-slate-700">
-              Signed in as <span className="font-semibold">{user?.display_name}</span>
+              Signed in as <span className="font-semibold">{userName}</span>
             </p>
-            <p className="mt-1 text-xs text-slate-500">Room: {user?.room_id}</p>
             <div className="mt-3 grid grid-cols-3 gap-2 text-center">
               <div className="rounded-lg bg-slate-50 p-2">
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">Due</p>
@@ -469,10 +319,10 @@ export function App() {
             <button
               className="mt-3 w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
               type="button"
-              onClick={() => void startPractice()}
+              onClick={startPractice}
               disabled={isLoading}
             >
-              {isLoading ? "Starting..." : "Start Practice"}
+              Start Practice
             </button>
 
             <button
@@ -519,7 +369,7 @@ export function App() {
         <section className="mt-4 space-y-3">
           <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
             <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-              {currentCard.unit_id} · {currentCard.subtopic}
+              {currentCard.unit} · {currentCard.subtopic}
             </p>
             <p className="mt-1 text-xs text-slate-500">
               Remaining: {queue.length} · Answered: {totalAnswered}
@@ -532,7 +382,7 @@ export function App() {
               <button
                 key={key}
                 type="button"
-                onClick={() => void submitAnswer(key)}
+                onClick={() => submitAnswer(key)}
                 disabled={Boolean(pendingAnswer) || isLoading}
                 className={`w-full rounded-xl px-3 py-3 text-left text-sm ring-1 transition ${
                   selectedChoice === key
@@ -585,7 +435,9 @@ export function App() {
               {totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0}%)
             </p>
             <p className="mt-1 text-sm text-slate-700">Points earned: {pointsEarned}</p>
-            <p className="mt-1 text-sm text-slate-700">Daily points: {dailyPoints}</p>
+            <p className="mt-1 text-sm text-slate-700">
+              Daily points: {dailyScore?.points ?? 0}
+            </p>
           </div>
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
@@ -606,7 +458,7 @@ export function App() {
           <button
             className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white"
             type="button"
-            onClick={() => void resetToHome()}
+            onClick={resetToHome}
           >
             Back to Home
           </button>
