@@ -373,42 +373,6 @@ export function App() {
 
       {stage === "practice" && currentCard ? (
         <section className="mt-4 space-y-3">
-          <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-            <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-              {currentCard.unit} · {currentCard.subtopic}
-            </p>
-            <p className="mt-1 text-xs text-slate-500">
-              Remaining: {queue.length} · Answered: {totalAnswered}
-            </p>
-            <p className="mt-3 text-sm leading-6 text-slate-900">{currentCard.prompt}</p>
-            <p className="mt-2 text-xs font-medium italic text-slate-500">
-              {currentCard.card_type === "error_id"
-                ? "Which part, if any, contains an error?"
-                : currentCard.card_type === "revision"
-                  ? "Choose the best version of the sentence."
-                  : "Choose the best option."}
-            </p>
-          </div>
-
-          <div className="space-y-2">
-            {(["A", "B", "C", "D"] as ChoiceKey[]).map((key) => (
-              <button
-                key={key}
-                type="button"
-                onClick={() => submitAnswer(key)}
-                disabled={Boolean(pendingAnswer) || isLoading}
-                className={`w-full rounded-xl px-3 py-3 text-left text-sm ring-1 transition ${
-                  selectedChoice === key
-                    ? "bg-sky-50 ring-sky-300"
-                    : "bg-white ring-slate-200 hover:ring-slate-300"
-                } disabled:opacity-70`}
-              >
-                <span className="mr-2 font-semibold">{key}.</span>
-                <span>{currentCard.choices[key]}</span>
-              </button>
-            ))}
-          </div>
-
           {pendingAnswer ? (
             <div
               className={`rounded-2xl p-4 ring-1 ${
@@ -417,14 +381,20 @@ export function App() {
                   : "bg-rose-50 text-rose-900 ring-rose-200"
               }`}
             >
-              <p className="text-sm font-semibold">
-                {pendingAnswer.correct ? "Correct" : "Incorrect"}
-              </p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold">
+                  {pendingAnswer.correct ? "Correct" : "Incorrect"}
+                </p>
+                <p className="text-xs">
+                  +{pendingAnswer.points_awarded} pts · Box {pendingAnswer.new_box}
+                </p>
+              </div>
+              {!pendingAnswer.correct ? (
+                <p className="mt-1 text-xs font-semibold">
+                  Answer: {currentCard.correct_answer}. {currentCard.choices[currentCard.correct_answer as ChoiceKey]}
+                </p>
+              ) : null}
               <p className="mt-1 text-sm">{pendingAnswer.explanation}</p>
-              <p className="mt-2 text-xs">
-                Box {pendingAnswer.new_box} · +{pendingAnswer.points_awarded} pts · Daily{" "}
-                {pendingAnswer.daily_points}
-              </p>
               <button
                 className="mt-3 w-full rounded-lg bg-ink px-3 py-2 text-sm font-semibold text-white"
                 type="button"
@@ -435,7 +405,48 @@ export function App() {
                   : "Finish Session"}
               </button>
             </div>
-          ) : null}
+          ) : (
+            <div className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+              <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                {currentCard.unit} · {currentCard.subtopic}
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Remaining: {queue.length} · Answered: {totalAnswered}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-900">{currentCard.prompt}</p>
+              <p className="mt-2 text-xs font-medium italic text-slate-500">
+                {currentCard.card_type === "error_id"
+                  ? "Which part, if any, contains an error?"
+                  : currentCard.card_type === "revision"
+                    ? "Choose the best version of the sentence."
+                    : "Choose the best option."}
+              </p>
+            </div>
+          )}
+
+          <div className="space-y-2">
+            {(["A", "B", "C", "D"] as ChoiceKey[]).map((key) => {
+              const isCorrectKey = pendingAnswer && key === currentCard.correct_answer;
+              const isSelectedWrong = pendingAnswer && !pendingAnswer.correct && key === selectedChoice;
+              let ringClass = "bg-white ring-slate-200 hover:ring-slate-300";
+              if (isCorrectKey) ringClass = "bg-emerald-50 ring-emerald-400";
+              else if (isSelectedWrong) ringClass = "bg-rose-50 ring-rose-400";
+              else if (selectedChoice === key) ringClass = "bg-sky-50 ring-sky-300";
+
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  onClick={() => submitAnswer(key)}
+                  disabled={Boolean(pendingAnswer) || isLoading}
+                  className={`w-full rounded-xl px-3 py-3 text-left text-sm ring-1 transition ${ringClass} disabled:opacity-70`}
+                >
+                  <span className="mr-2 font-semibold">{key}.</span>
+                  <span>{currentCard.choices[key]}</span>
+                </button>
+              );
+            })}
+          </div>
         </section>
       ) : null}
 

@@ -5687,5 +5687,1010 @@
     "correct_answer": "B",
     "explanation": "Sentence 5 explains what the open-access repository does (allows subscription-free access), which logically follows the introduction of the repository in Sentence 1. Placing it after Sentence 1 provides necessary context before the specific details in Sentences 2 and 3, creating a general-to-specific flow.",
     "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The gathered data was combined together to create a single report.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The gathered data was combined to create a single report.",
+      "C": "The gathered data was combined and merged to create a single report.",
+      "D": "The gathered data was combined together into one single report."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Combined\" implies bringing things together; adding \"together\" is redundant.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "It is necessary that the committee be in attendance at the meeting.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The committee must attend the meeting.",
+      "C": "It is required for the committee to attend the meeting.",
+      "D": "The committee needs to be present at the meeting."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B is the most direct and active way to state the requirement.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "The reason the launch failed was because of a server error.",
+    "choices": {
+      "A": "The reason",
+      "B": "was because",
+      "C": "server error",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"The reason... was because\" is redundant. Use \"The reason... was that\" or simply \"The launch failed because.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "There are many students who struggle with time management.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Many students struggle with time management.",
+      "C": "There are many students struggling with time management.",
+      "D": "It is true that many students struggle with time management."
+    },
+    "correct_answer": "B",
+    "explanation": "Removing the expletive construction \"There are... who\" makes the sentence stronger and more concise.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The unexpected surprise caught the team off guard.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The surprise caught the team off guard.",
+      "C": "The unexpected surprise event caught the team off guard.",
+      "D": "The surprise that was unexpected caught the team off guard."
+    },
+    "correct_answer": "B",
+    "explanation": "A surprise is by definition unexpected; the adjective is redundant.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which choice is most concise? \"In the proximity of the station...\"",
+    "choices": {
+      "A": "Near the station",
+      "B": "Close to the station",
+      "C": "In the immediate vicinity of the station",
+      "D": "Located near the station"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Near\" is the most economical way to express proximity.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The CEO made a decision to expand the marketing budget.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The CEO decided to expand the marketing budget.",
+      "C": "The CEO came to a decision to expand the marketing budget.",
+      "D": "The CEO's decision was to expand the marketing budget."
+    },
+    "correct_answer": "B",
+    "explanation": "Replacing the nominalization \"made a decision\" with the verb \"decided\" improves flow and concision.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The prototype was circular in shape and blue in color.",
+    "choices": {
+      "A": "circular in shape",
+      "B": "blue in color",
+      "C": "both A and B",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Circular\" implies shape and \"blue\" implies color; the prepositional phrases are redundant.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "At this point in time, we do not have further comments.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "At this time, we do not have further comments.",
+      "C": "Currently, we do not have further comments.",
+      "D": "We do not have further comments at the present moment."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Currently\" replaces the wordy phrase \"At this point in time\" in a single word while preserving the meaning.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The history of the past dictates our future.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "History dictates our future.",
+      "C": "Past history dictates our future.",
+      "D": "The history that has passed dictates our future."
+    },
+    "correct_answer": "B",
+    "explanation": "History is by definition the past; qualifiers are redundant.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "revision",
+    "prompt": "Whereas the old model required manual input.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Whereas the old model required manual input, the new one is automated.",
+      "C": "The old model required manual input.",
+      "D": "Whereas, the old model required manual input, the new one."
+    },
+    "correct_answer": "B",
+    "explanation": "The prompt is a fragment because \"whereas\" makes it a dependent clause. Attaching an independent clause (choice B) creates a complete sentence.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "He ran the simulation twice, the results were identical.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "He ran the simulation twice; the results were identical.",
+      "C": "He ran the simulation twice, and the results were identical.",
+      "D": "He ran the simulation twice, the results, were identical."
+    },
+    "correct_answer": "B",
+    "explanation": "A comma splice can be fixed with a semicolon (B) or a comma + coordinating conjunction (C). The semicolon is the most direct fix on standardized tests.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "error_id",
+    "prompt": "The experiment failed the temperature was too low.",
+    "choices": {
+      "A": "The experiment failed",
+      "B": "the temperature",
+      "C": "missing punctuation between clauses",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Two independent clauses are fused without punctuation.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Relative Clauses",
+    "card_type": "revision",
+    "prompt": "The software, that was updated yesterday, crashed immediately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The software that was updated yesterday, crashed immediately.",
+      "C": "The software that was updated yesterday crashed immediately.",
+      "D": "The software, which was updated yesterday crashed immediately."
+    },
+    "correct_answer": "C",
+    "explanation": "Restrictive clauses starting with \"that\" should not be set off by commas.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Conjunctive Adverbs",
+    "card_type": "revision",
+    "prompt": "The budget is tight, therefore we must cut costs.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The budget is tight; therefore, we must cut costs.",
+      "C": "The budget is tight, therefore, we must cut costs.",
+      "D": "The budget is tight therefore we must cut costs."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Therefore\" is a conjunctive adverb, not a conjunction. It requires a semicolon when joining clauses.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Introductory Clauses",
+    "card_type": "error_id",
+    "prompt": "While the analyst compiled the data she noticed a trend.",
+    "choices": {
+      "A": "While the analyst compiled the data",
+      "B": "she noticed",
+      "C": "missing comma after introductory clause",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Standard test convention requires a comma after an introductory dependent clause to separate it from the main clause.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "revision",
+    "prompt": "For example, the species found in the deep ocean.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "For example, the species found in the deep ocean are bioluminescent.",
+      "C": "For example; the species found in the deep ocean.",
+      "D": "Such as the species found in the deep ocean."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a fragment lacking a main verb. Choice B completes the thought.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Logic",
+    "card_type": "best_choice",
+    "prompt": "Combine the sentences: \"The study was flawed. It was published anyway.\"",
+    "choices": {
+      "A": "The study was flawed, and it was published anyway.",
+      "B": "The study was flawed, so it was published anyway.",
+      "C": "Although the study was flawed, it was published anyway.",
+      "D": "The study was flawed; therefore, it was published anyway."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Although\" best captures the contrast/concession relationship between the two clauses.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Semicolon Usage",
+    "card_type": "error_id",
+    "prompt": "The team finished the project early; creating time for a celebration.",
+    "choices": {
+      "A": "project early;",
+      "B": "creating time",
+      "C": "for a celebration",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A semicolon cannot join an independent clause to a dependent phrase. Use a comma instead.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Appositives",
+    "card_type": "revision",
+    "prompt": "A skilled coder, the bug was fixed by Sarah in minutes.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The bug was fixed by Sarah, a skilled coder, in minutes.",
+      "C": "Sarah, a skilled coder, fixed the bug in minutes.",
+      "D": "A skilled coder, fixing the bug was easy for Sarah."
+    },
+    "correct_answer": "C",
+    "explanation": "The modifier \"A skilled coder\" must be adjacent to \"Sarah.\" Choice C places the appositive correctly.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "revision",
+    "prompt": "The two dog's leashes were tangled.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The two dogs leashes were tangled.",
+      "C": "The two dogs' leashes were tangled.",
+      "D": "The two dogs's leashes were tangled."
+    },
+    "correct_answer": "C",
+    "explanation": "Plural possessive for \"dogs\" places the apostrophe after the s.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dash Usage",
+    "card_type": "revision",
+    "prompt": "The solution—simple and elegant, was accepted immediately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The solution, simple and elegant—was accepted immediately.",
+      "C": "The solution—simple and elegant—was accepted immediately.",
+      "D": "The solution simple and elegant was accepted immediately."
+    },
+    "correct_answer": "C",
+    "explanation": "Dashes functioning as parentheses must be paired.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "error_id",
+    "prompt": "The rapid development of AI technology, poses new ethical questions.",
+    "choices": {
+      "A": "development of AI technology,",
+      "B": "poses",
+      "C": "ethical questions",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Do not place a comma between the subject (development) and the verb (poses).",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colon Usage",
+    "card_type": "revision",
+    "prompt": "I need to buy: bread, milk, and eggs.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "I need to buy, bread, milk, and eggs.",
+      "C": "I need to buy bread, milk, and eggs.",
+      "D": "I need to buy; bread, milk, and eggs."
+    },
+    "correct_answer": "C",
+    "explanation": "A colon should not interrupt the flow between verb and object. No punctuation is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "best_choice",
+    "prompt": "Which choice follows standard ACT/SAT punctuation conventions? \"Lions, tigers and bears.\"",
+    "choices": {
+      "A": "Lions, tigers and bears.",
+      "B": "Lions, tigers, and bears.",
+      "C": "Lions tigers and bears.",
+      "D": "Lions, tigers; and bears."
+    },
+    "correct_answer": "B",
+    "explanation": "Standardized tests generally prefer the serial (Oxford) comma for clarity.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons in Lists",
+    "card_type": "revision",
+    "prompt": "The tour visited London, England, Paris, France, and Rome, Italy.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The tour visited London; England, Paris; France, and Rome; Italy.",
+      "C": "The tour visited London, England; Paris, France; and Rome, Italy.",
+      "D": "The tour visited: London, England, Paris, France, and Rome, Italy."
+    },
+    "correct_answer": "C",
+    "explanation": "Use semicolons to separate list items that already contain commas.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "error_id",
+    "prompt": "The childrens' toys were scattered across the floor.",
+    "choices": {
+      "A": "childrens'",
+      "B": "were scattered",
+      "C": "across",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Children\" is already plural. The possessive form is \"children's.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "revision",
+    "prompt": "The painting, that hung in the lobby, was a forgery.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The painting, which hung in the lobby was a forgery.",
+      "C": "The painting that hung in the lobby was a forgery.",
+      "D": "The painting which hung in the lobby, was a forgery."
+    },
+    "correct_answer": "C",
+    "explanation": "\"That\" clauses are essential and should not be surrounded by commas.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "revision",
+    "prompt": "The well known author signed books for hours.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The well-known author signed books for hours.",
+      "C": "The well, known author signed books for hours.",
+      "D": "The well known-author signed books for hours."
+    },
+    "correct_answer": "B",
+    "explanation": "Compound modifiers before a noun usually require a hyphen.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "error_id",
+    "prompt": "I wonder if he will arrive on time?",
+    "choices": {
+      "A": "I wonder",
+      "B": "arrive",
+      "C": "time?",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "This is an indirect question and should end with a period, not a question mark.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The group of students are planning a trip.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The group of students is planning a trip.",
+      "C": "The group of students have planned a trip.",
+      "D": "The group of students were planning a trip."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject \"group\" is singular, so the verb must be singular (\"is\").",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "If a person wants to succeed, they have to work hard.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "If a person wants to succeed, one has to work hard.",
+      "C": "If a person wants to succeed, he or she has to work hard.",
+      "D": "If people want to succeed, you have to work hard."
+    },
+    "correct_answer": "A",
+    "explanation": "Singular \"they\" is accepted in modern standard English and on current SAT/ACT tests when the antecedent is an indefinite singular like \"a person.\" No change is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "Last year, the company expands its operations into Asia.",
+    "choices": {
+      "A": "Last year",
+      "B": "expands",
+      "C": "into",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Last year\" places the action in the past; \"expands\" should be \"expanded.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "Neither the teacher nor the students was happy with the result.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Neither the teacher nor the students were happy with the result.",
+      "C": "Neither the teacher nor the students is happy with the result.",
+      "D": "Neither the teacher nor the students has been happy with the result."
+    },
+    "correct_answer": "B",
+    "explanation": "With \"neither/nor,\" the verb agrees with the noun closest to it (\"students\" -> \"were\").",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "The climate of Arizona is drier than Florida.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The climate of Arizona is drier than that of Florida.",
+      "C": "The climate of Arizona is drier than Florida's climate is.",
+      "D": "Arizona is drier than Florida."
+    },
+    "correct_answer": "B",
+    "explanation": "You must compare climate to climate, not climate to a state. \"That of\" fixes the error.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "error_id",
+    "prompt": "Me and him went to the library to study.",
+    "choices": {
+      "A": "Me and him",
+      "B": "went",
+      "C": "to the library",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Subject pronouns are needed here: \"He and I went...\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "There is a pen and a notebook on the desk.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "There are a pen and a notebook on the desk.",
+      "C": "There is a pen, and a notebook on the desk.",
+      "D": "There's a pen and a notebook on the desk."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is compound (\"pen and notebook\"), so the verb must be plural (\"are\").",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "Those kind of movies are my favorite.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Those kinds of movies is my favorite.",
+      "C": "That kind of movies are my favorite.",
+      "D": "Those kinds of movies are my favorite."
+    },
+    "correct_answer": "D",
+    "explanation": "Plural demonstrative \"Those\" requires plural noun \"kinds\" and plural verb \"are.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "As the sun rose, the birds begin to chirp.",
+    "choices": {
+      "A": "rose",
+      "B": "begin",
+      "C": "to chirp",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Tense shift from past (\"rose\") to present (\"begin\"). It should be \"began.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "best_choice",
+    "prompt": "The artist ____ painting won the award is standing over there.",
+    "choices": {
+      "A": "who's",
+      "B": "whose",
+      "C": "that",
+      "D": "which"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Whose\" is the possessive form needed here. \"Who's\" means \"who is.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "After reading the book, the movie was disappointing.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "After reading the book, the movie disappointed me.",
+      "C": "After reading the book, I found the movie disappointing.",
+      "D": "The movie was disappointing after reading the book."
+    },
+    "correct_answer": "C",
+    "explanation": "The modifier \"After reading the book\" implies a person reading. Choice C provides the correct subject \"I.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "She served sandwiches to the children on paper plates.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "She served sandwiches on paper plates to the children.",
+      "C": "She served, on paper plates, sandwiches to the children.",
+      "D": "To the children, she served sandwiches on paper plates."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice A implies the children were on the plates. Choice B clarifies the sandwiches were on the plates.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "He likes swimming, hiking, and to ride his bike.",
+    "choices": {
+      "A": "swimming",
+      "B": "hiking",
+      "C": "to ride",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The list items should be parallel: swimming, hiking, and riding.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "Not only did he finish the project, but he also presented it.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Not only did he finish the project, but also presented it.",
+      "C": "He not only finished the project, but also he presented it.",
+      "D": "Not only he finished the project, but he also presented it."
+    },
+    "correct_answer": "A",
+    "explanation": "The structure \"Not only did he [verb]... but he also [verb]\" is grammatically correct and parallel.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Fix the ambiguity: \"Cycling uphill quickly tires him.\"",
+    "choices": {
+      "A": "Quickly cycling uphill tires him.",
+      "B": "Cycling uphill tires him quickly.",
+      "C": "Cycling uphill, quickly, tires him.",
+      "D": "Cycling quickly uphill tires him."
+    },
+    "correct_answer": "A",
+    "explanation": "Moving \"quickly\" before \"cycling\" in choice A clarifies that the cycling is quick, resolving the squinting modifier ambiguity.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "To learn is better than knowing.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "To learn is better than to know.",
+      "C": "Learning is better than to know.",
+      "D": "To learn is better than knowledge."
+    },
+    "correct_answer": "B",
+    "explanation": "Compare infinitive to infinitive (\"To learn\" vs \"to know\").",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "She looked in the closet, under the bed, and the desk.",
+    "choices": {
+      "A": "in the closet",
+      "B": "under the bed",
+      "C": "the desk",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Parallelism breaks at \"the desk.\" It needs a preposition (e.g., \"behind the desk\").",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Walking down the street, the trees looked beautiful.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Walking down the street, I thought the trees looked beautiful.",
+      "C": "The trees looked beautiful walking down the street.",
+      "D": "The trees, walking down the street, looked beautiful."
+    },
+    "correct_answer": "B",
+    "explanation": "Trees cannot walk. Choice B provides the correct subject.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "The affect of the policy was negligible.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The effect of the policy was negligible.",
+      "C": "The affecting of the policy was negligible.",
+      "D": "The effectivity of the policy was negligible."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Effect\" is the noun (result); \"affect\" is the verb (to influence).",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "He is capable to do the job.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "He is capable of doing the job.",
+      "C": "He is capable for doing the job.",
+      "D": "He is capable at doing the job."
+    },
+    "correct_answer": "B",
+    "explanation": "The correct idiom is \"capable of doing,\" not \"capable to do.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "They formally accepted the invitation to the ball.",
+    "choices": {
+      "A": "formally",
+      "B": "accepted",
+      "C": "invitation",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "\"Formally\" (officially) is correct here, distinct from \"formerly\" (previously).",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "The scientist's hypothesis was totally bogus.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The scientist's hypothesis was unsound.",
+      "C": "The scientist's hypothesis was super wrong.",
+      "D": "The scientist's hypothesis was sketchy."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Unsound\" maintains the formal tone required for academic writing.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "revision",
+    "prompt": "She alluded to the fact that she was leaving.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "She eluded to the fact that she was leaving.",
+      "C": "She illuded to the fact that she was leaving.",
+      "D": "She alluded at the fact that she was leaving."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Alluded\" (referenced indirectly) is correct. \"Eluded\" means to escape.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "The manager should comply to the new regulations.",
+    "choices": {
+      "A": "should",
+      "B": "comply to",
+      "C": "new regulations",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The correct idiom is \"comply with,\" not \"comply to.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "best_choice",
+    "prompt": "From the hilltop, the ____ of the new city hall was breathtaking.",
+    "choices": {
+      "A": "site",
+      "B": "sight",
+      "C": "cite",
+      "D": "sighting"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Sight\" refers to something seen or a visual impression. \"Site\" refers to a location. \"Cite\" means to reference a source. The sentence describes a visual experience, so \"sight\" is correct.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "best_choice",
+    "prompt": "Which word best fits the formal sentence? \"The committee ____ the proposal.\"",
+    "choices": {
+      "A": "trashed",
+      "B": "rejected",
+      "C": "threw out",
+      "D": "dumped"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Rejected\" is the standard formal term.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "revision",
+    "prompt": "The reason is because he was late.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The reason is that he was late.",
+      "C": "The reason is since he was late.",
+      "D": "The reason is due to he was late."
+    },
+    "correct_answer": "B",
+    "explanation": "\"The reason is that\" is precise; \"reason is because\" is redundant/informal.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "He has a tendency of forgetting names.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "He has a tendency to forget names.",
+      "C": "He has a tendency for forgetting names.",
+      "D": "He has a tendency in forgetting names."
+    },
+    "correct_answer": "B",
+    "explanation": "The idiom is \"tendency to [verb].\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "He studied hard. Furthermore, he failed the test.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "He studied hard. However, he failed the test.",
+      "C": "He studied hard. Therefore, he failed the test.",
+      "D": "He studied hard. For example, he failed the test."
+    },
+    "correct_answer": "B",
+    "explanation": "The relationship is contrastive, so \"However\" is correct.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "error_id",
+    "prompt": "In a paragraph about whales, a sentence about the history of submarines.",
+    "choices": {
+      "A": "Keep it",
+      "B": "Delete it",
+      "C": "Move it",
+      "D": "Revise it"
+    },
+    "correct_answer": "B",
+    "explanation": "Unless there is a direct link made, the sentence is likely irrelevant to the topic.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "revision",
+    "prompt": "It rained all day. Nevertheless, the game was cancelled.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "It rained all day. Consequently, the game was cancelled.",
+      "C": "It rained all day. However, the game was cancelled.",
+      "D": "It rained all day. Similarly, the game was cancelled."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Consequently\" indicates the logical result of the rain.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "Which sentence best introduces a paragraph about the benefits of exercise?",
+    "choices": {
+      "A": "Running is hard work.",
+      "B": "Physical activity offers numerous health advantages.",
+      "C": "I like to go to the gym.",
+      "D": "Doctors say eating well is important."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B provides a broad topic sentence covering the paragraph's theme.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "First, we mix the ingredients. Finally, we bake the cake.",
+    "choices": {
+      "A": "NO CHANGE (if these are the only two steps)",
+      "B": "First, we mix the ingredients. Second, we bake the cake.",
+      "C": "First, we mix the ingredients. Also, we bake the cake.",
+      "D": "First, we mix the ingredients. But, we bake the cake."
+    },
+    "correct_answer": "A",
+    "explanation": "If the process is just two steps, \"First... Finally\" is a logical sequence.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "Which sentence best concludes a paragraph arguing for recycling?",
+    "choices": {
+      "A": "Recycling is easy.",
+      "B": "Therefore, recycling is essential for a sustainable future.",
+      "C": "Plastic is bad.",
+      "D": "In conclusion, I recycle."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B summarizes the argument and provides a strong closing thought.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "revision",
+    "prompt": "The car is fast. On the other hand, it is fuel-efficient.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The car is fast. Moreover, it is fuel-efficient.",
+      "C": "The car is fast. However, it is fuel-efficient.",
+      "D": "The car is fast. Thus, it is fuel-efficient."
+    },
+    "correct_answer": "B",
+    "explanation": "Both qualities are positive attributes here, so an additive transition like \"Moreover\" fits best.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "error_id",
+    "prompt": "Everyone loved the movie. It received terrible reviews.",
+    "choices": {
+      "A": "Everyone loved the movie.",
+      "B": "It received terrible reviews.",
+      "C": "The sequence is logically inconsistent without a transition.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The two sentences contradict each other. A transition like \"Yet\" is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "In my personal opinion, I think the plan is good.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "I think the plan is good.",
+      "C": "The plan is good.",
+      "D": "My opinion is that the plan is good."
+    },
+    "correct_answer": "C",
+    "explanation": "In academic writing, stating the assertion directly (C) is stronger than filtering it through \"I think\" (B) or the redundant (A).",
+    "difficulty": 2
   }
 ]
