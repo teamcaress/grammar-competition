@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The analysis of the experimental results suggest that the hypothesis requires revision.",
+    "choices": {
+      "A": "The analysis",
+      "B": "of the experimental results",
+      "C": "suggest",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The subject is \"analysis\" (singular), not \"results.\" The verb should be \"suggests.\" The subject is never inside a prepositional phrase.",
+    "difficulty": 1,
+    "tags": ["subject_verb_agreement", "prepositional_phrase_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_analysis_prep"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The professor, along with several graduate assistants, review manuscripts for the journal each semester.",
+    "choices": {
+      "A": "along with several graduate assistants",
+      "B": "review",
+      "C": "for the journal",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Interrupting phrases like \"along with\" do not change the number of the subject. The subject is \"professor\" (singular), so the verb should be \"reviews.\"",
+    "difficulty": 2,
+    "tags": ["subject_verb_agreement", "interrupting_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_along_with_interrupt"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "error_id",
+    "prompt": "Among the artifacts recovered from the excavation site was three ceramic vessels dating to the Bronze Age.",
+    "choices": {
+      "A": "Among the artifacts",
+      "B": "was",
+      "C": "dating to the Bronze Age",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the subject \"three ceramic vessels\" is plural and comes after the verb. The verb should be \"were,\" not \"was.\"",
+    "difficulty": 2,
+    "tags": ["subject_verb_agreement", "inverted_sentence"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_inverted_among"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "error_id",
+    "prompt": "The research team have published their findings in a peer-reviewed journal.",
+    "choices": {
+      "A": "The research team",
+      "B": "have published",
+      "C": "their findings",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "In American English, collective nouns like \"team\" take singular verbs. The verb should be \"has published.\"",
+    "difficulty": 1,
+    "tags": ["collective_noun", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_collective_team_verb"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "error_id",
+    "prompt": "Neither of the proposed amendments to the zoning code were approved by the planning commission.",
+    "choices": {
+      "A": "Neither of the proposed amendments",
+      "B": "were approved",
+      "C": "by the planning commission",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Neither\" is always singular, regardless of the prepositional phrase that follows. The verb should be \"was approved.\"",
+    "difficulty": 1,
+    "tags": ["indefinite_pronoun", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_neither_singular_verb"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "error_id",
+    "prompt": "When Dr. Patel consulted with Dr. Reyes about the clinical trial, she recommended extending the observation period.",
+    "choices": {
+      "A": "consulted with Dr. Reyes",
+      "B": "she recommended",
+      "C": "extending the observation period",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The pronoun \"she\" is ambiguous because it could refer to either Dr. Patel or Dr. Reyes. A clear noun should replace the pronoun.",
+    "difficulty": 3,
+    "tags": ["pronoun_clarity", "ambiguous_reference"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_pronoun_ambiguous_two_doctors"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "The researchers collected samples in the field, transported them to the lab, and then are cataloging each specimen.",
+    "choices": {
+      "A": "collected samples in the field",
+      "B": "transported them to the lab",
+      "C": "are cataloging",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The sentence describes a sequence of completed past actions. \"Are cataloging\" breaks tense consistency and should be \"cataloged\" to match the past tense of the other verbs.",
+    "difficulty": 1,
+    "tags": ["tense_consistency", "verb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_tense_past_series_break"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "error_id",
+    "prompt": "Each of the graduate students presented their dissertation proposal to the faculty committee.",
+    "choices": {
+      "A": "Each of the graduate students",
+      "B": "presented",
+      "C": "their dissertation proposal",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "Singular \"they/their\" is accepted in modern standard English and on current SAT/ACT tests when referring to indefinite pronouns like \"each.\" No error.",
+    "difficulty": 2,
+    "tags": ["indefinite_pronoun", "singular_they"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_each_singular_they_ok"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The director of admissions, as well as two associate deans, attend the orientation briefing every fall.",
+    "choices": {
+      "A": "as well as two associate deans",
+      "B": "attend",
+      "C": "the orientation briefing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As well as\" is an interrupting phrase that does not change the number of the subject. The subject \"director\" is singular, so the verb should be \"attends.\"",
+    "difficulty": 2,
+    "tags": ["subject_verb_agreement", "interrupting_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_as_well_as_trap"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "The archaeologists excavated the site for three months and publish a detailed monograph the following year.",
+    "choices": {
+      "A": "excavated the site",
+      "B": "for three months",
+      "C": "publish",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Publish\" is present tense, but the sentence describes completed past events. The verb should be \"published\" to maintain tense consistency.",
+    "difficulty": 1,
+    "tags": ["tense_consistency", "verb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_tense_past_publish_shift"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The findings of the longitudinal study indicates a strong correlation between sleep and academic performance.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The findings of the longitudinal study indicate a strong correlation between sleep and academic performance.",
+      "C": "The findings of the longitudinal study has indicated a strong correlation between sleep and academic performance.",
+      "D": "The findings of the longitudinal study is indicating a strong correlation between sleep and academic performance."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is \"findings\" (plural), not \"study.\" A plural subject requires the plural verb \"indicate.\"",
+    "difficulty": 1,
+    "tags": ["subject_verb_agreement", "prepositional_phrase_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_findings_plural"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "revision",
+    "prompt": "The faculty are voting on the revised curriculum proposal at its next meeting.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The faculty is voting on the revised curriculum proposal at its next meeting.",
+      "C": "The faculty are voting on the revised curriculum proposal at their next meeting.",
+      "D": "The faculty have voted on the revised curriculum proposal at its next meeting."
+    },
+    "correct_answer": "B",
+    "explanation": "In American English, collective nouns like \"faculty\" take singular verbs and singular pronouns. \"Is voting\" and \"its\" are the correct pair.",
+    "difficulty": 1,
+    "tags": ["collective_noun", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_collective_faculty_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "revision",
+    "prompt": "On the top shelf of the archive sits the original correspondence between the two diplomats.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "On the top shelf of the archive sit the original correspondence between the two diplomats.",
+      "C": "On the top shelf of the archive are sitting the original correspondence between the two diplomats.",
+      "D": "On the top shelf of the archive were sitting the original correspondence between the two diplomats."
+    },
+    "correct_answer": "A",
+    "explanation": "In this inverted sentence, the subject is \"correspondence\" (singular). The singular verb \"sits\" correctly agrees with it. No change is needed.",
+    "difficulty": 2,
+    "tags": ["inverted_sentence", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_inverted_shelf_correct"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "revision",
+    "prompt": "The senator introduced the bill in March, and the committee reviews it throughout the summer.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The senator introduced the bill in March, and the committee reviewed it throughout the summer.",
+      "C": "The senator introduces the bill in March, and the committee reviews it throughout the summer.",
+      "D": "The senator had introduced the bill in March, and the committee reviews it throughout the summer."
+    },
+    "correct_answer": "B",
+    "explanation": "Both actions occurred in a past time frame. \"Reviewed\" maintains tense consistency with \"introduced.\"",
+    "difficulty": 1,
+    "tags": ["tense_consistency", "verb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_tense_senator_past_pair"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "The museum acquired a collection of rare manuscripts, and they were immediately placed in a climate-controlled vault.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The museum acquired a collection of rare manuscripts, and it was immediately placed in a climate-controlled vault.",
+      "C": "The museum acquired a collection of rare manuscripts, and the manuscripts were immediately placed in a climate-controlled vault.",
+      "D": "The museum acquired a collection of rare manuscripts, and these were immediately placed in a climate-controlled vault."
+    },
+    "correct_answer": "C",
+    "explanation": "The pronoun \"they\" is ambiguous because it could refer to the collection or the manuscripts. Replacing it with the clear noun \"the manuscripts\" eliminates ambiguity.",
+    "difficulty": 3,
+    "tags": ["pronoun_clarity", "ambiguous_reference"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_pronoun_museum_clarity"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "revision",
+    "prompt": "Most of the data collected during the pilot phase were unreliable due to sensor malfunction.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Most of the data collected during the pilot phase was unreliable due to sensor malfunction.",
+      "C": "Most of the data collected during the pilot phase are unreliable due to sensor malfunction.",
+      "D": "Most of the data collected during the pilot phase have been unreliable due to sensor malfunction."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Most\" is a SANAM pronoun whose number depends on the object of the preposition. \"Data\" in standard American English is treated as a singular mass noun, so the verb should be \"was.\"",
+    "difficulty": 3,
+    "tags": ["indefinite_pronoun", "sanam_rule", "data_singular"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sanam_most_data_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The stack of peer-reviewed articles on the professor's desk need to be cataloged before the semester ends.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The stack of peer-reviewed articles on the professor's desk needs to be cataloged before the semester ends.",
+      "C": "The stack of peer-reviewed articles on the professor's desk are needing to be cataloged before the semester ends.",
+      "D": "The stack of peer-reviewed articles on the professor's desk have needed to be cataloged before the semester ends."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is \"stack\" (singular). The prepositional phrases \"of peer-reviewed articles\" and \"on the professor's desk\" do not change the subject's number. The verb must be \"needs.\"",
+    "difficulty": 2,
+    "tags": ["subject_verb_agreement", "prepositional_phrase_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_stack_double_prep"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "revision",
+    "prompt": "Before the grant period expired, the research team already submits its final report to the funding agency.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Before the grant period expired, the research team had already submitted its final report to the funding agency.",
+      "C": "Before the grant period expired, the research team already submitted its final report to the funding agency.",
+      "D": "Before the grant period expires, the research team already submits its final report to the funding agency."
+    },
+    "correct_answer": "B",
+    "explanation": "The submission happened before the grant expired (past of the past). Past perfect \"had already submitted\" correctly signals an action completed before another past event.",
+    "difficulty": 3,
+    "tags": ["past_perfect", "sequence_of_events"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_past_perfect_grant_submit"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "revision",
+    "prompt": "Attached to the report was several appendices containing raw data and supplemental charts.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Attached to the report were several appendices containing raw data and supplemental charts.",
+      "C": "Attached to the report has been several appendices containing raw data and supplemental charts.",
+      "D": "Attached to the report is several appendices containing raw data and supplemental charts."
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the subject is \"several appendices\" (plural), which follows the verb. The plural verb \"were\" is required.",
+    "difficulty": 2,
+    "tags": ["inverted_sentence", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_inverted_attached_appendices"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "The laboratory notified the department that it had failed the safety inspection.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The laboratory notified the department that the laboratory had failed the safety inspection.",
+      "C": "The laboratory notified the department that the department had failed the safety inspection.",
+      "D": "The laboratory notified the department about the failed safety inspection."
+    },
+    "correct_answer": "D",
+    "explanation": "The pronoun \"it\" is ambiguous because it could refer to either the laboratory or the department. Choice D restructures the sentence to eliminate the ambiguous pronoun entirely.",
+    "difficulty": 3,
+    "tags": ["pronoun_clarity", "ambiguous_reference"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_pronoun_lab_dept_ambig"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The number of applications received by the admissions office ____ increased dramatically this cycle.\"",
+    "choices": {
+      "A": "have",
+      "B": "has",
+      "C": "are",
+      "D": "were"
+    },
+    "correct_answer": "B",
+    "explanation": "\"The number\" is a singular subject that takes the singular verb \"has.\" The prepositional phrase \"of applications\" does not change the subject's number.",
+    "difficulty": 1,
+    "tags": ["subject_verb_agreement", "the_number_singular"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sv_the_number_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"Every professor and every teaching assistant ____ required to attend the orientation session.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "When \"every\" precedes each noun in a compound subject, the subject is treated as singular. The singular verb \"is\" is correct.",
+    "difficulty": 2,
+    "tags": ["indefinite_pronoun", "every_singular"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_every_compound_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The historians discovered that the treaty ____ signed under duress, a fact that earlier scholars had overlooked.\"",
+    "choices": {
+      "A": "is",
+      "B": "has been",
+      "C": "had been",
+      "D": "was being"
+    },
+    "correct_answer": "C",
+    "explanation": "The signing of the treaty occurred before the historians' discovery (past of the past). Past perfect \"had been\" correctly signals the earlier action in the sequence.",
+    "difficulty": 3,
+    "tags": ["past_perfect", "sequence_of_events"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_past_perfect_treaty"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The board of trustees ____ scheduled to review the provost's proposal next Thursday.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Board\" is a collective noun that takes a singular verb in American English. \"Is\" is the correct choice.",
+    "difficulty": 1,
+    "tags": ["collective_noun", "subject_verb_agreement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_collective_board_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"In the university's special collections ____ a first-edition manuscript and two signed letters.\"",
+    "choices": {
+      "A": "remains",
+      "B": "remain",
+      "C": "has remained",
+      "D": "is remaining"
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the compound subject \"a first-edition manuscript and two signed letters\" is plural. The plural verb \"remain\" is required.",
+    "difficulty": 2,
+    "tags": ["inverted_sentence", "subject_verb_agreement", "compound_subject"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_inverted_collections_compound"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"All of the funding for the three research grants ____ been allocated by the provost's office.\"",
+    "choices": {
+      "A": "have",
+      "B": "has",
+      "C": "are",
+      "D": "were"
+    },
+    "correct_answer": "B",
+    "explanation": "\"All\" is a SANAM pronoun whose number depends on the object of the preposition. \"Funding\" is a singular mass noun, so the singular verb \"has\" is correct.",
+    "difficulty": 3,
+    "tags": ["indefinite_pronoun", "sanam_rule"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sanam_all_funding_singular"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "best_choice",
+    "prompt": "Which choice best replaces the underlined portion? \"The study's lead author and the department chair disagreed, and ____ interpretation was ultimately published.\"",
+    "choices": {
+      "A": "his",
+      "B": "their",
+      "C": "the lead author's",
+      "D": "its"
+    },
+    "correct_answer": "C",
+    "explanation": "With two possible antecedents, a pronoun like \"his\" or \"their\" would be ambiguous. Replacing with the specific noun \"the lead author's\" eliminates the unclear reference.",
+    "difficulty": 3,
+    "tags": ["pronoun_clarity", "ambiguous_reference"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_pronoun_clarity_replace_noun"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"If the funding allocation ____ larger, the research team could have extended the trial by six months.\"",
+    "choices": {
+      "A": "was",
+      "B": "were",
+      "C": "is",
+      "D": "has been"
+    },
+    "correct_answer": "B",
+    "explanation": "This is a contrary-to-fact conditional (the funding was not actually larger). The subjunctive \"were\" is required, not the indicative \"was.\"",
+    "difficulty": 3,
+    "tags": ["subjunctive", "contrary_to_fact"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_subjunctive_were_funding"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"Some of the evidence gathered by the forensic team ____ inadmissible under the new procedural guidelines.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Some\" is a SANAM pronoun whose number depends on the object of the preposition. \"Evidence\" is a singular mass noun, so the singular verb \"is\" is correct.",
+    "difficulty": 2,
+    "tags": ["indefinite_pronoun", "sanam_rule"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_sanam_some_evidence_singular"
+  }
+]

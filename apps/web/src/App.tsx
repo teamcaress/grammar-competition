@@ -4,6 +4,7 @@ import {
   selectSessionCards,
   processAnswer,
   computeDashboard,
+  UNIT_COMPLETION_THRESHOLD,
   type CardState,
   type DailyScore,
   type SessionCard,
@@ -339,17 +340,22 @@ export function App() {
             <h3 className="text-sm font-semibold">Unit Progress</h3>
             {dashboard?.unit_mastery?.length ? (
               <ul className="mt-2 space-y-2 text-xs text-slate-700">
-                {dashboard.unit_mastery.slice(0, 4).map((unit) => (
+                {dashboard.unit_mastery.map((unit) => (
                   <li key={unit.unit_id}>
                     <div className="flex items-center justify-between">
-                      <span>{unit.unit_id}</span>
+                      <span className="flex items-center gap-1">
+                        {unit.completed ? (
+                          <span className="text-emerald-600" title="Complete">&#10003;</span>
+                        ) : null}
+                        {unit.unit_id}
+                      </span>
                       <span>
-                        {unit.mastered_cards}/{unit.total_cards}
+                        {Math.min(unit.mastered_cards, UNIT_COMPLETION_THRESHOLD)}/{UNIT_COMPLETION_THRESHOLD}
                       </span>
                     </div>
                     <div className="mt-1 h-1.5 rounded bg-slate-100">
                       <div
-                        className="h-1.5 rounded bg-accent"
+                        className={`h-1.5 rounded ${unit.completed ? "bg-emerald-500" : "bg-accent"}`}
                         style={{
                           width: `${Math.round((unit.mastery_ratio ?? 0) * 100)}%`
                         }}

@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The researchers returned back to the laboratory to replicate the initial findings.",
+    "choices": {
+      "A": "returned back",
+      "B": "to the laboratory",
+      "C": "to replicate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Returned\" already means to go back, so \"back\" is redundant. The concise phrasing is \"returned to the laboratory.\"",
+    "difficulty": 1,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_returned_back"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "Each and every participant in the clinical trial must submit written consent prior to enrollment.",
+    "choices": {
+      "A": "Each and every participant",
+      "B": "in the clinical trial",
+      "C": "written consent",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Each and every\" is a redundant expression. Either \"each\" or \"every\" alone conveys the same meaning more concisely.",
+    "difficulty": 2,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_each_and_every"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The advance planning committee scheduled the symposium for early March to accommodate visiting scholars.",
+    "choices": {
+      "A": "advance planning",
+      "B": "scheduled the symposium",
+      "C": "to accommodate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Planning\" inherently involves looking ahead, so \"advance\" is redundant. \"Planning committee\" is sufficient.",
+    "difficulty": 1,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_advance_planning"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The study's end result confirmed that biodiversity loss accelerates in regions with high deforestation rates.",
+    "choices": {
+      "A": "end result",
+      "B": "confirmed that",
+      "C": "accelerates in regions",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A \"result\" is already something reached at the end, making \"end\" redundant. \"Result\" alone is concise and clear.",
+    "difficulty": 2,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_end_result"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The two laboratory teams merged together to form a single interdisciplinary research group.",
+    "choices": {
+      "A": "two laboratory teams",
+      "B": "merged together",
+      "C": "a single interdisciplinary",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Merged\" already means to combine into one, so \"together\" is redundant. The concise phrasing is simply \"merged.\"",
+    "difficulty": 1,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_merged_together"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "The professor gave a brief summary of the lecture's key points in a short, concise manner.",
+    "choices": {
+      "A": "brief summary",
+      "B": "lecture's key points",
+      "C": "short, concise manner",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Short\" and \"concise\" mean essentially the same thing, creating a pleonasm. Either word alone would suffice.",
+    "difficulty": 2,
+    "tags": ["pleonasm", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_short_concise"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "The autobiography of her life details her transition from practicing clinician to full-time researcher.",
+    "choices": {
+      "A": "autobiography of her life",
+      "B": "details her transition",
+      "C": "from practicing clinician",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "An autobiography is by definition the story of one's own life. \"Of her life\" is a pleonasm. \"Her autobiography\" is sufficient.",
+    "difficulty": 2,
+    "tags": ["pleonasm", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_autobiography_life"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "error_id",
+    "prompt": "There are several scholars who believe that the methodology is fundamentally flawed.",
+    "choices": {
+      "A": "There are several scholars who believe",
+      "B": "that the methodology",
+      "C": "is fundamentally flawed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"There are several scholars who believe\" is a wordy construction. A more concise version would be \"Several scholars believe.\" The expletive \"there are\" and the relative clause add unnecessary length.",
+    "difficulty": 2,
+    "tags": ["wordiness", "expletive_construction", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_expletive_there_are"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "error_id",
+    "prompt": "The department chair, despite the fact that funding was available, declined to authorize the new hire.",
+    "choices": {
+      "A": "despite the fact that",
+      "B": "funding was available",
+      "C": "declined to authorize",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Despite the fact that\" is a circumlocution. The concise alternative is \"although\" or \"even though,\" which conveys the same meaning in fewer words.",
+    "difficulty": 3,
+    "tags": ["circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_despite_fact_that"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "error_id",
+    "prompt": "It is essential that researchers are able to access the archived datasets in a timely fashion.",
+    "choices": {
+      "A": "It is essential that",
+      "B": "are able to access",
+      "C": "the archived datasets",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Are able to access\" is wordy. The concise equivalent is \"can access,\" which conveys the same meaning in fewer words.",
+    "difficulty": 3,
+    "tags": ["wordiness", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_able_to_access"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "Due to the fact that the sample was contaminated, the researchers discarded the entire batch.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Because the sample was contaminated, the researchers discarded the entire batch.",
+      "C": "Owing to the fact that the sample was contaminated, the researchers discarded the entire batch.",
+      "D": "On account of the fact that the sample was contaminated, the researchers discarded the entire batch."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Due to the fact that\" is a circumlocution for \"because.\" Choice B is the most concise and direct option while preserving the original meaning.",
+    "difficulty": 1,
+    "tags": ["circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_due_to_fact_revision"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The sociologist conducted an investigation into the various factors that play a role in urban poverty.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The sociologist investigated the factors that contribute to urban poverty.",
+      "C": "The sociologist conducted an investigation into the various different factors that play a significant role in urban poverty.",
+      "D": "It was the sociologist who conducted an investigation into those various factors playing a role in urban poverty."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Conducted an investigation into\" is a wordy way of saying \"investigated,\" and \"play a role in\" can be replaced by \"contribute to.\" Choice B is concise without losing meaning.",
+    "difficulty": 2,
+    "tags": ["wordiness", "nominalization", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_conducted_investigation"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The researchers collaborated together on a joint project examining antibiotic resistance.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researchers collaborated on a project examining antibiotic resistance.",
+      "C": "The researchers collaborated together in a joint and shared project examining antibiotic resistance.",
+      "D": "Working collaboratively together, the researchers examined antibiotic resistance in a joint project."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Collaborated together\" is redundant because collaboration already implies working together. Additionally, \"joint\" is redundant with \"collaborated.\" Choice B removes both redundancies.",
+    "difficulty": 3,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_collaborated_joint"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "In the event that the grant application is denied, the principal investigator will seek alternative funding sources.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "If the grant application is denied, the principal investigator will seek alternative funding sources.",
+      "C": "In the event that the grant application happens to be denied, the principal investigator will then seek out alternative funding sources.",
+      "D": "Should it come to pass that the grant application is denied, the principal investigator will seek alternative funding sources."
+    },
+    "correct_answer": "B",
+    "explanation": "\"In the event that\" is a circumlocution for \"if.\" Choice B is direct, concise, and preserves the full meaning of the original sentence.",
+    "difficulty": 1,
+    "tags": ["circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_in_event_that"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The data that was collected by the team was analyzed in a manner that was both rigorous and thorough.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The data collected by the team was analyzed rigorously and thoroughly.",
+      "C": "The team analyzed the data rigorously.",
+      "D": "The data that had been collected by the team was then analyzed in a rigorous and thorough manner by them."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C eliminates the passive construction, removes the unnecessary relative clause \"that was collected,\" and recognizes that \"rigorously\" already implies thoroughness. It is the most concise option that preserves the essential meaning.",
+    "difficulty": 3,
+    "tags": ["wordiness", "passive_voice", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_passive_wordy_analysis"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "revision",
+    "prompt": "The new innovation in gene therapy has the potential to completely transform the entire field of oncology.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The innovation in gene therapy has the potential to transform oncology.",
+      "C": "The new innovation in gene therapy has great potential to completely and totally transform the entire field of oncology.",
+      "D": "The new and novel innovation in the field of gene therapy could potentially transform the entire field of oncology completely."
+    },
+    "correct_answer": "B",
+    "explanation": "\"New innovation\" is pleonastic because innovations are by definition new. \"Completely transform the entire field of\" is wordy when \"transform oncology\" conveys the same idea. Choice B removes all unnecessary words.",
+    "difficulty": 3,
+    "tags": ["pleonasm", "wordiness", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_new_innovation"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "At this point in time, the university is in the process of reviewing its admissions criteria.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "At this juncture, the university is currently in the process of undertaking a review of its admissions criteria.",
+      "C": "The university is currently reviewing its admissions criteria.",
+      "D": "At the present moment, the university is engaged in the process of reviewing its admissions criteria."
+    },
+    "correct_answer": "C",
+    "explanation": "\"At this point in time\" is a wordy substitute for \"currently\" or \"now,\" and \"is in the process of reviewing\" is wordier than \"is reviewing.\" Choice C conveys the same meaning in the fewest words.",
+    "difficulty": 1,
+    "tags": ["wordiness", "circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_at_this_point"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The students were asked to revert back to the original version of the thesis draft.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The students were asked to revert to the original version of the thesis draft.",
+      "C": "The students were asked to go back and revert to the original prior version of the thesis draft.",
+      "D": "The students were asked to revert back once again to the original version of the thesis draft that came first."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Revert\" already means to return to a previous state, so \"back\" is redundant. Choice B removes the redundancy while preserving the sentence's meaning.",
+    "difficulty": 1,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_revert_back"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "The provost made the decision to postpone the vote for the reason that several committee members were absent.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The provost decided to postpone the vote because several committee members were absent.",
+      "C": "The provost made the decision to postpone the vote due to the fact that several committee members were absent.",
+      "D": "Making the decision, the provost postponed the vote for the reason that several of the committee members were not in attendance."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Made the decision\" is a wordy nominalization of \"decided,\" and \"for the reason that\" is a circumlocution for \"because.\" Choice B uses both concise forms.",
+    "difficulty": 2,
+    "tags": ["circumlocution", "nominalization", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_made_decision_reason"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The researcher who was conducting the experiment noticed an anomaly that was significant in the data set.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher conducting the experiment noticed a significant anomaly in the data set.",
+      "C": "The researcher who was the one conducting the experiment noticed an anomaly that happened to be significant in the data set.",
+      "D": "While conducting the experiment, the researcher who was involved noticed that there was a significant anomaly present in the data set."
+    },
+    "correct_answer": "B",
+    "explanation": "The relative clauses \"who was conducting\" and \"that was significant\" are unnecessarily wordy. Choice B replaces them with a participial phrase and a simple adjective, achieving concision without changing meaning.",
+    "difficulty": 2,
+    "tags": ["wordiness", "relative_clause", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_wordy_relative_clauses"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision most concisely expresses the idea? \"The consensus of opinion among the faculty was that the curriculum needed revision.\"",
+    "choices": {
+      "A": "The consensus of opinion among the faculty was that the curriculum needed revision.",
+      "B": "The general consensus of opinion among the faculty members was that the curriculum was in need of revision.",
+      "C": "The faculty consensus was that the curriculum needed revision.",
+      "D": "The consensus of the shared opinion of the faculty was that the curriculum needed to be revised."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Consensus\" already means agreement of opinion, so \"of opinion\" is pleonastic. \"Among the faculty\" can be shortened to \"faculty consensus.\" Choice C removes all unnecessary words.",
+    "difficulty": 3,
+    "tags": ["pleonasm", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_consensus_opinion"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option is most concise while preserving meaning? \"It is important to note that the experiment yielded inconclusive results.\"",
+    "choices": {
+      "A": "It is important to note that the experiment yielded inconclusive results.",
+      "B": "What is important to note is that the experiment yielded results that were inconclusive.",
+      "C": "Notably, the experiment yielded inconclusive results.",
+      "D": "It should be noted as important that the experiment yielded results that were inconclusive in nature."
+    },
+    "correct_answer": "C",
+    "explanation": "\"It is important to note that\" is a wordy filler phrase. \"Notably\" captures the same emphasis in a single word, making Choice C the most concise option.",
+    "difficulty": 2,
+    "tags": ["wordiness", "filler_phrases", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_important_to_note"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "best_choice",
+    "prompt": "Which revision best replaces the underlined portion? \"The committee postponed the hearing _for the purpose of allowing_ additional testimony to be gathered.\"",
+    "choices": {
+      "A": "for the purpose of allowing",
+      "B": "with the intention of allowing for",
+      "C": "to allow",
+      "D": "so as to be able to allow"
+    },
+    "correct_answer": "C",
+    "explanation": "\"For the purpose of allowing\" is a circumlocution. \"To allow\" expresses the same purpose relationship in two words instead of five, making it the most concise and direct choice.",
+    "difficulty": 1,
+    "tags": ["circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_for_purpose_of"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely states the idea? \"The professor asked the students to record and write down their observations during the field study.\"",
+    "choices": {
+      "A": "to record and write down their observations",
+      "B": "to record and write down their observations in written form",
+      "C": "to record their observations",
+      "D": "to record and also write down and document their observations"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Record\" and \"write down\" are synonymous in this context, making one of them redundant. Choice C uses only \"record,\" which is sufficient and concise.",
+    "difficulty": 1,
+    "tags": ["redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_record_write_down"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option is the most concise replacement for the underlined phrase? \"The dean _has the ability to_ override the committee's recommendation.\"",
+    "choices": {
+      "A": "has the ability to",
+      "B": "is someone who has the ability to",
+      "C": "can",
+      "D": "is able to potentially"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Has the ability to\" is a wordy way of expressing \"can.\" Choice C replaces five words with one while preserving the meaning completely.",
+    "difficulty": 1,
+    "tags": ["wordiness", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_has_ability_to"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the pleonasm? \"The two candidates held a joint collaboration to develop shared policy proposals.\"",
+    "choices": {
+      "A": "held a joint collaboration to develop shared policy proposals",
+      "B": "held a joint collaboration together to develop shared policy proposals for both of them",
+      "C": "collaborated to develop policy proposals",
+      "D": "held a joint collaborative effort together to develop their shared policy proposals"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Joint collaboration\" is pleonastic because collaboration already implies a joint effort. \"Held a collaboration\" is also a wordy nominalization. Choice C uses the verb \"collaborated\" and removes \"shared,\" which is implied by the collaboration.",
+    "difficulty": 3,
+    "tags": ["pleonasm", "nominalization", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_joint_collaboration"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "best_choice",
+    "prompt": "Which option best replaces the underlined portion to improve concision? \"The experiment failed _as a consequence of the fact that_ the calibration was incorrect.\"",
+    "choices": {
+      "A": "as a consequence of the fact that",
+      "B": "because",
+      "C": "as a direct result of the circumstances surrounding the fact that",
+      "D": "owing to the reason that"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As a consequence of the fact that\" is a seven-word circumlocution that can be replaced by \"because.\" Choice B is the most direct and concise way to express causation.",
+    "difficulty": 2,
+    "tags": ["circumlocution", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_consequence_fact_that"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely conveys the meaning? \"The study, which was lengthy in duration, examined the effects of prolonged screen exposure on adolescent cognition.\"",
+    "choices": {
+      "A": "The study, which was lengthy in duration,",
+      "B": "The lengthy study",
+      "C": "The study, which was one that was lengthy in its duration,",
+      "D": "The study, being one that was of a lengthy duration,"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Which was lengthy in duration\" is a wordy relative clause. \"Lengthy\" already implies duration, so \"in duration\" is unnecessary. Choice B converts the clause to a simple adjective, achieving maximum concision.",
+    "difficulty": 3,
+    "tags": ["wordiness", "relative_clause", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_lengthy_in_duration"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates unnecessary words? \"The professor issued a written memo in writing to all department faculty members.\"",
+    "choices": {
+      "A": "issued a written memo in writing to all department faculty members",
+      "B": "issued a memo to all department faculty members in writing",
+      "C": "issued a memo to department faculty",
+      "D": "issued a written memo that was in writing to the faculty members of the department"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Written memo in writing\" is pleonastic: a memo is by definition written. \"All department faculty members\" can be shortened to \"department faculty\" without losing meaning. Choice C is the most concise.",
+    "difficulty": 3,
+    "tags": ["pleonasm", "redundancy", "concision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section II: The Editor's Lens and Economy",
+    "skill_code": "economy_written_memo_writing"
+  }
+]

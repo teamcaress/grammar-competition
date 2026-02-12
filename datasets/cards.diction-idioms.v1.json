@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The professor noted that the affect of prolonged screen exposure on adolescent sleep patterns warrants further investigation.",
+    "choices": {
+      "A": "noted that",
+      "B": "affect",
+      "C": "prolonged screen exposure",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The noun form meaning 'result' or 'impact' is 'effect.' 'Affect' is typically a verb meaning 'to influence.' The sentence requires 'effect' because it functions as the subject of 'warrants.'",
+    "difficulty": 1,
+    "tags": ["affect_effect", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_affect_effect_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The archaeological site was more significant then the team had originally anticipated based on initial surveys.",
+    "choices": {
+      "A": "archaeological site",
+      "B": "more significant",
+      "C": "then",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Than' is the correct word for comparisons. 'Then' indicates time or sequence. Because 'more significant' sets up a comparison, 'than' is required.",
+    "difficulty": 1,
+    "tags": ["than_then", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_than_then_comparison"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The principle investigator recommended expanding the longitudinal study to include a broader demographic sample.",
+    "choices": {
+      "A": "principle",
+      "B": "recommended expanding",
+      "C": "longitudinal study",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Principal' means 'chief' or 'primary' and is the correct adjective to describe the lead investigator. 'Principle' is a noun meaning a fundamental rule or belief. The sentence requires 'principal' as an adjective modifying 'investigator.'",
+    "difficulty": 2,
+    "tags": ["principal_principle", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_principal_principle_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "The researchers failed to sight the original study in their literature review, which weakened the credibility of their argument.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researchers failed to cite the original study in their literature review, which weakened the credibility of their argument.",
+      "C": "The researchers failed to site the original study in their literature review, which weakened the credibility of their argument.",
+      "D": "The researchers failed to sight the original study in their literature review; which weakened the credibility of their argument."
+    },
+    "correct_answer": "B",
+    "explanation": "'Cite' means to reference a source. 'Sight' relates to vision, and 'site' refers to a location. In an academic context describing a literature review, 'cite' is the correct word.",
+    "difficulty": 1,
+    "tags": ["cite_site_sight", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_cite_sight_revision"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "Excess to the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Access to the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations.",
+      "C": "Excess to the university's rare manuscript collection is granted only to doctoral candidates, who have completed their qualifying examinations.",
+      "D": "Excess into the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations."
+    },
+    "correct_answer": "B",
+    "explanation": "'Access' means the ability to enter or use something. 'Excess' means an overabundance or surplus. The sentence describes permission to use a collection, so 'access' is correct.",
+    "difficulty": 1,
+    "tags": ["access_excess", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_access_excess_revision"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "best_choice",
+    "prompt": "Which word correctly completes the sentence? \"The undercover investigation was designed to ______ confessions from suspected members of the smuggling ring.\"",
+    "choices": {
+      "A": "illicit",
+      "B": "elicit",
+      "C": "solicit",
+      "D": "explicit"
+    },
+    "correct_answer": "B",
+    "explanation": "'Elicit' means to draw out or evoke a response. 'Illicit' means illegal or forbidden. The sentence describes drawing out confessions, making 'elicit' the correct choice. While 'solicit' can mean to seek, 'elicit' more precisely captures the idea of extracting responses.",
+    "difficulty": 2,
+    "tags": ["elicit_illicit", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_elicit_illicit_choice"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The board adopted the resolution based on the principal that all stakeholders deserve equitable representation.",
+    "choices": {
+      "A": "adopted the resolution",
+      "B": "principal",
+      "C": "stakeholders deserve",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Principle' is a noun meaning a fundamental belief or rule. 'Principal' means 'chief' or refers to a person in authority. The sentence describes a guiding belief, so 'principle' is required.",
+    "difficulty": 2,
+    "tags": ["principal_principle", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_principle_noun_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "The clinical trials demonstrated that the new compound is capable to reducing inflammation without significant side effects.",
+    "choices": {
+      "A": "clinical trials demonstrated",
+      "B": "capable to",
+      "C": "reducing inflammation",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'capable of,' not 'capable to.' The correct phrasing is 'capable of reducing.'",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition", "capable_of"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_capable_of_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "Federal regulations prohibit pharmaceutical companies to market unapproved treatments directly to consumers.",
+    "choices": {
+      "A": "Federal regulations",
+      "B": "prohibit pharmaceutical companies to market",
+      "C": "unapproved treatments",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'prohibit from marketing,' not 'prohibit to market.' 'Prohibit' requires the preposition 'from' followed by a gerund.",
+    "difficulty": 2,
+    "tags": ["idiom", "preposition", "prohibit_from"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_prohibit_from_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "The researcher's findings were consistent of the predictions outlined in the original hypothesis.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher's findings were consistent with the predictions outlined in the original hypothesis.",
+      "C": "The researcher's findings were consistent to the predictions outlined in the original hypothesis.",
+      "D": "The researcher's findings were consistent for the predictions outlined in the original hypothesis."
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'consistent with,' meaning in agreement or harmony with something. 'Consistent of,' 'consistent to,' and 'consistent for' are all nonstandard.",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition", "consistent_with"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_consistent_with_revision"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "Several environmental groups advocate against stricter emissions standards for industrial facilities.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Several environmental groups advocate for stricter emissions standards for industrial facilities.",
+      "C": "Several environmental groups advocate to stricter emissions standards for industrial facilities.",
+      "D": "Several environmental groups advocate about stricter emissions standards for industrial facilities."
+    },
+    "correct_answer": "B",
+    "explanation": "'Advocate for' means to publicly support or recommend something. 'Advocate against' means to oppose, which contradicts the context of environmental groups wanting stricter standards. The correct idiom in this supportive context is 'advocate for.'",
+    "difficulty": 3,
+    "tags": ["idiom", "preposition", "advocate_for"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_advocate_for_revision"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Which preposition correctly completes the sentence? \"The ethnographic study provided valuable insight ______ the daily lives of migrant agricultural workers.\"",
+    "choices": {
+      "A": "about",
+      "B": "to",
+      "C": "into",
+      "D": "on"
+    },
+    "correct_answer": "C",
+    "explanation": "The standard idiom is 'insight into,' meaning a deep understanding of something. While 'insight about' and 'insight on' are sometimes used informally, 'insight into' is the established academic idiom.",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition", "insight_into"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_insight_into_choice"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "The graduate seminar focused at the intersection of computational linguistics and cognitive psychology.",
+    "choices": {
+      "A": "graduate seminar",
+      "B": "focused at",
+      "C": "intersection of",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'focused on,' not 'focused at.' The correct phrasing is 'focused on the intersection.'",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition", "focused_on"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_focused_on_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Which preposition correctly completes the sentence? \"The new data is not consistent ______ the model's earlier predictions about population growth.\"",
+    "choices": {
+      "A": "to",
+      "B": "of",
+      "C": "for",
+      "D": "with"
+    },
+    "correct_answer": "D",
+    "explanation": "The standard idiom is 'consistent with,' meaning in agreement with. 'Consistent to,' 'consistent of,' and 'consistent for' are all nonstandard forms.",
+    "difficulty": 1,
+    "tags": ["idiom", "preposition", "consistent_with"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_consistent_with_choice"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "best_choice",
+    "prompt": "Which revision best maintains a formal academic tone? \"The researchers were bummed out when the initial trial results contradicted their hypothesis.\"",
+    "choices": {
+      "A": "The researchers were bummed out when the initial trial results contradicted their hypothesis.",
+      "B": "The researchers were really upset when the initial trial results contradicted their hypothesis.",
+      "C": "The researchers were disappointed when the initial trial results contradicted their hypothesis.",
+      "D": "The researchers were super frustrated when the initial trial results contradicted their hypothesis."
+    },
+    "correct_answer": "C",
+    "explanation": "'Disappointed' maintains a formal academic register. 'Bummed out,' 'really upset,' and 'super frustrated' are colloquial or informal expressions inappropriate for academic writing.",
+    "difficulty": 1,
+    "tags": ["register", "formal_tone", "colloquialism"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_disappointed"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "The sampling methodology was kind of flawed, which basically made the entire dataset unreliable for peer-reviewed publication.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The sampling methodology was fundamentally flawed, which rendered the entire dataset unreliable for peer-reviewed publication.",
+      "C": "The sampling methodology was sort of flawed, which pretty much made the entire dataset unreliable for peer-reviewed publication.",
+      "D": "The sampling methodology was kind of flawed, which essentially made the entire dataset unreliable for peer-reviewed publication."
+    },
+    "correct_answer": "B",
+    "explanation": "'Fundamentally flawed' and 'rendered' are precise, formal alternatives to the colloquial hedges 'kind of' and 'basically.' Academic writing should avoid vague qualifiers and use exact language.",
+    "difficulty": 2,
+    "tags": ["register", "formal_tone", "hedging"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_remove_hedges"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "The longitudinal study totally proved that early intervention programs pay off in terms of graduation rates.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The longitudinal study conclusively demonstrated that early intervention programs improve graduation rates.",
+      "C": "The longitudinal study totally showed that early intervention programs are worth it when it comes to graduation rates.",
+      "D": "The longitudinal study kind of proved that early intervention programs help out with graduation rates."
+    },
+    "correct_answer": "B",
+    "explanation": "'Conclusively demonstrated' replaces the informal intensifier 'totally proved,' and 'improve graduation rates' replaces the colloquial 'pay off in terms of.' Academic writing requires precise, formal diction.",
+    "difficulty": 2,
+    "tags": ["register", "formal_tone", "slang"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_formal_diction"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "best_choice",
+    "prompt": "Which word best replaces the underlined portion to maintain a formal academic tone? \"The committee's decision to cut funding was a huge mistake that set back the research program.\"",
+    "choices": {
+      "A": "a huge mistake that set back",
+      "B": "a grave miscalculation that impeded",
+      "C": "a really bad call that messed up",
+      "D": "a terrible blunder that hurt"
+    },
+    "correct_answer": "B",
+    "explanation": "'A grave miscalculation that impeded' uses precise, formal vocabulary appropriate for academic discourse. The other options contain colloquial language ('huge mistake,' 'bad call,' 'messed up,' 'terrible blunder') that is too informal for scholarly writing.",
+    "difficulty": 2,
+    "tags": ["register", "formal_tone", "word_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_miscalculation"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "error_id",
+    "prompt": "The researchers got ahold of previously classified documents that shed light on the government's covert surveillance program.",
+    "choices": {
+      "A": "got ahold of",
+      "B": "previously classified documents",
+      "C": "shed light on",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Got ahold of' is colloquial and inappropriate for academic writing. A formal alternative would be 'obtained' or 'acquired.' The phrase 'shed light on' is an accepted idiom in academic prose.",
+    "difficulty": 3,
+    "tags": ["register", "formal_tone", "colloquialism"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_colloquial_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "A lot of scholars have pushed back against the claim that standardized testing is a reliable predictor of college success.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Numerous scholars have challenged the claim that standardized testing is a reliable predictor of college success.",
+      "C": "A lot of scholars have fought the claim that standardized testing is a reliable predictor of college success.",
+      "D": "Tons of scholars have pushed back against the claim that standardized testing is a reliable predictor of college success."
+    },
+    "correct_answer": "B",
+    "explanation": "'Numerous' is a formal quantifier replacing the informal 'a lot of,' and 'challenged' is a more precise and academic verb than 'pushed back against.' Academic writing demands formal diction throughout.",
+    "difficulty": 3,
+    "tags": ["register", "formal_tone", "quantifier"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_formal_quantifier"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The archaeological team ______ a series of clay tablets inscribed with cuneiform text beneath the temple floor.\"",
+    "choices": {
+      "A": "found",
+      "B": "unearthed",
+      "C": "got",
+      "D": "saw"
+    },
+    "correct_answer": "B",
+    "explanation": "'Unearthed' is the most precise word because it specifically means to dig up something buried, which matches the archaeological context of discovering artifacts beneath a floor. 'Found' is too general, 'got' is informal, and 'saw' does not convey discovery.",
+    "difficulty": 2,
+    "tags": ["precision", "word_choice", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_unearthed"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The new environmental policy ______ industrial waste discharge into the river by more than sixty percent.\"",
+    "choices": {
+      "A": "changed",
+      "B": "helped",
+      "C": "curtailed",
+      "D": "affected"
+    },
+    "correct_answer": "C",
+    "explanation": "'Curtailed' means to reduce or cut back, which precisely describes a significant decrease in waste discharge. 'Changed' is too vague, 'helped' does not convey reduction, and 'affected' does not specify the direction of impact.",
+    "difficulty": 3,
+    "tags": ["precision", "word_choice", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_curtailed"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "error_id",
+    "prompt": "The researcher's report used generic language throughout, stating that the intervention helped things get better for participants in the treatment group.",
+    "choices": {
+      "A": "generic language",
+      "B": "stating that",
+      "C": "helped things get better",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Helped things get better' is vague and informal. Academic writing demands precision; a phrase such as 'improved outcomes' or 'enhanced well-being' would convey the meaning more exactly. The imprecise diction undermines the scholarly tone of the report.",
+    "difficulty": 3,
+    "tags": ["precision", "vague_language", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_vague_id"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "revision",
+    "prompt": "The medication had a really bad thing happen to some patients, causing nausea, dizziness, and elevated blood pressure.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The medication had a negative effect on some patients, causing nausea, dizziness, and elevated blood pressure.",
+      "C": "The medication produced adverse reactions in some patients, including nausea, dizziness, and elevated blood pressure.",
+      "D": "The medication was not good for some patients, causing nausea, dizziness, and elevated blood pressure."
+    },
+    "correct_answer": "C",
+    "explanation": "'Produced adverse reactions' is the most precise and academically appropriate phrasing for describing negative medical outcomes. It uses domain-specific terminology ('adverse reactions') and an accurate verb ('produced'). The other options are either vague or informal.",
+    "difficulty": 3,
+    "tags": ["precision", "word_choice", "academic_vocabulary"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_adverse_reactions"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which phrase most precisely replaces the underlined portion? \"The thing about the new algorithm is that it processes large datasets more quickly than conventional methods.\"",
+    "choices": {
+      "A": "The thing about",
+      "B": "The advantage of",
+      "C": "The stuff about",
+      "D": "What is cool about"
+    },
+    "correct_answer": "B",
+    "explanation": "'The advantage of' precisely identifies the relationship being described. 'The thing about' is vague and informal, 'the stuff about' is equally imprecise, and 'what is cool about' is colloquial.",
+    "difficulty": 2,
+    "tags": ["precision", "word_choice", "vague_language"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_advantage"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "The regulatory agency determined that the company's illicit marketing practices had managed to elicit trust from vulnerable consumers.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The regulatory agency determined that the company's elicit marketing practices had managed to illicit trust from vulnerable consumers.",
+      "C": "The regulatory agency determined that the company's illicit marketing practices had managed to illicit trust from vulnerable consumers.",
+      "D": "The regulatory agency determined that the company's elicit marketing practices had managed to elicit trust from vulnerable consumers."
+    },
+    "correct_answer": "A",
+    "explanation": "The sentence is correct as written. 'Illicit' (meaning illegal or forbidden) properly describes the marketing practices, and 'elicit' (meaning to draw out or evoke) properly describes the act of gaining trust. No change is needed.",
+    "difficulty": 3,
+    "tags": ["elicit_illicit", "commonly_confused", "diction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_elicit_illicit_pair"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "The university's honor code prohibits students to submit work that has been previously graded in another course.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The university's honor code prohibits students from submitting work that has been previously graded in another course.",
+      "C": "The university's honor code prohibits students of submitting work that has been previously graded in another course.",
+      "D": "The university's honor code prohibits students for submitting work that has been previously graded in another course."
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'prohibit from' followed by a gerund. 'Prohibit to submit,' 'prohibit of submitting,' and 'prohibit for submitting' are all nonstandard constructions.",
+    "difficulty": 2,
+    "tags": ["idiom", "preposition", "prohibit_from"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_prohibit_from_revision"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The editorial board voted to ______ the controversial article after discovering significant methodological errors in the study.\"",
+    "choices": {
+      "A": "remove",
+      "B": "retract",
+      "C": "delete",
+      "D": "cancel"
+    },
+    "correct_answer": "B",
+    "explanation": "'Retract' is the precise academic and publishing term for formally withdrawing a published article due to errors or misconduct. 'Remove,' 'delete,' and 'cancel' do not carry the specific scholarly connotation of a formal retraction.",
+    "difficulty": 3,
+    "tags": ["precision", "word_choice", "academic_vocabulary"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_precision_retract"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "error_id",
+    "prompt": "The meta-analysis synthesized findings from forty-seven peer-reviewed studies and pretty much confirmed that cognitive behavioral therapy is effective for treating anxiety disorders.",
+    "choices": {
+      "A": "synthesized findings",
+      "B": "peer-reviewed studies",
+      "C": "pretty much confirmed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Pretty much confirmed' is colloquial and imprecise for academic writing. A formal alternative would be 'largely confirmed' or 'substantially confirmed.' Academic prose requires exact, formal language rather than casual hedges.",
+    "difficulty": 3,
+    "tags": ["register", "formal_tone", "colloquialism"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_register_pretty_much_id"
+  }
+]

@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The research team focused on collecting survey data, coding transcripts, and to develop a theoretical framework.",
+    "choices": {
+      "A": "collecting survey data",
+      "B": "coding transcripts",
+      "C": "to develop a theoretical framework",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Items in a series must share the same grammatical form. The first two items are gerunds ('collecting,' 'coding'), so the third must also be a gerund: 'developing a theoretical framework.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "list_structure", "gerund_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The laboratory protocol requires sterilizing equipment, accurate measurements, and labeling all samples.",
+    "choices": {
+      "A": "sterilizing equipment",
+      "B": "accurate measurements",
+      "C": "labeling all samples",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The first and third items are gerund phrases ('sterilizing,' 'labeling'), but the second item is a noun phrase ('accurate measurements'). It should be 'measuring accurately' or similar gerund form to maintain parallelism.",
+    "difficulty": 2,
+    "tags": ["parallelism", "list_structure", "mixed_forms"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_mixed_form"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The dissertation committee praised the candidate's thorough literature review, her innovative methodology, and presenting data with clarity.",
+    "choices": {
+      "A": "thorough literature review",
+      "B": "her innovative methodology",
+      "C": "presenting data with clarity",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items are noun phrases ('thorough literature review,' 'innovative methodology'), so the third item should also be a noun phrase, such as 'her clear data presentation,' rather than a gerund phrase.",
+    "difficulty": 2,
+    "tags": ["parallelism", "list_structure", "noun_phrase_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_noun_phrase"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The professor neither approved the revised thesis statement nor the updated bibliography.",
+    "choices": {
+      "A": "neither approved the revised thesis statement",
+      "B": "nor the updated bibliography",
+      "C": "revised thesis statement",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'neither...nor,' the grammatical structure after each word must match. After 'neither' comes a verb phrase ('approved the revised thesis statement'), so after 'nor' there must also be a verb phrase: 'nor approved the updated bibliography.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "neither_nor"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_neither_nor"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The grant proposal was both praised for its originality and because it addressed an underserved population.",
+    "choices": {
+      "A": "was both praised",
+      "B": "for its originality",
+      "C": "because it addressed an underserved population",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'both...and,' the structures must match. After 'both' comes a past participle phrase ('praised for its originality'), so after 'and' there must also be a past participle phrase, such as 'valued for addressing an underserved population,' not an adverbial clause beginning with 'because.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "correlative_conjunctions", "both_and"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_both_and"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The dean stated that students must either complete the capstone project or an internship of equivalent rigor.",
+    "choices": {
+      "A": "stated that students must",
+      "B": "either complete the capstone project",
+      "C": "or an internship of equivalent rigor",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structure after each word must match. After 'either' comes a verb phrase ('complete the capstone project'), so after 'or' there must also be a verb phrase: 'or complete an internship of equivalent rigor.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "either_or"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_either_or"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "error_id",
+    "prompt": "The researchers found that the new drug was more effective at reducing inflammation than lowering cholesterol.",
+    "choices": {
+      "A": "The researchers found",
+      "B": "more effective at reducing inflammation",
+      "C": "than lowering cholesterol",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "In comparative constructions, both sides must be grammatically parallel. The preposition 'at' should be repeated: 'more effective at reducing inflammation than at lowering cholesterol.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "comparative_structure", "preposition_repetition"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_preposition"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "error_id",
+    "prompt": "The provost argued that investing in faculty development is more beneficial than to increase administrative staffing.",
+    "choices": {
+      "A": "The provost argued",
+      "B": "investing in faculty development",
+      "C": "more beneficial",
+      "D": "to increase administrative staffing"
+    },
+    "correct_answer": "D",
+    "explanation": "In a 'more X than Y' comparison, X and Y must be grammatically parallel. The first element is a gerund ('investing'), so the second must also be a gerund: 'increasing administrative staffing.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "comparative_structure", "gerund_infinitive_mismatch"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "error_id",
+    "prompt": "The keynote speaker not only discussed emerging trends in artificial intelligence but also a pioneer in quantum computing.",
+    "choices": {
+      "A": "not only discussed",
+      "B": "emerging trends in artificial intelligence",
+      "C": "but also a pioneer in quantum computing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "After 'not only' comes a verb phrase ('discussed emerging trends'), so after 'but also' there must also be a verb phrase, not a noun phrase. A correct version: 'but also explored breakthroughs in quantum computing.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_not_only_verb_noun"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "error_id",
+    "prompt": "The fellowship program is designed not only for training researchers but also the goal of building institutional capacity.",
+    "choices": {
+      "A": "is designed",
+      "B": "not only for training researchers",
+      "C": "but also the goal of building institutional capacity",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "After 'not only' comes a prepositional phrase ('for training researchers'), so after 'but also' there must be a matching prepositional phrase: 'but also for building institutional capacity.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also", "prepositional_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_not_only_prep_phrase"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The study required participants to read a passage, answering comprehension questions, and to write a summary.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "to read a passage, to answer comprehension questions, and to write a summary",
+      "C": "to read a passage, answering comprehension questions, and writing a summary",
+      "D": "reading a passage, to answer comprehension questions, and to write a summary"
+    },
+    "correct_answer": "B",
+    "explanation": "All three items in the list must share the same grammatical form. Choice B uses a consistent infinitive pattern ('to read,' 'to answer,' 'to write'), maintaining proper parallelism.",
+    "difficulty": 1,
+    "tags": ["parallelism", "list_structure", "infinitive_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_infinitive"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The museum curator was responsible for cataloging new acquisitions, the restoration of damaged artifacts, and training junior staff.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "cataloging new acquisitions, restoring damaged artifacts, and training junior staff",
+      "C": "cataloging new acquisitions, the restoration of damaged artifacts, and to train junior staff",
+      "D": "to catalog new acquisitions, the restoration of damaged artifacts, and training junior staff"
+    },
+    "correct_answer": "B",
+    "explanation": "All items in a series must share the same grammatical form. Choice B uses three gerund phrases ('cataloging,' 'restoring,' 'training'), creating proper parallelism.",
+    "difficulty": 1,
+    "tags": ["parallelism", "list_structure", "gerund_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_gerund_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The professor expects students to attend all lectures, that they will complete weekly problem sets, and to participate in lab sessions.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "to attend all lectures, to complete weekly problem sets, and to participate in lab sessions",
+      "C": "attending all lectures, that they will complete weekly problem sets, and participating in lab sessions",
+      "D": "that students attend all lectures, to complete weekly problem sets, and they should participate in lab sessions"
+    },
+    "correct_answer": "B",
+    "explanation": "The items must share the same grammatical form. Choice B uses three parallel infinitive phrases ('to attend,' 'to complete,' 'to participate'), fixing the inconsistency.",
+    "difficulty": 2,
+    "tags": ["parallelism", "list_structure", "clause_form_mismatch"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_clause_fix"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The committee determined that the candidate was neither qualified for the tenure-track position nor was she suitable for the adjunct role.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "was neither qualified for the tenure-track position nor suitable for the adjunct role",
+      "C": "neither was qualified for the tenure-track position nor suitable for the adjunct role",
+      "D": "was qualified neither for the tenure-track position nor was she suitable for the adjunct role"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'neither...nor,' the structure after each word must match. Choice B places 'neither' and 'nor' before parallel adjective phrases ('qualified for...' and 'suitable for...'), creating proper parallelism.",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "neither_nor", "adjective_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_neither_adj"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The scholarship is available both to domestic applicants and international students may apply.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "both to domestic applicants and to international students",
+      "C": "both to domestic applicants and international students may apply as well",
+      "D": "to both domestic applicants and also international students"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match. Choice B places parallel prepositional phrases after each element ('to domestic applicants' and 'to international students').",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "both_and"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_both_prep"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The department will either hire two additional lecturers or the existing faculty will need to increase their course loads.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "will either hire two additional lecturers or require existing faculty to increase their course loads",
+      "C": "either will hire two additional lecturers or the existing faculty will need to increase their course loads",
+      "D": "either hire two additional lecturers or will require existing faculty increasing their course loads"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'either...or,' the structures after each word must match. Choice B places 'either' and 'or' before parallel verb phrases ('hire two additional lecturers' and 'require existing faculty to increase their course loads').",
+    "difficulty": 3,
+    "tags": ["parallelism", "correlative_conjunctions", "either_or", "verb_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_either_verb"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The longitudinal study was more useful for predicting behavioral trends than to identify genetic markers.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more useful for predicting behavioral trends than for identifying genetic markers",
+      "C": "more useful for predicting behavioral trends than it identified genetic markers",
+      "D": "more useful to predict behavioral trends than for identifying genetic markers"
+    },
+    "correct_answer": "B",
+    "explanation": "In a comparative construction, both sides must match grammatically. Choice B repeats the preposition 'for' with matching gerund phrases ('for predicting' and 'for identifying'), creating proper parallelism.",
+    "difficulty": 2,
+    "tags": ["parallelism", "comparative_structure", "preposition_repetition"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_prep_repeat"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The reviewers considered the second manuscript to be more clearly argued than the organization of the first.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more clearly argued than the first manuscript",
+      "C": "more clearly argued than how the first was organized",
+      "D": "more clear in its argument than the first was organized"
+    },
+    "correct_answer": "B",
+    "explanation": "A comparison must compare equivalent things. The sentence compares a manuscript's argumentation to 'the organization,' which is not parallel. Choice B correctly compares one manuscript to another manuscript.",
+    "difficulty": 3,
+    "tags": ["parallelism", "comparative_structure", "illogical_comparison"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_logical"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "The new policy not only reduced administrative overhead but also employee satisfaction was improved.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only reduced administrative overhead but also improved employee satisfaction",
+      "C": "not only reducing administrative overhead but also employee satisfaction improved",
+      "D": "not only reduced administrative overhead, and also improved employee satisfaction"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' the structures must match. Choice B places parallel verb phrases after each element ('reduced administrative overhead' and 'improved employee satisfaction').",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_not_only_verb_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "The clinical trial not only confirmed the drug's efficacy but also that its side effects were minimal was demonstrated.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only confirmed the drug's efficacy but also demonstrated that its side effects were minimal",
+      "C": "not only confirmed the drug's efficacy but also its side effects that were minimal",
+      "D": "not only was confirming the drug's efficacy but also demonstrated its minimal side effects"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' parallel verb phrases must follow each element. Choice B pairs 'confirmed the drug's efficacy' with 'demonstrated that its side effects were minimal,' maintaining parallel verb-phrase structure.",
+    "difficulty": 3,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also", "clause_structure"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_not_only_clause_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence with proper parallel structure? \"The grant requires recipients to publish their findings, ____, and to present at a national conference.\"",
+    "choices": {
+      "A": "sharing data with collaborators",
+      "B": "to share data with collaborators",
+      "C": "that they share data with collaborators",
+      "D": "data should be shared with collaborators"
+    },
+    "correct_answer": "B",
+    "explanation": "The other items in the series use infinitive phrases ('to publish,' 'to present'), so the missing item must also be an infinitive: 'to share data with collaborators.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "list_structure", "infinitive_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_infinitive_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice maintains parallel structure? \"The laboratory technician is responsible for calibrating instruments, preparing samples, and ____.\"",
+    "choices": {
+      "A": "to record experimental results",
+      "B": "the recording of experimental results",
+      "C": "recording experimental results",
+      "D": "she records experimental results"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items are gerund phrases ('calibrating,' 'preparing'), so the third must also be a gerund phrase: 'recording experimental results.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "list_structure", "gerund_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_gerund_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The research indicates that bilingual education both improves cognitive flexibility and ____.\"",
+    "choices": {
+      "A": "academic performance is enhanced",
+      "B": "enhances academic performance",
+      "C": "the enhancement of academic performance",
+      "D": "to enhance academic performance"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match. After 'both' comes a verb phrase ('improves cognitive flexibility'), so after 'and' there must also be a verb phrase: 'enhances academic performance.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "both_and"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_both_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The university will either increase funding for graduate research or ____.\"",
+    "choices": {
+      "A": "the number of teaching assistantships should be reduced",
+      "B": "it will be reducing the number of teaching assistantships",
+      "C": "reduce the number of teaching assistantships",
+      "D": "a reduction in the number of teaching assistantships"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structures must match. After 'either' comes a base verb phrase ('increase funding'), so after 'or' there must also be a base verb phrase: 'reduce the number of teaching assistantships.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "either_or"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_correlative_either_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The panel found the qualitative approach more revealing in capturing participant experiences than ____.\"",
+    "choices": {
+      "A": "the quantitative method measured outcomes",
+      "B": "to measure outcomes quantitatively",
+      "C": "in measuring outcomes quantitatively",
+      "D": "when outcomes are measured quantitatively"
+    },
+    "correct_answer": "C",
+    "explanation": "In a comparative construction, the preposition 'in' must be repeated for clarity and parallelism: 'more revealing in capturing...than in measuring...' Both sides use 'in' plus a gerund phrase.",
+    "difficulty": 3,
+    "tags": ["parallelism", "comparative_structure", "preposition_repetition"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_in_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best maintains parallel structure? \"Peer tutoring has proven more effective at building student confidence than ____.\"",
+    "choices": {
+      "A": "to improve test scores",
+      "B": "at improving test scores",
+      "C": "improved test scores",
+      "D": "when test scores are improved"
+    },
+    "correct_answer": "B",
+    "explanation": "The first part of the comparison uses 'at' plus a gerund ('at building'), so the second part must mirror that structure: 'at improving test scores.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "comparative_structure", "preposition_repetition"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_at_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The revised curriculum was designed not only to deepen subject knowledge but also ____.\"",
+    "choices": {
+      "A": "critical thinking skills were fostered",
+      "B": "fostering critical thinking skills",
+      "C": "to foster critical thinking skills",
+      "D": "for the fostering of critical thinking skills"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'not only...but also,' the structures must match. After 'not only' comes an infinitive phrase ('to deepen subject knowledge'), so after 'but also' there must also be an infinitive: 'to foster critical thinking skills.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_not_only_infinitive_choice"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The editorial board values concise prose, logical organization, and that sources are cited accurately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "concise prose, logical organization, and accurate citation of sources",
+      "C": "concise prose, logical organization, and to cite sources accurately",
+      "D": "writing concisely, logical organization, and that sources are cited accurately"
+    },
+    "correct_answer": "B",
+    "explanation": "The first two items are noun phrases ('concise prose,' 'logical organization'), so the third must also be a noun phrase. Choice B uses the parallel noun phrase 'accurate citation of sources.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "list_structure", "noun_phrase_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_list_noun_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The graduate students found collaborative projects more rewarding for developing professional networks than gaining subject expertise.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more rewarding for developing professional networks than for gaining subject expertise",
+      "C": "more rewarding to develop professional networks than gaining subject expertise",
+      "D": "more rewarding for developing professional networks than to gain subject expertise"
+    },
+    "correct_answer": "B",
+    "explanation": "In a 'more X for Y than for Z' comparison, the preposition 'for' must be repeated to maintain parallelism. Choice B correctly pairs 'for developing' with 'for gaining.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "comparative_structure", "preposition_repetition"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "parallel_comparative_for_revision"
+  }
+]

@@ -2207,5 +2207,3485 @@
     ],
     "source_section": "Section IX: Diction, Idioms, and Register",
     "skill_code": "variation_diction_idiom_hard_v1"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "While the laboratory technicians calibrated the new spectrometer before the scheduled trial. The principal investigator reviewed the safety protocols in her office.",
+    "choices": {
+      "A": "calibrated the new spectrometer",
+      "B": "before the scheduled trial",
+      "C": "While the laboratory technicians calibrated the new spectrometer before the scheduled trial.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first sentence is a fragment because it is a dependent clause beginning with \"While\" and lacks an independent clause. It should be attached to the second sentence.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "revision",
+    "prompt": "Having analyzed over three hundred soil samples from the riverbank.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Having analyzed over three hundred soil samples from the riverbank, the geologists published their findings.",
+      "C": "Having analyzed, over three hundred soil samples from the riverbank.",
+      "D": "Over three hundred soil samples from the riverbank having analyzed."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a participial phrase fragment with no independent clause. Adding \"the geologists published their findings\" supplies the missing main clause and completes the sentence.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "The research team submitted the proposal on time. Because they had secured preliminary approval from the ethics board.",
+    "choices": {
+      "A": "submitted the proposal on time",
+      "B": "Because they had secured preliminary approval from the ethics board.",
+      "C": "from the ethics board",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The second sentence is a dependent clause beginning with \"Because\" and cannot stand alone as a sentence. It is a fragment that should be attached to the preceding independent clause.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "best_choice",
+    "prompt": "Which option correctly completes the thought? \"Although the committee reviewed every application ____\"",
+    "choices": {
+      "A": "carefully and with great attention to detail.",
+      "B": ", they could not reach a unanimous decision.",
+      "C": "including the late submissions from external departments.",
+      "D": "especially the ones flagged by the registrar."
+    },
+    "correct_answer": "B",
+    "explanation": "The opening is a dependent clause beginning with \"Although,\" which requires an independent clause to form a complete sentence. Only choice B supplies an independent clause after the comma.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The clinical trial produced promising results, the pharmaceutical company applied for regulatory approval.",
+    "choices": {
+      "A": "produced promising results",
+      "B": "the pharmaceutical company",
+      "C": "the comma joining the two clauses",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Two independent clauses are joined only by a comma, creating a comma splice. A semicolon, period, or comma with a coordinating conjunction is needed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The professor assigned additional readings, however, the students had already completed the original bibliography.",
+    "choices": {
+      "A": "assigned additional readings",
+      "B": "the comma before \"however\"",
+      "C": "the students had already completed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"However\" is a conjunctive adverb, not a coordinating conjunction. Using a comma before it to join two independent clauses creates a comma splice. A semicolon is needed before \"however.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The lab's ventilation system failed during the experiment, therefore, the researchers evacuated the building immediately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The lab's ventilation system failed during the experiment; therefore, the researchers evacuated the building immediately.",
+      "C": "The lab's ventilation system failed during the experiment therefore the researchers evacuated the building immediately.",
+      "D": "The lab's ventilation system failed during the experiment, therefore the researchers evacuated the building immediately."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Therefore\" is a conjunctive adverb and cannot join two independent clauses with just a comma. A semicolon before \"therefore\" correctly separates the clauses.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The department chair endorsed the new curriculum, many faculty members still expressed reservations about the timeline.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The department chair endorsed the new curriculum, but many faculty members still expressed reservations about the timeline.",
+      "C": "The department chair endorsed the new curriculum many faculty members still expressed reservations about the timeline.",
+      "D": "The department chair endorsed, the new curriculum, many faculty members still expressed reservations about the timeline."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. Adding the coordinating conjunction \"but\" after the comma correctly joins the two independent clauses using comma + FANBOYS.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The longitudinal study tracked participants over fifteen years, as a result, the dataset became one of the largest in the field.",
+    "choices": {
+      "A": "tracked participants over fifteen years",
+      "B": "the comma before \"as a result\"",
+      "C": "one of the largest in the field",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As a result\" is a conjunctive adverb phrase and cannot join two independent clauses with only a comma. A semicolon or period is needed before \"as a result.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly fixes the comma splice? \"The grant application was submitted before the deadline, the review committee had not yet convened.\"",
+    "choices": {
+      "A": "The grant application was submitted before the deadline the review committee had not yet convened.",
+      "B": "The grant application was submitted before the deadline, the review committee, had not yet convened.",
+      "C": "The grant application was submitted before the deadline, yet the review committee had not yet convened.",
+      "D": "The grant application was submitted before the deadline, consequently the review committee had not yet convened."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Yet\" is a coordinating conjunction (FANBOYS), so comma + \"yet\" correctly joins two independent clauses. Choice A is a run-on, B adds an illogical comma, and D uses a conjunctive adverb after a comma, creating another comma splice.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "error_id",
+    "prompt": "The university expanded its online offerings the enrollment numbers doubled within two semesters.",
+    "choices": {
+      "A": "expanded its online offerings",
+      "B": "the missing punctuation between the two clauses",
+      "C": "doubled within two semesters",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses are fused together with no punctuation, creating a run-on sentence. A period, semicolon, or comma with a coordinating conjunction is needed between \"offerings\" and \"the.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "revision",
+    "prompt": "The field researchers collected water samples at dawn they transported the samples to the lab by noon.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The field researchers collected water samples at dawn, they transported the samples to the lab by noon.",
+      "C": "The field researchers collected water samples at dawn; they transported the samples to the lab by noon.",
+      "D": "The field researchers collected water samples at dawn they, transported the samples to the lab by noon."
+    },
+    "correct_answer": "C",
+    "explanation": "The original is a run-on (fused sentence). A semicolon correctly joins two closely related independent clauses. Choice B creates a comma splice, and D places a comma incorrectly within the second clause.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "revision",
+    "prompt": "The historian discovered unpublished letters in the archive they shed new light on the diplomatic negotiations of that era.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The historian discovered unpublished letters in the archive, they shed new light on the diplomatic negotiations of that era.",
+      "C": "The historian discovered unpublished letters in the archive. They shed new light on the diplomatic negotiations of that era.",
+      "D": "The historian discovered unpublished letters in the archive they, shed new light on the diplomatic negotiations of that era."
+    },
+    "correct_answer": "C",
+    "explanation": "The original is a run-on sentence. A period correctly separates the two independent clauses into distinct sentences. Choice B creates a comma splice, and D inserts a meaningless comma within the second clause.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "error_id",
+    "prompt": "The advisory panel recommended increased funding for community health programs the budget office allocated resources accordingly.",
+    "choices": {
+      "A": "recommended increased funding",
+      "B": "for community health programs",
+      "C": "the lack of punctuation between \"programs\" and \"the\"",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Two complete independent clauses are joined with no punctuation or conjunction, forming a run-on sentence. Punctuation is needed between \"programs\" and \"the budget office.\"",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The data suggested a significant correlation, the researchers needed additional trials to confirm causation.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The data suggested a significant correlation; however, the researchers needed additional trials to confirm causation.",
+      "C": "The data suggested a significant correlation, however the researchers needed additional trials to confirm causation.",
+      "D": "The data suggested a significant correlation however, the researchers needed additional trials to confirm causation."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. A semicolon before the conjunctive adverb \"however\" followed by a comma correctly joins the two independent clauses. Choices C and D both fail to place a semicolon or period before \"however.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "best_choice",
+    "prompt": "Which option correctly joins the two clauses? \"The archaeologists cataloged every artifact from the excavation site ____ they submitted their final report to the university.\"",
+    "choices": {
+      "A": ", and",
+      "B": ", consequently",
+      "C": "and",
+      "D": "being that"
+    },
+    "correct_answer": "A",
+    "explanation": "Comma + \"and\" (a FANBOYS conjunction) correctly joins two independent clauses. Choice B uses a conjunctive adverb after a comma, creating a comma splice. Choice C omits the required comma before the conjunction joining two independent clauses. Choice D is nonstandard.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The observatory recorded unusual seismic activity near the fault line: and the county issued evacuation advisories for coastal neighborhoods.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The observatory recorded unusual seismic activity near the fault line, and the county issued evacuation advisories for coastal neighborhoods.",
+      "C": "The observatory recorded unusual seismic activity near the fault line and, the county issued evacuation advisories for coastal neighborhoods.",
+      "D": "The observatory recorded unusual seismic activity near the fault line: the county, issued evacuation advisories for coastal neighborhoods."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon should not be followed by a coordinating conjunction joining two independent clauses. Comma + \"and\" is the correct way to join these clauses. Choice C misplaces the comma, and D inserts a disruptive comma within the second clause.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly uses a colon? \"The research team reached a clear conclusion ____\"",
+    "choices": {
+      "A": ": although the data supported the initial hypothesis.",
+      "B": ": the data strongly supported the initial hypothesis.",
+      "C": ", the data strongly supported the initial hypothesis.",
+      "D": ": and the data strongly supported the initial hypothesis."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon requires a complete sentence before it and introduces information that explains or elaborates. Choice B correctly places a colon after an independent clause and follows it with an explanatory statement. Choice A follows the colon with a dependent clause fragment, C is a comma splice, and D incorrectly pairs a colon with a conjunction.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "error_id",
+    "prompt": "The museum curator organized the exhibition by theme, the visitors, however, preferred a chronological arrangement.",
+    "choices": {
+      "A": "organized the exhibition by theme",
+      "B": "the comma between \"theme\" and \"the visitors\"",
+      "C": "preferred a chronological arrangement",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses are joined only by a comma, creating a comma splice. The word \"however\" is a parenthetical conjunctive adverb within the second clause, not a conjunction that can fix the boundary. A semicolon or period is needed after \"theme.\"",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which subordinating conjunction best expresses the causal relationship? \"____ the grant funding was approved, the laboratory was able to hire two additional research assistants.\"",
+    "choices": {
+      "A": "Although",
+      "B": "While",
+      "C": "Because",
+      "D": "Unless"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Because\" correctly expresses a cause-and-effect relationship: the funding approval caused the lab to hire assistants. \"Although\" and \"While\" express contrast or concession, and \"Unless\" expresses a condition.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which choice best expresses the conditional relationship? \"The clinical trial will proceed to Phase III ____ the preliminary results demonstrate both safety and efficacy.\"",
+    "choices": {
+      "A": "although",
+      "B": "because",
+      "C": "only if",
+      "D": "while"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Only if\" correctly expresses a condition that must be met before the trial proceeds. \"Although\" signals contrast, \"because\" signals cause, and \"while\" signals simultaneity or contrast.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "error_id",
+    "prompt": "Since the department restructured its advising system last semester students have reported shorter wait times for appointments.",
+    "choices": {
+      "A": "Since the department restructured",
+      "B": "the missing comma after \"semester\"",
+      "C": "students have reported",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "When a dependent clause beginning with a subordinating conjunction (\"Since\") leads the sentence, a comma is required after the dependent clause and before the independent clause. A comma is needed after \"semester.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "revision",
+    "prompt": "Although the survey response rate exceeded expectations. The research team decided to extend the collection period to capture additional demographic groups.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Although the survey response rate exceeded expectations, the research team decided to extend the collection period to capture additional demographic groups.",
+      "C": "Although, the survey response rate exceeded expectations the research team decided to extend the collection period to capture additional demographic groups.",
+      "D": "The survey response rate exceeded expectations although. The research team decided to extend the collection period."
+    },
+    "correct_answer": "B",
+    "explanation": "The original incorrectly punctuates the dependent clause as a separate sentence (fragment). Attaching it to the independent clause with a comma after \"expectations\" creates a correct complex sentence with the subordinate clause leading.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which choice best expresses the contrast between the two ideas? \"____ the committee allocated significant resources to the mentorship program, participation rates remained unchanged.\"",
+    "choices": {
+      "A": "Because",
+      "B": "Since",
+      "C": "If",
+      "D": "Even though"
+    },
+    "correct_answer": "D",
+    "explanation": "\"Even though\" correctly expresses concession and contrast: despite the significant resource allocation, participation did not change. \"Because\" and \"Since\" express cause, and \"If\" expresses a condition.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly addresses the error? \"The peer reviewers identified several methodological weaknesses, the authors revised the manuscript accordingly.\"",
+    "choices": {
+      "A": "The peer reviewers identified several methodological weaknesses, the authors, revised the manuscript accordingly.",
+      "B": "The peer reviewers identified several methodological weaknesses, so the authors revised the manuscript accordingly.",
+      "C": "The peer reviewers identified several methodological weaknesses the authors revised the manuscript accordingly.",
+      "D": "The peer reviewers identified several methodological weaknesses, consequently the authors revised the manuscript accordingly."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. \"So\" is a coordinating conjunction (FANBOYS), and comma + \"so\" correctly joins two independent clauses. Choice A adds a disruptive comma, C creates a run-on, and D uses a conjunctive adverb after a comma, which is still a comma splice.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "The neuroscience department invested heavily in new imaging equipment. Resulting in clearer scans and more precise data for longitudinal studies.",
+    "choices": {
+      "A": "invested heavily in new imaging equipment",
+      "B": "Resulting in clearer scans and more precise data for longitudinal studies.",
+      "C": "more precise data",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Resulting in clearer scans...\" is a participial phrase fragment. It has no subject or finite verb and cannot stand alone as a sentence. It should be attached to the preceding sentence, typically with a comma.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "best_choice",
+    "prompt": "Which revision best corrects the fused sentence? \"The engineering students completed the bridge simulation the professors evaluated structural integrity using load-bearing software.\"",
+    "choices": {
+      "A": "The engineering students completed the bridge simulation, the professors evaluated structural integrity using load-bearing software.",
+      "B": "The engineering students completed the bridge simulation; the professors evaluated structural integrity using load-bearing software.",
+      "C": "The engineering students completed, the bridge simulation the professors evaluated structural integrity using load-bearing software.",
+      "D": "The engineering students completed the bridge simulation the professors, evaluated structural integrity using load-bearing software."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a run-on (fused sentence). A semicolon correctly joins two related independent clauses. Choice A creates a comma splice, and choices C and D place commas in positions that break the clauses incorrectly.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The demographic analysis revealed significant population shifts in the region, moreover, these shifts correlated with changes in local employment patterns.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The demographic analysis revealed significant population shifts in the region; moreover, these shifts correlated with changes in local employment patterns.",
+      "C": "The demographic analysis revealed significant population shifts in the region moreover these shifts correlated with changes in local employment patterns.",
+      "D": "The demographic analysis revealed significant population shifts in the region, moreover these shifts correlated with changes in local employment patterns."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Moreover\" is a conjunctive adverb and cannot join two independent clauses with only a comma. A semicolon before \"moreover\" correctly marks the boundary between the two independent clauses.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "revision",
+    "prompt": "While the economics department debated the merits of the new forecasting model, and the statistics faculty conducted independent validation tests.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "While the economics department debated the merits of the new forecasting model, the statistics faculty conducted independent validation tests.",
+      "C": "While, the economics department debated the merits of the new forecasting model the statistics faculty conducted independent validation tests.",
+      "D": "While the economics department debated the merits of the new forecasting model the statistics faculty, conducted independent validation tests."
+    },
+    "correct_answer": "B",
+    "explanation": "The original incorrectly inserts \"and\" after the comma, which makes the independent clause coordinate with the dependent clause and leaves no true main clause. Removing \"and\" allows the dependent clause (\"While...\") to correctly lead into the independent clause after the comma.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "error_id",
+    "prompt": "The research team collected soil samples, water readings and atmospheric data from three field stations.",
+    "choices": {
+      "A": "soil samples,",
+      "B": "water readings and",
+      "C": "atmospheric data",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The serial (Oxford) comma is standard: a comma is required after \"water readings\" and before \"and\" to clearly separate the three list items.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "revision",
+    "prompt": "The laboratory technicians calibrated instruments, recorded baseline measurements and prepared culture samples before the trial began.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "calibrated instruments, recorded baseline measurements, and prepared culture samples before the trial began.",
+      "C": "calibrated instruments recorded baseline measurements, and prepared culture samples before the trial began.",
+      "D": "calibrated instruments, recorded baseline measurements, and, prepared culture samples before the trial began."
+    },
+    "correct_answer": "B",
+    "explanation": "The serial comma must appear after each item in a list of three or more before the coordinating conjunction. Choice B correctly places a comma after \"measurements\" and before \"and.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the list?",
+    "choices": {
+      "A": "The fellowship requires a research proposal a writing sample, and two letters of recommendation.",
+      "B": "The fellowship requires a research proposal, a writing sample and two letters of recommendation.",
+      "C": "The fellowship requires a research proposal, a writing sample, and two letters of recommendation.",
+      "D": "The fellowship requires, a research proposal, a writing sample, and two letters of recommendation."
+    },
+    "correct_answer": "C",
+    "explanation": "A serial comma must follow each item in a list of three or more. Choice C correctly places commas after \"proposal\" and \"sample\" and before the final \"and.\" Choice D incorrectly places a comma between the verb and its object.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "error_id",
+    "prompt": "Researchers, who falsify data, face severe professional consequences.",
+    "choices": {
+      "A": "Researchers,",
+      "B": "who falsify data,",
+      "C": "face severe",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause \"who falsify data\" is restrictive (essential) because it identifies which researchers face consequences -- not all researchers do. No commas should set it off. The comma after \"Researchers\" is the error.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "revision",
+    "prompt": "Dr. Vasquez who directs the genomics lab published a landmark paper on gene editing.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Dr. Vasquez, who directs the genomics lab, published a landmark paper on gene editing.",
+      "C": "Dr. Vasquez, who directs the genomics lab published a landmark paper on gene editing.",
+      "D": "Dr. Vasquez who directs the genomics lab, published a landmark paper on gene editing."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Who directs the genomics lab\" is nonrestrictive (non-essential) because Dr. Vasquez is already identified by name. The clause must be set off by a pair of commas -- one before \"who\" and one after \"lab.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the relative clause? The context is a campus with multiple libraries.",
+    "choices": {
+      "A": "The library, that houses the rare manuscript collection, will close for renovation.",
+      "B": "The library that houses the rare manuscript collection will close for renovation.",
+      "C": "The library that houses the rare manuscript collection, will close for renovation.",
+      "D": "The library, that houses the rare manuscript collection will close for renovation."
+    },
+    "correct_answer": "B",
+    "explanation": "Because the campus has multiple libraries, \"that houses the rare manuscript collection\" is essential (restrictive) -- it specifies which library. Restrictive clauses take no commas. Additionally, \"that\" (not \"which\") typically introduces restrictive clauses.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "error_id",
+    "prompt": "The internship program which was founded in 2015 has placed over two hundred graduates in research positions.",
+    "choices": {
+      "A": "The internship program which",
+      "B": "was founded in 2015",
+      "C": "has placed over two hundred",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Which was founded in 2015\" is nonrestrictive information about the already-identified internship program. It should be set off by commas: \"The internship program, which was founded in 2015, has placed...\" The missing comma after \"program\" is the error.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "revision",
+    "prompt": "Sociologist, William Julius Wilson, analyzed the effects of deindustrialization on urban communities.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Sociologist William Julius Wilson analyzed the effects of deindustrialization on urban communities.",
+      "C": "Sociologist William Julius Wilson, analyzed the effects of deindustrialization on urban communities.",
+      "D": "Sociologist, William Julius Wilson analyzed the effects of deindustrialization on urban communities."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title precedes a specific name, the name is essential (it tells us which sociologist) and should not be set off by commas. No commas should surround \"William Julius Wilson.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly applies the Name Rule for appositives?",
+    "choices": {
+      "A": "Economist, Thomas Piketty, argued that wealth inequality undermines democratic institutions.",
+      "B": "Economist Thomas Piketty argued that wealth inequality undermines democratic institutions.",
+      "C": "Economist Thomas Piketty, argued that wealth inequality undermines democratic institutions.",
+      "D": "Economist, Thomas Piketty argued that wealth inequality undermines democratic institutions."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title (\"Economist\") precedes a specific name, the name is essential because it tells us which economist. No commas should set off the name.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the appositive?",
+    "choices": {
+      "A": "The study's lead author, Dr. Mei-Ling Chen, presented the findings at the annual conference.",
+      "B": "The study's lead author Dr. Mei-Ling Chen, presented the findings at the annual conference.",
+      "C": "The study's lead author, Dr. Mei-Ling Chen presented the findings at the annual conference.",
+      "D": "The study's lead author Dr. Mei-Ling Chen presented the findings at the annual conference."
+    },
+    "correct_answer": "A",
+    "explanation": "Because \"the study's lead author\" already uniquely identifies the person, the name \"Dr. Mei-Ling Chen\" is nonrestrictive and must be enclosed in a pair of commas. Only choice A provides both the opening and closing comma.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "error_id",
+    "prompt": "The dataset was publicly available; although few researchers had attempted to replicate the study's findings.",
+    "choices": {
+      "A": "publicly available;",
+      "B": "although few researchers",
+      "C": "had attempted to replicate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A semicolon joins two independent clauses. The clause beginning with \"although\" is dependent, not independent, so a semicolon is incorrect here. A comma should replace the semicolon.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "The participants in the clinical trial included nurses from Chicago, Illinois, epidemiologists from Atlanta, Georgia, and biostatisticians from Bethesda, Maryland.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "nurses from Chicago, Illinois; epidemiologists from Atlanta, Georgia; and biostatisticians from Bethesda, Maryland.",
+      "C": "nurses from Chicago; Illinois; epidemiologists from Atlanta; Georgia; and biostatisticians from Bethesda; Maryland.",
+      "D": "nurses from Chicago Illinois, epidemiologists from Atlanta Georgia, and biostatisticians from Bethesda Maryland."
+    },
+    "correct_answer": "B",
+    "explanation": "When list items contain internal commas (city, state pairs), semicolons serve as \"super commas\" to separate the major items and prevent confusion.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses a semicolon?",
+    "choices": {
+      "A": "The grant application was thorough; and it included a detailed budget.",
+      "B": "The grant application was thorough; it included a detailed budget.",
+      "C": "The grant application was thorough; because it included a detailed budget.",
+      "D": "The grant application; was thorough, and it included a detailed budget."
+    },
+    "correct_answer": "B",
+    "explanation": "A semicolon correctly joins two independent clauses without a coordinating conjunction. Choice A incorrectly pairs a semicolon with \"and.\" Choice C follows the semicolon with a dependent clause. Choice D splits the subject from its verb.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "error_id",
+    "prompt": "The study examined: income inequality, educational access, and housing instability across three metropolitan areas.",
+    "choices": {
+      "A": "The study examined:",
+      "B": "income inequality,",
+      "C": "educational access, and",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before a colon must be a complete sentence. \"The study examined\" is not a complete thought without its objects, so the colon is incorrectly placed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "revision",
+    "prompt": "The study examined three variables: income inequality, educational access, and housing instability.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The study examined three variables, income inequality, educational access, and housing instability.",
+      "C": "The study examined: three variables, income inequality, educational access, and housing instability.",
+      "D": "The study examined three variables; income inequality, educational access, and housing instability."
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before the colon (\"The study examined three variables\") is a complete sentence, and the colon correctly introduces the list that elaborates on \"three variables.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly uses a colon to introduce the explanation?",
+    "choices": {
+      "A": "The experiment failed for one reason: the control group was contaminated.",
+      "B": "The experiment failed for: one reason, the control group was contaminated.",
+      "C": "The experiment failed: for one reason, the control group was contaminated.",
+      "D": "The experiment failed for one reason the control group: was contaminated."
+    },
+    "correct_answer": "A",
+    "explanation": "In choice A, the clause before the colon is a complete independent clause, and the colon correctly introduces the explanatory detail. The other choices break the colon rule by placing it after an incomplete clause.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "error_id",
+    "prompt": "The longitudinal study, which tracked participants for over a decade -- revealed significant disparities in health outcomes.",
+    "choices": {
+      "A": "The longitudinal study,",
+      "B": "which tracked participants",
+      "C": "for over a decade --",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Punctuation marks used to set off nonessential elements must be paired consistently. The sentence begins with a comma after \"study\" but closes with a dash after \"decade.\" You cannot mix a comma with a dash; both marks must match.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "revision",
+    "prompt": "The committee's decision, to increase funding by forty percent, surprised even the program's most vocal advocates.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The committee's decision -- to increase funding by forty percent -- surprised even the program's most vocal advocates.",
+      "C": "The committee's decision to increase funding by forty percent, surprised even the program's most vocal advocates.",
+      "D": "The committee's decision, to increase funding by forty percent surprised even the program's most vocal advocates."
+    },
+    "correct_answer": "A",
+    "explanation": "The commas correctly set off the nonessential phrase \"to increase funding by forty percent\" as a pair. While dashes (choice B) could also work, the original is grammatically correct. Choice C drops one comma, and choice D drops the closing comma, both breaking the pair.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses a single dash?",
+    "choices": {
+      "A": "The research yielded an unexpected result -- a statistically significant correlation between diet and cognitive decline.",
+      "B": "The research yielded -- an unexpected result a statistically significant correlation between diet and cognitive decline.",
+      "C": "The research yielded an unexpected result a statistically significant -- correlation between diet and cognitive decline.",
+      "D": "The research -- yielded an unexpected result, a statistically significant correlation between diet and cognitive decline."
+    },
+    "correct_answer": "A",
+    "explanation": "A single dash can function like a colon, introducing elaborating or defining material after a complete clause. In choice A, the clause before the dash is complete and the dash introduces the specific result.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "revision",
+    "prompt": "Three factors -- sample size, measurement error, and participant attrition, undermined the validity of the study.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Three factors -- sample size, measurement error, and participant attrition -- undermined the validity of the study.",
+      "C": "Three factors, sample size, measurement error, and participant attrition -- undermined the validity of the study.",
+      "D": "Three factors -- sample size; measurement error; and participant attrition, undermined the validity of the study."
+    },
+    "correct_answer": "B",
+    "explanation": "Double dashes function like parentheses and must appear as a pair. The original opens with a dash but closes with a comma, creating a mismatch. Choice B correctly pairs both dashes around the nonessential list.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "error_id",
+    "prompt": "The researchers' findings confirmed that the enzyme's role in cellular repair is more complex than it's earlier models suggested.",
+    "choices": {
+      "A": "researchers' findings",
+      "B": "enzyme's role",
+      "C": "it's earlier models",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"It's\" is a contraction of \"it is.\" The possessive pronoun is \"its\" -- possessive pronouns never take an apostrophe. The sentence requires \"its earlier models.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "revision",
+    "prompt": "The two professor's offices were relocated during the building's renovation, but the department kept all of it's archived files intact.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The two professors' offices were relocated during the building's renovation, but the department kept all of its archived files intact.",
+      "C": "The two professors's offices were relocated during the buildings renovation, but the department kept all of its archived files intact.",
+      "D": "The two professors offices were relocated during the building's renovation, but the department kept all of it's archived files intact."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Professors\" is a plural noun, so its possessive form is \"professors'\" (apostrophe after the s). \"Building's\" is a correct singular possessive. \"Its\" (no apostrophe) is the possessive pronoun; \"it's\" means \"it is.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly distinguishes \"whose\" from \"who's\"?",
+    "choices": {
+      "A": "The candidate who's dissertation received the highest marks was offered a fellowship.",
+      "B": "The candidate whose dissertation received the highest marks was offered a fellowship.",
+      "C": "The candidate who's dissertation received the highest marks, was offered a fellowship.",
+      "D": "The candidate, whose dissertation received the highest marks was offered a fellowship."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Whose\" is the possessive form of \"who\"; \"who's\" is a contraction of \"who is.\" Choice B correctly uses \"whose\" to show possession and places no unnecessary commas around the restrictive clause.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence uses apostrophes correctly throughout?",
+    "choices": {
+      "A": "The children's test scores improved after the district revised it's curriculum.",
+      "B": "The childrens' test scores improved after the district revised its curriculum.",
+      "C": "The children's test scores improved after the district revised its curriculum.",
+      "D": "The children's test score's improved after the district revised its curriculum."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Children\" is an irregular plural, so the possessive is \"children's.\" \"Its\" (no apostrophe) is the correct possessive pronoun. Choice A uses \"it's\" (contraction). Choice B uses \"childrens'\" (incorrect form). Choice D adds an apostrophe to \"score's,\" which is just a plural, not a possessive.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "error_id",
+    "prompt": "The archive contained three types of documents; field notes from the 1940s, correspondence between researchers, and unpublished manuscripts.",
+    "choices": {
+      "A": "three types of documents;",
+      "B": "field notes from the 1940s,",
+      "C": "correspondence between researchers,",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before the semicolon introduces a list, which is the function of a colon, not a semicolon. Because \"The archive contained three types of documents\" is a complete clause introducing explanatory material, a colon should replace the semicolon.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "revision",
+    "prompt": "The professor praised the students, who submitted their drafts early, and noted that late submissions would not receive feedback.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The professor praised the students who submitted their drafts early and noted that late submissions would not receive feedback.",
+      "C": "The professor praised the students who submitted their drafts early, and noted that late submissions would not receive feedback.",
+      "D": "The professor, praised the students who submitted their drafts early, and noted that late submissions would not receive feedback."
+    },
+    "correct_answer": "B",
+    "explanation": "The clause \"who submitted their drafts early\" is restrictive: it specifies which students the professor praised (only the early submitters, not all students). Restrictive clauses should not be set off with commas. The compound predicate (\"praised ... and noted\") does not require a comma before \"and.\"",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "error_id",
+    "prompt": "The dean's message emphasized that: faculty should attend the orientation, submit syllabi by Friday, and complete safety training.",
+    "choices": {
+      "A": "emphasized that:",
+      "B": "faculty should attend",
+      "C": "submit syllabi by Friday,",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A colon must follow a complete independent clause. \"The dean's message emphasized that\" is not a complete sentence because \"that\" makes it an incomplete structure awaiting its noun clause. The colon should be removed.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "error_id",
+    "prompt": "The curriculum includes courses in statistics, research methods and ethical frameworks for social science inquiry.",
+    "choices": {
+      "A": "courses in statistics,",
+      "B": "research methods and",
+      "C": "ethical frameworks for",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The serial comma is standard: a comma must appear after \"research methods\" and before \"and\" to clearly separate the three items in the list.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "The meta-analysis reviewed studies from several disciplines, however, the authors acknowledged gaps in the existing literature.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The meta-analysis reviewed studies from several disciplines; however, the authors acknowledged gaps in the existing literature.",
+      "C": "The meta-analysis reviewed studies from several disciplines however, the authors acknowledged gaps in the existing literature.",
+      "D": "The meta-analysis reviewed studies from several disciplines; however the authors acknowledged gaps in the existing literature."
+    },
+    "correct_answer": "B",
+    "explanation": "A conjunctive adverb like \"however\" joining two independent clauses requires a semicolon before it and a comma after it. Choice B provides the correct punctuation pattern: semicolon + however + comma.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The analysis of the experimental results suggest that the hypothesis requires revision.",
+    "choices": {
+      "A": "The analysis",
+      "B": "of the experimental results",
+      "C": "suggest",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The subject is \"analysis\" (singular), not \"results.\" The verb should be \"suggests.\" The subject is never inside a prepositional phrase.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The professor, along with several graduate assistants, review manuscripts for the journal each semester.",
+    "choices": {
+      "A": "along with several graduate assistants",
+      "B": "review",
+      "C": "for the journal",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Interrupting phrases like \"along with\" do not change the number of the subject. The subject is \"professor\" (singular), so the verb should be \"reviews.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "error_id",
+    "prompt": "Among the artifacts recovered from the excavation site was three ceramic vessels dating to the Bronze Age.",
+    "choices": {
+      "A": "Among the artifacts",
+      "B": "was",
+      "C": "dating to the Bronze Age",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the subject \"three ceramic vessels\" is plural and comes after the verb. The verb should be \"were,\" not \"was.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "error_id",
+    "prompt": "The research team have published their findings in a peer-reviewed journal.",
+    "choices": {
+      "A": "The research team",
+      "B": "have published",
+      "C": "their findings",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "In American English, collective nouns like \"team\" take singular verbs. The verb should be \"has published.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "error_id",
+    "prompt": "Neither of the proposed amendments to the zoning code were approved by the planning commission.",
+    "choices": {
+      "A": "Neither of the proposed amendments",
+      "B": "were approved",
+      "C": "by the planning commission",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Neither\" is always singular, regardless of the prepositional phrase that follows. The verb should be \"was approved.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "error_id",
+    "prompt": "When Dr. Patel consulted with Dr. Reyes about the clinical trial, she recommended extending the observation period.",
+    "choices": {
+      "A": "consulted with Dr. Reyes",
+      "B": "she recommended",
+      "C": "extending the observation period",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The pronoun \"she\" is ambiguous because it could refer to either Dr. Patel or Dr. Reyes. A clear noun should replace the pronoun.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "The researchers collected samples in the field, transported them to the lab, and then are cataloging each specimen.",
+    "choices": {
+      "A": "collected samples in the field",
+      "B": "transported them to the lab",
+      "C": "are cataloging",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The sentence describes a sequence of completed past actions. \"Are cataloging\" breaks tense consistency and should be \"cataloged\" to match the past tense of the other verbs.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "error_id",
+    "prompt": "Each of the graduate students presented their dissertation proposal to the faculty committee.",
+    "choices": {
+      "A": "Each of the graduate students",
+      "B": "presented",
+      "C": "their dissertation proposal",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "Singular \"they/their\" is accepted in modern standard English and on current SAT/ACT tests when referring to indefinite pronouns like \"each.\" No error.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "The director of admissions, as well as two associate deans, attend the orientation briefing every fall.",
+    "choices": {
+      "A": "as well as two associate deans",
+      "B": "attend",
+      "C": "the orientation briefing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As well as\" is an interrupting phrase that does not change the number of the subject. The subject \"director\" is singular, so the verb should be \"attends.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "error_id",
+    "prompt": "The archaeologists excavated the site for three months and publish a detailed monograph the following year.",
+    "choices": {
+      "A": "excavated the site",
+      "B": "for three months",
+      "C": "publish",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Publish\" is present tense, but the sentence describes completed past events. The verb should be \"published\" to maintain tense consistency.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The findings of the longitudinal study indicates a strong correlation between sleep and academic performance.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The findings of the longitudinal study indicate a strong correlation between sleep and academic performance.",
+      "C": "The findings of the longitudinal study has indicated a strong correlation between sleep and academic performance.",
+      "D": "The findings of the longitudinal study is indicating a strong correlation between sleep and academic performance."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is \"findings\" (plural), not \"study.\" A plural subject requires the plural verb \"indicate.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "revision",
+    "prompt": "The faculty are voting on the revised curriculum proposal at its next meeting.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The faculty is voting on the revised curriculum proposal at its next meeting.",
+      "C": "The faculty are voting on the revised curriculum proposal at their next meeting.",
+      "D": "The faculty have voted on the revised curriculum proposal at its next meeting."
+    },
+    "correct_answer": "B",
+    "explanation": "In American English, collective nouns like \"faculty\" take singular verbs and singular pronouns. \"Is voting\" and \"its\" are the correct pair.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "revision",
+    "prompt": "On the top shelf of the archive sits the original correspondence between the two diplomats.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "On the top shelf of the archive sit the original correspondence between the two diplomats.",
+      "C": "On the top shelf of the archive are sitting the original correspondence between the two diplomats.",
+      "D": "On the top shelf of the archive were sitting the original correspondence between the two diplomats."
+    },
+    "correct_answer": "A",
+    "explanation": "In this inverted sentence, the subject is \"correspondence\" (singular). The singular verb \"sits\" correctly agrees with it. No change is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "revision",
+    "prompt": "The senator introduced the bill in March, and the committee reviews it throughout the summer.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The senator introduced the bill in March, and the committee reviewed it throughout the summer.",
+      "C": "The senator introduces the bill in March, and the committee reviews it throughout the summer.",
+      "D": "The senator had introduced the bill in March, and the committee reviews it throughout the summer."
+    },
+    "correct_answer": "B",
+    "explanation": "Both actions occurred in a past time frame. \"Reviewed\" maintains tense consistency with \"introduced.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "The museum acquired a collection of rare manuscripts, and they were immediately placed in a climate-controlled vault.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The museum acquired a collection of rare manuscripts, and it was immediately placed in a climate-controlled vault.",
+      "C": "The museum acquired a collection of rare manuscripts, and the manuscripts were immediately placed in a climate-controlled vault.",
+      "D": "The museum acquired a collection of rare manuscripts, and these were immediately placed in a climate-controlled vault."
+    },
+    "correct_answer": "C",
+    "explanation": "The pronoun \"they\" is ambiguous because it could refer to the collection or the manuscripts. Replacing it with the clear noun \"the manuscripts\" eliminates ambiguity.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "revision",
+    "prompt": "Most of the data collected during the pilot phase were unreliable due to sensor malfunction.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Most of the data collected during the pilot phase was unreliable due to sensor malfunction.",
+      "C": "Most of the data collected during the pilot phase are unreliable due to sensor malfunction.",
+      "D": "Most of the data collected during the pilot phase have been unreliable due to sensor malfunction."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Most\" is a SANAM pronoun whose number depends on the object of the preposition. \"Data\" in standard American English is treated as a singular mass noun, so the verb should be \"was.\"",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "revision",
+    "prompt": "The stack of peer-reviewed articles on the professor's desk need to be cataloged before the semester ends.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The stack of peer-reviewed articles on the professor's desk needs to be cataloged before the semester ends.",
+      "C": "The stack of peer-reviewed articles on the professor's desk are needing to be cataloged before the semester ends.",
+      "D": "The stack of peer-reviewed articles on the professor's desk have needed to be cataloged before the semester ends."
+    },
+    "correct_answer": "B",
+    "explanation": "The subject is \"stack\" (singular). The prepositional phrases \"of peer-reviewed articles\" and \"on the professor's desk\" do not change the subject's number. The verb must be \"needs.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "revision",
+    "prompt": "Before the grant period expired, the research team already submits its final report to the funding agency.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Before the grant period expired, the research team had already submitted its final report to the funding agency.",
+      "C": "Before the grant period expired, the research team already submitted its final report to the funding agency.",
+      "D": "Before the grant period expires, the research team already submits its final report to the funding agency."
+    },
+    "correct_answer": "B",
+    "explanation": "The submission happened before the grant expired (past of the past). Past perfect \"had already submitted\" correctly signals an action completed before another past event.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "revision",
+    "prompt": "Attached to the report was several appendices containing raw data and supplemental charts.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Attached to the report were several appendices containing raw data and supplemental charts.",
+      "C": "Attached to the report has been several appendices containing raw data and supplemental charts.",
+      "D": "Attached to the report is several appendices containing raw data and supplemental charts."
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the subject is \"several appendices\" (plural), which follows the verb. The plural verb \"were\" is required.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "revision",
+    "prompt": "The laboratory notified the department that it had failed the safety inspection.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The laboratory notified the department that the laboratory had failed the safety inspection.",
+      "C": "The laboratory notified the department that the department had failed the safety inspection.",
+      "D": "The laboratory notified the department about the failed safety inspection."
+    },
+    "correct_answer": "D",
+    "explanation": "The pronoun \"it\" is ambiguous because it could refer to either the laboratory or the department. Choice D restructures the sentence to eliminate the ambiguous pronoun entirely.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The number of applications received by the admissions office ____ increased dramatically this cycle.\"",
+    "choices": {
+      "A": "have",
+      "B": "has",
+      "C": "are",
+      "D": "were"
+    },
+    "correct_answer": "B",
+    "explanation": "\"The number\" is a singular subject that takes the singular verb \"has.\" The prepositional phrase \"of applications\" does not change the subject's number.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"Every professor and every teaching assistant ____ required to attend the orientation session.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "When \"every\" precedes each noun in a compound subject, the subject is treated as singular. The singular verb \"is\" is correct.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The historians discovered that the treaty ____ signed under duress, a fact that earlier scholars had overlooked.\"",
+    "choices": {
+      "A": "is",
+      "B": "has been",
+      "C": "had been",
+      "D": "was being"
+    },
+    "correct_answer": "C",
+    "explanation": "The signing of the treaty occurred before the historians' discovery (past of the past). Past perfect \"had been\" correctly signals the earlier action in the sequence.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"The board of trustees ____ scheduled to review the provost's proposal next Thursday.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Board\" is a collective noun that takes a singular verb in American English. \"Is\" is the correct choice.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Inverted Sentences",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"In the university's special collections ____ a first-edition manuscript and two signed letters.\"",
+    "choices": {
+      "A": "remains",
+      "B": "remain",
+      "C": "has remained",
+      "D": "is remaining"
+    },
+    "correct_answer": "B",
+    "explanation": "In this inverted sentence, the compound subject \"a first-edition manuscript and two signed letters\" is plural. The plural verb \"remain\" is required.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"All of the funding for the three research grants ____ been allocated by the provost's office.\"",
+    "choices": {
+      "A": "have",
+      "B": "has",
+      "C": "are",
+      "D": "were"
+    },
+    "correct_answer": "B",
+    "explanation": "\"All\" is a SANAM pronoun whose number depends on the object of the preposition. \"Funding\" is a singular mass noun, so the singular verb \"has\" is correct.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "best_choice",
+    "prompt": "Which choice best replaces the underlined portion? \"The study's lead author and the department chair disagreed, and ____ interpretation was ultimately published.\"",
+    "choices": {
+      "A": "his",
+      "B": "their",
+      "C": "the lead author's",
+      "D": "its"
+    },
+    "correct_answer": "C",
+    "explanation": "With two possible antecedents, a pronoun like \"his\" or \"their\" would be ambiguous. Replacing with the specific noun \"the lead author's\" eliminates the unclear reference.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"If the funding allocation ____ larger, the research team could have extended the trial by six months.\"",
+    "choices": {
+      "A": "was",
+      "B": "were",
+      "C": "is",
+      "D": "has been"
+    },
+    "correct_answer": "B",
+    "explanation": "This is a contrary-to-fact conditional (the funding was not actually larger). The subjunctive \"were\" is required, not the indicative \"was.\"",
+    "difficulty": 3
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Which verb correctly completes the sentence? \"Some of the evidence gathered by the forensic team ____ inadmissible under the new procedural guidelines.\"",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Some\" is a SANAM pronoun whose number depends on the object of the preposition. \"Evidence\" is a singular mass noun, so the singular verb \"is\" is correct.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Analyzing the soil samples, the contamination levels surprised the research team.",
+    "choices": {
+      "A": "Analyzing the soil samples",
+      "B": "the contamination levels",
+      "C": "surprised the research team",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase \"Analyzing the soil samples\" must be followed by the person doing the analyzing. \"The contamination levels\" cannot analyze anything; the subject should be the research team.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Having completed the longitudinal study, the published findings revealed a strong correlation between sleep and academic performance.",
+    "choices": {
+      "A": "Having completed the longitudinal study",
+      "B": "the published findings",
+      "C": "revealed a strong correlation",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Having completed the longitudinal study\" is a participial phrase that must modify a person who completed the study. \"The published findings\" cannot complete a study; the researchers should be the subject.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Trained in statistical modeling, the dataset was processed by the graduate assistant within a week.",
+    "choices": {
+      "A": "Trained in statistical modeling",
+      "B": "the dataset was processed",
+      "C": "by the graduate assistant",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The introductory phrase \"Trained in statistical modeling\" must modify a person. \"The dataset\" cannot be trained; the sentence should be restructured so that \"the graduate assistant\" follows the comma.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The professor only assigned the reading to students enrolled in the honors section.",
+    "choices": {
+      "A": "The professor only assigned",
+      "B": "the reading",
+      "C": "to students enrolled",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Only\" is misplaced next to \"assigned,\" implying the professor did nothing but assign. The intended meaning is that the reading was assigned exclusively to honors students, so \"only\" should appear before \"to students enrolled in the honors section.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The chemist almost tested every compound in the lab inventory before the deadline.",
+    "choices": {
+      "A": "The chemist almost tested",
+      "B": "every compound",
+      "C": "in the lab inventory",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Almost\" incorrectly modifies \"tested,\" suggesting the chemist nearly tested but did not. The intended meaning is that the chemist tested nearly every compound, so \"almost\" should precede \"every compound.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The dean announced that the university would build a new laboratory for chemistry students costing twelve million dollars.",
+    "choices": {
+      "A": "announced that",
+      "B": "would build a new laboratory",
+      "C": "costing twelve million dollars",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The participial phrase \"costing twelve million dollars\" is placed next to \"chemistry students,\" making it seem as if the students cost twelve million dollars. The phrase should be moved next to \"laboratory.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "error_id",
+    "prompt": "The researchers who tested the vaccine frequently reported side effects.",
+    "choices": {
+      "A": "who tested the vaccine",
+      "B": "frequently",
+      "C": "reported side effects",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Frequently\" is a squinting modifier: it could mean the researchers tested the vaccine frequently, or that they frequently reported side effects. Repositioning the adverb eliminates the ambiguity.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "error_id",
+    "prompt": "Students who study diligently improve their scores on standardized tests.",
+    "choices": {
+      "A": "who study",
+      "B": "diligently",
+      "C": "improve their scores",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "In this sentence, \"diligently\" clearly modifies \"study\" because of the clause boundary created by \"improve.\" The adverb is not ambiguous here, and the sentence contains no error.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "error_id",
+    "prompt": "The lab technician performed the calibration procedure careful before recording any measurements.",
+    "choices": {
+      "A": "performed",
+      "B": "careful",
+      "C": "before recording",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The adjective \"careful\" incorrectly modifies the verb \"performed.\" The adverb \"carefully\" is required to describe how the procedure was performed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "error_id",
+    "prompt": "The newly appointed director spoke confident about the department's five-year strategic plan.",
+    "choices": {
+      "A": "newly appointed",
+      "B": "spoke confident",
+      "C": "about the department's",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The adjective \"confident\" incorrectly modifies the verb \"spoke.\" The adverb \"confidently\" is needed to describe the manner of speaking.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Reviewing the experimental data, several anomalies were detected in the control group.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Reviewing the experimental data, the researchers detected several anomalies in the control group.",
+      "C": "Several anomalies, reviewing the experimental data, were detected in the control group.",
+      "D": "Reviewing the experimental data, there were several anomalies detected in the control group."
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase \"Reviewing the experimental data\" requires a human subject who performed the reviewing. Only choice B places \"the researchers\" immediately after the comma, correctly linking the modifier to its logical subject.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Exhausted from the overnight trial, the lab report was submitted two hours past the deadline.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Exhausted from the overnight trial, the graduate student submitted the lab report two hours past the deadline.",
+      "C": "The lab report, exhausted from the overnight trial, was submitted two hours past the deadline.",
+      "D": "Exhausted from the overnight trial and submitted two hours past the deadline, the lab report was completed."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Exhausted from the overnight trial\" describes a person, not a lab report. Choice B correctly places \"the graduate student\" as the subject after the introductory modifier.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Based on preliminary observations, the hypothesis was revised to account for temperature fluctuations.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Based on preliminary observations, the team revised the hypothesis to account for temperature fluctuations.",
+      "C": "The hypothesis, based on preliminary observations, was revised to account for temperature fluctuations.",
+      "D": "Based on preliminary observations, it was decided that the hypothesis needed revision to account for temperature fluctuations."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Based on preliminary observations\" implies that a person performed the analysis. Choice B correctly places \"the team\" as the subject doing the revising. Choice A makes it seem as though the hypothesis itself was based on observations and then revised itself.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The archaeologist discovered a clay vessel buried in the trench that was over two thousand years old.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The archaeologist discovered, buried in the trench, a clay vessel that was over two thousand years old.",
+      "C": "Buried in the trench, the archaeologist discovered a clay vessel that was over two thousand years old.",
+      "D": "The archaeologist discovered a clay vessel that was over two thousand years old buried in the trench."
+    },
+    "correct_answer": "B",
+    "explanation": "In the original, \"that was over two thousand years old\" appears to modify \"the trench\" rather than \"a clay vessel.\" Choice B repositions the phrases so the age modifier clearly refers to the vessel.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The researcher just collected data from three of the twelve survey sites.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher collected data from just three of the twelve survey sites.",
+      "C": "Just the researcher collected data from three of the twelve survey sites.",
+      "D": "The researcher collected just data from three of the twelve survey sites."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Just\" is misplaced before \"collected,\" implying the researcher only recently collected data. The intended meaning is that only three sites were sampled. Moving \"just\" before \"three\" clarifies the scope.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The professor gave a lecture on migration patterns in the auditorium that lasted ninety minutes.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "In the auditorium, the professor gave a ninety-minute lecture on migration patterns.",
+      "C": "The professor gave a lecture on migration patterns that lasted ninety minutes in the auditorium.",
+      "D": "The professor, in the auditorium, gave a lecture that lasted ninety minutes on migration patterns."
+    },
+    "correct_answer": "B",
+    "explanation": "\"That lasted ninety minutes\" appears to modify \"the auditorium\" rather than the lecture. Choice B eliminates the ambiguity by restructuring the sentence so the duration is attached directly to the lecture.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The biologist nearly observed the mating behavior of every species in the reserve.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The biologist observed the mating behavior of nearly every species in the reserve.",
+      "C": "Nearly, the biologist observed the mating behavior of every species in the reserve.",
+      "D": "The biologist observed nearly the mating behavior of every species in the reserve."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Nearly\" before \"observed\" suggests the biologist almost observed but did not. The intended meaning is that the biologist observed most species, so \"nearly\" should precede \"every species.\"",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "revision",
+    "prompt": "The students who practice writing regularly score higher on the essay portion of the exam.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The students who regularly practice writing score higher on the essay portion of the exam.",
+      "C": "The students who practice writing score regularly higher on the essay portion of the exam.",
+      "D": "Regularly, the students who practice writing score higher on the essay portion of the exam."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Regularly\" is a squinting modifier that could modify either \"practice writing\" or \"score higher.\" Moving \"regularly\" before \"practice\" eliminates the ambiguity and clearly indicates the frequency of practice.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "revision",
+    "prompt": "The new policy was implemented quick, and staff members had to adapt without additional training.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The new policy was implemented quickly, and staff members had to adapt without additional training.",
+      "C": "The new policy was implemented in a quick manner, and staff members had to adapt without additional training.",
+      "D": "The new, quick policy was implemented, and staff members had to adapt without additional training."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Quick\" is an adjective and cannot modify the verb \"was implemented.\" The adverb \"quickly\" is needed to describe how the policy was implemented.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "To ensure accurate measurements, the spectrophotometer was calibrated before each trial by the lab technician.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "To ensure accurate measurements, the lab technician calibrated the spectrophotometer before each trial.",
+      "C": "The spectrophotometer, to ensure accurate measurements, was calibrated before each trial.",
+      "D": "To ensure accurate measurements, calibration of the spectrophotometer was completed before each trial."
+    },
+    "correct_answer": "B",
+    "explanation": "The infinitive phrase \"To ensure accurate measurements\" implies a deliberate actor. The subject after the comma should be the person ensuring accuracy. Only choice B places \"the lab technician\" as the subject.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"Concerned about declining enrollment, ____\"",
+    "choices": {
+      "A": "a new marketing strategy was developed by the admissions office.",
+      "B": "the admissions office developed a new marketing strategy.",
+      "C": "there was a new marketing strategy developed by the admissions office.",
+      "D": "a new marketing strategy, developed by the admissions office, was put in place."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Concerned about declining enrollment\" is a participial phrase that must be followed by the subject experiencing the concern. Only \"the admissions office\" in choice B logically serves as that subject.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"After conducting a thorough peer review, ____\"",
+    "choices": {
+      "A": "the manuscript was returned to the author with detailed comments.",
+      "B": "detailed comments were added to the manuscript by the editorial board.",
+      "C": "the editorial board returned the manuscript to the author with detailed comments.",
+      "D": "there were detailed comments added to the manuscript."
+    },
+    "correct_answer": "C",
+    "explanation": "The introductory phrase \"After conducting a thorough peer review\" requires a subject who performed the review. Only choice C places \"the editorial board\" as the subject immediately after the comma.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision best eliminates the misplaced modifier? Original: \"The intern submitted a report to the supervisor that contained several calculation errors.\"",
+    "choices": {
+      "A": "The intern submitted a report that contained several calculation errors to the supervisor.",
+      "B": "The intern submitted to the supervisor a report that contained several calculation errors.",
+      "C": "Containing several calculation errors, the intern submitted a report to the supervisor.",
+      "D": "The intern, who contained several calculation errors, submitted a report to the supervisor."
+    },
+    "correct_answer": "A",
+    "explanation": "In the original, \"that contained several calculation errors\" appears to modify \"the supervisor.\" Choice A places the relative clause directly after \"report,\" clearly identifying what contained the errors.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the ambiguity in the following sentence? \"The professor told the students after the lecture the exam would be postponed.\"",
+    "choices": {
+      "A": "The professor told the students the exam after the lecture would be postponed.",
+      "B": "After the lecture, the professor told the students the exam would be postponed.",
+      "C": "The professor told, after the lecture, the students the exam would be postponed.",
+      "D": "The professor told the students the exam would be after the lecture postponed."
+    },
+    "correct_answer": "B",
+    "explanation": "\"After the lecture\" is a squinting modifier that could modify either \"told\" or \"would be postponed.\" Choice B moves the phrase to the beginning, making it clear that the telling happened after the lecture.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "best_choice",
+    "prompt": "Which choice correctly completes the sentence? \"The peer reviewers examined the methodology ____ before approving the study for publication.\"",
+    "choices": {
+      "A": "thorough",
+      "B": "thoroughly",
+      "C": "more thorough",
+      "D": "most thorough"
+    },
+    "correct_answer": "B",
+    "explanation": "An adverb is needed to modify the verb \"examined.\" \"Thoroughly\" is the correct adverb form; \"thorough\" and its comparative/superlative forms are adjectives and cannot modify a verb.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "best_choice",
+    "prompt": "Which choice correctly completes the sentence? \"The results of the replication study appeared ____ to those of the original experiment.\"",
+    "choices": {
+      "A": "similarly",
+      "B": "similar",
+      "C": "more similarly",
+      "D": "similarity"
+    },
+    "correct_answer": "B",
+    "explanation": "After the linking verb \"appeared,\" a predicate adjective is required, not an adverb. \"Similar\" correctly describes the subject \"results.\" \"Similarly\" would incorrectly modify the verb rather than the subject.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the ambiguity in the following sentence? \"The technicians who calibrated the instruments periodically submitted maintenance logs.\"",
+    "choices": {
+      "A": "The technicians who periodically calibrated the instruments submitted maintenance logs.",
+      "B": "The technicians who calibrated the instruments submitted periodically maintenance logs.",
+      "C": "Periodically, the technicians who calibrated the instruments submitted maintenance logs.",
+      "D": "Both A and C eliminate the ambiguity, but A clarifies that calibration was periodic."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Periodically\" sits between \"instruments\" and \"submitted,\" making it unclear whether calibration or submission was periodic. Choice A moves \"periodically\" before \"calibrated,\" clearly indicating that the calibration happened at regular intervals.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"Frustrated by the inconsistent results, ____\"",
+    "choices": {
+      "A": "the experiment was redesigned to include a larger control group.",
+      "B": "a larger control group was added to the experiment.",
+      "C": "the lead scientist redesigned the experiment to include a larger control group.",
+      "D": "redesigning the experiment included a larger control group."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Frustrated by the inconsistent results\" is a participial phrase that must modify a person capable of feeling frustration. Only choice C places \"the lead scientist\" as the subject after the comma.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly fixes the misplaced modifier? Original: \"The committee nearly approved funding for all fifteen proposed research projects at yesterday's meeting.\"",
+    "choices": {
+      "A": "The committee approved funding for nearly all fifteen proposed research projects at yesterday's meeting.",
+      "B": "Nearly, the committee approved funding for all fifteen proposed research projects at yesterday's meeting.",
+      "C": "The committee approved nearly funding for all fifteen proposed research projects at yesterday's meeting.",
+      "D": "The original sentence is correct and requires no revision."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Nearly\" before \"approved\" implies the committee almost approved but ultimately did not. The intended meaning is that funding was approved for most of the fifteen projects, so \"nearly\" should precede \"all fifteen.\" Choice A correctly repositions the adverb.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The research team focused on collecting survey data, coding transcripts, and to develop a theoretical framework.",
+    "choices": {
+      "A": "collecting survey data",
+      "B": "coding transcripts",
+      "C": "to develop a theoretical framework",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Items in a series must share the same grammatical form. The first two items are gerunds ('collecting,' 'coding'), so the third must also be a gerund: 'developing a theoretical framework.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The laboratory protocol requires sterilizing equipment, accurate measurements, and labeling all samples.",
+    "choices": {
+      "A": "sterilizing equipment",
+      "B": "accurate measurements",
+      "C": "labeling all samples",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The first and third items are gerund phrases ('sterilizing,' 'labeling'), but the second item is a noun phrase ('accurate measurements'). It should be 'measuring accurately' or similar gerund form to maintain parallelism.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "error_id",
+    "prompt": "The dissertation committee praised the candidate's thorough literature review, her innovative methodology, and presenting data with clarity.",
+    "choices": {
+      "A": "thorough literature review",
+      "B": "her innovative methodology",
+      "C": "presenting data with clarity",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items are noun phrases ('thorough literature review,' 'innovative methodology'), so the third item should also be a noun phrase, such as 'her clear data presentation,' rather than a gerund phrase.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The professor neither approved the revised thesis statement nor the updated bibliography.",
+    "choices": {
+      "A": "neither approved the revised thesis statement",
+      "B": "nor the updated bibliography",
+      "C": "revised thesis statement",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'neither...nor,' the grammatical structure after each word must match. After 'neither' comes a verb phrase ('approved the revised thesis statement'), so after 'nor' there must also be a verb phrase: 'nor approved the updated bibliography.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The grant proposal was both praised for its originality and because it addressed an underserved population.",
+    "choices": {
+      "A": "was both praised",
+      "B": "for its originality",
+      "C": "because it addressed an underserved population",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'both...and,' the structures must match. After 'both' comes a past participle phrase ('praised for its originality'), so after 'and' there must also be a past participle phrase, such as 'valued for addressing an underserved population,' not an adverbial clause beginning with 'because.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "The dean stated that students must either complete the capstone project or an internship of equivalent rigor.",
+    "choices": {
+      "A": "stated that students must",
+      "B": "either complete the capstone project",
+      "C": "or an internship of equivalent rigor",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structure after each word must match. After 'either' comes a verb phrase ('complete the capstone project'), so after 'or' there must also be a verb phrase: 'or complete an internship of equivalent rigor.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "error_id",
+    "prompt": "The researchers found that the new drug was more effective at reducing inflammation than lowering cholesterol.",
+    "choices": {
+      "A": "The researchers found",
+      "B": "more effective at reducing inflammation",
+      "C": "than lowering cholesterol",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "In comparative constructions, both sides must be grammatically parallel. The preposition 'at' should be repeated: 'more effective at reducing inflammation than at lowering cholesterol.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "error_id",
+    "prompt": "The provost argued that investing in faculty development is more beneficial than to increase administrative staffing.",
+    "choices": {
+      "A": "The provost argued",
+      "B": "investing in faculty development",
+      "C": "more beneficial",
+      "D": "to increase administrative staffing"
+    },
+    "correct_answer": "D",
+    "explanation": "In a 'more X than Y' comparison, X and Y must be grammatically parallel. The first element is a gerund ('investing'), so the second must also be a gerund: 'increasing administrative staffing.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "error_id",
+    "prompt": "The keynote speaker not only discussed emerging trends in artificial intelligence but also a pioneer in quantum computing.",
+    "choices": {
+      "A": "not only discussed",
+      "B": "emerging trends in artificial intelligence",
+      "C": "but also a pioneer in quantum computing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "After 'not only' comes a verb phrase ('discussed emerging trends'), so after 'but also' there must also be a verb phrase, not a noun phrase. A correct version: 'but also explored breakthroughs in quantum computing.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "error_id",
+    "prompt": "The fellowship program is designed not only for training researchers but also the goal of building institutional capacity.",
+    "choices": {
+      "A": "is designed",
+      "B": "not only for training researchers",
+      "C": "but also the goal of building institutional capacity",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "After 'not only' comes a prepositional phrase ('for training researchers'), so after 'but also' there must be a matching prepositional phrase: 'but also for building institutional capacity.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The study required participants to read a passage, answering comprehension questions, and to write a summary.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "to read a passage, to answer comprehension questions, and to write a summary",
+      "C": "to read a passage, answering comprehension questions, and writing a summary",
+      "D": "reading a passage, to answer comprehension questions, and to write a summary"
+    },
+    "correct_answer": "B",
+    "explanation": "All three items in the list must share the same grammatical form. Choice B uses a consistent infinitive pattern ('to read,' 'to answer,' 'to write'), maintaining proper parallelism.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The museum curator was responsible for cataloging new acquisitions, the restoration of damaged artifacts, and training junior staff.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "cataloging new acquisitions, restoring damaged artifacts, and training junior staff",
+      "C": "cataloging new acquisitions, the restoration of damaged artifacts, and to train junior staff",
+      "D": "to catalog new acquisitions, the restoration of damaged artifacts, and training junior staff"
+    },
+    "correct_answer": "B",
+    "explanation": "All items in a series must share the same grammatical form. Choice B uses three gerund phrases ('cataloging,' 'restoring,' 'training'), creating proper parallelism.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The professor expects students to attend all lectures, that they will complete weekly problem sets, and to participate in lab sessions.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "to attend all lectures, to complete weekly problem sets, and to participate in lab sessions",
+      "C": "attending all lectures, that they will complete weekly problem sets, and participating in lab sessions",
+      "D": "that students attend all lectures, to complete weekly problem sets, and they should participate in lab sessions"
+    },
+    "correct_answer": "B",
+    "explanation": "The items must share the same grammatical form. Choice B uses three parallel infinitive phrases ('to attend,' 'to complete,' 'to participate'), fixing the inconsistency.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The committee determined that the candidate was neither qualified for the tenure-track position nor was she suitable for the adjunct role.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "was neither qualified for the tenure-track position nor suitable for the adjunct role",
+      "C": "neither was qualified for the tenure-track position nor suitable for the adjunct role",
+      "D": "was qualified neither for the tenure-track position nor was she suitable for the adjunct role"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'neither...nor,' the structure after each word must match. Choice B places 'neither' and 'nor' before parallel adjective phrases ('qualified for...' and 'suitable for...'), creating proper parallelism.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The scholarship is available both to domestic applicants and international students may apply.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "both to domestic applicants and to international students",
+      "C": "both to domestic applicants and international students may apply as well",
+      "D": "to both domestic applicants and also international students"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match. Choice B places parallel prepositional phrases after each element ('to domestic applicants' and 'to international students').",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "revision",
+    "prompt": "The department will either hire two additional lecturers or the existing faculty will need to increase their course loads.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "will either hire two additional lecturers or require existing faculty to increase their course loads",
+      "C": "either will hire two additional lecturers or the existing faculty will need to increase their course loads",
+      "D": "either hire two additional lecturers or will require existing faculty increasing their course loads"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'either...or,' the structures after each word must match. Choice B places 'either' and 'or' before parallel verb phrases ('hire two additional lecturers' and 'require existing faculty to increase their course loads').",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The longitudinal study was more useful for predicting behavioral trends than to identify genetic markers.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more useful for predicting behavioral trends than for identifying genetic markers",
+      "C": "more useful for predicting behavioral trends than it identified genetic markers",
+      "D": "more useful to predict behavioral trends than for identifying genetic markers"
+    },
+    "correct_answer": "B",
+    "explanation": "In a comparative construction, both sides must match grammatically. Choice B repeats the preposition 'for' with matching gerund phrases ('for predicting' and 'for identifying'), creating proper parallelism.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The reviewers considered the second manuscript to be more clearly argued than the organization of the first.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more clearly argued than the first manuscript",
+      "C": "more clearly argued than how the first was organized",
+      "D": "more clear in its argument than the first was organized"
+    },
+    "correct_answer": "B",
+    "explanation": "A comparison must compare equivalent things. The sentence compares a manuscript's argumentation to 'the organization,' which is not parallel. Choice B correctly compares one manuscript to another manuscript.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "The new policy not only reduced administrative overhead but also employee satisfaction was improved.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only reduced administrative overhead but also improved employee satisfaction",
+      "C": "not only reducing administrative overhead but also employee satisfaction improved",
+      "D": "not only reduced administrative overhead, and also improved employee satisfaction"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' the structures must match. Choice B places parallel verb phrases after each element ('reduced administrative overhead' and 'improved employee satisfaction').",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "The clinical trial not only confirmed the drug's efficacy but also that its side effects were minimal was demonstrated.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only confirmed the drug's efficacy but also demonstrated that its side effects were minimal",
+      "C": "not only confirmed the drug's efficacy but also its side effects that were minimal",
+      "D": "not only was confirming the drug's efficacy but also demonstrated its minimal side effects"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' parallel verb phrases must follow each element. Choice B pairs 'confirmed the drug's efficacy' with 'demonstrated that its side effects were minimal,' maintaining parallel verb-phrase structure.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence with proper parallel structure? \"The grant requires recipients to publish their findings, ____, and to present at a national conference.\"",
+    "choices": {
+      "A": "sharing data with collaborators",
+      "B": "to share data with collaborators",
+      "C": "that they share data with collaborators",
+      "D": "data should be shared with collaborators"
+    },
+    "correct_answer": "B",
+    "explanation": "The other items in the series use infinitive phrases ('to publish,' 'to present'), so the missing item must also be an infinitive: 'to share data with collaborators.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice maintains parallel structure? \"The laboratory technician is responsible for calibrating instruments, preparing samples, and ____.\"",
+    "choices": {
+      "A": "to record experimental results",
+      "B": "the recording of experimental results",
+      "C": "recording experimental results",
+      "D": "she records experimental results"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items are gerund phrases ('calibrating,' 'preparing'), so the third must also be a gerund phrase: 'recording experimental results.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The research indicates that bilingual education both improves cognitive flexibility and ____.\"",
+    "choices": {
+      "A": "academic performance is enhanced",
+      "B": "enhances academic performance",
+      "C": "the enhancement of academic performance",
+      "D": "to enhance academic performance"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match. After 'both' comes a verb phrase ('improves cognitive flexibility'), so after 'and' there must also be a verb phrase: 'enhances academic performance.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The university will either increase funding for graduate research or ____.\"",
+    "choices": {
+      "A": "the number of teaching assistantships should be reduced",
+      "B": "it will be reducing the number of teaching assistantships",
+      "C": "reduce the number of teaching assistantships",
+      "D": "a reduction in the number of teaching assistantships"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structures must match. After 'either' comes a base verb phrase ('increase funding'), so after 'or' there must also be a base verb phrase: 'reduce the number of teaching assistantships.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The panel found the qualitative approach more revealing in capturing participant experiences than ____.\"",
+    "choices": {
+      "A": "the quantitative method measured outcomes",
+      "B": "to measure outcomes quantitatively",
+      "C": "in measuring outcomes quantitatively",
+      "D": "when outcomes are measured quantitatively"
+    },
+    "correct_answer": "C",
+    "explanation": "In a comparative construction, the preposition 'in' must be repeated for clarity and parallelism: 'more revealing in capturing...than in measuring...' Both sides use 'in' plus a gerund phrase.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best maintains parallel structure? \"Peer tutoring has proven more effective at building student confidence than ____.\"",
+    "choices": {
+      "A": "to improve test scores",
+      "B": "at improving test scores",
+      "C": "improved test scores",
+      "D": "when test scores are improved"
+    },
+    "correct_answer": "B",
+    "explanation": "The first part of the comparison uses 'at' plus a gerund ('at building'), so the second part must mirror that structure: 'at improving test scores.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence? \"The revised curriculum was designed not only to deepen subject knowledge but also ____.\"",
+    "choices": {
+      "A": "critical thinking skills were fostered",
+      "B": "fostering critical thinking skills",
+      "C": "to foster critical thinking skills",
+      "D": "for the fostering of critical thinking skills"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'not only...but also,' the structures must match. After 'not only' comes an infinitive phrase ('to deepen subject knowledge'), so after 'but also' there must also be an infinitive: 'to foster critical thinking skills.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Parallelism",
+    "card_type": "revision",
+    "prompt": "The editorial board values concise prose, logical organization, and that sources are cited accurately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "concise prose, logical organization, and accurate citation of sources",
+      "C": "concise prose, logical organization, and to cite sources accurately",
+      "D": "writing concisely, logical organization, and that sources are cited accurately"
+    },
+    "correct_answer": "B",
+    "explanation": "The first two items are noun phrases ('concise prose,' 'logical organization'), so the third must also be a noun phrase. Choice B uses the parallel noun phrase 'accurate citation of sources.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "The graduate students found collaborative projects more rewarding for developing professional networks than gaining subject expertise.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "more rewarding for developing professional networks than for gaining subject expertise",
+      "C": "more rewarding to develop professional networks than gaining subject expertise",
+      "D": "more rewarding for developing professional networks than to gain subject expertise"
+    },
+    "correct_answer": "B",
+    "explanation": "In a 'more X for Y than for Z' comparison, the preposition 'for' must be repeated to maintain parallelism. Choice B correctly pairs 'for developing' with 'for gaining.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The professor noted that the affect of prolonged screen exposure on adolescent sleep patterns warrants further investigation.",
+    "choices": {
+      "A": "noted that",
+      "B": "affect",
+      "C": "prolonged screen exposure",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The noun form meaning 'result' or 'impact' is 'effect.' 'Affect' is typically a verb meaning 'to influence.' The sentence requires 'effect' because it functions as the subject of 'warrants.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The archaeological site was more significant then the team had originally anticipated based on initial surveys.",
+    "choices": {
+      "A": "archaeological site",
+      "B": "more significant",
+      "C": "then",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Than' is the correct word for comparisons. 'Then' indicates time or sequence. Because 'more significant' sets up a comparison, 'than' is required.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The principle investigator recommended expanding the longitudinal study to include a broader demographic sample.",
+    "choices": {
+      "A": "principle",
+      "B": "recommended expanding",
+      "C": "longitudinal study",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Principal' means 'chief' or 'primary' and is the correct adjective to describe the lead investigator. 'Principle' is a noun meaning a fundamental rule or belief. The sentence requires 'principal' as an adjective modifying 'investigator.'",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "The researchers failed to sight the original study in their literature review, which weakened the credibility of their argument.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researchers failed to cite the original study in their literature review, which weakened the credibility of their argument.",
+      "C": "The researchers failed to site the original study in their literature review, which weakened the credibility of their argument.",
+      "D": "The researchers failed to sight the original study in their literature review; which weakened the credibility of their argument."
+    },
+    "correct_answer": "B",
+    "explanation": "'Cite' means to reference a source. 'Sight' relates to vision, and 'site' refers to a location. In an academic context describing a literature review, 'cite' is the correct word.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "Excess to the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Access to the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations.",
+      "C": "Excess to the university's rare manuscript collection is granted only to doctoral candidates, who have completed their qualifying examinations.",
+      "D": "Excess into the university's rare manuscript collection is granted only to doctoral candidates who have completed their qualifying examinations."
+    },
+    "correct_answer": "B",
+    "explanation": "'Access' means the ability to enter or use something. 'Excess' means an overabundance or surplus. The sentence describes permission to use a collection, so 'access' is correct.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "best_choice",
+    "prompt": "Which word correctly completes the sentence? \"The undercover investigation was designed to ______ confessions from suspected members of the smuggling ring.\"",
+    "choices": {
+      "A": "illicit",
+      "B": "elicit",
+      "C": "solicit",
+      "D": "explicit"
+    },
+    "correct_answer": "B",
+    "explanation": "'Elicit' means to draw out or evoke a response. 'Illicit' means illegal or forbidden. The sentence describes drawing out confessions, making 'elicit' the correct choice. While 'solicit' can mean to seek, 'elicit' more precisely captures the idea of extracting responses.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "The board adopted the resolution based on the principal that all stakeholders deserve equitable representation.",
+    "choices": {
+      "A": "adopted the resolution",
+      "B": "principal",
+      "C": "stakeholders deserve",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Principle' is a noun meaning a fundamental belief or rule. 'Principal' means 'chief' or refers to a person in authority. The sentence describes a guiding belief, so 'principle' is required.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "The clinical trials demonstrated that the new compound is capable to reducing inflammation without significant side effects.",
+    "choices": {
+      "A": "clinical trials demonstrated",
+      "B": "capable to",
+      "C": "reducing inflammation",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'capable of,' not 'capable to.' The correct phrasing is 'capable of reducing.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "Federal regulations prohibit pharmaceutical companies to market unapproved treatments directly to consumers.",
+    "choices": {
+      "A": "Federal regulations",
+      "B": "prohibit pharmaceutical companies to market",
+      "C": "unapproved treatments",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'prohibit from marketing,' not 'prohibit to market.' 'Prohibit' requires the preposition 'from' followed by a gerund.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "The researcher's findings were consistent of the predictions outlined in the original hypothesis.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher's findings were consistent with the predictions outlined in the original hypothesis.",
+      "C": "The researcher's findings were consistent to the predictions outlined in the original hypothesis.",
+      "D": "The researcher's findings were consistent for the predictions outlined in the original hypothesis."
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'consistent with,' meaning in agreement or harmony with something. 'Consistent of,' 'consistent to,' and 'consistent for' are all nonstandard.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "Several environmental groups advocate against stricter emissions standards for industrial facilities.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Several environmental groups advocate for stricter emissions standards for industrial facilities.",
+      "C": "Several environmental groups advocate to stricter emissions standards for industrial facilities.",
+      "D": "Several environmental groups advocate about stricter emissions standards for industrial facilities."
+    },
+    "correct_answer": "B",
+    "explanation": "'Advocate for' means to publicly support or recommend something. 'Advocate against' means to oppose, which contradicts the context of environmental groups wanting stricter standards. The correct idiom in this supportive context is 'advocate for.'",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Which preposition correctly completes the sentence? \"The ethnographic study provided valuable insight ______ the daily lives of migrant agricultural workers.\"",
+    "choices": {
+      "A": "about",
+      "B": "to",
+      "C": "into",
+      "D": "on"
+    },
+    "correct_answer": "C",
+    "explanation": "The standard idiom is 'insight into,' meaning a deep understanding of something. While 'insight about' and 'insight on' are sometimes used informally, 'insight into' is the established academic idiom.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "The graduate seminar focused at the intersection of computational linguistics and cognitive psychology.",
+    "choices": {
+      "A": "graduate seminar",
+      "B": "focused at",
+      "C": "intersection of",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'focused on,' not 'focused at.' The correct phrasing is 'focused on the intersection.'",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Which preposition correctly completes the sentence? \"The new data is not consistent ______ the model's earlier predictions about population growth.\"",
+    "choices": {
+      "A": "to",
+      "B": "of",
+      "C": "for",
+      "D": "with"
+    },
+    "correct_answer": "D",
+    "explanation": "The standard idiom is 'consistent with,' meaning in agreement with. 'Consistent to,' 'consistent of,' and 'consistent for' are all nonstandard forms.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "best_choice",
+    "prompt": "Which revision best maintains a formal academic tone? \"The researchers were bummed out when the initial trial results contradicted their hypothesis.\"",
+    "choices": {
+      "A": "The researchers were bummed out when the initial trial results contradicted their hypothesis.",
+      "B": "The researchers were really upset when the initial trial results contradicted their hypothesis.",
+      "C": "The researchers were disappointed when the initial trial results contradicted their hypothesis.",
+      "D": "The researchers were super frustrated when the initial trial results contradicted their hypothesis."
+    },
+    "correct_answer": "C",
+    "explanation": "'Disappointed' maintains a formal academic register. 'Bummed out,' 'really upset,' and 'super frustrated' are colloquial or informal expressions inappropriate for academic writing.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "The sampling methodology was kind of flawed, which basically made the entire dataset unreliable for peer-reviewed publication.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The sampling methodology was fundamentally flawed, which rendered the entire dataset unreliable for peer-reviewed publication.",
+      "C": "The sampling methodology was sort of flawed, which pretty much made the entire dataset unreliable for peer-reviewed publication.",
+      "D": "The sampling methodology was kind of flawed, which essentially made the entire dataset unreliable for peer-reviewed publication."
+    },
+    "correct_answer": "B",
+    "explanation": "'Fundamentally flawed' and 'rendered' are precise, formal alternatives to the colloquial hedges 'kind of' and 'basically.' Academic writing should avoid vague qualifiers and use exact language.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "The longitudinal study totally proved that early intervention programs pay off in terms of graduation rates.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The longitudinal study conclusively demonstrated that early intervention programs improve graduation rates.",
+      "C": "The longitudinal study totally showed that early intervention programs are worth it when it comes to graduation rates.",
+      "D": "The longitudinal study kind of proved that early intervention programs help out with graduation rates."
+    },
+    "correct_answer": "B",
+    "explanation": "'Conclusively demonstrated' replaces the informal intensifier 'totally proved,' and 'improve graduation rates' replaces the colloquial 'pay off in terms of.' Academic writing requires precise, formal diction.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "best_choice",
+    "prompt": "Which word best replaces the underlined portion to maintain a formal academic tone? \"The committee's decision to cut funding was a huge mistake that set back the research program.\"",
+    "choices": {
+      "A": "a huge mistake that set back",
+      "B": "a grave miscalculation that impeded",
+      "C": "a really bad call that messed up",
+      "D": "a terrible blunder that hurt"
+    },
+    "correct_answer": "B",
+    "explanation": "'A grave miscalculation that impeded' uses precise, formal vocabulary appropriate for academic discourse. The other options contain colloquial language ('huge mistake,' 'bad call,' 'messed up,' 'terrible blunder') that is too informal for scholarly writing.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "error_id",
+    "prompt": "The researchers got ahold of previously classified documents that shed light on the government's covert surveillance program.",
+    "choices": {
+      "A": "got ahold of",
+      "B": "previously classified documents",
+      "C": "shed light on",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Got ahold of' is colloquial and inappropriate for academic writing. A formal alternative would be 'obtained' or 'acquired.' The phrase 'shed light on' is an accepted idiom in academic prose.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "A lot of scholars have pushed back against the claim that standardized testing is a reliable predictor of college success.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Numerous scholars have challenged the claim that standardized testing is a reliable predictor of college success.",
+      "C": "A lot of scholars have fought the claim that standardized testing is a reliable predictor of college success.",
+      "D": "Tons of scholars have pushed back against the claim that standardized testing is a reliable predictor of college success."
+    },
+    "correct_answer": "B",
+    "explanation": "'Numerous' is a formal quantifier replacing the informal 'a lot of,' and 'challenged' is a more precise and academic verb than 'pushed back against.' Academic writing demands formal diction throughout.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The archaeological team ______ a series of clay tablets inscribed with cuneiform text beneath the temple floor.\"",
+    "choices": {
+      "A": "found",
+      "B": "unearthed",
+      "C": "got",
+      "D": "saw"
+    },
+    "correct_answer": "B",
+    "explanation": "'Unearthed' is the most precise word because it specifically means to dig up something buried, which matches the archaeological context of discovering artifacts beneath a floor. 'Found' is too general, 'got' is informal, and 'saw' does not convey discovery.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The new environmental policy ______ industrial waste discharge into the river by more than sixty percent.\"",
+    "choices": {
+      "A": "changed",
+      "B": "helped",
+      "C": "curtailed",
+      "D": "affected"
+    },
+    "correct_answer": "C",
+    "explanation": "'Curtailed' means to reduce or cut back, which precisely describes a significant decrease in waste discharge. 'Changed' is too vague, 'helped' does not convey reduction, and 'affected' does not specify the direction of impact.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "error_id",
+    "prompt": "The researcher's report used generic language throughout, stating that the intervention helped things get better for participants in the treatment group.",
+    "choices": {
+      "A": "generic language",
+      "B": "stating that",
+      "C": "helped things get better",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Helped things get better' is vague and informal. Academic writing demands precision; a phrase such as 'improved outcomes' or 'enhanced well-being' would convey the meaning more exactly. The imprecise diction undermines the scholarly tone of the report.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "revision",
+    "prompt": "The medication had a really bad thing happen to some patients, causing nausea, dizziness, and elevated blood pressure.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The medication had a negative effect on some patients, causing nausea, dizziness, and elevated blood pressure.",
+      "C": "The medication produced adverse reactions in some patients, including nausea, dizziness, and elevated blood pressure.",
+      "D": "The medication was not good for some patients, causing nausea, dizziness, and elevated blood pressure."
+    },
+    "correct_answer": "C",
+    "explanation": "'Produced adverse reactions' is the most precise and academically appropriate phrasing for describing negative medical outcomes. It uses domain-specific terminology ('adverse reactions') and an accurate verb ('produced'). The other options are either vague or informal.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which phrase most precisely replaces the underlined portion? \"The thing about the new algorithm is that it processes large datasets more quickly than conventional methods.\"",
+    "choices": {
+      "A": "The thing about",
+      "B": "The advantage of",
+      "C": "The stuff about",
+      "D": "What is cool about"
+    },
+    "correct_answer": "B",
+    "explanation": "'The advantage of' precisely identifies the relationship being described. 'The thing about' is vague and informal, 'the stuff about' is equally imprecise, and 'what is cool about' is colloquial.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "The regulatory agency determined that the company's illicit marketing practices had managed to elicit trust from vulnerable consumers.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The regulatory agency determined that the company's elicit marketing practices had managed to illicit trust from vulnerable consumers.",
+      "C": "The regulatory agency determined that the company's illicit marketing practices had managed to illicit trust from vulnerable consumers.",
+      "D": "The regulatory agency determined that the company's elicit marketing practices had managed to elicit trust from vulnerable consumers."
+    },
+    "correct_answer": "A",
+    "explanation": "The sentence is correct as written. 'Illicit' (meaning illegal or forbidden) properly describes the marketing practices, and 'elicit' (meaning to draw out or evoke) properly describes the act of gaining trust. No change is needed.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "revision",
+    "prompt": "The university's honor code prohibits students to submit work that has been previously graded in another course.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The university's honor code prohibits students from submitting work that has been previously graded in another course.",
+      "C": "The university's honor code prohibits students of submitting work that has been previously graded in another course.",
+      "D": "The university's honor code prohibits students for submitting work that has been previously graded in another course."
+    },
+    "correct_answer": "B",
+    "explanation": "The standard idiom is 'prohibit from' followed by a gerund. 'Prohibit to submit,' 'prohibit of submitting,' and 'prohibit for submitting' are all nonstandard constructions.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which word most precisely completes the sentence? \"The editorial board voted to ______ the controversial article after discovering significant methodological errors in the study.\"",
+    "choices": {
+      "A": "remove",
+      "B": "retract",
+      "C": "delete",
+      "D": "cancel"
+    },
+    "correct_answer": "B",
+    "explanation": "'Retract' is the precise academic and publishing term for formally withdrawing a published article due to errors or misconduct. 'Remove,' 'delete,' and 'cancel' do not carry the specific scholarly connotation of a formal retraction.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "error_id",
+    "prompt": "The meta-analysis synthesized findings from forty-seven peer-reviewed studies and pretty much confirmed that cognitive behavioral therapy is effective for treating anxiety disorders.",
+    "choices": {
+      "A": "synthesized findings",
+      "B": "peer-reviewed studies",
+      "C": "pretty much confirmed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "'Pretty much confirmed' is colloquial and imprecise for academic writing. A formal alternative would be 'largely confirmed' or 'substantially confirmed.' Academic prose requires exact, formal language rather than casual hedges.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The researchers returned back to the laboratory to replicate the initial findings.",
+    "choices": {
+      "A": "returned back",
+      "B": "to the laboratory",
+      "C": "to replicate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Returned\" already means to go back, so \"back\" is redundant. The concise phrasing is \"returned to the laboratory.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "Each and every participant in the clinical trial must submit written consent prior to enrollment.",
+    "choices": {
+      "A": "Each and every participant",
+      "B": "in the clinical trial",
+      "C": "written consent",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Each and every\" is a redundant expression. Either \"each\" or \"every\" alone conveys the same meaning more concisely.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The advance planning committee scheduled the symposium for early March to accommodate visiting scholars.",
+    "choices": {
+      "A": "advance planning",
+      "B": "scheduled the symposium",
+      "C": "to accommodate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Planning\" inherently involves looking ahead, so \"advance\" is redundant. \"Planning committee\" is sufficient.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The study's end result confirmed that biodiversity loss accelerates in regions with high deforestation rates.",
+    "choices": {
+      "A": "end result",
+      "B": "confirmed that",
+      "C": "accelerates in regions",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A \"result\" is already something reached at the end, making \"end\" redundant. \"Result\" alone is concise and clear.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "error_id",
+    "prompt": "The two laboratory teams merged together to form a single interdisciplinary research group.",
+    "choices": {
+      "A": "two laboratory teams",
+      "B": "merged together",
+      "C": "a single interdisciplinary",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Merged\" already means to combine into one, so \"together\" is redundant. The concise phrasing is simply \"merged.\"",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "The professor gave a brief summary of the lecture's key points in a short, concise manner.",
+    "choices": {
+      "A": "brief summary",
+      "B": "lecture's key points",
+      "C": "short, concise manner",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Short\" and \"concise\" mean essentially the same thing, creating a pleonasm. Either word alone would suffice.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "The autobiography of her life details her transition from practicing clinician to full-time researcher.",
+    "choices": {
+      "A": "autobiography of her life",
+      "B": "details her transition",
+      "C": "from practicing clinician",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "An autobiography is by definition the story of one's own life. \"Of her life\" is a pleonasm. \"Her autobiography\" is sufficient.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "error_id",
+    "prompt": "There are several scholars who believe that the methodology is fundamentally flawed.",
+    "choices": {
+      "A": "There are several scholars who believe",
+      "B": "that the methodology",
+      "C": "is fundamentally flawed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"There are several scholars who believe\" is a wordy construction. A more concise version would be \"Several scholars believe.\" The expletive \"there are\" and the relative clause add unnecessary length.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "error_id",
+    "prompt": "The department chair, despite the fact that funding was available, declined to authorize the new hire.",
+    "choices": {
+      "A": "despite the fact that",
+      "B": "funding was available",
+      "C": "declined to authorize",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Despite the fact that\" is a circumlocution. The concise alternative is \"although\" or \"even though,\" which conveys the same meaning in fewer words.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "error_id",
+    "prompt": "It is essential that researchers are able to access the archived datasets in a timely fashion.",
+    "choices": {
+      "A": "It is essential that",
+      "B": "are able to access",
+      "C": "the archived datasets",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Are able to access\" is wordy. The concise equivalent is \"can access,\" which conveys the same meaning in fewer words.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "Due to the fact that the sample was contaminated, the researchers discarded the entire batch.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Because the sample was contaminated, the researchers discarded the entire batch.",
+      "C": "Owing to the fact that the sample was contaminated, the researchers discarded the entire batch.",
+      "D": "On account of the fact that the sample was contaminated, the researchers discarded the entire batch."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Due to the fact that\" is a circumlocution for \"because.\" Choice B is the most concise and direct option while preserving the original meaning.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The sociologist conducted an investigation into the various factors that play a role in urban poverty.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The sociologist investigated the factors that contribute to urban poverty.",
+      "C": "The sociologist conducted an investigation into the various different factors that play a significant role in urban poverty.",
+      "D": "It was the sociologist who conducted an investigation into those various factors playing a role in urban poverty."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Conducted an investigation into\" is a wordy way of saying \"investigated,\" and \"play a role in\" can be replaced by \"contribute to.\" Choice B is concise without losing meaning.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The researchers collaborated together on a joint project examining antibiotic resistance.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researchers collaborated on a project examining antibiotic resistance.",
+      "C": "The researchers collaborated together in a joint and shared project examining antibiotic resistance.",
+      "D": "Working collaboratively together, the researchers examined antibiotic resistance in a joint project."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Collaborated together\" is redundant because collaboration already implies working together. Additionally, \"joint\" is redundant with \"collaborated.\" Choice B removes both redundancies.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "In the event that the grant application is denied, the principal investigator will seek alternative funding sources.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "If the grant application is denied, the principal investigator will seek alternative funding sources.",
+      "C": "In the event that the grant application happens to be denied, the principal investigator will then seek out alternative funding sources.",
+      "D": "Should it come to pass that the grant application is denied, the principal investigator will seek alternative funding sources."
+    },
+    "correct_answer": "B",
+    "explanation": "\"In the event that\" is a circumlocution for \"if.\" Choice B is direct, concise, and preserves the full meaning of the original sentence.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The data that was collected by the team was analyzed in a manner that was both rigorous and thorough.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The data collected by the team was analyzed rigorously and thoroughly.",
+      "C": "The team analyzed the data rigorously.",
+      "D": "The data that had been collected by the team was then analyzed in a rigorous and thorough manner by them."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C eliminates the passive construction, removes the unnecessary relative clause \"that was collected,\" and recognizes that \"rigorously\" already implies thoroughness. It is the most concise option that preserves the essential meaning.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "revision",
+    "prompt": "The new innovation in gene therapy has the potential to completely transform the entire field of oncology.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The innovation in gene therapy has the potential to transform oncology.",
+      "C": "The new innovation in gene therapy has great potential to completely and totally transform the entire field of oncology.",
+      "D": "The new and novel innovation in the field of gene therapy could potentially transform the entire field of oncology completely."
+    },
+    "correct_answer": "B",
+    "explanation": "\"New innovation\" is pleonastic because innovations are by definition new. \"Completely transform the entire field of\" is wordy when \"transform oncology\" conveys the same idea. Choice B removes all unnecessary words.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "At this point in time, the university is in the process of reviewing its admissions criteria.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "At this juncture, the university is currently in the process of undertaking a review of its admissions criteria.",
+      "C": "The university is currently reviewing its admissions criteria.",
+      "D": "At the present moment, the university is engaged in the process of reviewing its admissions criteria."
+    },
+    "correct_answer": "C",
+    "explanation": "\"At this point in time\" is a wordy substitute for \"currently\" or \"now,\" and \"is in the process of reviewing\" is wordier than \"is reviewing.\" Choice C conveys the same meaning in the fewest words.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "The students were asked to revert back to the original version of the thesis draft.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The students were asked to revert to the original version of the thesis draft.",
+      "C": "The students were asked to go back and revert to the original prior version of the thesis draft.",
+      "D": "The students were asked to revert back once again to the original version of the thesis draft that came first."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Revert\" already means to return to a previous state, so \"back\" is redundant. Choice B removes the redundancy while preserving the sentence's meaning.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "revision",
+    "prompt": "The provost made the decision to postpone the vote for the reason that several committee members were absent.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The provost decided to postpone the vote because several committee members were absent.",
+      "C": "The provost made the decision to postpone the vote due to the fact that several committee members were absent.",
+      "D": "Making the decision, the provost postponed the vote for the reason that several of the committee members were not in attendance."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Made the decision\" is a wordy nominalization of \"decided,\" and \"for the reason that\" is a circumlocution for \"because.\" Choice B uses both concise forms.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The researcher who was conducting the experiment noticed an anomaly that was significant in the data set.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher conducting the experiment noticed a significant anomaly in the data set.",
+      "C": "The researcher who was the one conducting the experiment noticed an anomaly that happened to be significant in the data set.",
+      "D": "While conducting the experiment, the researcher who was involved noticed that there was a significant anomaly present in the data set."
+    },
+    "correct_answer": "B",
+    "explanation": "The relative clauses \"who was conducting\" and \"that was significant\" are unnecessarily wordy. Choice B replaces them with a participial phrase and a simple adjective, achieving concision without changing meaning.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision most concisely expresses the idea? \"The consensus of opinion among the faculty was that the curriculum needed revision.\"",
+    "choices": {
+      "A": "The consensus of opinion among the faculty was that the curriculum needed revision.",
+      "B": "The general consensus of opinion among the faculty members was that the curriculum was in need of revision.",
+      "C": "The faculty consensus was that the curriculum needed revision.",
+      "D": "The consensus of the shared opinion of the faculty was that the curriculum needed to be revised."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Consensus\" already means agreement of opinion, so \"of opinion\" is pleonastic. \"Among the faculty\" can be shortened to \"faculty consensus.\" Choice C removes all unnecessary words.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option is most concise while preserving meaning? \"It is important to note that the experiment yielded inconclusive results.\"",
+    "choices": {
+      "A": "It is important to note that the experiment yielded inconclusive results.",
+      "B": "What is important to note is that the experiment yielded results that were inconclusive.",
+      "C": "Notably, the experiment yielded inconclusive results.",
+      "D": "It should be noted as important that the experiment yielded results that were inconclusive in nature."
+    },
+    "correct_answer": "C",
+    "explanation": "\"It is important to note that\" is a wordy filler phrase. \"Notably\" captures the same emphasis in a single word, making Choice C the most concise option.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "best_choice",
+    "prompt": "Which revision best replaces the underlined portion? \"The committee postponed the hearing _for the purpose of allowing_ additional testimony to be gathered.\"",
+    "choices": {
+      "A": "for the purpose of allowing",
+      "B": "with the intention of allowing for",
+      "C": "to allow",
+      "D": "so as to be able to allow"
+    },
+    "correct_answer": "C",
+    "explanation": "\"For the purpose of allowing\" is a circumlocution. \"To allow\" expresses the same purpose relationship in two words instead of five, making it the most concise and direct choice.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely states the idea? \"The professor asked the students to record and write down their observations during the field study.\"",
+    "choices": {
+      "A": "to record and write down their observations",
+      "B": "to record and write down their observations in written form",
+      "C": "to record their observations",
+      "D": "to record and also write down and document their observations"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Record\" and \"write down\" are synonymous in this context, making one of them redundant. Choice C uses only \"record,\" which is sufficient and concise.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option is the most concise replacement for the underlined phrase? \"The dean _has the ability to_ override the committee's recommendation.\"",
+    "choices": {
+      "A": "has the ability to",
+      "B": "is someone who has the ability to",
+      "C": "can",
+      "D": "is able to potentially"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Has the ability to\" is a wordy way of expressing \"can.\" Choice C replaces five words with one while preserving the meaning completely.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the pleonasm? \"The two candidates held a joint collaboration to develop shared policy proposals.\"",
+    "choices": {
+      "A": "held a joint collaboration to develop shared policy proposals",
+      "B": "held a joint collaboration together to develop shared policy proposals for both of them",
+      "C": "collaborated to develop policy proposals",
+      "D": "held a joint collaborative effort together to develop their shared policy proposals"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Joint collaboration\" is pleonastic because collaboration already implies a joint effort. \"Held a collaboration\" is also a wordy nominalization. Choice C uses the verb \"collaborated\" and removes \"shared,\" which is implied by the collaboration.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Circumlocution",
+    "card_type": "best_choice",
+    "prompt": "Which option best replaces the underlined portion to improve concision? \"The experiment failed _as a consequence of the fact that_ the calibration was incorrect.\"",
+    "choices": {
+      "A": "as a consequence of the fact that",
+      "B": "because",
+      "C": "as a direct result of the circumstances surrounding the fact that",
+      "D": "owing to the reason that"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As a consequence of the fact that\" is a seven-word circumlocution that can be replaced by \"because.\" Choice B is the most direct and concise way to express causation.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely conveys the meaning? \"The study, which was lengthy in duration, examined the effects of prolonged screen exposure on adolescent cognition.\"",
+    "choices": {
+      "A": "The study, which was lengthy in duration,",
+      "B": "The lengthy study",
+      "C": "The study, which was one that was lengthy in its duration,",
+      "D": "The study, being one that was of a lengthy duration,"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Which was lengthy in duration\" is a wordy relative clause. \"Lengthy\" already implies duration, so \"in duration\" is unnecessary. Choice B converts the clause to a simple adjective, achieving maximum concision.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates unnecessary words? \"The professor issued a written memo in writing to all department faculty members.\"",
+    "choices": {
+      "A": "issued a written memo in writing to all department faculty members",
+      "B": "issued a memo to all department faculty members in writing",
+      "C": "issued a memo to department faculty",
+      "D": "issued a written memo that was in writing to the faculty members of the department"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Written memo in writing\" is pleonastic: a memo is by definition written. \"All department faculty members\" can be shortened to \"department faculty\" without losing meaning. Choice C is the most concise.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "The new filtration system removed 99 percent of contaminants from the water supply. However, the department of health certified the tap water as safe for consumption.",
+    "choices": {
+      "A": "removed 99 percent",
+      "B": "However",
+      "C": "certified the tap water",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'However' signals contrast, but the health department's certification logically follows from the filtration system's success — this is a cause-and-effect relationship. A causation transition such as 'Consequently' or 'Therefore' is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "Municipal water usage surged during the drought. Conversely, the city council imposed strict rationing measures.",
+    "choices": {
+      "A": "Municipal water usage",
+      "B": "Conversely",
+      "C": "imposed strict rationing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Conversely' signals a contrast or opposite direction, but the second sentence describes a logical consequence of the water surge (cause leads to effect). A causation transition such as 'Consequently' or 'As a result' is needed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "The study found that regular aerobic exercise lowers blood pressure. Nevertheless, it also reduces the risk of type 2 diabetes.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "that regular aerobic exercise",
+      "C": "it also reduces",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Nevertheless' signals contrast, but the second sentence adds another benefit of exercise — a continuation of the positive findings. A continuation transition such as 'Moreover' or 'Additionally' is needed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "error_id",
+    "prompt": "Urban green spaces provide measurable public health benefits. Therefore, a 2019 study in Copenhagen linked proximity to parks with a 15 percent reduction in stress-related hospital visits.",
+    "choices": {
+      "A": "provide measurable",
+      "B": "Therefore",
+      "C": "linked proximity to parks",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Therefore' signals a conclusion or result, but the second sentence offers a specific example supporting the general claim in the first sentence. An illustration transition such as 'For instance' or 'For example' is needed.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "error_id",
+    "prompt": "Early models of plate tectonics faced widespread skepticism from geologists. Similarly, Alfred Wegener's original continental drift hypothesis was dismissed for lacking a plausible mechanism.",
+    "choices": {
+      "A": "Early models of plate tectonics",
+      "B": "Similarly",
+      "C": "was dismissed for lacking",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "'Similarly' is correct here because both sentences describe parallel instances of geological theories facing skepticism. The second sentence provides a comparable historical case, making the continuation/comparison transition appropriate.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "The clinical trial demonstrated that the new drug reduced symptoms by 30 percent. Moreover, the FDA approved it for widespread distribution.",
+    "choices": {
+      "A": "demonstrated that the new drug",
+      "B": "Moreover",
+      "C": "approved it for widespread",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Moreover' signals addition, but the FDA approval is a direct consequence of the trial's positive results, not merely an additional fact. A causation transition such as 'As a result' or 'Consequently' is needed to reflect the cause-and-effect relationship.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "The museum's new wing features interactive exhibits designed for younger visitors. Accordingly, the renovation includes a sculpture garden that appeals to adult patrons.",
+    "choices": {
+      "A": "Accordingly",
+      "B": "features interactive exhibits",
+      "C": "includes a sculpture garden",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Accordingly' signals a logical consequence, but the second sentence adds a different feature of the renovation aimed at a different audience. This is an addition relationship, not a cause-and-effect one. A continuation transition such as 'Additionally' or 'In addition' is needed.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "error_id",
+    "prompt": "The satellite data indicated a significant decrease in Arctic sea ice over the past decade. As a result, some researchers argue that natural cyclical patterns may account for part of the observed decline.",
+    "choices": {
+      "A": "indicated a significant decrease",
+      "B": "As a result",
+      "C": "natural cyclical patterns",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'As a result' signals that the second sentence is a consequence of the first, but the researchers are offering an alternative explanation that partially contradicts the implied cause. This is a contrast relationship. A transition such as 'However' or 'Nevertheless' is needed.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "error_id",
+    "prompt": "Microplastics have been found in a wide range of ecosystems. On the other hand, samples collected from the Mariana Trench in 2020 contained measurable concentrations of polyethylene fragments.",
+    "choices": {
+      "A": "have been found in",
+      "B": "On the other hand",
+      "C": "contained measurable concentrations",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'On the other hand' signals a contrast, but the second sentence provides a specific example supporting the general claim in the first sentence. An illustration transition such as 'For example' or 'Specifically' is needed.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "error_id",
+    "prompt": "A paragraph about the economic impact of renewable energy subsidies contains the following sentence: 'The curator's decision to reorganize the gallery's permanent collection drew praise from art critics.' Which best describes the problem?",
+    "choices": {
+      "A": "The sentence is too short for the paragraph.",
+      "B": "The sentence introduces an unrelated topic and should be deleted.",
+      "C": "The sentence needs a stronger transition word.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "A sentence about an art gallery curator is entirely unrelated to a paragraph about renewable energy economics. It breaks paragraph unity and should be removed to maintain focus on the stated topic.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "The archaeological team expected to find pottery shards dating to the Bronze Age. In addition, the excavation yielded only artifacts from the medieval period.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The archaeological team expected to find pottery shards dating to the Bronze Age. However, the excavation yielded only artifacts from the medieval period.",
+      "C": "The archaeological team expected to find pottery shards dating to the Bronze Age. For example, the excavation yielded only artifacts from the medieval period.",
+      "D": "The archaeological team expected to find pottery shards dating to the Bronze Age. Therefore, the excavation yielded only artifacts from the medieval period."
+    },
+    "correct_answer": "B",
+    "explanation": "The expectation (Bronze Age pottery) contradicts the result (medieval artifacts only). This is a contrast relationship requiring a transition such as 'However.' 'In addition' incorrectly signals continuation, 'For example' signals illustration, and 'Therefore' signals causation.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "revision",
+    "prompt": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. Nonetheless, industrial workers in high-decibel environments are required to wear hearing protection.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. For this reason, industrial workers in high-decibel environments are required to wear hearing protection.",
+      "C": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. Similarly, industrial workers in high-decibel environments are required to wear hearing protection.",
+      "D": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. For instance, industrial workers in high-decibel environments are required to wear hearing protection."
+    },
+    "correct_answer": "B",
+    "explanation": "The requirement to wear hearing protection is a direct consequence of the fact that high noise damages hearing. This cause-and-effect relationship requires a causation transition such as 'For this reason.' 'Nonetheless' incorrectly signals contrast.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "revision",
+    "prompt": "The grant funded new laboratory equipment for the chemistry department. However, it provided travel stipends for graduate students presenting at national conferences.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The grant funded new laboratory equipment for the chemistry department. Consequently, it provided travel stipends for graduate students presenting at national conferences.",
+      "C": "The grant funded new laboratory equipment for the chemistry department. Additionally, it provided travel stipends for graduate students presenting at national conferences.",
+      "D": "The grant funded new laboratory equipment for the chemistry department. Specifically, it provided travel stipends for graduate students presenting at national conferences."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another benefit the grant provided, which is a continuation/addition relationship. 'Additionally' correctly signals that a new, parallel point is being introduced. 'However' incorrectly signals contrast, and 'Consequently' incorrectly signals causation.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "revision",
+    "prompt": "Invasive species can disrupt native food webs in multiple ways. Consequently, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Invasive species can disrupt native food webs in multiple ways. Nevertheless, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+      "C": "Invasive species can disrupt native food webs in multiple ways. For instance, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+      "D": "Invasive species can disrupt native food webs in multiple ways. Alternatively, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence provides a specific example of the general claim in the first sentence. 'For instance' correctly introduces an illustrative case. 'Consequently' incorrectly implies causation, 'Nevertheless' implies contrast, and 'Alternatively' implies a different option.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "Early astronomers believed the universe was static and unchanging. Likewise, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Early astronomers believed the universe was static and unchanging. In contrast, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+      "C": "Early astronomers believed the universe was static and unchanging. Furthermore, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+      "D": "Early astronomers believed the universe was static and unchanging. As a result, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding."
+    },
+    "correct_answer": "B",
+    "explanation": "The first sentence states an old belief (static universe) while the second sentence presents evidence that directly contradicts it (expanding universe). This contrast requires a transition such as 'In contrast.' 'Likewise' incorrectly signals similarity.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "revision",
+    "prompt": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. On the other hand, the city council voted to close the bridge for emergency repairs.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. For example, the city council voted to close the bridge for emergency repairs.",
+      "C": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. Therefore, the city council voted to close the bridge for emergency repairs.",
+      "D": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. Similarly, the city council voted to close the bridge for emergency repairs."
+    },
+    "correct_answer": "C",
+    "explanation": "The council's decision to close the bridge is a direct consequence of the corrosion discovered. 'Therefore' correctly signals this cause-and-effect relationship. 'On the other hand' incorrectly signals contrast.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "revision",
+    "prompt": "The longitudinal study tracked cardiovascular health markers over fifteen years. As a result, it monitored dietary habits and exercise frequency among the same cohort.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The longitudinal study tracked cardiovascular health markers over fifteen years. However, it monitored dietary habits and exercise frequency among the same cohort.",
+      "C": "The longitudinal study tracked cardiovascular health markers over fifteen years. Moreover, it monitored dietary habits and exercise frequency among the same cohort.",
+      "D": "The longitudinal study tracked cardiovascular health markers over fifteen years. To illustrate, it monitored dietary habits and exercise frequency among the same cohort."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another variable the study monitored, parallel to the first. 'Moreover' correctly signals this addition. 'As a result' incorrectly implies that monitoring diet was a consequence rather than an additional research activity.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "A writer is composing a paragraph about how deforestation accelerates soil erosion. Which sentence, if added, would best maintain the paragraph's focus?\n\n(1) Deforestation removes the root systems that anchor topsoil. (2) ____ (3) Without these natural barriers, heavy rainfall washes away nutrient-rich layers.",
+    "choices": {
+      "A": "Tropical rainforests contain more species of birds than any other biome.",
+      "B": "Tree canopies also intercept rainfall, reducing the force with which water strikes the ground.",
+      "C": "The logging industry employs thousands of workers in rural communities.",
+      "D": "Satellite imagery has become an important tool for tracking land-use changes."
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph's focus is the mechanism by which deforestation causes soil erosion. Choice B directly supports this by explaining another way trees protect soil (intercepting rainfall), logically bridging sentences 1 and 3. The other options introduce unrelated topics.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "The pharmaceutical company's internal trials reported minimal side effects. Specifically, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The pharmaceutical company's internal trials reported minimal side effects. Moreover, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+      "C": "The pharmaceutical company's internal trials reported minimal side effects. However, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+      "D": "The pharmaceutical company's internal trials reported minimal side effects. Subsequently, an independent review found significantly higher rates of adverse reactions among participants over age 60."
+    },
+    "correct_answer": "C",
+    "explanation": "The internal trials (minimal side effects) contradict the independent review (higher adverse reactions). This opposition requires a contrast transition. 'However' correctly signals this contradiction. 'Specifically' incorrectly signals that the second sentence elaborates on the first.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "A student is writing about the decline of pollinator populations. The draft includes this sentence: 'My family keeps a small herb garden on our apartment balcony.' Should the writer keep or delete this sentence?",
+    "choices": {
+      "A": "Keep it, because it provides a personal connection that engages the reader.",
+      "B": "Keep it, because it offers a solution to pollinator decline.",
+      "C": "Delete it, because it introduces a personal anecdote unrelated to the paragraph's analytical focus.",
+      "D": "Delete it, because herb gardens are not interesting to most readers."
+    },
+    "correct_answer": "C",
+    "explanation": "The paragraph analyzes pollinator decline from a scientific perspective. A personal anecdote about an apartment herb garden does not support the analytical argument and breaks the paragraph's unity. It should be deleted for relevance, not because it is uninteresting.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "best_choice",
+    "prompt": "The new curriculum emphasizes critical thinking through case-based analysis. ____, it incorporates peer-review workshops that require students to evaluate one another's reasoning.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "Consequently",
+      "C": "In addition",
+      "D": "On the other hand"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another feature of the curriculum that supports the same educational goal. This is a continuation/addition relationship. 'In addition' correctly signals a new parallel point. 'Nevertheless' and 'On the other hand' incorrectly signal contrast, and 'Consequently' incorrectly signals causation.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "best_choice",
+    "prompt": "The region experienced record-breaking rainfall throughout the spring. ____, several low-lying neighborhoods reported severe flooding for the first time in decades.",
+    "choices": {
+      "A": "Furthermore",
+      "B": "In contrast",
+      "C": "For example",
+      "D": "As a result"
+    },
+    "correct_answer": "D",
+    "explanation": "The flooding is a direct consequence of the record rainfall. 'As a result' correctly signals this cause-and-effect relationship. 'Furthermore' signals addition, 'In contrast' signals opposition, and 'For example' signals illustration — none of which capture the causal logic.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "Laboratory simulations suggested that the polymer would remain stable at temperatures exceeding 300 degrees Celsius. ____, field tests revealed that the material degraded rapidly under prolonged heat exposure.",
+    "choices": {
+      "A": "Moreover",
+      "B": "Accordingly",
+      "C": "Nonetheless",
+      "D": "Specifically"
+    },
+    "correct_answer": "C",
+    "explanation": "The lab prediction (stable at high temperatures) is contradicted by the field test result (rapid degradation). 'Nonetheless' correctly signals that the second sentence presents an unexpected contrast. 'Moreover' signals addition, 'Accordingly' signals consequence, and 'Specifically' signals elaboration.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "best_choice",
+    "prompt": "Ancient civilizations developed sophisticated methods of timekeeping. ____, the Egyptians used obelisks as shadow clocks to divide the day into segments.",
+    "choices": {
+      "A": "However",
+      "B": "Therefore",
+      "C": "For instance",
+      "D": "Still"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence provides a specific example (Egyptian obelisks) of the general claim (ancient civilizations developed timekeeping methods). 'For instance' correctly introduces this illustration. 'However' signals contrast, 'Therefore' signals consequence, and 'Still' signals concession.",
+    "difficulty": 1
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "The city invested heavily in expanding its public transit network during the 2010s. ____, ridership declined steadily as remote work became more prevalent after 2020.",
+    "choices": {
+      "A": "Similarly",
+      "B": "Despite this investment",
+      "C": "In addition",
+      "D": "To illustrate"
+    },
+    "correct_answer": "B",
+    "explanation": "The heavy investment (positive action) is contradicted by declining ridership (negative outcome). 'Despite this investment' correctly signals that the result was contrary to what the investment intended. Note that 'Similarly' and 'In addition' are both continuation transitions — a key SAT/ACT trap when two choices from the same family appear together.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "best_choice",
+    "prompt": "Repeated freezing and thawing cycles cause water trapped in rock fractures to expand and contract. ____, the rock gradually breaks apart in a process geologists call frost wedging.",
+    "choices": {
+      "A": "Regardless",
+      "B": "Hence",
+      "C": "In contrast",
+      "D": "For example"
+    },
+    "correct_answer": "B",
+    "explanation": "The rock breaking apart is the direct result of the freeze-thaw expansion process. 'Hence' correctly signals this causal conclusion. 'Regardless' signals dismissal of a counter-argument, 'In contrast' signals opposition, and 'For example' signals illustration.",
+    "difficulty": 2
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "A paragraph discusses how the construction of the Transcontinental Railroad transformed American commerce. The writer wants to add a sentence. Which choice best maintains the paragraph's focus?",
+    "choices": {
+      "A": "The Golden Spike ceremony at Promontory Summit in 1869 attracted journalists from across the country.",
+      "B": "By reducing cross-country shipping times from months to days, the railroad made previously inaccessible western markets viable for eastern manufacturers.",
+      "C": "Railroad workers often faced dangerous conditions, including avalanches and extreme heat.",
+      "D": "Steam locomotives burn coal at a rate that varies with elevation and load."
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph focuses on how the railroad transformed commerce. Only choice B directly addresses commerce by explaining how reduced shipping times opened new markets. The other options discuss related but off-topic subjects (ceremony, worker conditions, fuel consumption).",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "The conventional model predicts that deep-ocean currents remain relatively constant over short time scales. ____, recent sensor data from the Atlantic reveals unexpected fluctuations occurring within single decades.",
+    "choices": {
+      "A": "Furthermore",
+      "B": "Accordingly",
+      "C": "However",
+      "D": "Indeed"
+    },
+    "correct_answer": "C",
+    "explanation": "The prediction (constant currents) is contradicted by the observation (unexpected fluctuations). 'However' correctly signals this contrast. Note that 'Furthermore' and 'Indeed' are both continuation-family transitions — when two options belong to the same family, both are typically wrong, which is a key SAT/ACT trap pattern.",
+    "difficulty": 3
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "Read the following paragraph and determine where Sentence 5 should be placed for the best logical flow.\n\n(1) The campus library recently adopted an open-access digital repository. (2) Faculty can now upload preprints directly to the platform. (3) The repository also archives dissertations and theses from graduate students. (4) Since its launch, downloads have increased by 200 percent. (5) This system allows researchers worldwide to access the university's scholarship without a subscription.\n\nWhere should Sentence 5 be placed?",
+    "choices": {
+      "A": "Where it is now (after Sentence 4)",
+      "B": "After Sentence 1",
+      "C": "After Sentence 2",
+      "D": "After Sentence 3"
+    },
+    "correct_answer": "B",
+    "explanation": "Sentence 5 explains what the open-access repository does (allows subscription-free access), which logically follows the introduction of the repository in Sentence 1. Placing it after Sentence 1 provides necessary context before the specific details in Sentences 2 and 3, creating a general-to-specific flow.",
+    "difficulty": 3
   }
 ]

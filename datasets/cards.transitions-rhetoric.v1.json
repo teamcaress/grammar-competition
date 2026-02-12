@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "The new filtration system removed 99 percent of contaminants from the water supply. However, the department of health certified the tap water as safe for consumption.",
+    "choices": {
+      "A": "removed 99 percent",
+      "B": "However",
+      "C": "certified the tap water",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'However' signals contrast, but the health department's certification logically follows from the filtration system's success — this is a cause-and-effect relationship. A causation transition such as 'Consequently' or 'Therefore' is needed.",
+    "difficulty": 2,
+    "tags": ["transition", "causation", "contrast_misuse"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_contrast_for_cause_water"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "Municipal water usage surged during the drought. Conversely, the city council imposed strict rationing measures.",
+    "choices": {
+      "A": "Municipal water usage",
+      "B": "Conversely",
+      "C": "imposed strict rationing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Conversely' signals a contrast or opposite direction, but the second sentence describes a logical consequence of the water surge (cause leads to effect). A causation transition such as 'Consequently' or 'As a result' is needed.",
+    "difficulty": 1,
+    "tags": ["transition", "causation", "contrast_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_contrast_for_cause"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "The study found that regular aerobic exercise lowers blood pressure. Nevertheless, it also reduces the risk of type 2 diabetes.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "that regular aerobic exercise",
+      "C": "it also reduces",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Nevertheless' signals contrast, but the second sentence adds another benefit of exercise — a continuation of the positive findings. A continuation transition such as 'Moreover' or 'Additionally' is needed.",
+    "difficulty": 1,
+    "tags": ["transition", "continuation", "contrast_misuse"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_contrast_for_continuation"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "error_id",
+    "prompt": "Urban green spaces provide measurable public health benefits. Therefore, a 2019 study in Copenhagen linked proximity to parks with a 15 percent reduction in stress-related hospital visits.",
+    "choices": {
+      "A": "provide measurable",
+      "B": "Therefore",
+      "C": "linked proximity to parks",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Therefore' signals a conclusion or result, but the second sentence offers a specific example supporting the general claim in the first sentence. An illustration transition such as 'For instance' or 'For example' is needed.",
+    "difficulty": 1,
+    "tags": ["transition", "example", "causation_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_cause_for_example"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "error_id",
+    "prompt": "Early models of plate tectonics faced widespread skepticism from geologists. Similarly, Alfred Wegener's original continental drift hypothesis was dismissed for lacking a plausible mechanism.",
+    "choices": {
+      "A": "Early models of plate tectonics",
+      "B": "Similarly",
+      "C": "was dismissed for lacking",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "'Similarly' is correct here because both sentences describe parallel instances of geological theories facing skepticism. The second sentence provides a comparable historical case, making the continuation/comparison transition appropriate.",
+    "difficulty": 2,
+    "tags": ["transition", "continuation", "no_error"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_similarly_correct"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "error_id",
+    "prompt": "The clinical trial demonstrated that the new drug reduced symptoms by 30 percent. Moreover, the FDA approved it for widespread distribution.",
+    "choices": {
+      "A": "demonstrated that the new drug",
+      "B": "Moreover",
+      "C": "approved it for widespread",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'Moreover' signals addition, but the FDA approval is a direct consequence of the trial's positive results, not merely an additional fact. A causation transition such as 'As a result' or 'Consequently' is needed to reflect the cause-and-effect relationship.",
+    "difficulty": 2,
+    "tags": ["transition", "causation", "addition_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_addition_for_cause"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "The museum's new wing features interactive exhibits designed for younger visitors. Accordingly, the renovation includes a sculpture garden that appeals to adult patrons.",
+    "choices": {
+      "A": "Accordingly",
+      "B": "features interactive exhibits",
+      "C": "includes a sculpture garden",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "'Accordingly' signals a logical consequence, but the second sentence adds a different feature of the renovation aimed at a different audience. This is an addition relationship, not a cause-and-effect one. A continuation transition such as 'Additionally' or 'In addition' is needed.",
+    "difficulty": 2,
+    "tags": ["transition", "continuation", "causation_misuse"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_cause_for_addition"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "error_id",
+    "prompt": "The satellite data indicated a significant decrease in Arctic sea ice over the past decade. As a result, some researchers argue that natural cyclical patterns may account for part of the observed decline.",
+    "choices": {
+      "A": "indicated a significant decrease",
+      "B": "As a result",
+      "C": "natural cyclical patterns",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'As a result' signals that the second sentence is a consequence of the first, but the researchers are offering an alternative explanation that partially contradicts the implied cause. This is a contrast relationship. A transition such as 'However' or 'Nevertheless' is needed.",
+    "difficulty": 3,
+    "tags": ["transition", "contrast", "causation_misuse"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_cause_for_contrast"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "error_id",
+    "prompt": "Microplastics have been found in a wide range of ecosystems. On the other hand, samples collected from the Mariana Trench in 2020 contained measurable concentrations of polyethylene fragments.",
+    "choices": {
+      "A": "have been found in",
+      "B": "On the other hand",
+      "C": "contained measurable concentrations",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'On the other hand' signals a contrast, but the second sentence provides a specific example supporting the general claim in the first sentence. An illustration transition such as 'For example' or 'Specifically' is needed.",
+    "difficulty": 3,
+    "tags": ["transition", "example", "contrast_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_contrast_for_example"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "error_id",
+    "prompt": "A paragraph about the economic impact of renewable energy subsidies contains the following sentence: 'The curator's decision to reorganize the gallery's permanent collection drew praise from art critics.' Which best describes the problem?",
+    "choices": {
+      "A": "The sentence is too short for the paragraph.",
+      "B": "The sentence introduces an unrelated topic and should be deleted.",
+      "C": "The sentence needs a stronger transition word.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "A sentence about an art gallery curator is entirely unrelated to a paragraph about renewable energy economics. It breaks paragraph unity and should be removed to maintain focus on the stated topic.",
+    "difficulty": 1,
+    "tags": ["organization", "unity", "relevance"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_error_irrelevant_sentence"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "The archaeological team expected to find pottery shards dating to the Bronze Age. In addition, the excavation yielded only artifacts from the medieval period.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The archaeological team expected to find pottery shards dating to the Bronze Age. However, the excavation yielded only artifacts from the medieval period.",
+      "C": "The archaeological team expected to find pottery shards dating to the Bronze Age. For example, the excavation yielded only artifacts from the medieval period.",
+      "D": "The archaeological team expected to find pottery shards dating to the Bronze Age. Therefore, the excavation yielded only artifacts from the medieval period."
+    },
+    "correct_answer": "B",
+    "explanation": "The expectation (Bronze Age pottery) contradicts the result (medieval artifacts only). This is a contrast relationship requiring a transition such as 'However.' 'In addition' incorrectly signals continuation, 'For example' signals illustration, and 'Therefore' signals causation.",
+    "difficulty": 2,
+    "tags": ["transition", "contrast", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_contrast_expected"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "revision",
+    "prompt": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. Nonetheless, industrial workers in high-decibel environments are required to wear hearing protection.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. For this reason, industrial workers in high-decibel environments are required to wear hearing protection.",
+      "C": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. Similarly, industrial workers in high-decibel environments are required to wear hearing protection.",
+      "D": "Prolonged exposure to high noise levels damages the hair cells of the inner ear. For instance, industrial workers in high-decibel environments are required to wear hearing protection."
+    },
+    "correct_answer": "B",
+    "explanation": "The requirement to wear hearing protection is a direct consequence of the fact that high noise damages hearing. This cause-and-effect relationship requires a causation transition such as 'For this reason.' 'Nonetheless' incorrectly signals contrast.",
+    "difficulty": 1,
+    "tags": ["transition", "causation", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_cause_hearing"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "revision",
+    "prompt": "The grant funded new laboratory equipment for the chemistry department. However, it provided travel stipends for graduate students presenting at national conferences.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The grant funded new laboratory equipment for the chemistry department. Consequently, it provided travel stipends for graduate students presenting at national conferences.",
+      "C": "The grant funded new laboratory equipment for the chemistry department. Additionally, it provided travel stipends for graduate students presenting at national conferences.",
+      "D": "The grant funded new laboratory equipment for the chemistry department. Specifically, it provided travel stipends for graduate students presenting at national conferences."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another benefit the grant provided, which is a continuation/addition relationship. 'Additionally' correctly signals that a new, parallel point is being introduced. 'However' incorrectly signals contrast, and 'Consequently' incorrectly signals causation.",
+    "difficulty": 1,
+    "tags": ["transition", "continuation", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_addition_grant"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "revision",
+    "prompt": "Invasive species can disrupt native food webs in multiple ways. Consequently, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Invasive species can disrupt native food webs in multiple ways. Nevertheless, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+      "C": "Invasive species can disrupt native food webs in multiple ways. For instance, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on.",
+      "D": "Invasive species can disrupt native food webs in multiple ways. Alternatively, the introduction of zebra mussels into the Great Lakes depleted phytoplankton populations that native fish depended on."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence provides a specific example of the general claim in the first sentence. 'For instance' correctly introduces an illustrative case. 'Consequently' incorrectly implies causation, 'Nevertheless' implies contrast, and 'Alternatively' implies a different option.",
+    "difficulty": 1,
+    "tags": ["transition", "example", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_example_invasive"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "Early astronomers believed the universe was static and unchanging. Likewise, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Early astronomers believed the universe was static and unchanging. In contrast, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+      "C": "Early astronomers believed the universe was static and unchanging. Furthermore, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding.",
+      "D": "Early astronomers believed the universe was static and unchanging. As a result, Edwin Hubble's observations in the 1920s demonstrated that galaxies are moving apart, proving the universe is expanding."
+    },
+    "correct_answer": "B",
+    "explanation": "The first sentence states an old belief (static universe) while the second sentence presents evidence that directly contradicts it (expanding universe). This contrast requires a transition such as 'In contrast.' 'Likewise' incorrectly signals similarity.",
+    "difficulty": 2,
+    "tags": ["transition", "contrast", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_contrast_hubble"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "revision",
+    "prompt": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. On the other hand, the city council voted to close the bridge for emergency repairs.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. For example, the city council voted to close the bridge for emergency repairs.",
+      "C": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. Therefore, the city council voted to close the bridge for emergency repairs.",
+      "D": "The bridge's steel supports showed advanced corrosion after decades of salt exposure. Similarly, the city council voted to close the bridge for emergency repairs."
+    },
+    "correct_answer": "C",
+    "explanation": "The council's decision to close the bridge is a direct consequence of the corrosion discovered. 'Therefore' correctly signals this cause-and-effect relationship. 'On the other hand' incorrectly signals contrast.",
+    "difficulty": 3,
+    "tags": ["transition", "causation", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_cause_bridge"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "revision",
+    "prompt": "The longitudinal study tracked cardiovascular health markers over fifteen years. As a result, it monitored dietary habits and exercise frequency among the same cohort.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The longitudinal study tracked cardiovascular health markers over fifteen years. However, it monitored dietary habits and exercise frequency among the same cohort.",
+      "C": "The longitudinal study tracked cardiovascular health markers over fifteen years. Moreover, it monitored dietary habits and exercise frequency among the same cohort.",
+      "D": "The longitudinal study tracked cardiovascular health markers over fifteen years. To illustrate, it monitored dietary habits and exercise frequency among the same cohort."
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another variable the study monitored, parallel to the first. 'Moreover' correctly signals this addition. 'As a result' incorrectly implies that monitoring diet was a consequence rather than an additional research activity.",
+    "difficulty": 2,
+    "tags": ["transition", "continuation", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_addition_study"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "A writer is composing a paragraph about how deforestation accelerates soil erosion. Which sentence, if added, would best maintain the paragraph's focus?\n\n(1) Deforestation removes the root systems that anchor topsoil. (2) ____ (3) Without these natural barriers, heavy rainfall washes away nutrient-rich layers.",
+    "choices": {
+      "A": "Tropical rainforests contain more species of birds than any other biome.",
+      "B": "Tree canopies also intercept rainfall, reducing the force with which water strikes the ground.",
+      "C": "The logging industry employs thousands of workers in rural communities.",
+      "D": "Satellite imagery has become an important tool for tracking land-use changes."
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph's focus is the mechanism by which deforestation causes soil erosion. Choice B directly supports this by explaining another way trees protect soil (intercepting rainfall), logically bridging sentences 1 and 3. The other options introduce unrelated topics.",
+    "difficulty": 2,
+    "tags": ["organization", "unity", "sentence_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_unity_deforestation"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "The pharmaceutical company's internal trials reported minimal side effects. Specifically, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The pharmaceutical company's internal trials reported minimal side effects. Moreover, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+      "C": "The pharmaceutical company's internal trials reported minimal side effects. However, an independent review found significantly higher rates of adverse reactions among participants over age 60.",
+      "D": "The pharmaceutical company's internal trials reported minimal side effects. Subsequently, an independent review found significantly higher rates of adverse reactions among participants over age 60."
+    },
+    "correct_answer": "C",
+    "explanation": "The internal trials (minimal side effects) contradict the independent review (higher adverse reactions). This opposition requires a contrast transition. 'However' correctly signals this contradiction. 'Specifically' incorrectly signals that the second sentence elaborates on the first.",
+    "difficulty": 3,
+    "tags": ["transition", "contrast", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_contrast_pharma"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "revision",
+    "prompt": "A student is writing about the decline of pollinator populations. The draft includes this sentence: 'My family keeps a small herb garden on our apartment balcony.' Should the writer keep or delete this sentence?",
+    "choices": {
+      "A": "Keep it, because it provides a personal connection that engages the reader.",
+      "B": "Keep it, because it offers a solution to pollinator decline.",
+      "C": "Delete it, because it introduces a personal anecdote unrelated to the paragraph's analytical focus.",
+      "D": "Delete it, because herb gardens are not interesting to most readers."
+    },
+    "correct_answer": "C",
+    "explanation": "The paragraph analyzes pollinator decline from a scientific perspective. A personal anecdote about an apartment herb garden does not support the analytical argument and breaks the paragraph's unity. It should be deleted for relevance, not because it is uninteresting.",
+    "difficulty": 3,
+    "tags": ["organization", "relevance", "add_delete"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_revision_relevance_pollinator"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "best_choice",
+    "prompt": "The new curriculum emphasizes critical thinking through case-based analysis. ____, it incorporates peer-review workshops that require students to evaluate one another's reasoning.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "Consequently",
+      "C": "In addition",
+      "D": "On the other hand"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds another feature of the curriculum that supports the same educational goal. This is a continuation/addition relationship. 'In addition' correctly signals a new parallel point. 'Nevertheless' and 'On the other hand' incorrectly signal contrast, and 'Consequently' incorrectly signals causation.",
+    "difficulty": 1,
+    "tags": ["transition", "continuation", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_addition_curriculum"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "best_choice",
+    "prompt": "The region experienced record-breaking rainfall throughout the spring. ____, several low-lying neighborhoods reported severe flooding for the first time in decades.",
+    "choices": {
+      "A": "Furthermore",
+      "B": "In contrast",
+      "C": "For example",
+      "D": "As a result"
+    },
+    "correct_answer": "D",
+    "explanation": "The flooding is a direct consequence of the record rainfall. 'As a result' correctly signals this cause-and-effect relationship. 'Furthermore' signals addition, 'In contrast' signals opposition, and 'For example' signals illustration — none of which capture the causal logic.",
+    "difficulty": 1,
+    "tags": ["transition", "causation", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_cause_flooding"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "Laboratory simulations suggested that the polymer would remain stable at temperatures exceeding 300 degrees Celsius. ____, field tests revealed that the material degraded rapidly under prolonged heat exposure.",
+    "choices": {
+      "A": "Moreover",
+      "B": "Accordingly",
+      "C": "Nonetheless",
+      "D": "Specifically"
+    },
+    "correct_answer": "C",
+    "explanation": "The lab prediction (stable at high temperatures) is contradicted by the field test result (rapid degradation). 'Nonetheless' correctly signals that the second sentence presents an unexpected contrast. 'Moreover' signals addition, 'Accordingly' signals consequence, and 'Specifically' signals elaboration.",
+    "difficulty": 2,
+    "tags": ["transition", "contrast", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_contrast_polymer"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Example Transitions",
+    "card_type": "best_choice",
+    "prompt": "Ancient civilizations developed sophisticated methods of timekeeping. ____, the Egyptians used obelisks as shadow clocks to divide the day into segments.",
+    "choices": {
+      "A": "However",
+      "B": "Therefore",
+      "C": "For instance",
+      "D": "Still"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence provides a specific example (Egyptian obelisks) of the general claim (ancient civilizations developed timekeeping methods). 'For instance' correctly introduces this illustration. 'However' signals contrast, 'Therefore' signals consequence, and 'Still' signals concession.",
+    "difficulty": 1,
+    "tags": ["transition", "example", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_example_timekeeping"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "The city invested heavily in expanding its public transit network during the 2010s. ____, ridership declined steadily as remote work became more prevalent after 2020.",
+    "choices": {
+      "A": "Similarly",
+      "B": "Despite this investment",
+      "C": "In addition",
+      "D": "To illustrate"
+    },
+    "correct_answer": "B",
+    "explanation": "The heavy investment (positive action) is contradicted by declining ridership (negative outcome). 'Despite this investment' correctly signals that the result was contrary to what the investment intended. Note that 'Similarly' and 'In addition' are both continuation transitions — a key SAT/ACT trap when two choices from the same family appear together.",
+    "difficulty": 3,
+    "tags": ["transition", "contrast", "synonym_trap", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_contrast_transit"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causation Transitions",
+    "card_type": "best_choice",
+    "prompt": "Repeated freezing and thawing cycles cause water trapped in rock fractures to expand and contract. ____, the rock gradually breaks apart in a process geologists call frost wedging.",
+    "choices": {
+      "A": "Regardless",
+      "B": "Hence",
+      "C": "In contrast",
+      "D": "For example"
+    },
+    "correct_answer": "B",
+    "explanation": "The rock breaking apart is the direct result of the freeze-thaw expansion process. 'Hence' correctly signals this causal conclusion. 'Regardless' signals dismissal of a counter-argument, 'In contrast' signals opposition, and 'For example' signals illustration.",
+    "difficulty": 2,
+    "tags": ["transition", "causation", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_cause_frost"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "A paragraph discusses how the construction of the Transcontinental Railroad transformed American commerce. The writer wants to add a sentence. Which choice best maintains the paragraph's focus?",
+    "choices": {
+      "A": "The Golden Spike ceremony at Promontory Summit in 1869 attracted journalists from across the country.",
+      "B": "By reducing cross-country shipping times from months to days, the railroad made previously inaccessible western markets viable for eastern manufacturers.",
+      "C": "Railroad workers often faced dangerous conditions, including avalanches and extreme heat.",
+      "D": "Steam locomotives burn coal at a rate that varies with elevation and load."
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph focuses on how the railroad transformed commerce. Only choice B directly addresses commerce by explaining how reduced shipping times opened new markets. The other options discuss related but off-topic subjects (ceremony, worker conditions, fuel consumption).",
+    "difficulty": 3,
+    "tags": ["organization", "unity", "relevance", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_unity_railroad"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "best_choice",
+    "prompt": "The conventional model predicts that deep-ocean currents remain relatively constant over short time scales. ____, recent sensor data from the Atlantic reveals unexpected fluctuations occurring within single decades.",
+    "choices": {
+      "A": "Furthermore",
+      "B": "Accordingly",
+      "C": "However",
+      "D": "Indeed"
+    },
+    "correct_answer": "C",
+    "explanation": "The prediction (constant currents) is contradicted by the observation (unexpected fluctuations). 'However' correctly signals this contrast. Note that 'Furthermore' and 'Indeed' are both continuation-family transitions — when two options belong to the same family, both are typically wrong, which is a key SAT/ACT trap pattern.",
+    "difficulty": 3,
+    "tags": ["transition", "contrast", "synonym_trap", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_contrast_ocean"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Organization and Unity",
+    "card_type": "best_choice",
+    "prompt": "Read the following paragraph and determine where Sentence 5 should be placed for the best logical flow.\n\n(1) The campus library recently adopted an open-access digital repository. (2) Faculty can now upload preprints directly to the platform. (3) The repository also archives dissertations and theses from graduate students. (4) Since its launch, downloads have increased by 200 percent. (5) This system allows researchers worldwide to access the university's scholarship without a subscription.\n\nWhere should Sentence 5 be placed?",
+    "choices": {
+      "A": "Where it is now (after Sentence 4)",
+      "B": "After Sentence 1",
+      "C": "After Sentence 2",
+      "D": "After Sentence 3"
+    },
+    "correct_answer": "B",
+    "explanation": "Sentence 5 explains what the open-access repository does (allows subscription-free access), which logically follows the introduction of the repository in Sentence 1. Placing it after Sentence 1 provides necessary context before the specific details in Sentences 2 and 3, creating a general-to-specific flow.",
+    "difficulty": 3,
+    "tags": ["organization", "sentence_placement", "logical_flow"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section X: Rhetorical Logic and Transitions",
+    "skill_code": "rhetoric_best_placement_library"
+  }
+]

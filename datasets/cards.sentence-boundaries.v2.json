@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "While the laboratory technicians calibrated the new spectrometer before the scheduled trial. The principal investigator reviewed the safety protocols in her office.",
+    "choices": {
+      "A": "calibrated the new spectrometer",
+      "B": "before the scheduled trial",
+      "C": "While the laboratory technicians calibrated the new spectrometer before the scheduled trial.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first sentence is a fragment because it is a dependent clause beginning with \"While\" and lacks an independent clause. It should be attached to the second sentence.",
+    "difficulty": 1,
+    "tags": ["fragment", "dependent_clause", "subordinating_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_while_clause"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "revision",
+    "prompt": "Having analyzed over three hundred soil samples from the riverbank.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Having analyzed over three hundred soil samples from the riverbank, the geologists published their findings.",
+      "C": "Having analyzed, over three hundred soil samples from the riverbank.",
+      "D": "Over three hundred soil samples from the riverbank having analyzed."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a participial phrase fragment with no independent clause. Adding \"the geologists published their findings\" supplies the missing main clause and completes the sentence.",
+    "difficulty": 1,
+    "tags": ["fragment", "participial_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_participle_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "The research team submitted the proposal on time. Because they had secured preliminary approval from the ethics board.",
+    "choices": {
+      "A": "submitted the proposal on time",
+      "B": "Because they had secured preliminary approval from the ethics board.",
+      "C": "from the ethics board",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The second sentence is a dependent clause beginning with \"Because\" and cannot stand alone as a sentence. It is a fragment that should be attached to the preceding independent clause.",
+    "difficulty": 1,
+    "tags": ["fragment", "dependent_clause", "subordinating_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_because_clause"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "best_choice",
+    "prompt": "Which option correctly completes the thought? \"Although the committee reviewed every application ____\"",
+    "choices": {
+      "A": "carefully and with great attention to detail.",
+      "B": ", they could not reach a unanimous decision.",
+      "C": "including the late submissions from external departments.",
+      "D": "especially the ones flagged by the registrar."
+    },
+    "correct_answer": "B",
+    "explanation": "The opening is a dependent clause beginning with \"Although,\" which requires an independent clause to form a complete sentence. Only choice B supplies an independent clause after the comma.",
+    "difficulty": 1,
+    "tags": ["fragment", "dependent_clause", "sentence_completion"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_complete_thought"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The clinical trial produced promising results, the pharmaceutical company applied for regulatory approval.",
+    "choices": {
+      "A": "produced promising results",
+      "B": "the pharmaceutical company",
+      "C": "the comma joining the two clauses",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Two independent clauses are joined only by a comma, creating a comma splice. A semicolon, period, or comma with a coordinating conjunction is needed.",
+    "difficulty": 1,
+    "tags": ["comma_splice", "independent_clauses"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_clinical"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The professor assigned additional readings, however, the students had already completed the original bibliography.",
+    "choices": {
+      "A": "assigned additional readings",
+      "B": "the comma before \"however\"",
+      "C": "the students had already completed",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"However\" is a conjunctive adverb, not a coordinating conjunction. Using a comma before it to join two independent clauses creates a comma splice. A semicolon is needed before \"however.\"",
+    "difficulty": 2,
+    "tags": ["comma_splice", "conjunctive_adverb", "however"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_however"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The lab's ventilation system failed during the experiment, therefore, the researchers evacuated the building immediately.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The lab's ventilation system failed during the experiment; therefore, the researchers evacuated the building immediately.",
+      "C": "The lab's ventilation system failed during the experiment therefore the researchers evacuated the building immediately.",
+      "D": "The lab's ventilation system failed during the experiment, therefore the researchers evacuated the building immediately."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Therefore\" is a conjunctive adverb and cannot join two independent clauses with just a comma. A semicolon before \"therefore\" correctly separates the clauses.",
+    "difficulty": 2,
+    "tags": ["comma_splice", "conjunctive_adverb", "therefore", "semicolon"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_therefore_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "The department chair endorsed the new curriculum, many faculty members still expressed reservations about the timeline.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The department chair endorsed the new curriculum, but many faculty members still expressed reservations about the timeline.",
+      "C": "The department chair endorsed the new curriculum many faculty members still expressed reservations about the timeline.",
+      "D": "The department chair endorsed, the new curriculum, many faculty members still expressed reservations about the timeline."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. Adding the coordinating conjunction \"but\" after the comma correctly joins the two independent clauses using comma + FANBOYS.",
+    "difficulty": 1,
+    "tags": ["comma_splice", "fanboys", "coordinating_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_fanboys_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "error_id",
+    "prompt": "The longitudinal study tracked participants over fifteen years, as a result, the dataset became one of the largest in the field.",
+    "choices": {
+      "A": "tracked participants over fifteen years",
+      "B": "the comma before \"as a result\"",
+      "C": "one of the largest in the field",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"As a result\" is a conjunctive adverb phrase and cannot join two independent clauses with only a comma. A semicolon or period is needed before \"as a result.\"",
+    "difficulty": 2,
+    "tags": ["comma_splice", "conjunctive_adverb", "as_a_result"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_as_a_result"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly fixes the comma splice? \"The grant application was submitted before the deadline, the review committee had not yet convened.\"",
+    "choices": {
+      "A": "The grant application was submitted before the deadline the review committee had not yet convened.",
+      "B": "The grant application was submitted before the deadline, the review committee, had not yet convened.",
+      "C": "The grant application was submitted before the deadline, yet the review committee had not yet convened.",
+      "D": "The grant application was submitted before the deadline, consequently the review committee had not yet convened."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Yet\" is a coordinating conjunction (FANBOYS), so comma + \"yet\" correctly joins two independent clauses. Choice A is a run-on, B adds an illogical comma, and D uses a conjunctive adverb after a comma, creating another comma splice.",
+    "difficulty": 3,
+    "tags": ["comma_splice", "fanboys", "conjunctive_adverb"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_best_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "error_id",
+    "prompt": "The university expanded its online offerings the enrollment numbers doubled within two semesters.",
+    "choices": {
+      "A": "expanded its online offerings",
+      "B": "the missing punctuation between the two clauses",
+      "C": "doubled within two semesters",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses are fused together with no punctuation, creating a run-on sentence. A period, semicolon, or comma with a coordinating conjunction is needed between \"offerings\" and \"the.\"",
+    "difficulty": 1,
+    "tags": ["run_on", "fused_sentence", "independent_clauses"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_fused_id"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "revision",
+    "prompt": "The field researchers collected water samples at dawn they transported the samples to the lab by noon.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The field researchers collected water samples at dawn, they transported the samples to the lab by noon.",
+      "C": "The field researchers collected water samples at dawn; they transported the samples to the lab by noon.",
+      "D": "The field researchers collected water samples at dawn they, transported the samples to the lab by noon."
+    },
+    "correct_answer": "C",
+    "explanation": "The original is a run-on (fused sentence). A semicolon correctly joins two closely related independent clauses. Choice B creates a comma splice, and D places a comma incorrectly within the second clause.",
+    "difficulty": 1,
+    "tags": ["run_on", "semicolon", "fused_sentence"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_semicolon_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "revision",
+    "prompt": "The historian discovered unpublished letters in the archive they shed new light on the diplomatic negotiations of that era.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The historian discovered unpublished letters in the archive, they shed new light on the diplomatic negotiations of that era.",
+      "C": "The historian discovered unpublished letters in the archive. They shed new light on the diplomatic negotiations of that era.",
+      "D": "The historian discovered unpublished letters in the archive they, shed new light on the diplomatic negotiations of that era."
+    },
+    "correct_answer": "C",
+    "explanation": "The original is a run-on sentence. A period correctly separates the two independent clauses into distinct sentences. Choice B creates a comma splice, and D inserts a meaningless comma within the second clause.",
+    "difficulty": 1,
+    "tags": ["run_on", "period", "sentence_separation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_period_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "error_id",
+    "prompt": "The advisory panel recommended increased funding for community health programs the budget office allocated resources accordingly.",
+    "choices": {
+      "A": "recommended increased funding",
+      "B": "for community health programs",
+      "C": "the lack of punctuation between \"programs\" and \"the\"",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Two complete independent clauses are joined with no punctuation or conjunction, forming a run-on sentence. Punctuation is needed between \"programs\" and \"the budget office.\"",
+    "difficulty": 3,
+    "tags": ["run_on", "fused_sentence", "independent_clauses"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_fused_advisory"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The data suggested a significant correlation, the researchers needed additional trials to confirm causation.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The data suggested a significant correlation; however, the researchers needed additional trials to confirm causation.",
+      "C": "The data suggested a significant correlation, however the researchers needed additional trials to confirm causation.",
+      "D": "The data suggested a significant correlation however, the researchers needed additional trials to confirm causation."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. A semicolon before the conjunctive adverb \"however\" followed by a comma correctly joins the two independent clauses. Choices C and D both fail to place a semicolon or period before \"however.\"",
+    "difficulty": 2,
+    "tags": ["clause_connection", "semicolon", "conjunctive_adverb", "however"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_semicolon_however"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "best_choice",
+    "prompt": "Which option correctly joins the two clauses? \"The archaeologists cataloged every artifact from the excavation site ____ they submitted their final report to the university.\"",
+    "choices": {
+      "A": ", and",
+      "B": ", consequently",
+      "C": "and",
+      "D": "being that"
+    },
+    "correct_answer": "A",
+    "explanation": "Comma + \"and\" (a FANBOYS conjunction) correctly joins two independent clauses. Choice B uses a conjunctive adverb after a comma, creating a comma splice. Choice C omits the required comma before the conjunction joining two independent clauses. Choice D is nonstandard.",
+    "difficulty": 2,
+    "tags": ["clause_connection", "fanboys", "comma_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_fanboys_join"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The observatory recorded unusual seismic activity near the fault line: and the county issued evacuation advisories for coastal neighborhoods.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The observatory recorded unusual seismic activity near the fault line, and the county issued evacuation advisories for coastal neighborhoods.",
+      "C": "The observatory recorded unusual seismic activity near the fault line and, the county issued evacuation advisories for coastal neighborhoods.",
+      "D": "The observatory recorded unusual seismic activity near the fault line: the county, issued evacuation advisories for coastal neighborhoods."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon should not be followed by a coordinating conjunction joining two independent clauses. Comma + \"and\" is the correct way to join these clauses. Choice C misplaces the comma, and D inserts a disruptive comma within the second clause.",
+    "difficulty": 2,
+    "tags": ["clause_connection", "colon_misuse", "fanboys"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_colon_misuse"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly uses a colon? \"The research team reached a clear conclusion ____\"",
+    "choices": {
+      "A": ": although the data supported the initial hypothesis.",
+      "B": ": the data strongly supported the initial hypothesis.",
+      "C": ", the data strongly supported the initial hypothesis.",
+      "D": ": and the data strongly supported the initial hypothesis."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon requires a complete sentence before it and introduces information that explains or elaborates. Choice B correctly places a colon after an independent clause and follows it with an explanatory statement. Choice A follows the colon with a dependent clause fragment, C is a comma splice, and D incorrectly pairs a colon with a conjunction.",
+    "difficulty": 3,
+    "tags": ["clause_connection", "colon", "independent_clause"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_colon_usage"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "error_id",
+    "prompt": "The museum curator organized the exhibition by theme, the visitors, however, preferred a chronological arrangement.",
+    "choices": {
+      "A": "organized the exhibition by theme",
+      "B": "the comma between \"theme\" and \"the visitors\"",
+      "C": "preferred a chronological arrangement",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses are joined only by a comma, creating a comma splice. The word \"however\" is a parenthetical conjunctive adverb within the second clause, not a conjunction that can fix the boundary. A semicolon or period is needed after \"theme.\"",
+    "difficulty": 3,
+    "tags": ["clause_connection", "comma_splice", "conjunctive_adverb", "however"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_however_embedded"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which subordinating conjunction best expresses the causal relationship? \"____ the grant funding was approved, the laboratory was able to hire two additional research assistants.\"",
+    "choices": {
+      "A": "Although",
+      "B": "While",
+      "C": "Because",
+      "D": "Unless"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Because\" correctly expresses a cause-and-effect relationship: the funding approval caused the lab to hire assistants. \"Although\" and \"While\" express contrast or concession, and \"Unless\" expresses a condition.",
+    "difficulty": 1,
+    "tags": ["subordination", "causal_logic", "subordinating_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_because"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which choice best expresses the conditional relationship? \"The clinical trial will proceed to Phase III ____ the preliminary results demonstrate both safety and efficacy.\"",
+    "choices": {
+      "A": "although",
+      "B": "because",
+      "C": "only if",
+      "D": "while"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Only if\" correctly expresses a condition that must be met before the trial proceeds. \"Although\" signals contrast, \"because\" signals cause, and \"while\" signals simultaneity or contrast.",
+    "difficulty": 2,
+    "tags": ["subordination", "conditional_logic", "subordinating_conjunction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_conditional"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "error_id",
+    "prompt": "Since the department restructured its advising system last semester students have reported shorter wait times for appointments.",
+    "choices": {
+      "A": "Since the department restructured",
+      "B": "the missing comma after \"semester\"",
+      "C": "students have reported",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "When a dependent clause beginning with a subordinating conjunction (\"Since\") leads the sentence, a comma is required after the dependent clause and before the independent clause. A comma is needed after \"semester.\"",
+    "difficulty": 2,
+    "tags": ["subordination", "introductory_clause", "comma_after_dependent"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_intro_comma"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "revision",
+    "prompt": "Although the survey response rate exceeded expectations. The research team decided to extend the collection period to capture additional demographic groups.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Although the survey response rate exceeded expectations, the research team decided to extend the collection period to capture additional demographic groups.",
+      "C": "Although, the survey response rate exceeded expectations the research team decided to extend the collection period to capture additional demographic groups.",
+      "D": "The survey response rate exceeded expectations although. The research team decided to extend the collection period."
+    },
+    "correct_answer": "B",
+    "explanation": "The original incorrectly punctuates the dependent clause as a separate sentence (fragment). Attaching it to the independent clause with a comma after \"expectations\" creates a correct complex sentence with the subordinate clause leading.",
+    "difficulty": 2,
+    "tags": ["subordination", "fragment", "dependent_clause", "comma_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_fragment_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Which choice best expresses the contrast between the two ideas? \"____ the committee allocated significant resources to the mentorship program, participation rates remained unchanged.\"",
+    "choices": {
+      "A": "Because",
+      "B": "Since",
+      "C": "If",
+      "D": "Even though"
+    },
+    "correct_answer": "D",
+    "explanation": "\"Even though\" correctly expresses concession and contrast: despite the significant resource allocation, participation did not change. \"Because\" and \"Since\" express cause, and \"If\" expresses a condition.",
+    "difficulty": 3,
+    "tags": ["subordination", "contrast_logic", "concession"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_even_though"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly addresses the error? \"The peer reviewers identified several methodological weaknesses, the authors revised the manuscript accordingly.\"",
+    "choices": {
+      "A": "The peer reviewers identified several methodological weaknesses, the authors, revised the manuscript accordingly.",
+      "B": "The peer reviewers identified several methodological weaknesses, so the authors revised the manuscript accordingly.",
+      "C": "The peer reviewers identified several methodological weaknesses the authors revised the manuscript accordingly.",
+      "D": "The peer reviewers identified several methodological weaknesses, consequently the authors revised the manuscript accordingly."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a comma splice. \"So\" is a coordinating conjunction (FANBOYS), and comma + \"so\" correctly joins two independent clauses. Choice A adds a disruptive comma, C creates a run-on, and D uses a conjunctive adverb after a comma, which is still a comma splice.",
+    "difficulty": 3,
+    "tags": ["comma_splice", "fanboys", "conjunctive_adverb"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_comma_splice_so_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "The neuroscience department invested heavily in new imaging equipment. Resulting in clearer scans and more precise data for longitudinal studies.",
+    "choices": {
+      "A": "invested heavily in new imaging equipment",
+      "B": "Resulting in clearer scans and more precise data for longitudinal studies.",
+      "C": "more precise data",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Resulting in clearer scans...\" is a participial phrase fragment. It has no subject or finite verb and cannot stand alone as a sentence. It should be attached to the preceding sentence, typically with a comma.",
+    "difficulty": 2,
+    "tags": ["fragment", "participial_phrase", "resulting"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_resulting"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-on Sentences",
+    "card_type": "best_choice",
+    "prompt": "Which revision best corrects the fused sentence? \"The engineering students completed the bridge simulation the professors evaluated structural integrity using load-bearing software.\"",
+    "choices": {
+      "A": "The engineering students completed the bridge simulation, the professors evaluated structural integrity using load-bearing software.",
+      "B": "The engineering students completed the bridge simulation; the professors evaluated structural integrity using load-bearing software.",
+      "C": "The engineering students completed, the bridge simulation the professors evaluated structural integrity using load-bearing software.",
+      "D": "The engineering students completed the bridge simulation the professors, evaluated structural integrity using load-bearing software."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a run-on (fused sentence). A semicolon correctly joins two related independent clauses. Choice A creates a comma splice, and choices C and D place commas in positions that break the clauses incorrectly.",
+    "difficulty": 3,
+    "tags": ["run_on", "semicolon", "fused_sentence"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_best_semicolon"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connections",
+    "card_type": "revision",
+    "prompt": "The demographic analysis revealed significant population shifts in the region, moreover, these shifts correlated with changes in local employment patterns.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The demographic analysis revealed significant population shifts in the region; moreover, these shifts correlated with changes in local employment patterns.",
+      "C": "The demographic analysis revealed significant population shifts in the region moreover these shifts correlated with changes in local employment patterns.",
+      "D": "The demographic analysis revealed significant population shifts in the region, moreover these shifts correlated with changes in local employment patterns."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Moreover\" is a conjunctive adverb and cannot join two independent clauses with only a comma. A semicolon before \"moreover\" correctly marks the boundary between the two independent clauses.",
+    "difficulty": 3,
+    "tags": ["clause_connection", "conjunctive_adverb", "moreover", "semicolon"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_moreover_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "revision",
+    "prompt": "While the economics department debated the merits of the new forecasting model, and the statistics faculty conducted independent validation tests.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "While the economics department debated the merits of the new forecasting model, the statistics faculty conducted independent validation tests.",
+      "C": "While, the economics department debated the merits of the new forecasting model the statistics faculty conducted independent validation tests.",
+      "D": "While the economics department debated the merits of the new forecasting model the statistics faculty, conducted independent validation tests."
+    },
+    "correct_answer": "B",
+    "explanation": "The original incorrectly inserts \"and\" after the comma, which makes the independent clause coordinate with the dependent clause and leaves no true main clause. Removing \"and\" allows the dependent clause (\"While...\") to correctly lead into the independent clause after the comma.",
+    "difficulty": 3,
+    "tags": ["subordination", "dependent_clause", "coordinating_conjunction_error"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_subordination_while_and_error"
+  }
+]

@@ -34,6 +34,9 @@ export type AnswerResult = {
   answers_today: number;
 };
 
+/** Number of cards at box 4 needed to "complete" a unit */
+export const UNIT_COMPLETION_THRESHOLD = 15;
+
 export type DashboardData = {
   due_count: number;
   daily_points: number;
@@ -44,6 +47,7 @@ export type DashboardData = {
     seen_cards: number;
     mastered_cards: number;
     mastery_ratio: number;
+    completed: boolean;
   }>;
 };
 
@@ -239,7 +243,11 @@ export function computeDashboard(
       total_cards: e.total,
       seen_cards: e.seen,
       mastered_cards: e.mastered,
-      mastery_ratio: e.total > 0 ? e.mastered / e.total : 0,
+      mastery_ratio:
+        UNIT_COMPLETION_THRESHOLD > 0
+          ? Math.min(1, e.mastered / UNIT_COMPLETION_THRESHOLD)
+          : 0,
+      completed: e.mastered >= UNIT_COMPLETION_THRESHOLD,
     }))
     .sort((a, b) => a.unit_id.localeCompare(b.unit_id));
 

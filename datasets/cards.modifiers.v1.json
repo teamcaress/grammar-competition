@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Analyzing the soil samples, the contamination levels surprised the research team.",
+    "choices": {
+      "A": "Analyzing the soil samples",
+      "B": "the contamination levels",
+      "C": "surprised the research team",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase \"Analyzing the soil samples\" must be followed by the person doing the analyzing. \"The contamination levels\" cannot analyze anything; the subject should be the research team.",
+    "difficulty": 1,
+    "tags": ["dangling_modifier", "participial_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_participle_soil"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Having completed the longitudinal study, the published findings revealed a strong correlation between sleep and academic performance.",
+    "choices": {
+      "A": "Having completed the longitudinal study",
+      "B": "the published findings",
+      "C": "revealed a strong correlation",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Having completed the longitudinal study\" is a participial phrase that must modify a person who completed the study. \"The published findings\" cannot complete a study; the researchers should be the subject.",
+    "difficulty": 2,
+    "tags": ["dangling_modifier", "participial_phrase", "academic_context"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_having_completed"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Trained in statistical modeling, the dataset was processed by the graduate assistant within a week.",
+    "choices": {
+      "A": "Trained in statistical modeling",
+      "B": "the dataset was processed",
+      "C": "by the graduate assistant",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The introductory phrase \"Trained in statistical modeling\" must modify a person. \"The dataset\" cannot be trained; the sentence should be restructured so that \"the graduate assistant\" follows the comma.",
+    "difficulty": 2,
+    "tags": ["dangling_modifier", "passive_voice_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_passive_dataset"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The professor only assigned the reading to students enrolled in the honors section.",
+    "choices": {
+      "A": "The professor only assigned",
+      "B": "the reading",
+      "C": "to students enrolled",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Only\" is misplaced next to \"assigned,\" implying the professor did nothing but assign. The intended meaning is that the reading was assigned exclusively to honors students, so \"only\" should appear before \"to students enrolled in the honors section.\"",
+    "difficulty": 2,
+    "tags": ["misplaced_modifier", "only_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_only_assign"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The chemist almost tested every compound in the lab inventory before the deadline.",
+    "choices": {
+      "A": "The chemist almost tested",
+      "B": "every compound",
+      "C": "in the lab inventory",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Almost\" incorrectly modifies \"tested,\" suggesting the chemist nearly tested but did not. The intended meaning is that the chemist tested nearly every compound, so \"almost\" should precede \"every compound.\"",
+    "difficulty": 1,
+    "tags": ["misplaced_modifier", "almost_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_almost_tested"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "The dean announced that the university would build a new laboratory for chemistry students costing twelve million dollars.",
+    "choices": {
+      "A": "announced that",
+      "B": "would build a new laboratory",
+      "C": "costing twelve million dollars",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The participial phrase \"costing twelve million dollars\" is placed next to \"chemistry students,\" making it seem as if the students cost twelve million dollars. The phrase should be moved next to \"laboratory.\"",
+    "difficulty": 2,
+    "tags": ["misplaced_modifier", "participial_phrase_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_costing_phrase"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "error_id",
+    "prompt": "The researchers who tested the vaccine frequently reported side effects.",
+    "choices": {
+      "A": "who tested the vaccine",
+      "B": "frequently",
+      "C": "reported side effects",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Frequently\" is a squinting modifier: it could mean the researchers tested the vaccine frequently, or that they frequently reported side effects. Repositioning the adverb eliminates the ambiguity.",
+    "difficulty": 3,
+    "tags": ["squinting_modifier", "adverb_ambiguity"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_squinting_frequently"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "error_id",
+    "prompt": "Students who study diligently improve their scores on standardized tests.",
+    "choices": {
+      "A": "who study",
+      "B": "diligently",
+      "C": "improve their scores",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "D",
+    "explanation": "In this sentence, \"diligently\" clearly modifies \"study\" because of the clause boundary created by \"improve.\" The adverb is not ambiguous here, and the sentence contains no error.",
+    "difficulty": 3,
+    "tags": ["squinting_modifier", "no_error_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_squinting_no_error"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "error_id",
+    "prompt": "The lab technician performed the calibration procedure careful before recording any measurements.",
+    "choices": {
+      "A": "performed",
+      "B": "careful",
+      "C": "before recording",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The adjective \"careful\" incorrectly modifies the verb \"performed.\" The adverb \"carefully\" is required to describe how the procedure was performed.",
+    "difficulty": 1,
+    "tags": ["adjective_adverb", "adverb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_adj_adv_careful"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "error_id",
+    "prompt": "The newly appointed director spoke confident about the department's five-year strategic plan.",
+    "choices": {
+      "A": "newly appointed",
+      "B": "spoke confident",
+      "C": "about the department's",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The adjective \"confident\" incorrectly modifies the verb \"spoke.\" The adverb \"confidently\" is needed to describe the manner of speaking.",
+    "difficulty": 1,
+    "tags": ["adjective_adverb", "adverb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_adj_adv_confident"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Reviewing the experimental data, several anomalies were detected in the control group.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Reviewing the experimental data, the researchers detected several anomalies in the control group.",
+      "C": "Several anomalies, reviewing the experimental data, were detected in the control group.",
+      "D": "Reviewing the experimental data, there were several anomalies detected in the control group."
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase \"Reviewing the experimental data\" requires a human subject who performed the reviewing. Only choice B places \"the researchers\" immediately after the comma, correctly linking the modifier to its logical subject.",
+    "difficulty": 1,
+    "tags": ["dangling_modifier", "introductory_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_review_data"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Exhausted from the overnight trial, the lab report was submitted two hours past the deadline.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Exhausted from the overnight trial, the graduate student submitted the lab report two hours past the deadline.",
+      "C": "The lab report, exhausted from the overnight trial, was submitted two hours past the deadline.",
+      "D": "Exhausted from the overnight trial and submitted two hours past the deadline, the lab report was completed."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Exhausted from the overnight trial\" describes a person, not a lab report. Choice B correctly places \"the graduate student\" as the subject after the introductory modifier.",
+    "difficulty": 3,
+    "tags": ["dangling_modifier", "past_participle"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_exhausted_trial"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Based on preliminary observations, the hypothesis was revised to account for temperature fluctuations.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Based on preliminary observations, the team revised the hypothesis to account for temperature fluctuations.",
+      "C": "The hypothesis, based on preliminary observations, was revised to account for temperature fluctuations.",
+      "D": "Based on preliminary observations, it was decided that the hypothesis needed revision to account for temperature fluctuations."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Based on preliminary observations\" implies that a person performed the analysis. Choice B correctly places \"the team\" as the subject doing the revising. Choice A makes it seem as though the hypothesis itself was based on observations and then revised itself.",
+    "difficulty": 2,
+    "tags": ["dangling_modifier", "passive_voice_trap"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_based_on"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The archaeologist discovered a clay vessel buried in the trench that was over two thousand years old.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The archaeologist discovered, buried in the trench, a clay vessel that was over two thousand years old.",
+      "C": "Buried in the trench, the archaeologist discovered a clay vessel that was over two thousand years old.",
+      "D": "The archaeologist discovered a clay vessel that was over two thousand years old buried in the trench."
+    },
+    "correct_answer": "B",
+    "explanation": "In the original, \"that was over two thousand years old\" appears to modify \"the trench\" rather than \"a clay vessel.\" Choice B repositions the phrases so the age modifier clearly refers to the vessel.",
+    "difficulty": 3,
+    "tags": ["misplaced_modifier", "relative_clause_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_relative_vessel"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The researcher just collected data from three of the twelve survey sites.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The researcher collected data from just three of the twelve survey sites.",
+      "C": "Just the researcher collected data from three of the twelve survey sites.",
+      "D": "The researcher collected just data from three of the twelve survey sites."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Just\" is misplaced before \"collected,\" implying the researcher only recently collected data. The intended meaning is that only three sites were sampled. Moving \"just\" before \"three\" clarifies the scope.",
+    "difficulty": 1,
+    "tags": ["misplaced_modifier", "just_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_just_three"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The professor gave a lecture on migration patterns in the auditorium that lasted ninety minutes.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "In the auditorium, the professor gave a ninety-minute lecture on migration patterns.",
+      "C": "The professor gave a lecture on migration patterns that lasted ninety minutes in the auditorium.",
+      "D": "The professor, in the auditorium, gave a lecture that lasted ninety minutes on migration patterns."
+    },
+    "correct_answer": "B",
+    "explanation": "\"That lasted ninety minutes\" appears to modify \"the auditorium\" rather than the lecture. Choice B eliminates the ambiguity by restructuring the sentence so the duration is attached directly to the lecture.",
+    "difficulty": 2,
+    "tags": ["misplaced_modifier", "relative_clause_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_lecture_duration"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "The biologist nearly observed the mating behavior of every species in the reserve.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The biologist observed the mating behavior of nearly every species in the reserve.",
+      "C": "Nearly, the biologist observed the mating behavior of every species in the reserve.",
+      "D": "The biologist observed nearly the mating behavior of every species in the reserve."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Nearly\" before \"observed\" suggests the biologist almost observed but did not. The intended meaning is that the biologist observed most species, so \"nearly\" should precede \"every species.\"",
+    "difficulty": 2,
+    "tags": ["misplaced_modifier", "nearly_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_nearly_species"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "revision",
+    "prompt": "The students who practice writing regularly score higher on the essay portion of the exam.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The students who regularly practice writing score higher on the essay portion of the exam.",
+      "C": "The students who practice writing score regularly higher on the essay portion of the exam.",
+      "D": "Regularly, the students who practice writing score higher on the essay portion of the exam."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Regularly\" is a squinting modifier that could modify either \"practice writing\" or \"score higher.\" Moving \"regularly\" before \"practice\" eliminates the ambiguity and clearly indicates the frequency of practice.",
+    "difficulty": 3,
+    "tags": ["squinting_modifier", "adverb_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_squinting_regularly"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "revision",
+    "prompt": "The new policy was implemented quick, and staff members had to adapt without additional training.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The new policy was implemented quickly, and staff members had to adapt without additional training.",
+      "C": "The new policy was implemented in a quick manner, and staff members had to adapt without additional training.",
+      "D": "The new, quick policy was implemented, and staff members had to adapt without additional training."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Quick\" is an adjective and cannot modify the verb \"was implemented.\" The adverb \"quickly\" is needed to describe how the policy was implemented.",
+    "difficulty": 1,
+    "tags": ["adjective_adverb", "adverb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_adj_adv_quick"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "To ensure accurate measurements, the spectrophotometer was calibrated before each trial by the lab technician.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "To ensure accurate measurements, the lab technician calibrated the spectrophotometer before each trial.",
+      "C": "The spectrophotometer, to ensure accurate measurements, was calibrated before each trial.",
+      "D": "To ensure accurate measurements, calibration of the spectrophotometer was completed before each trial."
+    },
+    "correct_answer": "B",
+    "explanation": "The infinitive phrase \"To ensure accurate measurements\" implies a deliberate actor. The subject after the comma should be the person ensuring accuracy. Only choice B places \"the lab technician\" as the subject.",
+    "difficulty": 2,
+    "tags": ["dangling_modifier", "infinitive_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_infinitive_calibrate"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"Concerned about declining enrollment, ____\"",
+    "choices": {
+      "A": "a new marketing strategy was developed by the admissions office.",
+      "B": "the admissions office developed a new marketing strategy.",
+      "C": "there was a new marketing strategy developed by the admissions office.",
+      "D": "a new marketing strategy, developed by the admissions office, was put in place."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Concerned about declining enrollment\" is a participial phrase that must be followed by the subject experiencing the concern. Only \"the admissions office\" in choice B logically serves as that subject.",
+    "difficulty": 1,
+    "tags": ["dangling_modifier", "introductory_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_best_enrollment"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"After conducting a thorough peer review, ____\"",
+    "choices": {
+      "A": "the manuscript was returned to the author with detailed comments.",
+      "B": "detailed comments were added to the manuscript by the editorial board.",
+      "C": "the editorial board returned the manuscript to the author with detailed comments.",
+      "D": "there were detailed comments added to the manuscript."
+    },
+    "correct_answer": "C",
+    "explanation": "The introductory phrase \"After conducting a thorough peer review\" requires a subject who performed the review. Only choice C places \"the editorial board\" as the subject immediately after the comma.",
+    "difficulty": 2,
+    "tags": ["dangling_modifier", "introductory_phrase", "subject_alignment"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_best_peer_review"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision best eliminates the misplaced modifier? Original: \"The intern submitted a report to the supervisor that contained several calculation errors.\"",
+    "choices": {
+      "A": "The intern submitted a report that contained several calculation errors to the supervisor.",
+      "B": "The intern submitted to the supervisor a report that contained several calculation errors.",
+      "C": "Containing several calculation errors, the intern submitted a report to the supervisor.",
+      "D": "The intern, who contained several calculation errors, submitted a report to the supervisor."
+    },
+    "correct_answer": "A",
+    "explanation": "In the original, \"that contained several calculation errors\" appears to modify \"the supervisor.\" Choice A places the relative clause directly after \"report,\" clearly identifying what contained the errors.",
+    "difficulty": 2,
+    "tags": ["misplaced_modifier", "relative_clause_placement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_best_report"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the ambiguity in the following sentence? \"The professor told the students after the lecture the exam would be postponed.\"",
+    "choices": {
+      "A": "The professor told the students the exam after the lecture would be postponed.",
+      "B": "After the lecture, the professor told the students the exam would be postponed.",
+      "C": "The professor told, after the lecture, the students the exam would be postponed.",
+      "D": "The professor told the students the exam would be after the lecture postponed."
+    },
+    "correct_answer": "B",
+    "explanation": "\"After the lecture\" is a squinting modifier that could modify either \"told\" or \"would be postponed.\" Choice B moves the phrase to the beginning, making it clear that the telling happened after the lecture.",
+    "difficulty": 3,
+    "tags": ["squinting_modifier", "prepositional_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_squinting_best_after_lecture"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "best_choice",
+    "prompt": "Which choice correctly completes the sentence? \"The peer reviewers examined the methodology ____ before approving the study for publication.\"",
+    "choices": {
+      "A": "thorough",
+      "B": "thoroughly",
+      "C": "more thorough",
+      "D": "most thorough"
+    },
+    "correct_answer": "B",
+    "explanation": "An adverb is needed to modify the verb \"examined.\" \"Thoroughly\" is the correct adverb form; \"thorough\" and its comparative/superlative forms are adjectives and cannot modify a verb.",
+    "difficulty": 1,
+    "tags": ["adjective_adverb", "adverb_form"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_adj_adv_best_thorough"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "best_choice",
+    "prompt": "Which choice correctly completes the sentence? \"The results of the replication study appeared ____ to those of the original experiment.\"",
+    "choices": {
+      "A": "similarly",
+      "B": "similar",
+      "C": "more similarly",
+      "D": "similarity"
+    },
+    "correct_answer": "B",
+    "explanation": "After the linking verb \"appeared,\" a predicate adjective is required, not an adverb. \"Similar\" correctly describes the subject \"results.\" \"Similarly\" would incorrectly modify the verb rather than the subject.",
+    "difficulty": 3,
+    "tags": ["adjective_adverb", "linking_verb", "predicate_adjective"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_adj_adv_best_linking_similar"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Squinting Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision eliminates the ambiguity in the following sentence? \"The technicians who calibrated the instruments periodically submitted maintenance logs.\"",
+    "choices": {
+      "A": "The technicians who periodically calibrated the instruments submitted maintenance logs.",
+      "B": "The technicians who calibrated the instruments submitted periodically maintenance logs.",
+      "C": "Periodically, the technicians who calibrated the instruments submitted maintenance logs.",
+      "D": "Both A and C eliminate the ambiguity, but A clarifies that calibration was periodic."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Periodically\" sits between \"instruments\" and \"submitted,\" making it unclear whether calibration or submission was periodic. Choice A moves \"periodically\" before \"calibrated,\" clearly indicating that the calibration happened at regular intervals.",
+    "difficulty": 3,
+    "tags": ["squinting_modifier", "adverb_ambiguity"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_squinting_best_periodically"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Choose the best way to complete the sentence: \"Frustrated by the inconsistent results, ____\"",
+    "choices": {
+      "A": "the experiment was redesigned to include a larger control group.",
+      "B": "a larger control group was added to the experiment.",
+      "C": "the lead scientist redesigned the experiment to include a larger control group.",
+      "D": "redesigning the experiment included a larger control group."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Frustrated by the inconsistent results\" is a participial phrase that must modify a person capable of feeling frustration. Only choice C places \"the lead scientist\" as the subject after the comma.",
+    "difficulty": 1,
+    "tags": ["dangling_modifier", "participial_phrase", "subject_alignment"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_dangling_best_frustrated"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly fixes the misplaced modifier? Original: \"The committee nearly approved funding for all fifteen proposed research projects at yesterday's meeting.\"",
+    "choices": {
+      "A": "The committee approved funding for nearly all fifteen proposed research projects at yesterday's meeting.",
+      "B": "Nearly, the committee approved funding for all fifteen proposed research projects at yesterday's meeting.",
+      "C": "The committee approved nearly funding for all fifteen proposed research projects at yesterday's meeting.",
+      "D": "The original sentence is correct and requires no revision."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Nearly\" before \"approved\" implies the committee almost approved but ultimately did not. The intended meaning is that funding was approved for most of the fifteen projects, so \"nearly\" should precede \"all fifteen.\" Choice A correctly repositions the adverb.",
+    "difficulty": 3,
+    "tags": ["misplaced_modifier", "nearly_placement", "scope_ambiguity"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Modification and Parallelism",
+    "skill_code": "modifier_misplaced_best_nearly_all"
+  }
+]

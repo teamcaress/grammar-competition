@@ -1,0 +1,553 @@
+[
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "error_id",
+    "prompt": "The research team collected soil samples, water readings and atmospheric data from three field stations.",
+    "choices": {
+      "A": "soil samples,",
+      "B": "water readings and",
+      "C": "atmospheric data",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The serial (Oxford) comma is standard: a comma is required after \"water readings\" and before \"and\" to clearly separate the three list items.",
+    "difficulty": 1,
+    "tags": ["serial_comma", "list_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_serial_comma_missing"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "revision",
+    "prompt": "The laboratory technicians calibrated instruments, recorded baseline measurements and prepared culture samples before the trial began.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "calibrated instruments, recorded baseline measurements, and prepared culture samples before the trial began.",
+      "C": "calibrated instruments recorded baseline measurements, and prepared culture samples before the trial began.",
+      "D": "calibrated instruments, recorded baseline measurements, and, prepared culture samples before the trial began."
+    },
+    "correct_answer": "B",
+    "explanation": "The serial comma must appear after each item in a list of three or more before the coordinating conjunction. Choice B correctly places a comma after \"measurements\" and before \"and.\"",
+    "difficulty": 1,
+    "tags": ["serial_comma", "list_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_serial_comma_revision"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the list?",
+    "choices": {
+      "A": "The fellowship requires a research proposal a writing sample, and two letters of recommendation.",
+      "B": "The fellowship requires a research proposal, a writing sample and two letters of recommendation.",
+      "C": "The fellowship requires a research proposal, a writing sample, and two letters of recommendation.",
+      "D": "The fellowship requires, a research proposal, a writing sample, and two letters of recommendation."
+    },
+    "correct_answer": "C",
+    "explanation": "A serial comma must follow each item in a list of three or more. Choice C correctly places commas after \"proposal\" and \"sample\" and before the final \"and.\" Choice D incorrectly places a comma between the verb and its object.",
+    "difficulty": 1,
+    "tags": ["serial_comma", "list_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_serial_comma_best"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "error_id",
+    "prompt": "Researchers, who falsify data, face severe professional consequences.",
+    "choices": {
+      "A": "Researchers,",
+      "B": "who falsify data,",
+      "C": "face severe",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause \"who falsify data\" is restrictive (essential) because it identifies which researchers face consequences -- not all researchers do. No commas should set it off. The comma after \"Researchers\" is the error.",
+    "difficulty": 2,
+    "tags": ["restrictive_clause", "comma_rules"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_restrictive_false_nonrestrictive"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "revision",
+    "prompt": "Dr. Vasquez who directs the genomics lab published a landmark paper on gene editing.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Dr. Vasquez, who directs the genomics lab, published a landmark paper on gene editing.",
+      "C": "Dr. Vasquez, who directs the genomics lab published a landmark paper on gene editing.",
+      "D": "Dr. Vasquez who directs the genomics lab, published a landmark paper on gene editing."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Who directs the genomics lab\" is nonrestrictive (non-essential) because Dr. Vasquez is already identified by name. The clause must be set off by a pair of commas -- one before \"who\" and one after \"lab.\"",
+    "difficulty": 1,
+    "tags": ["nonrestrictive_clause", "comma_pair"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_nonrestrictive_comma_pair"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the relative clause? The context is a campus with multiple libraries.",
+    "choices": {
+      "A": "The library, that houses the rare manuscript collection, will close for renovation.",
+      "B": "The library that houses the rare manuscript collection will close for renovation.",
+      "C": "The library that houses the rare manuscript collection, will close for renovation.",
+      "D": "The library, that houses the rare manuscript collection will close for renovation."
+    },
+    "correct_answer": "B",
+    "explanation": "Because the campus has multiple libraries, \"that houses the rare manuscript collection\" is essential (restrictive) -- it specifies which library. Restrictive clauses take no commas. Additionally, \"that\" (not \"which\") typically introduces restrictive clauses.",
+    "difficulty": 2,
+    "tags": ["restrictive_clause", "that_vs_which"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_restrictive_that_no_commas"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "error_id",
+    "prompt": "The internship program which was founded in 2015 has placed over two hundred graduates in research positions.",
+    "choices": {
+      "A": "The internship program which",
+      "B": "was founded in 2015",
+      "C": "has placed over two hundred",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Which was founded in 2015\" is nonrestrictive information about the already-identified internship program. It should be set off by commas: \"The internship program, which was founded in 2015, has placed...\" The missing comma after \"program\" is the error.",
+    "difficulty": 2,
+    "tags": ["nonrestrictive_clause", "missing_comma"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_nonrestrictive_missing_commas"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "revision",
+    "prompt": "Sociologist, William Julius Wilson, analyzed the effects of deindustrialization on urban communities.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Sociologist William Julius Wilson analyzed the effects of deindustrialization on urban communities.",
+      "C": "Sociologist William Julius Wilson, analyzed the effects of deindustrialization on urban communities.",
+      "D": "Sociologist, William Julius Wilson analyzed the effects of deindustrialization on urban communities."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title precedes a specific name, the name is essential (it tells us which sociologist) and should not be set off by commas. No commas should surround \"William Julius Wilson.\"",
+    "difficulty": 2,
+    "tags": ["appositive", "name_rule"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_name_rule_title_before_name"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly applies the Name Rule for appositives?",
+    "choices": {
+      "A": "Economist, Thomas Piketty, argued that wealth inequality undermines democratic institutions.",
+      "B": "Economist Thomas Piketty argued that wealth inequality undermines democratic institutions.",
+      "C": "Economist Thomas Piketty, argued that wealth inequality undermines democratic institutions.",
+      "D": "Economist, Thomas Piketty argued that wealth inequality undermines democratic institutions."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title (\"Economist\") precedes a specific name, the name is essential because it tells us which economist. No commas should set off the name.",
+    "difficulty": 1,
+    "tags": ["appositive", "name_rule"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_name_rule_best"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the appositive?",
+    "choices": {
+      "A": "The study's lead author, Dr. Mei-Ling Chen, presented the findings at the annual conference.",
+      "B": "The study's lead author Dr. Mei-Ling Chen, presented the findings at the annual conference.",
+      "C": "The study's lead author, Dr. Mei-Ling Chen presented the findings at the annual conference.",
+      "D": "The study's lead author Dr. Mei-Ling Chen presented the findings at the annual conference."
+    },
+    "correct_answer": "A",
+    "explanation": "Because \"the study's lead author\" already uniquely identifies the person, the name \"Dr. Mei-Ling Chen\" is nonrestrictive and must be enclosed in a pair of commas. Only choice A provides both the opening and closing comma.",
+    "difficulty": 3,
+    "tags": ["appositive", "name_rule", "comma_pair"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_appositive_unique_identifier"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "error_id",
+    "prompt": "The dataset was publicly available; although few researchers had attempted to replicate the study's findings.",
+    "choices": {
+      "A": "publicly available;",
+      "B": "although few researchers",
+      "C": "had attempted to replicate",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A semicolon joins two independent clauses. The clause beginning with \"although\" is dependent, not independent, so a semicolon is incorrect here. A comma should replace the semicolon.",
+    "difficulty": 2,
+    "tags": ["semicolon", "dependent_clause"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_semicolon_before_dependent"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "The participants in the clinical trial included nurses from Chicago, Illinois, epidemiologists from Atlanta, Georgia, and biostatisticians from Bethesda, Maryland.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "nurses from Chicago, Illinois; epidemiologists from Atlanta, Georgia; and biostatisticians from Bethesda, Maryland.",
+      "C": "nurses from Chicago; Illinois; epidemiologists from Atlanta; Georgia; and biostatisticians from Bethesda; Maryland.",
+      "D": "nurses from Chicago Illinois, epidemiologists from Atlanta Georgia, and biostatisticians from Bethesda Maryland."
+    },
+    "correct_answer": "B",
+    "explanation": "When list items contain internal commas (city, state pairs), semicolons serve as \"super commas\" to separate the major items and prevent confusion.",
+    "difficulty": 3,
+    "tags": ["semicolon", "complex_list", "super_comma"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_semicolon_super_comma_clinical"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses a semicolon?",
+    "choices": {
+      "A": "The grant application was thorough; and it included a detailed budget.",
+      "B": "The grant application was thorough; it included a detailed budget.",
+      "C": "The grant application was thorough; because it included a detailed budget.",
+      "D": "The grant application; was thorough, and it included a detailed budget."
+    },
+    "correct_answer": "B",
+    "explanation": "A semicolon correctly joins two independent clauses without a coordinating conjunction. Choice A incorrectly pairs a semicolon with \"and.\" Choice C follows the semicolon with a dependent clause. Choice D splits the subject from its verb.",
+    "difficulty": 1,
+    "tags": ["semicolon", "independent_clauses"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_semicolon_join_independent"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "error_id",
+    "prompt": "The study examined: income inequality, educational access, and housing instability across three metropolitan areas.",
+    "choices": {
+      "A": "The study examined:",
+      "B": "income inequality,",
+      "C": "educational access, and",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before a colon must be a complete sentence. \"The study examined\" is not a complete thought without its objects, so the colon is incorrectly placed.",
+    "difficulty": 1,
+    "tags": ["colon", "incomplete_clause"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_colon_after_incomplete"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "revision",
+    "prompt": "The study examined three variables: income inequality, educational access, and housing instability.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The study examined three variables, income inequality, educational access, and housing instability.",
+      "C": "The study examined: three variables, income inequality, educational access, and housing instability.",
+      "D": "The study examined three variables; income inequality, educational access, and housing instability."
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before the colon (\"The study examined three variables\") is a complete sentence, and the colon correctly introduces the list that elaborates on \"three variables.\"",
+    "difficulty": 1,
+    "tags": ["colon", "list_introduction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_colon_correct_usage"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "best_choice",
+    "prompt": "Which revision correctly uses a colon to introduce the explanation?",
+    "choices": {
+      "A": "The experiment failed for one reason: the control group was contaminated.",
+      "B": "The experiment failed for: one reason, the control group was contaminated.",
+      "C": "The experiment failed: for one reason, the control group was contaminated.",
+      "D": "The experiment failed for one reason the control group: was contaminated."
+    },
+    "correct_answer": "A",
+    "explanation": "In choice A, the clause before the colon is a complete independent clause, and the colon correctly introduces the explanatory detail. The other choices break the colon rule by placing it after an incomplete clause.",
+    "difficulty": 2,
+    "tags": ["colon", "independent_clause_before_colon"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_colon_explanation_intro"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "error_id",
+    "prompt": "The longitudinal study, which tracked participants for over a decade -- revealed significant disparities in health outcomes.",
+    "choices": {
+      "A": "The longitudinal study,",
+      "B": "which tracked participants",
+      "C": "for over a decade --",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Punctuation marks used to set off nonessential elements must be paired consistently. The sentence begins with a comma after \"study\" but closes with a dash after \"decade.\" You cannot mix a comma with a dash; both marks must match.",
+    "difficulty": 3,
+    "tags": ["dash", "comma_dash_mismatch", "paired_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_dash_comma_mismatch"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "revision",
+    "prompt": "The committee's decision, to increase funding by forty percent, surprised even the program's most vocal advocates.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The committee's decision -- to increase funding by forty percent -- surprised even the program's most vocal advocates.",
+      "C": "The committee's decision to increase funding by forty percent, surprised even the program's most vocal advocates.",
+      "D": "The committee's decision, to increase funding by forty percent surprised even the program's most vocal advocates."
+    },
+    "correct_answer": "A",
+    "explanation": "The commas correctly set off the nonessential phrase \"to increase funding by forty percent\" as a pair. While dashes (choice B) could also work, the original is grammatically correct. Choice C drops one comma, and choice D drops the closing comma, both breaking the pair.",
+    "difficulty": 2,
+    "tags": ["dash", "comma_pair", "nonessential_phrase"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_dash_vs_comma_pair"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses a single dash?",
+    "choices": {
+      "A": "The research yielded an unexpected result -- a statistically significant correlation between diet and cognitive decline.",
+      "B": "The research yielded -- an unexpected result a statistically significant correlation between diet and cognitive decline.",
+      "C": "The research yielded an unexpected result a statistically significant -- correlation between diet and cognitive decline.",
+      "D": "The research -- yielded an unexpected result, a statistically significant correlation between diet and cognitive decline."
+    },
+    "correct_answer": "A",
+    "explanation": "A single dash can function like a colon, introducing elaborating or defining material after a complete clause. In choice A, the clause before the dash is complete and the dash introduces the specific result.",
+    "difficulty": 2,
+    "tags": ["dash", "single_dash_colon_function"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_single_dash_colon"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "revision",
+    "prompt": "Three factors -- sample size, measurement error, and participant attrition, undermined the validity of the study.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Three factors -- sample size, measurement error, and participant attrition -- undermined the validity of the study.",
+      "C": "Three factors, sample size, measurement error, and participant attrition -- undermined the validity of the study.",
+      "D": "Three factors -- sample size; measurement error; and participant attrition, undermined the validity of the study."
+    },
+    "correct_answer": "B",
+    "explanation": "Double dashes function like parentheses and must appear as a pair. The original opens with a dash but closes with a comma, creating a mismatch. Choice B correctly pairs both dashes around the nonessential list.",
+    "difficulty": 3,
+    "tags": ["dash", "paired_dashes", "comma_dash_mismatch"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_double_dash_pairing"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "error_id",
+    "prompt": "The researchers' findings confirmed that the enzyme's role in cellular repair is more complex than it's earlier models suggested.",
+    "choices": {
+      "A": "researchers' findings",
+      "B": "enzyme's role",
+      "C": "it's earlier models",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"It's\" is a contraction of \"it is.\" The possessive pronoun is \"its\" -- possessive pronouns never take an apostrophe. The sentence requires \"its earlier models.\"",
+    "difficulty": 1,
+    "tags": ["apostrophe", "its_vs_its"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_apostrophe_its_models"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "revision",
+    "prompt": "The two professor's offices were relocated during the building's renovation, but the department kept all of it's archived files intact.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The two professors' offices were relocated during the building's renovation, but the department kept all of its archived files intact.",
+      "C": "The two professors's offices were relocated during the buildings renovation, but the department kept all of its archived files intact.",
+      "D": "The two professors offices were relocated during the building's renovation, but the department kept all of it's archived files intact."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Professors\" is a plural noun, so its possessive form is \"professors'\" (apostrophe after the s). \"Building's\" is a correct singular possessive. \"Its\" (no apostrophe) is the possessive pronoun; \"it's\" means \"it is.\"",
+    "difficulty": 2,
+    "tags": ["apostrophe", "plural_possessive", "its_vs_its"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_apostrophe_plural_possessive"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly distinguishes \"whose\" from \"who's\"?",
+    "choices": {
+      "A": "The candidate who's dissertation received the highest marks was offered a fellowship.",
+      "B": "The candidate whose dissertation received the highest marks was offered a fellowship.",
+      "C": "The candidate who's dissertation received the highest marks, was offered a fellowship.",
+      "D": "The candidate, whose dissertation received the highest marks was offered a fellowship."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Whose\" is the possessive form of \"who\"; \"who's\" is a contraction of \"who is.\" Choice B correctly uses \"whose\" to show possession and places no unnecessary commas around the restrictive clause.",
+    "difficulty": 3,
+    "tags": ["apostrophe", "whos_vs_whose", "restrictive_clause"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_apostrophe_whos_whose"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence uses apostrophes correctly throughout?",
+    "choices": {
+      "A": "The children's test scores improved after the district revised it's curriculum.",
+      "B": "The childrens' test scores improved after the district revised its curriculum.",
+      "C": "The children's test scores improved after the district revised its curriculum.",
+      "D": "The children's test score's improved after the district revised its curriculum."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Children\" is an irregular plural, so the possessive is \"children's.\" \"Its\" (no apostrophe) is the correct possessive pronoun. Choice A uses \"it's\" (contraction). Choice B uses \"childrens'\" (incorrect form). Choice D adds an apostrophe to \"score's,\" which is just a plural, not a possessive.",
+    "difficulty": 2,
+    "tags": ["apostrophe", "irregular_plural_possessive", "its_vs_its"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_apostrophe_irregular_plural"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "error_id",
+    "prompt": "The archive contained three types of documents; field notes from the 1940s, correspondence between researchers, and unpublished manuscripts.",
+    "choices": {
+      "A": "three types of documents;",
+      "B": "field notes from the 1940s,",
+      "C": "correspondence between researchers,",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause before the semicolon introduces a list, which is the function of a colon, not a semicolon. Because \"The archive contained three types of documents\" is a complete clause introducing explanatory material, a colon should replace the semicolon.",
+    "difficulty": 3,
+    "tags": ["semicolon", "colon", "list_introduction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_semicolon_vs_colon_list"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Non-Restrictive",
+    "card_type": "revision",
+    "prompt": "The professor praised the students, who submitted their drafts early, and noted that late submissions would not receive feedback.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The professor praised the students who submitted their drafts early and noted that late submissions would not receive feedback.",
+      "C": "The professor praised the students who submitted their drafts early, and noted that late submissions would not receive feedback.",
+      "D": "The professor, praised the students who submitted their drafts early, and noted that late submissions would not receive feedback."
+    },
+    "correct_answer": "B",
+    "explanation": "The clause \"who submitted their drafts early\" is restrictive: it specifies which students the professor praised (only the early submitters, not all students). Restrictive clauses should not be set off with commas. The compound predicate (\"praised ... and noted\") does not require a comma before \"and.\"",
+    "difficulty": 3,
+    "tags": ["restrictive_clause", "comma_rules", "compound_predicate"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_restrictive_compound_pred"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "error_id",
+    "prompt": "The dean's message emphasized that: faculty should attend the orientation, submit syllabi by Friday, and complete safety training.",
+    "choices": {
+      "A": "emphasized that:",
+      "B": "faculty should attend",
+      "C": "submit syllabi by Friday,",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A colon must follow a complete independent clause. \"The dean's message emphasized that\" is not a complete sentence because \"that\" makes it an incomplete structure awaiting its noun clause. The colon should be removed.",
+    "difficulty": 3,
+    "tags": ["colon", "incomplete_clause", "subordinating_that"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_colon_after_that"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Serial Comma",
+    "card_type": "error_id",
+    "prompt": "The curriculum includes courses in statistics, research methods and ethical frameworks for social science inquiry.",
+    "choices": {
+      "A": "courses in statistics,",
+      "B": "research methods and",
+      "C": "ethical frameworks for",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The serial comma is standard: a comma must appear after \"research methods\" and before \"and\" to clearly separate the three items in the list.",
+    "difficulty": 1,
+    "tags": ["serial_comma", "list_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_serial_comma_curriculum"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "The meta-analysis reviewed studies from several disciplines, however, the authors acknowledged gaps in the existing literature.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The meta-analysis reviewed studies from several disciplines; however, the authors acknowledged gaps in the existing literature.",
+      "C": "The meta-analysis reviewed studies from several disciplines however, the authors acknowledged gaps in the existing literature.",
+      "D": "The meta-analysis reviewed studies from several disciplines; however the authors acknowledged gaps in the existing literature."
+    },
+    "correct_answer": "B",
+    "explanation": "A conjunctive adverb like \"however\" joining two independent clauses requires a semicolon before it and a comma after it. Choice B provides the correct punctuation pattern: semicolon + however + comma.",
+    "difficulty": 3,
+    "tags": ["semicolon", "conjunctive_adverb", "however"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_semicolon_conjunctive_adverb"
+  }
+]
