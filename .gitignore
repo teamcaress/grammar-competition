@@ -11,3 +11,6 @@ apps/api/.dev.vars
 .env
 .env.*
 *.tsbuildinfo
+
+# Copyrighted reference materials (kept locally, not in repo)
+resources/
