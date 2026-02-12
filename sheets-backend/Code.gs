@@ -14,7 +14,9 @@ function doGet(e) {
   var action = (e.parameter.action || "").toString();
   var result;
 
-  if (action === "getPlayerNames") {
+  if (action === "debug") {
+    result = handleDebug(e.parameter.user || "");
+  } else if (action === "getPlayerNames") {
     result = handleGetPlayerNames();
   } else if (action === "getUserData") {
     result = handleGetUserData(e.parameter.user || "");
@@ -134,12 +136,13 @@ function handleGetUserData(user) {
   var cardStates = [];
   var dailyScore = null;
   var today = todayKey();
+  var userLower = user.toString().trim().toLowerCase();
 
-  // Scan CardState for this user
+  // Scan CardState for this user (case-insensitive)
   if (csSheet) {
     var csData = csSheet.getDataRange().getValues();
     for (var i = 1; i < csData.length; i++) {
-      if (csData[i][0] === user) {
+      if (csData[i][0].toString().trim().toLowerCase() === userLower) {
         cardStates.push({
           card_id: csData[i][1],
           box: Number(csData[i][2]),
@@ -156,7 +159,7 @@ function handleGetUserData(user) {
   if (dsSheet) {
     var dsData = dsSheet.getDataRange().getValues();
     for (var j = 1; j < dsData.length; j++) {
-      if (dsData[j][0] === user && toDateKey(dsData[j][1]) === today) {
+      if (dsData[j][0].toString().trim().toLowerCase() === userLower && toDateKey(dsData[j][1]) === today) {
         dailyScore = {
           date: today,
           points: Number(dsData[j][2]),
@@ -186,6 +189,8 @@ function handleSaveAnswer(body) {
 
   if (!user || !cardId) return { error: "user and card_id are required" };
 
+  var userLower = user.trim().toLowerCase();
+
   // Upsert CardState
   var csSheet = getSheet("CardState");
   if (!csSheet) return { error: "CardState sheet not found" };
@@ -193,7 +198,7 @@ function handleSaveAnswer(body) {
   var csData = csSheet.getDataRange().getValues();
   var foundRow = -1;
   for (var i = 1; i < csData.length; i++) {
-    if (csData[i][0] === user && csData[i][1] === cardId) {
+    if (csData[i][0].toString().trim().toLowerCase() === userLower && csData[i][1] === cardId) {
       foundRow = i + 1; // 1-indexed for Sheet API
       break;
     }
@@ -213,7 +218,7 @@ function handleSaveAnswer(body) {
   var dsData = dsSheet.getDataRange().getValues();
   var dsRow = -1;
   for (var j = 1; j < dsData.length; j++) {
-    if (dsData[j][0] === user && toDateKey(dsData[j][1]) === today) {
+    if (dsData[j][0].toString().trim().toLowerCase() === userLower && toDateKey(dsData[j][1]) === today) {
       dsRow = j + 1;
       break;
     }
@@ -381,4 +386,66 @@ function handleJoinGame(body) {
 
   sheet.appendRow([name, pin]);
   return { ok: true, user: name };
+}
+
+/* ------------------------------------------------------------------ */
+/*  debug — show raw sheet data for troubleshooting                    */
+/* ------------------------------------------------------------------ */
+
+function handleDebug(user) {
+  var result = { today: todayKey(), user: user };
+
+  var csSheet = getSheet("CardState");
+  if (csSheet) {
+    var csData = csSheet.getDataRange().getValues();
+    result.cardstate_headers = csData[0];
+    result.cardstate_rows = 0;
+    result.cardstate_sample = [];
+    for (var i = 1; i < csData.length; i++) {
+      var cellUser = csData[i][0];
+      var cellUserStr = cellUser.toString().trim();
+      if (!user || cellUserStr.toLowerCase() === user.toLowerCase()) {
+        result.cardstate_rows++;
+        if (result.cardstate_sample.length < 3) {
+          result.cardstate_sample.push({
+            raw_user: cellUser,
+            user_type: typeof cellUser,
+            card_id: csData[i][1],
+            box: csData[i][2],
+            box_type: typeof csData[i][2],
+            due_date_raw: String(csData[i][3]),
+            due_date_type: csData[i][3] instanceof Date ? "Date" : typeof csData[i][3]
+          });
+        }
+      }
+    }
+  } else {
+    result.cardstate_error = "Sheet not found";
+  }
+
+  var dsSheet = getSheet("DailyScores");
+  if (dsSheet) {
+    var dsData = dsSheet.getDataRange().getValues();
+    result.dailyscores_headers = dsData[0];
+    result.dailyscores_rows = [];
+    for (var j = 1; j < dsData.length; j++) {
+      var dsUser = dsData[j][0].toString().trim();
+      if (!user || dsUser.toLowerCase() === user.toLowerCase()) {
+        result.dailyscores_rows.push({
+          raw_user: dsData[j][0],
+          user_type: typeof dsData[j][0],
+          date_raw: String(dsData[j][1]),
+          date_type: dsData[j][1] instanceof Date ? "Date" : typeof dsData[j][1],
+          date_as_key: toDateKey(dsData[j][1]),
+          matches_today: toDateKey(dsData[j][1]) === todayKey(),
+          points: dsData[j][2],
+          answers: dsData[j][3]
+        });
+      }
+    }
+  } else {
+    result.dailyscores_error = "Sheet not found";
+  }
+
+  return result;
 }
