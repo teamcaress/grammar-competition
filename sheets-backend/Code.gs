@@ -348,8 +348,7 @@ function handleJoinGame(body) {
   var name = (body.name || "").toString().trim();
   var pin = (body.pin || "").toString().trim();
   if (!name) return { error: "Name is required" };
-  if (!pin || pin.length < 3 || pin.length > 8) return { error: "PIN must be 3\u20138 digits" };
-  if (!/^\d+$/.test(pin)) return { error: "PIN must be digits only" };
+  if (!pin || pin.length !== 4 || !/^\d{4}$/.test(pin)) return { error: "PIN must be exactly 4 digits" };
 
   var sheet = getSheet("Users");
   if (!sheet) return { error: "Users sheet not found" };

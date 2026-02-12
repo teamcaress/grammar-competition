@@ -97,11 +97,15 @@ export function App() {
     setDashboard(d);
   }
 
-  async function handleLogin() {
-    const name = loginName.trim();
-    const pin = loginPin.trim();
-    if (!name || !pin) {
-      setGlobalError("Enter your name and PIN.");
+  async function handleLogin(nameOverride?: string, pinOverride?: string) {
+    const name = (nameOverride ?? loginName).trim();
+    const pin = (pinOverride ?? loginPin).trim();
+    if (!name) {
+      setGlobalError("Pick your name first.");
+      return;
+    }
+    if (pin.length !== 4) {
+      setGlobalError("PIN must be 4 digits.");
       return;
     }
     setGlobalError(null);
@@ -119,10 +123,28 @@ export function App() {
       refreshDashboard(states, score);
       setStage("home");
     } catch (error) {
+      setLoginPin("");
       setGlobalError(error instanceof Error ? error.message : "Could not sign in.");
     } finally {
       setIsLoading(false);
     }
+  }
+
+  function handlePinDigit(digit: string) {
+    if (isLoading) return;
+    setGlobalError(null);
+    const next = loginPin + digit;
+    if (next.length > 4) return;
+    setLoginPin(next);
+    if (next.length === 4) {
+      void handleLogin(undefined, next);
+    }
+  }
+
+  function handlePinDelete() {
+    if (isLoading) return;
+    setGlobalError(null);
+    setLoginPin((prev) => prev.slice(0, -1));
   }
 
   function startPractice() {
@@ -281,66 +303,93 @@ export function App() {
           <h2 className="text-base font-semibold">
             {isJoinMode ? "Join the Game" : "Sign In"}
           </h2>
-          <form
-            className="mt-3 space-y-3"
-            onSubmit={(e) => {
-              e.preventDefault();
-              void handleLogin();
-            }}
-          >
-            <label className="block">
-              <span className="mb-1 block text-xs font-medium text-slate-600">Name</span>
-              {isJoinMode ? (
-                <input
-                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                  type="text"
-                  autoComplete="username"
-                  value={loginName}
-                  onChange={(e) => setLoginName(e.target.value)}
-                  disabled={isLoading}
-                />
-              ) : (
-                <select
-                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                  value={loginName}
-                  onChange={(e) => setLoginName(e.target.value)}
-                  disabled={isLoading}
-                >
-                  <option value="">Choose your name</option>
-                  {playerNames.map((n) => (
-                    <option key={n} value={n}>{n}</option>
-                  ))}
-                </select>
-              )}
-            </label>
-            <label className="block">
-              <span className="mb-1 block text-xs font-medium text-slate-600">PIN</span>
+
+          <div className="mt-3">
+            <span className="mb-1 block text-xs font-medium text-slate-600">Name</span>
+            {isJoinMode ? (
               <input
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                type="password"
-                inputMode="numeric"
-                autoComplete="current-password"
-                value={loginPin}
-                onChange={(e) => setLoginPin(e.target.value)}
+                type="text"
+                autoComplete="username"
+                placeholder="Pick a display name"
+                value={loginName}
+                onChange={(e) => setLoginName(e.target.value)}
                 disabled={isLoading}
               />
-            </label>
+            ) : (
+              <select
+                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                value={loginName}
+                onChange={(e) => { setLoginName(e.target.value); setLoginPin(""); setGlobalError(null); }}
+                disabled={isLoading}
+              >
+                <option value="">Choose your name</option>
+                {playerNames.map((n) => (
+                  <option key={n} value={n}>{n}</option>
+                ))}
+              </select>
+            )}
+          </div>
+
+          {/* PIN dots */}
+          <div className="mt-4 flex justify-center gap-3">
+            {[0, 1, 2, 3].map((i) => (
+              <div
+                key={i}
+                className={`h-4 w-4 rounded-full border-2 transition-colors ${
+                  i < loginPin.length
+                    ? "border-accent bg-accent"
+                    : "border-slate-300 bg-white"
+                }`}
+              />
+            ))}
+          </div>
+          {isLoading ? (
+            <p className="mt-2 text-center text-xs text-slate-500">Signing in...</p>
+          ) : (
+            <p className="mt-2 text-center text-xs text-slate-400">Enter 4-digit PIN</p>
+          )}
+
+          {/* Number pad */}
+          <div className="mx-auto mt-3 grid max-w-[16rem] grid-cols-3 gap-2">
+            {["1","2","3","4","5","6","7","8","9"].map((d) => (
+              <button
+                key={d}
+                type="button"
+                className="rounded-xl bg-slate-100 py-3 text-lg font-semibold text-slate-800 active:bg-slate-200 disabled:opacity-40"
+                disabled={isLoading || loginPin.length >= 4}
+                onClick={() => handlePinDigit(d)}
+              >
+                {d}
+              </button>
+            ))}
+            <div />
             <button
-              className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
-              type="submit"
-              disabled={isLoading}
+              type="button"
+              className="rounded-xl bg-slate-100 py-3 text-lg font-semibold text-slate-800 active:bg-slate-200 disabled:opacity-40"
+              disabled={isLoading || loginPin.length >= 4}
+              onClick={() => handlePinDigit("0")}
             >
-              {isLoading ? "Loading..." : isJoinMode ? "Create Account" : "Sign In"}
+              0
             </button>
-          </form>
-          <p className="mt-3 text-center text-xs text-slate-500">
+            <button
+              type="button"
+              className="rounded-xl bg-slate-100 py-3 text-lg font-semibold text-slate-600 active:bg-slate-200 disabled:opacity-40"
+              disabled={isLoading || loginPin.length === 0}
+              onClick={handlePinDelete}
+            >
+              &#9003;
+            </button>
+          </div>
+
+          <p className="mt-4 text-center text-xs text-slate-500">
             {isJoinMode ? (
               <>
                 Already have an account?{" "}
                 <button
                   type="button"
                   className="font-semibold text-accent"
-                  onClick={() => { setIsJoinMode(false); setGlobalError(null); }}
+                  onClick={() => { setIsJoinMode(false); setLoginPin(""); setGlobalError(null); }}
                 >
                   Sign In
                 </button>
@@ -351,7 +400,7 @@ export function App() {
                 <button
                   type="button"
                   className="font-semibold text-accent"
-                  onClick={() => { setIsJoinMode(true); setGlobalError(null); }}
+                  onClick={() => { setIsJoinMode(true); setLoginPin(""); setGlobalError(null); }}
                 >
                   Join the Game
                 </button>

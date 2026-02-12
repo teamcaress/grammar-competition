@@ -23,7 +23,7 @@
    |---|---|
    | Neal | 0413 |
    | Amie | 0221 |
-   | Baxter | 07101 |
+   | Baxter | 0710 |
    | Lula | 0115 |
 
    **Important:** Format columns A and B as **Plain Text** (select the columns, then Format > Number > Plain text) so PINs with leading zeros aren't treated as numbers.
