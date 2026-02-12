@@ -535,8 +535,8 @@
       "C": "but also a skilled public speaker",
       "D": "NO ERROR"
     },
-    "correct_answer": "D",
-    "explanation": "Both sides of \"not only ... but also\" are parallel adjective phrases.",
+    "correct_answer": "C",
+    "explanation": "\"Not only ... but also\" requires parallel structure. Side A is an adjective phrase (\"experienced in policy analysis\") but side B is a noun phrase (\"a skilled public speaker\"). A correct version: \"not only experienced in policy analysis but also skilled in public speaking.\"",
     "difficulty": 2,
     "tags": [
       "correlative_conjunction",
@@ -547,7 +547,7 @@
       "ACT"
     ],
     "source_section": "Section VIII: Modification and Parallelism",
-    "skill_code": "parallel_correlative_correct"
+    "skill_code": "parallel_correlative_error"
   },
   {
     "unit": "Parallelism",
@@ -1256,8 +1256,8 @@
       "C": "and",
       "D": "as a result"
     },
-    "correct_answer": "D",
-    "explanation": "The second clause states an effect of the first, so a causal connector is needed.",
+    "correct_answer": "B",
+    "explanation": "\"Because\" is a subordinating conjunction that correctly joins these clauses with a comma and expresses the causal relationship. \"As a result\" and \"however\" are conjunctive adverbs that would create comma splices. \"And\" is grammatical but doesn't convey the cause-effect meaning.",
     "difficulty": 3,
     "tags": [
       "subordination",
