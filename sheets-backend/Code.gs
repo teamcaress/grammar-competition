@@ -73,12 +73,14 @@ function todayKey() {
 /** Convert a cell value (possibly a Date object) to "YYYY-MM-DD" string (UTC). */
 function toDateKey(val) {
   if (val instanceof Date) {
-    var y = val.getUTCFullYear();
-    var m = ("0" + (val.getUTCMonth() + 1)).slice(-2);
-    var d = ("0" + val.getUTCDate()).slice(-2);
-    return y + "-" + m + "-" + d;
+    return val.toISOString().slice(0, 10);
   }
-  return val.toString();
+  var s = val.toString();
+  // Handle ISO strings like "2026-02-12T05:00:00.000Z"
+  if (s.length > 10 && s.charAt(4) === '-' && s.charAt(10) === 'T') {
+    return s.slice(0, 10);
+  }
+  return s;
 }
 
 /** Convert a cell value (possibly a Date object) to an ISO 8601 string. */
@@ -87,6 +89,27 @@ function toIsoString(val) {
     return val.toISOString();
   }
   return val.toString();
+}
+
+/**
+ * Write a row without Google Sheets auto-parsing dates.
+ * Formats ALL columns as plain text first, then writes values.
+ */
+function appendRowAsText(sheet, values) {
+  var newRow = sheet.getLastRow() + 1;
+  var range = sheet.getRange(newRow, 1, 1, values.length);
+  range.setNumberFormat('@');
+  range.setValues([values.map(function(v) { return String(v); })]);
+}
+
+/**
+ * Write values to an existing row without auto-parsing.
+ * startCol is 1-indexed.
+ */
+function setRowAsText(sheet, row, startCol, values) {
+  var range = sheet.getRange(row, startCol, 1, values.length);
+  range.setNumberFormat('@');
+  range.setValues([values.map(function(v) { return String(v); })]);
 }
 
 function shiftDateKey(dateKey, delta) {
@@ -177,11 +200,9 @@ function handleSaveAnswer(body) {
   }
 
   if (foundRow > 0) {
-    csSheet.getRange(foundRow, 3, 1, 5).setValues([
-      [newBox, dueDate, correctStreak, totalAttempts, lastSeenAt]
-    ]);
+    setRowAsText(csSheet, foundRow, 3, [newBox, dueDate, correctStreak, totalAttempts, lastSeenAt]);
   } else {
-    csSheet.appendRow([user, cardId, newBox, dueDate, correctStreak, totalAttempts, lastSeenAt]);
+    appendRowAsText(csSheet, [user, cardId, newBox, dueDate, correctStreak, totalAttempts, lastSeenAt]);
   }
 
   // Upsert DailyScores
@@ -201,11 +222,9 @@ function handleSaveAnswer(body) {
   if (dsRow > 0) {
     var curPoints = Number(dsData[dsRow - 1][2]);
     var curCount = Number(dsData[dsRow - 1][3]);
-    dsSheet.getRange(dsRow, 3, 1, 2).setValues([
-      [curPoints + pointsAwarded, curCount + 1]
-    ]);
+    setRowAsText(dsSheet, dsRow, 3, [curPoints + pointsAwarded, curCount + 1]);
   } else {
-    dsSheet.appendRow([user, today, pointsAwarded, 1]);
+    appendRowAsText(dsSheet, [user, today, pointsAwarded, 1]);
   }
 
   return { ok: true };
