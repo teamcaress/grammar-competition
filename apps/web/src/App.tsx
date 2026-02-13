@@ -86,6 +86,8 @@ export function App() {
   const [loginPin, setLoginPin] = useState("");
   const [isJoinMode, setIsJoinMode] = useState(false);
 
+  const [selectedUnit, setSelectedUnit] = useState<string | null>(null);
+
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
   const [isLeaderboardLoading, setIsLeaderboardLoading] = useState(false);
@@ -182,9 +184,12 @@ export function App() {
 
   function startPractice() {
     setGlobalError(null);
-    const cards = selectSessionCards(getCards(), cardStates, sessionSize);
+    const pool = selectedUnit
+      ? getCards().filter((c) => c.unit === selectedUnit)
+      : getCards();
+    const cards = selectSessionCards(pool, cardStates, sessionSize);
     if (cards.length === 0) {
-      setGlobalError("No cards available. Try again later.");
+      setGlobalError("No cards available for this unit right now. Try another or come back later.");
       return;
     }
     setQueue(cards);
@@ -356,7 +361,7 @@ export function App() {
                 onChange={(e) => { setLoginName(e.target.value); setLoginPin(""); setGlobalError(null); }}
                 disabled={isLoading}
               >
-                <option value="">Choose your name</option>
+                <option value="">Select your name</option>
                 {playerNames.map((n) => (
                   <option key={n} value={n}>{n}</option>
                 ))}
@@ -454,10 +459,10 @@ export function App() {
             </p>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">
               <li>
-                <span className="font-semibold">How it works:</span> Answer multiple-choice questions. Cards you get right move forward; cards you miss come back for more practice.
+                <span className="font-semibold">How it works:</span> Answer multiple-choice questions. Cards you get right advance through 4 levels over increasing intervals (1, 3, 7, and 21 days). Cards you miss reset to level 1 for more practice.
               </li>
               <li>
-                <span className="font-semibold">How long:</span> There are 8 skill areas with {UNIT_COMPLETION_THRESHOLD} cards to master in each. With daily 5-minute sessions, most people finish a skill area in 2-3 weeks.
+                <span className="font-semibold">How long:</span> There are 8 independent skill areas. To complete each one, master {UNIT_COMPLETION_THRESHOLD} cards (get them to level 4). With one session a day, plan on about 2-3 weeks per skill area. You can work on any area in any order.
               </li>
               <li>
                 <span className="font-semibold">Your first session:</span> We'll start you off with a quick 5-card warm-up so you can get the feel for it.
@@ -508,17 +513,33 @@ export function App() {
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <label className="block">
+              <span className="mb-1 block text-xs font-medium text-slate-600">Skill Area</span>
+              <select
+                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                value={selectedUnit ?? ""}
+                onChange={(e) => setSelectedUnit(e.target.value || null)}
+              >
+                <option value="">All units (mixed)</option>
+                {dashboard?.unit_mastery?.map((u) => (
+                  <option key={u.unit_id} value={u.unit_id}>
+                    {u.unit_id}{u.completed ? " \u2713" : ""}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="mt-2 block">
               <span className="mb-1 block text-xs font-medium text-slate-600">Session Size</span>
               <input
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
                 type="number"
-                min={10}
+                min={5}
                 max={20}
                 value={sessionSize}
                 onChange={(event) => {
                   const value = Number(event.target.value);
                   if (Number.isNaN(value)) return;
-                  setSessionSize(Math.max(10, Math.min(20, Math.floor(value))));
+                  setSessionSize(Math.max(5, Math.min(20, Math.floor(value))));
                 }}
               />
             </label>
