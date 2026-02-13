@@ -58,7 +58,7 @@ function getSummaryMessage(pct: number, isFirstSession: boolean): string {
     return "Welcome aboard! Every answer helps the app learn what to review with you.";
   }
   if (pct === 100) return "Flawless! You nailed every single one.";
-  if (pct >= 80) return "Strong session! You're building real mastery.";
+  if (pct >= 80) return "Strong session! You're really getting the hang of this.";
   if (pct >= 60) return "Solid work! Tricky cards will come back for another round.";
   return "Tough round — but showing up is what matters. Keep at it!";
 }
@@ -182,12 +182,13 @@ export function App() {
     setLoginPin((prev) => prev.slice(0, -1));
   }
 
-  function startPractice() {
+  function startPractice(sizeOverride?: number) {
     setGlobalError(null);
+    const size = sizeOverride ?? sessionSize;
     const pool = selectedUnit
       ? getCards().filter((c) => c.unit === selectedUnit)
       : getCards();
-    const cards = selectSessionCards(pool, cardStates, sessionSize);
+    const cards = selectSessionCards(pool, cardStates, size);
     if (cards.length === 0) {
       setGlobalError("No cards available for this unit right now. Try another or come back later.");
       return;
@@ -455,14 +456,14 @@ export function App() {
               Welcome, {userName}!
             </h2>
             <p className="mt-2 text-sm text-slate-700">
-              Grammar Showdown helps you master SAT/ACT grammar through short daily practice sessions.
+              Grammar Showdown helps you learn SAT/ACT grammar through short daily practice sessions.
             </p>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">
               <li>
                 <span className="font-semibold">How it works:</span> Answer multiple-choice questions. Cards you get right advance through 4 levels over increasing intervals (1, 3, 7, and 21 days). Cards you miss reset to level 1 for more practice.
               </li>
               <li>
-                <span className="font-semibold">How long:</span> There are 8 independent skill areas. To complete each one, master {UNIT_COMPLETION_THRESHOLD} cards (get them to level 4). With one session a day, plan on about 2-3 weeks per skill area. You can work on any area in any order.
+                <span className="font-semibold">How long:</span> There are 8 independent skill areas. To complete each one, get {UNIT_COMPLETION_THRESHOLD} cards to level 4. With one session a day, plan on about 2-3 weeks per skill area. You can work on any area in any order.
               </li>
               <li>
                 <span className="font-semibold">Your first session:</span> We'll start you off with a quick 5-card warm-up so you can get the feel for it.
@@ -472,10 +473,7 @@ export function App() {
           <button
             className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white"
             type="button"
-            onClick={() => {
-              setSessionSize(5);
-              startPractice();
-            }}
+            onClick={() => startPractice(5)}
           >
             Start Your First Session
           </button>
@@ -551,7 +549,7 @@ export function App() {
             <button
               className="mt-3 w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
               type="button"
-              onClick={startPractice}
+              onClick={() => startPractice()}
               disabled={isLoading}
             >
               Start Practice
