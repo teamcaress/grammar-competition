@@ -106,6 +106,23 @@ export function App() {
     [pctCorrect, totalAnswered]
   );
 
+  // Pacing estimate: cards left to finish + days until May 1
+  const pacingEstimate = useMemo(() => {
+    if (!dashboard?.unit_mastery?.length) return null;
+    const cardsLeft = dashboard.unit_mastery.reduce(
+      (sum, u) => sum + Math.max(0, UNIT_COMPLETION_THRESHOLD - u.mastered_cards),
+      0
+    );
+    const target = new Date(Date.UTC(2026, 4, 1)); // May 1, 2026
+    const daysLeft = Math.max(0, Math.ceil((target.getTime() - Date.now()) / 86_400_000));
+    // Each card needs ~3 correct answers over ~11 days to reach level 4.
+    // A rough daily target: new cards to introduce per day, leaving 10 days
+    // for the last batch to mature through the review intervals.
+    const effectiveDays = Math.max(1, daysLeft - 10);
+    const cardsPerDay = cardsLeft > 0 ? Math.ceil(cardsLeft / effectiveDays) : 0;
+    return { cardsLeft, daysLeft, cardsPerDay };
+  }, [dashboard]);
+
   // Fire confetti when entering the summary stage
   useEffect(() => {
     if (stage !== "summary" || totalAnswered === 0) return;
@@ -156,7 +173,7 @@ export function App() {
       setDailyScore(score);
       refreshDashboard(states, score);
       isFirstSession.current = states.size === 0;
-      setStage("welcome");
+      setStage(states.size === 0 ? "welcome" : "home");
     } catch (error) {
       setLoginPin("");
       setGlobalError(error instanceof Error ? error.message : "Could not sign in.");
@@ -508,6 +525,24 @@ export function App() {
               </div>
             </div>
           </div>
+
+          {pacingEstimate && pacingEstimate.cardsLeft > 0 ? (
+            <div className="rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-200">
+              <p className="text-sm text-sky-900">
+                <span className="font-semibold">{pacingEstimate.cardsLeft} cards to go</span>
+                {" "}· {pacingEstimate.daysLeft} days until May 1
+              </p>
+              <p className="mt-1 text-xs text-sky-700">
+                Aim for about {pacingEstimate.cardsPerDay} new card{pacingEstimate.cardsPerDay === 1 ? "" : "s"} per day to stay on track.
+              </p>
+            </div>
+          ) : pacingEstimate && pacingEstimate.cardsLeft === 0 ? (
+            <div className="rounded-2xl bg-emerald-50 p-4 ring-1 ring-emerald-200">
+              <p className="text-sm font-semibold text-emerald-900">
+                All done! Every skill area is complete.
+              </p>
+            </div>
+          ) : null}
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <label className="block">
