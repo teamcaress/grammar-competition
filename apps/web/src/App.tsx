@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import confetti from "canvas-confetti";
 import { initCards, getCards, getCardById } from "./cards";
 import {
   selectSessionCards,
@@ -21,7 +22,7 @@ import {
   type LeaderboardRow,
 } from "./sheets-api";
 
-type AppStage = "login" | "home" | "practice" | "summary" | "leaderboard";
+type AppStage = "login" | "welcome" | "home" | "practice" | "summary" | "leaderboard";
 
 type ChoiceKey = "A" | "B" | "C" | "D";
 
@@ -47,6 +48,19 @@ function countWeakSubtopics(history: AnswerHistoryItem[]): Array<{ key: string; 
     .map(([key, misses]) => ({ key, misses }))
     .sort((a, b) => b.misses - a.misses)
     .slice(0, 3);
+}
+
+function getSummaryMessage(pct: number, isFirstSession: boolean): string {
+  if (isFirstSession) {
+    if (pct === 100) return "A perfect first session! You're a natural.";
+    if (pct >= 80) return "Great start! You've already got a strong foundation.";
+    if (pct >= 60) return "Nice first session! The cards you missed will come back for extra practice.";
+    return "Welcome aboard! Every answer helps the app learn what to review with you.";
+  }
+  if (pct === 100) return "Flawless! You nailed every single one.";
+  if (pct >= 80) return "Strong session! You're building real mastery.";
+  if (pct >= 60) return "Solid work! Tricky cards will come back for another round.";
+  return "Tough round — but showing up is what matters. Keep at it!";
 }
 
 export function App() {
@@ -76,11 +90,29 @@ export function App() {
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
   const [isLeaderboardLoading, setIsLeaderboardLoading] = useState(false);
 
+  const isFirstSession = useRef(false);
+
   const currentCard = queue[0] ?? null;
   const totalAnswered = history.length;
   const totalCorrect = history.filter((item) => item.correct).length;
+  const pctCorrect = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
   const pointsEarned = history.reduce((sum, item) => sum + item.pointsAwarded, 0);
   const weakSkills = useMemo(() => countWeakSubtopics(history), [history]);
+  const summaryMessage = useMemo(
+    () => getSummaryMessage(pctCorrect, isFirstSession.current),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [pctCorrect, totalAnswered]
+  );
+
+  // Fire confetti when entering the summary stage
+  useEffect(() => {
+    if (stage !== "summary" || totalAnswered === 0) return;
+    if (pctCorrect === 100) {
+      confetti({ particleCount: 150, spread: 80, origin: { y: 0.7 } });
+    } else if (pctCorrect >= 80) {
+      confetti({ particleCount: 60, spread: 50, origin: { y: 0.7 } });
+    }
+  }, [stage, pctCorrect, totalAnswered]);
 
   // Initialize cards and fetch player names on mount
   useEffect(() => {
@@ -121,7 +153,8 @@ export function App() {
       setCardStates(states);
       setDailyScore(score);
       refreshDashboard(states, score);
-      setStage("home");
+      isFirstSession.current = states.size === 0;
+      setStage(states.size === 0 ? "welcome" : "home");
     } catch (error) {
       setLoginPin("");
       setGlobalError(error instanceof Error ? error.message : "Could not sign in.");
@@ -410,6 +443,47 @@ export function App() {
         </section>
       ) : null}
 
+      {stage === "welcome" ? (
+        <section className="mt-4 space-y-3">
+          <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+            <h2 className="text-base font-semibold">
+              Welcome, {userName}!
+            </h2>
+            <p className="mt-2 text-sm text-slate-700">
+              Grammar Showdown helps you master SAT/ACT grammar through short daily practice sessions.
+            </p>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              <li>
+                <span className="font-semibold">How it works:</span> Answer multiple-choice questions. Cards you get right move forward; cards you miss come back for more practice.
+              </li>
+              <li>
+                <span className="font-semibold">How long:</span> There are 8 skill areas with {UNIT_COMPLETION_THRESHOLD} cards to master in each. With daily 5-minute sessions, most people finish a skill area in 2-3 weeks.
+              </li>
+              <li>
+                <span className="font-semibold">Your first session:</span> We'll start you off with a quick 5-card warm-up so you can get the feel for it.
+              </li>
+            </ul>
+          </div>
+          <button
+            className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white"
+            type="button"
+            onClick={() => {
+              setSessionSize(5);
+              startPractice();
+            }}
+          >
+            Start Your First Session
+          </button>
+          <button
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700"
+            type="button"
+            onClick={() => setStage("home")}
+          >
+            Skip to Home
+          </button>
+        </section>
+      ) : null}
+
       {stage === "home" ? (
         <section className="mt-4 space-y-3">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
@@ -586,9 +660,9 @@ export function App() {
         <section className="mt-4 space-y-3">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h2 className="text-base font-semibold">Session Summary</h2>
-            <p className="mt-2 text-sm text-slate-700">
-              Score: {totalCorrect}/{totalAnswered} (
-              {totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0}%)
+            <p className="mt-2 text-sm font-medium text-slate-800">{summaryMessage}</p>
+            <p className="mt-3 text-sm text-slate-700">
+              Score: {totalCorrect}/{totalAnswered} ({pctCorrect}%)
             </p>
             <p className="mt-1 text-sm text-slate-700">Points earned: {pointsEarned}</p>
             <p className="mt-1 text-sm text-slate-700">
