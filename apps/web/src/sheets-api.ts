@@ -21,6 +21,7 @@ type GetUserDataResponse = {
     last_seen_at: string;
   }>;
   dailyScore: DailyScore | null;
+  streak: number;
 };
 
 type GetLeaderboardResponse = {
@@ -65,7 +66,7 @@ export async function joinGame(
 
 export async function getUserData(
   user: string
-): Promise<{ cardStates: Map<string, CardState>; dailyScore: DailyScore | undefined }> {
+): Promise<{ cardStates: Map<string, CardState>; dailyScore: DailyScore | undefined; streak: number }> {
   const url = `${sheetsUrl}?action=getUserData&user=${encodeURIComponent(user)}`;
   const res = await fetch(url);
   const data = (await res.json()) as GetUserDataResponse;
@@ -78,6 +79,7 @@ export async function getUserData(
   return {
     cardStates: map,
     dailyScore: data.dailyScore ?? undefined,
+    streak: data.streak ?? 0,
   };
 }
 

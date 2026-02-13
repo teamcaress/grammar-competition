@@ -74,6 +74,7 @@ export function App() {
   const [cardStates, setCardStates] = useState<Map<string, CardState>>(new Map());
   const [dailyScore, setDailyScore] = useState<DailyScore | undefined>(undefined);
   const [dashboard, setDashboard] = useState<DashboardData | null>(null);
+  const [streak, setStreak] = useState(0);
 
   const [queue, setQueue] = useState<SessionCard[]>([]);
   const [history, setHistory] = useState<AnswerHistoryItem[]>([]);
@@ -167,10 +168,11 @@ export function App() {
       if (isJoinMode) {
         setPlayerNames((prev) => [...prev, user].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())));
       }
-      const { cardStates: states, dailyScore: score } = await getUserData(user);
+      const { cardStates: states, dailyScore: score, streak: userStreak } = await getUserData(user);
       setUserName(user);
       setCardStates(states);
       setDailyScore(score);
+      setStreak(userStreak);
       refreshDashboard(states, score);
       isFirstSession.current = states.size === 0;
       setStage(states.size === 0 ? "welcome" : "home");
@@ -291,6 +293,9 @@ export function App() {
     setPendingAnswer(null);
     setSelectedChoice(null);
     setGlobalError(null);
+    if (streak === 0 && (dailyScore?.answers_count ?? 0) > 0) {
+      setStreak(1);
+    }
     refreshDashboard(cardStates, dailyScore);
     setStage("home");
   }
@@ -510,7 +515,7 @@ export function App() {
             <p className="text-sm text-slate-700">
               Signed in as <span className="font-semibold">{userName}</span>
             </p>
-            <div className="mt-3 grid grid-cols-3 gap-2 text-center">
+            <div className="mt-3 grid grid-cols-4 gap-2 text-center">
               <div className="rounded-lg bg-slate-50 p-2">
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">Due</p>
                 <p className="text-sm font-semibold">{dashboard?.due_count ?? 0}</p>
@@ -522,6 +527,17 @@ export function App() {
               <div className="rounded-lg bg-slate-50 p-2">
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">Answers</p>
                 <p className="text-sm font-semibold">{dashboard?.answers_today ?? 0}</p>
+              </div>
+              <div className="rounded-lg bg-slate-50 p-2">
+                <p className="text-[11px] uppercase tracking-wide text-slate-500">Streak</p>
+                <p className="text-sm font-semibold">
+                  {streak > 0 ? (
+                    <span className={streak >= 7 ? "text-lg" : streak >= 3 ? "text-base" : "text-sm"}>
+                      🔥
+                    </span>
+                  ) : null}
+                  {" "}{streak}d
+                </p>
               </div>
             </div>
           </div>

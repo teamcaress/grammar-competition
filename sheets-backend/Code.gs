@@ -155,17 +155,24 @@ function handleGetUserData(user) {
     }
   }
 
-  // Sum today's DailyScores rows (there may be duplicates from race conditions)
+  // Sum today's DailyScores + compute streak (single pass)
+  var activeDates = {};
   if (dsSheet) {
     var dsData = dsSheet.getDataRange().getValues();
     var totalPoints = 0;
     var totalAnswers = 0;
     var found = false;
     for (var j = 1; j < dsData.length; j++) {
-      if (dsData[j][0].toString().trim().toLowerCase() === userLower && toDateKey(dsData[j][1]) === today) {
-        totalPoints += Number(dsData[j][2]);
+      if (dsData[j][0].toString().trim().toLowerCase() !== userLower) continue;
+      var dateVal = toDateKey(dsData[j][1]);
+      var pts = Number(dsData[j][2]);
+      if (dateVal === today) {
+        totalPoints += pts;
         totalAnswers += Number(dsData[j][3]);
         found = true;
+      }
+      if (pts > 0) {
+        activeDates[dateVal] = true;
       }
     }
     if (found) {
@@ -173,7 +180,14 @@ function handleGetUserData(user) {
     }
   }
 
-  return { cardStates: cardStates, dailyScore: dailyScore };
+  var streak = 0;
+  var cursor = today;
+  while (activeDates[cursor]) {
+    streak++;
+    cursor = shiftDateKey(cursor, -1);
+  }
+
+  return { cardStates: cardStates, dailyScore: dailyScore, streak: streak };
 }
 
 /* ------------------------------------------------------------------ */
