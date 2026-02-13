@@ -22,6 +22,8 @@ function doGet(e) {
     result = handleGetUserData(e.parameter.user || "");
   } else if (action === "getLeaderboard") {
     result = handleGetLeaderboard(e.parameter.range || "today");
+  } else if (action === "getUserChallenges") {
+    result = handleGetUserChallenges(e.parameter.user || "");
   } else {
     result = { error: "Unknown action" };
   }
@@ -48,6 +50,10 @@ function doPost(e) {
     result = handleLogin(body);
   } else if (action === "joinGame") {
     result = handleJoinGame(body);
+  } else if (action === "createChallenge") {
+    result = handleCreateChallenge(body);
+  } else if (action === "submitChallengeResult") {
+    result = handleSubmitChallengeResult(body);
   } else {
     result = { error: "Unknown action" };
   }
@@ -474,4 +480,127 @@ function handleDebug(user) {
   }
 
   return result;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Challenges                                                         */
+/* ------------------------------------------------------------------ */
+
+function handleCreateChallenge(body) {
+  var creator = (body.creator || "").toString().trim();
+  var opponent = (body.opponent || "").toString().trim();
+  var cardIds = body.card_ids || [];
+
+  if (!creator || !opponent) return { error: "creator and opponent are required" };
+  if (!Array.isArray(cardIds) || cardIds.length === 0) return { error: "card_ids array is required" };
+
+  var sheet = getSheet("Challenges");
+  if (!sheet) return { error: "Challenges sheet not found" };
+
+  var challengeId = "ch_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6);
+  var cardIdsStr = cardIds.join(",");
+  var now = new Date().toISOString();
+
+  appendRowAsText(sheet, [challengeId, creator, opponent, cardIdsStr, 0, 0, 0, 0, "open", now]);
+
+  return { ok: true, challenge_id: challengeId };
+}
+
+function handleSubmitChallengeResult(body) {
+  var challengeId = (body.challenge_id || "").toString();
+  var user = (body.user || "").toString().trim();
+  var score = Number(body.score);
+  var correctCount = Number(body.correct_count);
+
+  if (!challengeId || !user) return { error: "challenge_id and user are required" };
+
+  var lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+
+  try {
+    var sheet = getSheet("Challenges");
+    if (!sheet) return { error: "Challenges sheet not found" };
+
+    var data = sheet.getDataRange().getValues();
+    var userLower = user.toLowerCase();
+
+    for (var i = 1; i < data.length; i++) {
+      if (data[i][0].toString() !== challengeId) continue;
+
+      var creatorLower = data[i][1].toString().trim().toLowerCase();
+      var opponentLower = data[i][2].toString().trim().toLowerCase();
+      var row = i + 1;
+
+      if (userLower === creatorLower) {
+        setRowAsText(sheet, row, 5, [score, correctCount]);
+        return { ok: true, status: "open" };
+      } else if (userLower === opponentLower) {
+        setRowAsText(sheet, row, 7, [score, correctCount]);
+        setRowAsText(sheet, row, 9, ["completed"]);
+        return {
+          ok: true,
+          status: "completed",
+          challenge: {
+            challenge_id: challengeId,
+            creator: data[i][1].toString(),
+            opponent: data[i][2].toString(),
+            creator_score: Number(data[i][4]),
+            creator_correct: Number(data[i][5]),
+            opponent_score: score,
+            opponent_correct: correctCount
+          }
+        };
+      } else {
+        return { error: "User is not a participant in this challenge" };
+      }
+    }
+
+    return { error: "Challenge not found" };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function handleGetUserChallenges(user) {
+  if (!user) return { error: "user is required" };
+
+  var sheet = getSheet("Challenges");
+  if (!sheet) return { pending: [], completed: [] };
+
+  var data = sheet.getDataRange().getValues();
+  var userLower = user.trim().toLowerCase();
+  var pending = [];
+  var completed = [];
+
+  for (var i = 1; i < data.length; i++) {
+    var creatorLower = data[i][1].toString().trim().toLowerCase();
+    var opponentLower = data[i][2].toString().trim().toLowerCase();
+    var status = data[i][8].toString();
+
+    if (creatorLower !== userLower && opponentLower !== userLower) continue;
+
+    var challenge = {
+      challenge_id: data[i][0].toString(),
+      creator: data[i][1].toString(),
+      opponent: data[i][2].toString(),
+      card_ids: data[i][3].toString().split(","),
+      creator_score: Number(data[i][4]),
+      creator_correct: Number(data[i][5]),
+      opponent_score: Number(data[i][6]),
+      opponent_correct: Number(data[i][7]),
+      status: status,
+      created_at: data[i][9].toString()
+    };
+
+    if (status === "open" && opponentLower === userLower) {
+      pending.push(challenge);
+    } else if (status === "completed") {
+      completed.push(challenge);
+    }
+  }
+
+  pending.sort(function(a, b) { return a.created_at.localeCompare(b.created_at); });
+  completed.sort(function(a, b) { return b.created_at.localeCompare(a.created_at); });
+
+  return { pending: pending, completed: completed.slice(0, 10) };
 }

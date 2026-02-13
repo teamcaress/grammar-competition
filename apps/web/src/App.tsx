@@ -3,6 +3,7 @@ import confetti from "canvas-confetti";
 import { initCards, getCards, getCardById } from "./cards";
 import {
   selectSessionCards,
+  selectChallengeCards,
   processAnswer,
   computeDashboard,
   UNIT_COMPLETION_THRESHOLD,
@@ -19,10 +20,14 @@ import {
   getUserData,
   saveAnswerFireAndForget,
   getLeaderboard,
+  createChallenge,
+  getUserChallenges,
+  submitChallengeResult,
   type LeaderboardRow,
+  type Challenge,
 } from "./sheets-api";
 
-type AppStage = "login" | "welcome" | "home" | "practice" | "summary" | "leaderboard";
+type AppStage = "login" | "welcome" | "home" | "practice" | "summary" | "leaderboard" | "challenge-pick";
 
 type ChoiceKey = "A" | "B" | "C" | "D";
 
@@ -93,6 +98,10 @@ export function App() {
   const [speedMode, setSpeedMode] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(15);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
+
+  const [activeChallenge, setActiveChallenge] = useState<Challenge | null>(null);
+  const [pendingChallenges, setPendingChallenges] = useState<Challenge[]>([]);
+  const [challengeOpponent, setChallengeOpponent] = useState("");
 
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
@@ -203,6 +212,7 @@ export function App() {
       setDailyScore(score);
       setStreak(userStreak);
       refreshDashboard(states, score);
+      getUserChallenges(user).then(({ pending }) => setPendingChallenges(pending)).catch(() => {});
       isFirstSession.current = states.size === 0;
       setStage(states.size === 0 ? "welcome" : "home");
     } catch (error) {
@@ -242,6 +252,75 @@ export function App() {
       return;
     }
     setQueue(cards);
+    setHistory([]);
+    setPendingAnswer(null);
+    setSelectedChoice(null);
+    setActiveChallenge(null);
+    setCardStartedAtMs(Date.now());
+    setStage("practice");
+  }
+
+  function buildChallengeQueue(cardIds: string[]): SessionCard[] {
+    return cardIds
+      .map((id) => {
+        const card = getCardById(id);
+        if (!card) return null;
+        const state = cardStates.get(id);
+        return {
+          ...card,
+          source: (state ? "due" : "new") as SessionCard["source"],
+          current_box: state?.box ?? null,
+          due_date: state?.due_date ?? null,
+        };
+      })
+      .filter((c): c is SessionCard => c !== null);
+  }
+
+  async function startChallenge() {
+    if (!userName || !challengeOpponent) return;
+    setIsLoading(true);
+    setGlobalError(null);
+    try {
+      const cardIds = selectChallengeCards(getCards(), cardStates, 10);
+      const { challenge_id } = await createChallenge(userName, challengeOpponent, cardIds);
+      const challengeCards = buildChallengeQueue(cardIds);
+      if (challengeCards.length === 0) {
+        setGlobalError("Could not build challenge cards.");
+        return;
+      }
+      setActiveChallenge({
+        challenge_id,
+        creator: userName,
+        opponent: challengeOpponent,
+        card_ids: cardIds,
+        creator_score: 0,
+        creator_correct: 0,
+        opponent_score: 0,
+        opponent_correct: 0,
+        status: "open",
+        created_at: new Date().toISOString(),
+      });
+      setQueue(challengeCards);
+      setHistory([]);
+      setPendingAnswer(null);
+      setSelectedChoice(null);
+      setCardStartedAtMs(Date.now());
+      setStage("practice");
+    } catch (error) {
+      setGlobalError(error instanceof Error ? error.message : "Could not create challenge.");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  function acceptChallenge(challenge: Challenge) {
+    const challengeCards = buildChallengeQueue(challenge.card_ids);
+    if (challengeCards.length === 0) {
+      setGlobalError("Could not load challenge cards.");
+      return;
+    }
+    setActiveChallenge(challenge);
+    setQueue(challengeCards);
     setHistory([]);
     setPendingAnswer(null);
     setSelectedChoice(null);
@@ -365,6 +444,20 @@ export function App() {
     setCardStartedAtMs(Date.now());
 
     if (nextQueue.length === 0) {
+      // Submit challenge result if in a challenge
+      if (activeChallenge && userName) {
+        const finalHistory = [...history, nextHistoryItem];
+        const totalPts = finalHistory.reduce((s, h) => s + h.pointsAwarded, 0);
+        const totalOk = finalHistory.filter((h) => h.correct).length;
+        submitChallengeResult(
+          activeChallenge.challenge_id,
+          userName,
+          totalPts,
+          totalOk
+        ).then((res) => {
+          if (res.challenge) setActiveChallenge(res.challenge);
+        }).catch(console.warn);
+      }
       setStage("summary");
     }
   }
@@ -375,10 +468,14 @@ export function App() {
     setPendingAnswer(null);
     setSelectedChoice(null);
     setGlobalError(null);
+    setActiveChallenge(null);
     if (streak === 0 && (dailyScore?.answers_count ?? 0) > 0) {
       setStreak(1);
     }
     refreshDashboard(cardStates, dailyScore);
+    if (userName) {
+      getUserChallenges(userName).then(({ pending }) => setPendingChallenges(pending)).catch(() => {});
+    }
     setStage("home");
   }
 
@@ -715,7 +812,34 @@ export function App() {
             >
               {isLeaderboardLoading ? "Loading..." : "View Leaderboard"}
             </button>
+
+            <button
+              className="mt-2 w-full rounded-lg border-2 border-amber-400 bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-800"
+              type="button"
+              onClick={() => { setChallengeOpponent(""); setStage("challenge-pick"); }}
+            >
+              Challenge a Player
+            </button>
           </div>
+
+          {pendingChallenges.length > 0 ? (
+            <div className="rounded-2xl bg-amber-50 p-4 ring-1 ring-amber-200">
+              <h3 className="text-sm font-semibold text-amber-800">Pending Challenges</h3>
+              <div className="mt-2 space-y-2">
+                {pendingChallenges.map((ch) => (
+                  <button
+                    key={ch.challenge_id}
+                    type="button"
+                    className="w-full rounded-lg bg-white px-3 py-2 text-left text-sm ring-1 ring-amber-200"
+                    onClick={() => acceptChallenge(ch)}
+                  >
+                    <p className="font-semibold text-amber-800">{ch.creator} challenged you!</p>
+                    <p className="text-xs text-amber-700">10 cards · Tap to play</p>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : null}
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h3 className="text-sm font-semibold">Unit Progress</h3>
@@ -752,8 +876,56 @@ export function App() {
         </section>
       ) : null}
 
+      {stage === "challenge-pick" ? (
+        <section className="mt-4 space-y-3">
+          <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+            <h2 className="text-base font-semibold">Pick Your Opponent</h2>
+            <div className="mt-3 space-y-2">
+              {playerNames
+                .filter((n) => n.toLowerCase() !== userName?.toLowerCase())
+                .map((name) => (
+                  <button
+                    key={name}
+                    type="button"
+                    onClick={() => setChallengeOpponent(name)}
+                    className={`w-full rounded-lg px-3 py-3 text-left text-sm font-semibold ring-1 ${
+                      challengeOpponent === name
+                        ? "bg-amber-50 ring-amber-400 text-amber-800"
+                        : "bg-white ring-slate-200 text-slate-700"
+                    }`}
+                  >
+                    {name}
+                  </button>
+                ))}
+            </div>
+            <button
+              className="mt-3 w-full rounded-lg bg-amber-500 px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
+              type="button"
+              disabled={!challengeOpponent || isLoading}
+              onClick={() => void startChallenge()}
+            >
+              {isLoading ? "Creating..." : "Start Challenge"}
+            </button>
+            <button
+              className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700"
+              type="button"
+              onClick={() => setStage("home")}
+            >
+              Cancel
+            </button>
+          </div>
+        </section>
+      ) : null}
+
       {stage === "practice" && currentCard ? (
         <section className="mt-4 space-y-3">
+          {activeChallenge ? (
+            <div className="rounded-xl bg-amber-50 px-3 py-2 text-center ring-1 ring-amber-200">
+              <p className="text-sm font-semibold text-amber-800">
+                Challenge vs {activeChallenge.creator === userName ? activeChallenge.opponent : activeChallenge.creator}
+              </p>
+            </div>
+          ) : null}
           {pendingAnswer ? (
             <div
               className={`rounded-2xl p-4 ring-1 ${
@@ -870,6 +1042,32 @@ export function App() {
               Daily points: {dailyScore?.points ?? 0}
             </p>
           </div>
+
+          {activeChallenge ? (
+            <div className="rounded-2xl bg-amber-50 p-5 ring-1 ring-amber-200">
+              <h3 className="text-sm font-semibold text-amber-800">
+                Challenge vs {activeChallenge.creator === userName ? activeChallenge.opponent : activeChallenge.creator}
+              </h3>
+              {activeChallenge.status === "completed" ? (
+                <div className="mt-3 grid grid-cols-2 gap-3 text-center">
+                  <div className="rounded-lg bg-white p-3 ring-1 ring-amber-200">
+                    <p className="text-xs text-slate-500">{activeChallenge.creator}</p>
+                    <p className="text-lg font-bold text-amber-800">{activeChallenge.creator_correct}/10</p>
+                    <p className="text-xs text-slate-600">{activeChallenge.creator_score} pts</p>
+                  </div>
+                  <div className="rounded-lg bg-white p-3 ring-1 ring-amber-200">
+                    <p className="text-xs text-slate-500">{activeChallenge.opponent}</p>
+                    <p className="text-lg font-bold text-amber-800">{activeChallenge.opponent_correct}/10</p>
+                    <p className="text-xs text-slate-600">{activeChallenge.opponent_score} pts</p>
+                  </div>
+                </div>
+              ) : (
+                <p className="mt-2 text-sm text-amber-700">
+                  Challenge sent! {activeChallenge.opponent} will see it next time they log in.
+                </p>
+              )}
+            </div>
+          ) : null}
 
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h3 className="text-sm font-semibold">Weak Skills</h3>

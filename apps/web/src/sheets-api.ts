@@ -107,6 +107,65 @@ export function saveAnswerFireAndForget(payload: Parameters<typeof saveAnswer>[0
   });
 }
 
+export type Challenge = {
+  challenge_id: string;
+  creator: string;
+  opponent: string;
+  card_ids: string[];
+  creator_score: number;
+  creator_correct: number;
+  opponent_score: number;
+  opponent_correct: number;
+  status: "open" | "completed";
+  created_at: string;
+};
+
+export async function createChallenge(
+  creator: string,
+  opponent: string,
+  cardIds: string[]
+): Promise<{ challenge_id: string }> {
+  const res = await fetch(sheetsUrl, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({ action: "createChallenge", creator, opponent, card_ids: cardIds }),
+  });
+  const data = (await res.json()) as { ok?: boolean; challenge_id?: string; error?: string };
+  if (data.error) throw new Error(data.error);
+  return { challenge_id: data.challenge_id ?? "" };
+}
+
+export async function getUserChallenges(
+  user: string
+): Promise<{ pending: Challenge[]; completed: Challenge[] }> {
+  const url = `${sheetsUrl}?action=getUserChallenges&user=${encodeURIComponent(user)}`;
+  const res = await fetch(url);
+  const data = (await res.json()) as { pending?: Challenge[]; completed?: Challenge[] };
+  return { pending: data.pending ?? [], completed: data.completed ?? [] };
+}
+
+export async function submitChallengeResult(
+  challengeId: string,
+  user: string,
+  score: number,
+  correctCount: number
+): Promise<{ status: string; challenge?: Challenge }> {
+  const res = await fetch(sheetsUrl, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({
+      action: "submitChallengeResult",
+      challenge_id: challengeId,
+      user,
+      score,
+      correct_count: correctCount,
+    }),
+  });
+  const data = (await res.json()) as { ok?: boolean; status?: string; challenge?: Challenge; error?: string };
+  if (data.error) throw new Error(data.error);
+  return { status: data.status ?? "", challenge: data.challenge };
+}
+
 export async function getLeaderboard(
   range: LeaderboardRange
 ): Promise<{ range: LeaderboardRange; rows: LeaderboardRow[] }> {

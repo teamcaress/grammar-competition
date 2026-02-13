@@ -259,6 +259,25 @@ export function computeDashboard(
   };
 }
 
+export function selectChallengeCards(
+  allCards: Card[],
+  creatorStates: Map<string, CardState>,
+  size: number = 10
+): string[] {
+  const seen = allCards.filter((c) => creatorStates.has(c.id));
+  const shuffled = [...seen].sort(() => Math.random() - 0.5);
+
+  if (shuffled.length >= size) {
+    return shuffled.slice(0, size).map((c) => c.id);
+  }
+
+  const seenIds = new Set(shuffled.map((c) => c.id));
+  const unseen = allCards
+    .filter((c) => !seenIds.has(c.id))
+    .sort(() => Math.random() - 0.5);
+  return [...shuffled, ...unseen].slice(0, size).map((c) => c.id);
+}
+
 export function computeStreak(activeDateKeys: string[]): number {
   const set = new Set(activeDateKeys);
   let streak = 0;
