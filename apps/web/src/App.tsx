@@ -28,11 +28,13 @@ type ChoiceKey = "A" | "B" | "C" | "D";
 
 type AnswerHistoryItem = {
   cardId: string;
-  choice: ChoiceKey;
+  choice: ChoiceKey | null;
   correct: boolean;
   pointsAwarded: number;
   unitId: string;
   subtopic: string;
+  speedMultiplier?: number;
+  timedOut?: boolean;
 };
 
 type LeaderboardRange = "today" | "week" | "all";
@@ -88,6 +90,9 @@ export function App() {
   const [isJoinMode, setIsJoinMode] = useState(false);
 
   const [selectedUnit, setSelectedUnit] = useState<string | null>(null);
+  const [speedMode, setSpeedMode] = useState(false);
+  const [timeRemaining, setTimeRemaining] = useState(15);
+  const [speedMultiplier, setSpeedMultiplier] = useState(1);
 
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
@@ -133,6 +138,30 @@ export function App() {
       confetti({ particleCount: 60, spread: 50, origin: { y: 0.7 } });
     }
   }, [stage, pctCorrect, totalAnswered]);
+
+  // Speed mode countdown timer
+  useEffect(() => {
+    if (stage !== "practice" || !speedMode || pendingAnswer || !currentCard) return;
+    setTimeRemaining(15);
+    const interval = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stage, speedMode, currentCard?.id, pendingAnswer]);
+
+  // Auto-submit on timer expiry
+  useEffect(() => {
+    if (timeRemaining !== 0 || !speedMode || stage !== "practice" || pendingAnswer || !currentCard) return;
+    handleSpeedTimeout();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeRemaining]);
 
   // Initialize cards and fetch player names on mount
   useEffect(() => {
@@ -235,6 +264,21 @@ export function App() {
       dailyScore
     );
 
+    // Apply speed bonus
+    let mult = 1;
+    if (speedMode && answerResult.correct) {
+      const elapsed = (Date.now() - cardStartedAtMs) / 1000;
+      if (elapsed < 5) mult = 3;
+      else if (elapsed < 10) mult = 2;
+      if (mult > 1) {
+        const bonus = answerResult.points_awarded * (mult - 1);
+        answerResult.points_awarded *= mult;
+        newDailyScore.points += bonus;
+        answerResult.daily_points = newDailyScore.points;
+      }
+    }
+    setSpeedMultiplier(mult);
+
     // Update local state immediately
     setCardStates((prev) => {
       const next = new Map(prev);
@@ -259,8 +303,45 @@ export function App() {
     }
   }
 
+  function handleSpeedTimeout() {
+    if (!currentCard || pendingAnswer) return;
+    const card = getCardById(currentCard.id);
+    if (!card) return;
+
+    setSelectedChoice(null);
+    setSpeedMultiplier(1);
+
+    const { answerResult, newCardState, newDailyScore } = processAnswer(
+      card,
+      "__timeout__",
+      cardStates,
+      dailyScore
+    );
+
+    setCardStates((prev) => {
+      const next = new Map(prev);
+      next.set(card.id, newCardState);
+      return next;
+    });
+    setDailyScore(newDailyScore);
+    setPendingAnswer(answerResult);
+
+    if (userName) {
+      saveAnswerFireAndForget({
+        user: userName,
+        card_id: card.id,
+        box: newCardState.box,
+        due_date: newCardState.due_date,
+        correct_streak: newCardState.correct_streak,
+        total_attempts: newCardState.total_attempts,
+        last_seen_at: newCardState.last_seen_at,
+        points_awarded: 0,
+      });
+    }
+  }
+
   function continueAfterFeedback() {
-    if (!currentCard || !selectedChoice || !pendingAnswer) return;
+    if (!currentCard || !pendingAnswer) return;
 
     const nextHistoryItem: AnswerHistoryItem = {
       cardId: currentCard.id,
@@ -269,6 +350,7 @@ export function App() {
       pointsAwarded: pendingAnswer.points_awarded,
       unitId: currentCard.unit,
       subtopic: currentCard.subtopic,
+      ...(speedMode ? { speedMultiplier, timedOut: selectedChoice === null } : {}),
     };
 
     const remaining = queue.slice(1);
@@ -597,13 +679,32 @@ export function App() {
               </div>
             </div>
 
+            <div className="mt-2 flex items-center justify-between">
+              <span className="text-xs font-medium text-slate-600">Speed Round</span>
+              <button
+                type="button"
+                onClick={() => setSpeedMode((prev) => !prev)}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                  speedMode ? "bg-amber-500" : "bg-slate-300"
+                }`}
+              >
+                <span
+                  className={`inline-block h-4 w-4 rounded-full bg-white transition-transform ${
+                    speedMode ? "translate-x-6" : "translate-x-1"
+                  }`}
+                />
+              </button>
+            </div>
+
             <button
-              className="mt-3 w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
+              className={`mt-3 w-full rounded-lg px-3 py-2 text-sm font-semibold text-white disabled:opacity-50 ${
+                speedMode ? "bg-amber-500" : "bg-accent"
+              }`}
               type="button"
               onClick={() => startPractice()}
               disabled={isLoading}
             >
-              Start Practice
+              {speedMode ? "Start Speed Round" : "Start Practice"}
             </button>
 
             <button
@@ -663,10 +764,16 @@ export function App() {
             >
               <div className="flex items-center justify-between">
                 <p className="text-sm font-semibold">
-                  {pendingAnswer.correct ? "Correct" : "Incorrect"}
+                  {speedMode && !pendingAnswer.correct && selectedChoice === null
+                    ? "Time's up!"
+                    : pendingAnswer.correct ? "Correct" : "Incorrect"}
                 </p>
                 <p className="text-xs">
-                  +{pendingAnswer.points_awarded} pts · Box {pendingAnswer.new_box}
+                  +{pendingAnswer.points_awarded} pts
+                  {speedMode && pendingAnswer.correct && speedMultiplier > 1 ? (
+                    <span className="ml-1 font-bold text-amber-600">({speedMultiplier}x)</span>
+                  ) : null}
+                  {" "}· Box {pendingAnswer.new_box}
                 </p>
               </div>
               {!pendingAnswer.correct ? (
@@ -693,6 +800,26 @@ export function App() {
               <p className="mt-1 text-xs text-slate-500">
                 Remaining: {queue.length} · Answered: {totalAnswered}
               </p>
+              {speedMode ? (
+                <div className="mt-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className={timeRemaining <= 5 ? "font-semibold text-rose-600" : "text-slate-500"}>
+                      {timeRemaining}s
+                    </span>
+                    {timeRemaining <= 5 ? (
+                      <span className="font-semibold text-rose-600">Hurry!</span>
+                    ) : null}
+                  </div>
+                  <div className="mt-1 h-2 overflow-hidden rounded-full bg-slate-100">
+                    <div
+                      className={`h-2 rounded-full transition-all duration-1000 ease-linear ${
+                        timeRemaining <= 5 ? "bg-rose-500" : timeRemaining <= 10 ? "bg-amber-400" : "bg-accent"
+                      }`}
+                      style={{ width: `${(timeRemaining / 15) * 100}%` }}
+                    />
+                  </div>
+                </div>
+              ) : null}
               <p className="mt-2 text-sm font-bold text-slate-700">
                 {currentCard.card_type === "error_id"
                   ? "Which part, if any, contains an error?"
@@ -758,6 +885,26 @@ export function App() {
               </ul>
             )}
           </div>
+
+          {speedMode ? (
+            <div className="rounded-2xl bg-amber-50 p-5 ring-1 ring-amber-200">
+              <h3 className="text-sm font-semibold text-amber-800">Speed Round Stats</h3>
+              <div className="mt-2 grid grid-cols-3 gap-2 text-center text-xs text-amber-900">
+                <div>
+                  <p className="text-lg font-bold">{history.filter((h) => h.speedMultiplier === 3).length}</p>
+                  <p>3x bonus</p>
+                </div>
+                <div>
+                  <p className="text-lg font-bold">{history.filter((h) => h.speedMultiplier === 2).length}</p>
+                  <p>2x bonus</p>
+                </div>
+                <div>
+                  <p className="text-lg font-bold">{history.filter((h) => h.timedOut).length}</p>
+                  <p>Timed out</p>
+                </div>
+              </div>
+            </div>
+          ) : null}
 
           <button
             className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white"
