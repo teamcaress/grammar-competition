@@ -142,7 +142,7 @@ export function App() {
     // Calculate sessions needed: cards ÷ days ÷ 2 cards per session, minimum 1/day.
     const cardsPerDay = cardsLeft / daysLeft;
     const sessionsPerDay = Math.max(1, Math.ceil(cardsPerDay / 2));
-    return { cardsLeft, daysLeft, sessionsPerDay };
+    return { cardsLeft, daysLeft, sessionsPerDay, conceptsLeft: subtopicsNeeded };
   }, [dashboard]);
 
   // Fire confetti when entering the summary stage
@@ -760,10 +760,10 @@ export function App() {
               <p className="text-sm font-semibold text-sky-900">
                 {pacingEstimate.sessionsPerDay === 1
                   ? "Aim for 1 session per day to stay on track"
-                  : `Aim for ${pacingEstimate.sessionsPerDay} sessions per day to catch up`}
+                  : `Aim for ${pacingEstimate.sessionsPerDay} sessions per day to complete all units`}
               </p>
               <p className="mt-1 text-xs text-sky-700">
-                {pacingEstimate.cardsLeft} cards to go · {pacingEstimate.daysLeft} days until May 1
+                {pacingEstimate.conceptsLeft} concepts to go · {pacingEstimate.daysLeft} days until May 1
               </p>
             </div>
           ) : pacingEstimate && pacingEstimate.cardsLeft === 0 ? (
