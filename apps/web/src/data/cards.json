@@ -76,7 +76,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Subordination Logic",
+    "subtopic": "Subordination",
     "card_type": "best_choice",
     "prompt": "Which choice best completes the sentence so that it correctly expresses contrast? \"____ the pilot program increased attendance, the district postponed expansion.\"",
     "choices": {
@@ -176,7 +176,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Semicolons in Complex Lists",
+    "subtopic": "Semicolons",
     "card_type": "revision",
     "prompt": "The conference included delegates from Denver, Colorado, Austin, Texas, and Portland, Maine.",
     "choices": {
@@ -426,7 +426,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Modifier Clarity",
+    "subtopic": "Misplaced Modifiers",
     "card_type": "revision",
     "prompt": "The director approved the proposal in the meeting that reduced costs.",
     "choices": {
@@ -451,7 +451,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Introductory Phrases",
+    "subtopic": "Participial Phrases",
     "card_type": "best_choice",
     "prompt": "Choose the best revision: \"After reviewing the draft, ____\"",
     "choices": {
@@ -501,7 +501,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "List Structure",
+    "subtopic": "List Parallelism",
     "card_type": "revision",
     "prompt": "The internship emphasizes data cleaning, to write memos, and presenting findings.",
     "choices": {
@@ -651,7 +651,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Causal Transitions",
+    "subtopic": "Causation Transitions",
     "card_type": "revision",
     "prompt": "Attendance increased by 18 percent. Additionally, the district expanded evening tutoring.",
     "choices": {
@@ -700,7 +700,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Organization and Cohesion",
+    "subtopic": "Organization and Unity",
     "card_type": "error_id",
     "prompt": "Paragraph: (1) The team piloted peer mentoring in spring. (2) As a result, participation rates rose in fall. (3) First, baseline participation had already risen before the pilot began.",
     "choices": {
@@ -823,7 +823,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Shortest Correct Option",
+    "subtopic": "Economy Principle",
     "card_type": "error_id",
     "prompt": "The grant program will collaborate together with local partners to expand outreach.",
     "choices": {
@@ -898,7 +898,7 @@
   },
   {
     "unit": "Diction & Idioms",
-    "subtopic": "Confused Words",
+    "subtopic": "Commonly Confused Words",
     "card_type": "error_id",
     "prompt": "The policy change had a strong affect on application rates.",
     "choices": {
@@ -1023,7 +1023,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Dash Pairing",
+    "subtopic": "Dashes",
     "card_type": "revision",
     "prompt": "The policy proposal, which had broad support -- advanced to the final vote.",
     "choices": {
@@ -1073,7 +1073,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Modifier Placement",
+    "subtopic": "Misplaced Modifiers",
     "card_type": "revision",
     "prompt": "The editor almost reviewed every citation in the appendix.",
     "choices": {
@@ -1297,7 +1297,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Colon Usage",
+    "subtopic": "Colons",
     "card_type": "best_choice",
     "prompt": "Which sentence correctly uses a colon?",
     "choices": {
@@ -1447,7 +1447,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Misplaced Phrases",
+    "subtopic": "Misplaced Modifiers",
     "card_type": "error_id",
     "prompt": "The director announced in the auditorium the revised policy for first-year students.",
     "choices": {
@@ -1496,7 +1496,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "Series Form",
+    "subtopic": "Series Consistency",
     "card_type": "revision",
     "prompt": "The course emphasizes data collection, analyzing trends, and to communicate findings.",
     "choices": {
@@ -1521,7 +1521,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "Correlative Pairing",
+    "subtopic": "Correlative Conjunctions",
     "card_type": "best_choice",
     "prompt": "Choose the best revision: \"The internship is designed not only to strengthen writing skills but also ____\"",
     "choices": {
@@ -1546,7 +1546,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "Verb Pattern Consistency",
+    "subtopic": "List Parallelism",
     "card_type": "error_id",
     "prompt": "The task force interviewed residents, reviewed permits, and conducting site visits.",
     "choices": {
@@ -1571,7 +1571,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Transition Logic",
+    "subtopic": "Causation Transitions",
     "card_type": "best_choice",
     "prompt": "The first pilot generated inconsistent results. ____, the revised protocol produced stable findings.",
     "choices": {
@@ -1620,7 +1620,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Add/Delete Relevance",
+    "subtopic": "Relevance",
     "card_type": "error_id",
     "prompt": "Paragraph focus: internship outcomes. Proposed sentence: \"The campus fountain was restored in 1998.\"",
     "choices": {
@@ -1669,7 +1669,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Wordy Phrases",
+    "subtopic": "Wordiness",
     "card_type": "best_choice",
     "prompt": "Which choice is most concise? \"Due to the fact that the server failed, the launch was postponed.\"",
     "choices": {
@@ -1694,7 +1694,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Precise Wording",
+    "subtopic": "Precision",
     "card_type": "error_id",
     "prompt": "The findings were kind of significant for policy planning.",
     "choices": {
@@ -1744,7 +1744,7 @@
   },
   {
     "unit": "Diction & Idioms",
-    "subtopic": "Tone Consistency",
+    "subtopic": "Register and Tone",
     "card_type": "best_choice",
     "prompt": "Which revision best matches formal tone? \"The team eyeballed the charts before the meeting.\"",
     "choices": {
@@ -1769,7 +1769,7 @@
   },
   {
     "unit": "Diction & Idioms",
-    "subtopic": "Confused Forms",
+    "subtopic": "Commonly Confused Words",
     "card_type": "error_id",
     "prompt": "The managers updated there policies after the audit.",
     "choices": {
@@ -2360,7 +2360,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "error_id",
     "prompt": "The university expanded its online offerings the enrollment numbers doubled within two semesters.",
     "choices": {
@@ -2375,7 +2375,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "revision",
     "prompt": "The field researchers collected water samples at dawn they transported the samples to the lab by noon.",
     "choices": {
@@ -2390,7 +2390,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "revision",
     "prompt": "The historian discovered unpublished letters in the archive they shed new light on the diplomatic negotiations of that era.",
     "choices": {
@@ -2405,7 +2405,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "error_id",
     "prompt": "The advisory panel recommended increased funding for community health programs the budget office allocated resources accordingly.",
     "choices": {
@@ -2600,7 +2600,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "best_choice",
     "prompt": "Which revision best corrects the fused sentence? \"The engineering students completed the bridge simulation the professors evaluated structural integrity using load-bearing software.\"",
     "choices": {
@@ -2690,7 +2690,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "error_id",
     "prompt": "Researchers, who falsify data, face severe professional consequences.",
     "choices": {
@@ -2705,7 +2705,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "revision",
     "prompt": "Dr. Vasquez who directs the genomics lab published a landmark paper on gene editing.",
     "choices": {
@@ -2720,7 +2720,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "best_choice",
     "prompt": "Which sentence correctly punctuates the relative clause? The context is a campus with multiple libraries.",
     "choices": {
@@ -2735,7 +2735,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "error_id",
     "prompt": "The internship program which was founded in 2015 has placed over two hundred graduates in research positions.",
     "choices": {
@@ -3020,7 +3020,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "revision",
     "prompt": "The professor praised the students, who submitted their drafts early, and noted that late submissions would not receive feedback.",
     "choices": {
@@ -4940,7 +4940,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "error_id",
     "prompt": "The department chair, despite the fact that funding was available, declined to authorize the new hire.",
     "choices": {
@@ -4970,7 +4970,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "revision",
     "prompt": "Due to the fact that the sample was contaminated, the researchers discarded the entire batch.",
     "choices": {
@@ -5015,7 +5015,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "revision",
     "prompt": "In the event that the grant application is denied, the principal investigator will seek alternative funding sources.",
     "choices": {
@@ -5090,7 +5090,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "revision",
     "prompt": "The provost made the decision to postpone the vote for the reason that several committee members were absent.",
     "choices": {
@@ -5150,7 +5150,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "best_choice",
     "prompt": "Which revision best replaces the underlined portion? \"The committee postponed the hearing _for the purpose of allowing_ additional testimony to be gathered.\"",
     "choices": {
@@ -5210,7 +5210,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Circumlocution",
+    "subtopic": "Economy Principle",
     "card_type": "best_choice",
     "prompt": "Which option best replaces the underlined portion to improve concision? \"The experiment failed _as a consequence of the fact that_ the calibration was incorrect.\"",
     "choices": {
@@ -5870,7 +5870,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Run-on Sentences",
+    "subtopic": "Run-ons",
     "card_type": "error_id",
     "prompt": "The experiment failed the temperature was too low.",
     "choices": {
@@ -5945,7 +5945,7 @@
   },
   {
     "unit": "Sentence Boundaries",
-    "subtopic": "Clause Logic",
+    "subtopic": "Subordination",
     "card_type": "best_choice",
     "prompt": "Combine the sentences: \"The study was flawed. It was published anyway.\"",
     "choices": {
@@ -6005,7 +6005,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Dash Usage",
+    "subtopic": "Dashes",
     "card_type": "revision",
     "prompt": "The solution—simple and elegant, was accepted immediately.",
     "choices": {
@@ -6020,7 +6020,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "error_id",
     "prompt": "The rapid development of AI technology, poses new ethical questions.",
     "choices": {
@@ -6035,7 +6035,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Colon Usage",
+    "subtopic": "Colons",
     "card_type": "revision",
     "prompt": "I need to buy: bread, milk, and eggs.",
     "choices": {
@@ -6065,7 +6065,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Semicolons in Lists",
+    "subtopic": "Semicolons",
     "card_type": "revision",
     "prompt": "The tour visited London, England, Paris, France, and Rome, Italy.",
     "choices": {
@@ -6095,7 +6095,7 @@
   },
   {
     "unit": "Punctuation Hierarchy",
-    "subtopic": "Restrictive vs Non-Restrictive",
+    "subtopic": "Restrictive vs Nonrestrictive",
     "card_type": "revision",
     "prompt": "The painting, that hung in the lobby, was a forgery.",
     "choices": {
@@ -6850,7 +6850,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "List Structure",
+    "subtopic": "List Parallelism",
     "card_type": "revision",
     "prompt": "Before each cross country meet, Baxter focuses on stretching his hamstrings, to hydrate properly, and visualizing the course layout.",
     "choices": {
@@ -7032,7 +7032,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Causal Transitions",
+    "subtopic": "Causation Transitions",
     "card_type": "best_choice",
     "prompt": "Lula's linguistics professor at Tulane assigned a semester-long project comparing phonological systems in Spanish and Haitian Creole, two languages with deep roots in New Orleans. ____, Lula spent every weekend that fall conducting interviews in the city's Tremé and Bywater neighborhoods to gather primary data.",
     "choices": {
@@ -7583,7 +7583,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Modifier Clarity",
+    "subtopic": "Misplaced Modifiers",
     "card_type": "best_choice",
     "prompt": "Lula wants to describe her weekend routine in New Orleans. Which version is clearest and free of modifier errors?",
     "choices": {
@@ -7689,7 +7689,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Wordy Phrases",
+    "subtopic": "Wordiness",
     "card_type": "best_choice",
     "prompt": "Which option most concisely replaces the underlined portion? \"Baxter cycles along the greenway _for the purpose of building_ endurance before the 3200-meter race.\"",
     "choices": {
@@ -7846,7 +7846,7 @@
   },
   {
     "unit": "Diction & Idioms",
-    "subtopic": "Confused Words",
+    "subtopic": "Commonly Confused Words",
     "card_type": "best_choice",
     "prompt": "The humidity in New Orleans had a noticeable ________ on Lula's ability to concentrate while studying Spanish verb conjugations on the quad.",
     "choices": {
@@ -8369,7 +8369,7 @@
   },
   {
     "unit": "Modifiers",
-    "subtopic": "Modifier Clarity",
+    "subtopic": "Misplaced Modifiers",
     "card_type": "best_choice",
     "prompt": "Neal's latest sociology study found that neighborhoods with concentrated poverty only affect residents' health outcomes when public infrastructure is also neglected. Which revision most clearly states the intended meaning?",
     "choices": {
@@ -8421,7 +8421,7 @@
   },
   {
     "unit": "Parallelism",
-    "subtopic": "List Structure",
+    "subtopic": "List Parallelism",
     "card_type": "revision",
     "prompt": "Baxter's weekly training regimen at Chapel Hill High includes running hill repeats on Monday, completing tempo runs on Wednesday, and __________ long trail runs on Saturday to prepare for the 3200m at the conference meet.",
     "choices": {
@@ -8603,7 +8603,7 @@
   },
   {
     "unit": "Transitions & Rhetoric",
-    "subtopic": "Causal Transitions",
+    "subtopic": "Causation Transitions",
     "card_type": "error_id",
     "prompt": "Amie's data-literacy report revealed that 40 percent of incoming UNC first-years could not distinguish between a median and a mean on a diagnostic quiz. On the other hand, the provost approved funding for a required quantitative-reasoning module in the first-year seminar.",
     "choices": {
@@ -8759,7 +8759,7 @@
   },
   {
     "unit": "Concision / Economy",
-    "subtopic": "Wordy Phrases",
+    "subtopic": "Wordiness",
     "card_type": "best_choice",
     "prompt": "Which choice most effectively conveys Amie's update to the data literacy team? \"Due to the fact that the enrollment dashboard contained a number of metrics that were not necessary, Amie removed them in order to improve clarity.\"",
     "choices": {
@@ -8995,7 +8995,7 @@
   },
   {
     "unit": "Diction & Idioms",
-    "subtopic": "Confused Words",
+    "subtopic": "Commonly Confused Words",
     "card_type": "error_id",
     "prompt": "After Duke lost to UNC in overtime, a group of Blue Devil fans posted on social media that \"there team was robbed,\" proving once again that rivalry emotions cloud even basic grammar.",
     "choices": {
@@ -9045,5 +9045,576 @@
     ],
     "source_section": "Section IV: Diction, Idiom, and Register",
     "skill_code": "register_and_lie_lay"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Past Perfect Sequencing",
+    "card_type": "best_choice",
+    "prompt": "By the time Neal ____ the finish line of his ultramarathon, the volunteers had already packed up most of the aid station.",
+    "choices": {
+      "A": "reaches",
+      "B": "had reached",
+      "C": "reached",
+      "D": "has reached"
+    },
+    "correct_answer": "C",
+    "explanation": "Simple past tense is correct because the volunteers' action (\"had already packed\") uses past perfect to show it occurred before Neal's arrival. Using past perfect for both would incorrectly suggest Neal's reaching happened even earlier.",
+    "difficulty": 3,
+    "tags": [
+      "past_perfect",
+      "sequence_of_events",
+      "tense_choice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_past_perfect_vs_simple_past"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Past Perfect Sequencing",
+    "card_type": "revision",
+    "prompt": "Lula registered for Advanced Spanish Composition after she completed the prerequisite phonetics course the previous semester.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Lula registered for Advanced Spanish Composition after she had completed the prerequisite phonetics course the previous semester.",
+      "C": "Lula had registered for Advanced Spanish Composition after she completed the prerequisite phonetics course the previous semester.",
+      "D": "Lula registers for Advanced Spanish Composition after she completed the prerequisite phonetics course the previous semester."
+    },
+    "correct_answer": "B",
+    "explanation": "Past perfect \"had completed\" correctly indicates that completing the prerequisite happened before registering for the new course.",
+    "difficulty": 2,
+    "tags": [
+      "past_perfect",
+      "sequence_of_events",
+      "temporal_clarity"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_past_perfect_sequence"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Clarity",
+    "card_type": "error_id",
+    "prompt": "When Baxter met with his coach before the 3200m race, he emphasized the importance of pacing strategy.",
+    "choices": {
+      "A": "When Baxter met with his coach",
+      "B": "he emphasized",
+      "C": "the importance of pacing strategy",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The pronoun \"he\" is ambiguous because it could refer to either Baxter or the coach.",
+    "difficulty": 2,
+    "tags": [
+      "pronoun_clarity",
+      "ambiguous_reference"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_ambiguous_pronoun_he"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Relative Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Amie's data literacy students, ____ work often requires analyzing large datasets, learned several new visualization techniques this semester.",
+    "choices": {
+      "A": "who",
+      "B": "whose",
+      "C": "which",
+      "D": "whom"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Whose\" is the possessive relative pronoun referring to people and showing that the work belongs to the students.",
+    "difficulty": 2,
+    "tags": [
+      "relative_pronoun",
+      "possessive",
+      "agreement"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_relative_whose_people"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Relative Pronouns",
+    "card_type": "revision",
+    "prompt": "The knitting patterns who Amie follows for her winter projects come from a collective of fiber artists in Iceland.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The knitting patterns whom Amie follows for her winter projects come from a collective of fiber artists in Iceland.",
+      "C": "The knitting patterns which Amie follows for her winter projects come from a collective of fiber artists in Iceland.",
+      "D": "The knitting patterns whose Amie follows for her winter projects come from a collective of fiber artists in Iceland."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Which\" correctly refers to things (knitting patterns); \"who\" and \"whom\" refer only to people.",
+    "difficulty": 1,
+    "tags": [
+      "relative_pronoun",
+      "agreement",
+      "who_vs_which"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_relative_which_things"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense Consistency",
+    "card_type": "revision",
+    "prompt": "Neal's sociology students read three research articles on inequality and presents their analysis in a weekly seminar.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Neal's sociology students read three research articles on inequality and presented their analysis in a weekly seminar.",
+      "C": "Neal's sociology students read three research articles on inequality and present their analysis in a weekly seminar.",
+      "D": "Neal's sociology students will read three research articles on inequality and presents their analysis in a weekly seminar."
+    },
+    "correct_answer": "C",
+    "explanation": "Both verbs should use present tense to describe habitual or repeated actions in the course. \"Read\" (present tense) and \"present\" maintain consistency.",
+    "difficulty": 2,
+    "tags": [
+      "tense_consistency",
+      "verb_form",
+      "parallel_structure"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Syntactic Agreement and Consistency",
+    "skill_code": "agree_tense_consistency_present"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Pronoun Clarity",
+    "card_type": "error_id",
+    "prompt": "When Baxter texted his cross-country teammate about the interval workout, he said he was planning to drop the pace after the first mile.",
+    "choices": {
+      "A": "he said he was",
+      "B": "the interval workout",
+      "C": "planning to drop",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The pronoun \"he\" is ambiguous because it could refer to either Baxter or his teammate; the sentence should specify who made the statement, such as \"the teammate said he was\" or \"Baxter said he was.\"",
+    "difficulty": 2,
+    "tags": [
+      "pronoun_clarity",
+      "ambiguous_reference",
+      "two_antecedents"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_pronoun_clarity_ambiguous"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Pronoun Clarity",
+    "card_type": "revision",
+    "prompt": "After the research assistant submitted the draft to Dr. Martinez, she noticed several formatting errors in the bibliography.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "After the research assistant submitted the draft to Dr. Martinez, Dr. Martinez noticed several formatting errors in the bibliography.",
+      "C": "After the research assistant submitted the draft to Dr. Martinez, the research assistant noticed several formatting errors in the bibliography.",
+      "D": "Submitting the draft to Dr. Martinez, she noticed several formatting errors in the bibliography."
+    },
+    "correct_answer": "C",
+    "explanation": "The pronoun \"she\" is ambiguous; replacing it with \"the research assistant\" clarifies who noticed the errors and makes logical sense in context.",
+    "difficulty": 3,
+    "tags": [
+      "pronoun_clarity",
+      "ambiguity",
+      "noun_replacement"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_pronoun_clarity_replace_noun"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Than vs Then",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses \"than\" or \"then\" to express comparison?",
+    "choices": {
+      "A": "Amie's new enrollment dashboard processes data faster then the legacy system ever did.",
+      "B": "Amie's new enrollment dashboard processes data faster than the legacy system ever did.",
+      "C": "Amie's new enrollment dashboard processes data faster, then the legacy system ever did.",
+      "D": "Amie's new enrollment dashboard processes data faster then, the legacy system ever did."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Than\" is the correct word for comparisons; \"then\" refers to time or sequence.",
+    "difficulty": 1,
+    "tags": [
+      "than_then",
+      "comparison_word",
+      "diction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_than_then_comparison"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Than vs Then",
+    "card_type": "error_id",
+    "prompt": "The preliminary results were more promising then the team expected, leading to immediate follow-up experiments.",
+    "choices": {
+      "A": "preliminary results",
+      "B": "more promising then",
+      "C": "the team expected",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Than\" is required for comparisons; \"then\" indicates time or sequence. The phrase should read \"more promising than.\"",
+    "difficulty": 2,
+    "tags": [
+      "than_then",
+      "comparison_word",
+      "diction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IX: Diction, Idioms, and Register",
+    "skill_code": "diction_than_then_error"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Possessives",
+    "card_type": "revision",
+    "prompt": "Baxter borrowed his teammates bike pump before the cycling race at Jordan Lake.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter borrowed his teammates' bike pump before the cycling race at Jordan Lake.",
+      "C": "Baxter borrowed his teammate's bike pump before the cycling race at Jordan Lake.",
+      "D": "Baxter borrowed his teammates's bike pump before the cycling race at Jordan Lake."
+    },
+    "correct_answer": "C",
+    "explanation": "The singular possessive requires an apostrophe before the 's' to show that one teammate owns the bike pump. Choice B would indicate multiple teammates sharing ownership, and choice D is never correct.",
+    "difficulty": 2,
+    "tags": [
+      "apostrophe",
+      "singular_possessive",
+      "plural_possessive"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_possessive_singular_plural"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Possessives",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses the possessive form?",
+    "choices": {
+      "A": "Lula didn't know whose notes from the Phonetics lecture she had accidentally taken home.",
+      "B": "Lula didn't know who's notes from the Phonetics lecture she had accidentally taken home.",
+      "C": "Lula didn't know whose' notes from the Phonetics lecture she had accidentally taken home.",
+      "D": "Lula didn't know whos notes from the Phonetics lecture she had accidentally taken home."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Whose\" is the possessive form meaning \"belonging to whom.\" \"Who's\" is a contraction of \"who is\" or \"who has.\" The sentence asks about ownership of the notes, so \"whose\" is correct.",
+    "difficulty": 3,
+    "tags": [
+      "apostrophe",
+      "whose_vs_whos",
+      "possessive_pronoun"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: The Punctuation Hierarchy",
+    "skill_code": "punct_whose_possessive"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Appositives",
+    "card_type": "revision",
+    "prompt": "Ultramarathon runner, Neal, completed his first 50-mile race through the mountains of North Carolina.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Ultramarathon runner Neal completed his first 50-mile race through the mountains of North Carolina.",
+      "C": "Ultramarathon runner Neal, completed his first 50-mile race through the mountains of North Carolina.",
+      "D": "Ultramarathon runner, Neal completed his first 50-mile race through the mountains of North Carolina."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title ('ultramarathon runner') precedes a specific name, the name is essential and should not be set off by commas.",
+    "difficulty": 2,
+    "tags": [
+      "appositive",
+      "name_rule",
+      "title_before_name"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_appositive_name_rule"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Appositives",
+    "card_type": "error_id",
+    "prompt": "Lula's linguistics professor at Tulane, Dr. Martinez explained how code-switching functions in bilingual communities.",
+    "choices": {
+      "A": "linguistics professor at Tulane,",
+      "B": "Dr. Martinez",
+      "C": "missing comma after appositive",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The appositive \"Dr. Martinez\" is nonrestrictive and requires both an opening and closing comma. The sentence is missing the comma after \"Martinez.\"",
+    "difficulty": 3,
+    "tags": [
+      "appositive",
+      "comma_pair",
+      "nonrestrictive"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_appositive_comma_pair"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Conjunctive Adverbs",
+    "card_type": "revision",
+    "prompt": "Baxter planned to cycle 30 miles before the backpacking trip, however bad weather forced him to train indoors.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter planned to cycle 30 miles before the backpacking trip; however, bad weather forced him to train indoors.",
+      "C": "Baxter planned to cycle 30 miles before the backpacking trip, however, bad weather forced him to train indoors.",
+      "D": "Baxter planned to cycle 30 miles before the backpacking trip however bad weather forced him to train indoors."
+    },
+    "correct_answer": "B",
+    "explanation": "\"However\" is a conjunctive adverb, not a conjunction. It requires a semicolon before it when joining two independent clauses, and a comma after it.",
+    "difficulty": 2,
+    "tags": [
+      "conjunctive_adverb",
+      "semicolon",
+      "independent_clauses"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_conjunctive_adverb_semicolon"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Conjunctive Adverbs",
+    "card_type": "best_choice",
+    "prompt": "Which choice correctly uses a conjunctive adverb to join the two independent clauses? \"Amie finished the Data Literacy workshop early ____ she decided to start a new knitting project.\"",
+    "choices": {
+      "A": ", therefore",
+      "B": "; therefore,",
+      "C": ", therefore,",
+      "D": "therefore,"
+    },
+    "correct_answer": "B",
+    "explanation": "Conjunctive adverbs like \"therefore\" require a semicolon before them when joining independent clauses and a comma after them.",
+    "difficulty": 1,
+    "tags": [
+      "conjunctive_adverb",
+      "semicolon",
+      "clause_connection"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_conjunctive_adverb_format"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Introductory Clauses",
+    "card_type": "error_id",
+    "prompt": "When Neal teaches sociology at UNC he emphasizes the importance of empirical research methods.",
+    "choices": {
+      "A": "When Neal teaches",
+      "B": "sociology at UNC",
+      "C": "missing comma after introductory clause",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "An introductory dependent clause must be followed by a comma to separate it from the main clause. A comma is needed after \"UNC.\"",
+    "difficulty": 1,
+    "tags": [
+      "introductory_clause",
+      "comma",
+      "dependent_clause"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_intro_clause_comma"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Introductory Clauses",
+    "card_type": "revision",
+    "prompt": "Although the experimental design was innovative the researchers encountered unexpected challenges in data collection.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Although the experimental design was innovative, the researchers encountered unexpected challenges in data collection.",
+      "C": "Although, the experimental design was innovative the researchers encountered unexpected challenges in data collection.",
+      "D": "Although the experimental design was innovative; the researchers encountered unexpected challenges in data collection."
+    },
+    "correct_answer": "B",
+    "explanation": "Introductory dependent clauses require a comma after them to separate them from the independent clause that follows.",
+    "difficulty": 2,
+    "tags": [
+      "introductory_clause",
+      "comma",
+      "subordinate_clause"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_intro_dependent_comma"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Relative Clauses",
+    "card_type": "revision",
+    "prompt": "Lula's Spanish composition professor, who studied dialectal variation at Tulane recommended several academic journals.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Lula's Spanish composition professor who studied dialectal variation at Tulane, recommended several academic journals.",
+      "C": "Lula's Spanish composition professor, who studied dialectal variation at Tulane, recommended several academic journals.",
+      "D": "Lula's Spanish composition professor who studied dialectal variation at Tulane recommended several academic journals."
+    },
+    "correct_answer": "C",
+    "explanation": "The relative clause \"who studied dialectal variation at Tulane\" is nonrestrictive (adds extra information) and must be enclosed in a pair of commas.",
+    "difficulty": 2,
+    "tags": [
+      "relative_clause",
+      "nonrestrictive",
+      "comma_pair"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_relative_clause_nonrestrictive"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Relative Clauses",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly punctuates the restrictive relative clause?",
+    "choices": {
+      "A": "Students, who submit their work late, will receive a penalty.",
+      "B": "Students who submit their work late, will receive a penalty.",
+      "C": "Students who submit their work late will receive a penalty.",
+      "D": "Students, who submit their work late will receive a penalty."
+    },
+    "correct_answer": "C",
+    "explanation": "The clause \"who submit their work late\" is restrictive (it specifies which students), so it should not be set off by commas.",
+    "difficulty": 3,
+    "tags": [
+      "relative_clause",
+      "restrictive",
+      "that_which"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_relative_clause_restrictive"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Semicolon Usage",
+    "card_type": "error_id",
+    "prompt": "The 3200m race was Baxter's strongest event; although he also excelled at the mile.",
+    "choices": {
+      "A": "strongest event;",
+      "B": "although he also",
+      "C": "excelled at",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A semicolon must join two independent clauses. The clause beginning with \"although\" is dependent, not independent. A comma should replace the semicolon.",
+    "difficulty": 2,
+    "tags": [
+      "semicolon",
+      "dependent_clause",
+      "misuse"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_semicolon_dependent_error"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Semicolon Usage",
+    "card_type": "revision",
+    "prompt": "The dataset revealed significant patterns, the research team presented their findings at the national conference.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The dataset revealed significant patterns; the research team presented their findings at the national conference.",
+      "C": "The dataset revealed significant patterns the research team presented their findings at the national conference.",
+      "D": "The dataset revealed significant patterns, and; the research team presented their findings at the national conference."
+    },
+    "correct_answer": "B",
+    "explanation": "A semicolon correctly joins two closely related independent clauses. The comma alone creates a comma splice.",
+    "difficulty": 1,
+    "tags": [
+      "semicolon",
+      "independent_clauses",
+      "comma_splice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_semicolon_join_clauses"
   }
 ]
