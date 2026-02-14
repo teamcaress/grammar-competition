@@ -8164,12 +8164,12 @@
     "card_type": "revision",
     "prompt": "Baxter settled into the second interval of his 3200-meter workout, holds a 5:10 pace through the backstretch, and kicked hard over the final 200 meters.",
     "choices": {
-      "A": "settled … holds … kicked",
-      "B": "settled … held … kicked",
-      "C": "settles … holds … kicked",
-      "D": "settled … held … kicks"
+      "A": "NO CHANGE",
+      "B": "settled … holds … kicked",
+      "C": "settled … held … kicked",
+      "D": "settles … holds … kicked"
     },
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": "All three verbs in the compound predicate describe a completed sequence of actions and must share the same past tense: \"settled,\" \"held,\" and \"kicked.\"",
     "difficulty": 1,
     "tags": [
@@ -8399,12 +8399,12 @@
     "card_type": "revision",
     "prompt": "Overrated and overfunded, the sportscasters almost praised every aspect of Duke's basketball program, ignoring the Blue Devils' early-round tournament exits that any true UNC fan could have predicted.",
     "choices": {
-      "A": "the sportscasters almost praised every aspect of Duke's basketball program",
-      "B": "the sportscasters praised almost every aspect of Duke's basketball program",
-      "C": "almost the sportscasters praised every aspect of Duke's basketball program",
-      "D": "the sportscasters praised every aspect of Duke's almost basketball program"
+      "A": "NO CHANGE",
+      "B": "the sportscasters almost praised every aspect of Duke's basketball program",
+      "C": "the sportscasters praised almost every aspect of Duke's basketball program",
+      "D": "almost the sportscasters praised every aspect of Duke's basketball program"
     },
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": "\"Almost\" should modify \"every aspect\" to convey that the sportscasters praised nearly all aspects; placed before \"praised,\" it incorrectly suggests they nearly praised but did not.",
     "difficulty": 3,
     "tags": [
@@ -8425,12 +8425,12 @@
     "card_type": "revision",
     "prompt": "Baxter's weekly training regimen at Chapel Hill High includes running hill repeats on Monday, completing tempo runs on Wednesday, and __________ long trail runs on Saturday to prepare for the 3200m at the conference meet.",
     "choices": {
-      "A": "he does",
-      "B": "doing",
-      "C": "to do",
-      "D": "completing"
+      "A": "NO CHANGE",
+      "B": "he does",
+      "C": "doing",
+      "D": "to do"
     },
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": "Each item in the list must follow the same grammatical form: running, completing, and doing — all present participles serving as objects of the verb 'includes.'",
     "difficulty": 1,
     "tags": [
@@ -8503,12 +8503,12 @@
     "card_type": "revision",
     "prompt": "Lula has found that studying regional Spanish dialects in her Tulane linguistics courses is more rewarding than __________.",
     "choices": {
-      "A": "to memorize vocabulary lists in isolation",
-      "B": "memorizing vocabulary lists in isolation",
-      "C": "when she memorizes vocabulary lists in isolation",
-      "D": "if you memorize vocabulary lists in isolation"
+      "A": "NO CHANGE",
+      "B": "to memorize vocabulary lists in isolation",
+      "C": "memorizing vocabulary lists in isolation",
+      "D": "when she memorizes vocabulary lists in isolation"
     },
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": "A comparison using 'more...than' must compare parallel structures; since the first element is a gerund phrase ('studying regional Spanish dialects'), the second must also be a gerund phrase ('memorizing vocabulary lists').",
     "difficulty": 2,
     "tags": [
@@ -8896,7 +8896,7 @@
       "A": "Change \"affect\" to \"effect\"",
       "B": "Change \"approached\" to \"approaching\"",
       "C": "Change \"their\" to \"they're\"",
-      "D": "No change needed"
+      "D": "NO ERROR"
     },
     "correct_answer": "A",
     "explanation": "The noun form meaning \"result\" or \"impact\" is \"effect\"; \"affect\" is typically a verb meaning \"to influence.\"",
@@ -9002,7 +9002,7 @@
       "A": "Change \"there\" to \"their\"",
       "B": "Change \"there\" to \"they're\"",
       "C": "Change \"emotions\" to \"emotion\"",
-      "D": "No change needed"
+      "D": "NO ERROR"
     },
     "correct_answer": "A",
     "explanation": "The possessive form \"their\" is needed to show ownership of \"team\"; \"there\" indicates a place, and \"they're\" is a contraction of \"they are.\"",
