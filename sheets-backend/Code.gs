@@ -186,8 +186,14 @@ function handleGetUserData(user) {
     }
   }
 
+  // Calculate streak with 1-day grace period
   var streak = 0;
   var cursor = today;
+  // If no activity today, start from yesterday (grace period)
+  if (!activeDates[cursor]) {
+    cursor = shiftDateKey(cursor, -1);
+  }
+  // Count consecutive days backward
   while (activeDates[cursor]) {
     streak++;
     cursor = shiftDateKey(cursor, -1);
@@ -332,6 +338,11 @@ function handleGetLeaderboard(range) {
     var activeDates = datesMap[name] || {};
     var streak = 0;
     var cursor = today;
+    // If no activity today, start from yesterday (grace period)
+    if (!activeDates[cursor]) {
+      cursor = shiftDateKey(cursor, -1);
+    }
+    // Count consecutive days backward
     while (activeDates[cursor]) {
       streak++;
       cursor = shiftDateKey(cursor, -1);
