@@ -182,6 +182,18 @@ export function App() {
       .catch(() => {});
   }, []);
 
+  // Auto-login from saved credentials
+  useEffect(() => {
+    if (!cardsReady || userName) return;
+    try {
+      const saved = localStorage.getItem("grammar_saved_user");
+      if (!saved) return;
+      const { name, pin } = JSON.parse(saved);
+      if (name && pin) void handleLogin(name, pin);
+    } catch {}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cardsReady]);
+
   function refreshDashboard(states: Map<string, CardState>, score: DailyScore | undefined) {
     const d = computeDashboard(getCards(), states, score);
     setDashboard(d);
@@ -214,6 +226,7 @@ export function App() {
       refreshDashboard(states, score);
       getUserChallenges(user).then(({ pending }) => setPendingChallenges(pending)).catch(() => {});
       isFirstSession.current = states.size === 0;
+      try { localStorage.setItem("grammar_saved_user", JSON.stringify({ name: user, pin })); } catch {}
       setStage(states.size === 0 ? "welcome" : "home");
     } catch (error) {
       setLoginPin("");
@@ -691,9 +704,23 @@ export function App() {
       {stage === "home" ? (
         <section className="mt-4 space-y-3">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <p className="text-sm text-slate-700">
-              Signed in as <span className="font-semibold">{userName}</span>
-            </p>
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-slate-700">
+                Signed in as <span className="font-semibold">{userName}</span>
+              </p>
+              <button
+                className="text-xs text-slate-400 hover:text-slate-600"
+                onClick={() => {
+                  try { localStorage.removeItem("grammar_saved_user"); } catch {}
+                  setUserName(null);
+                  setLoginName("");
+                  setLoginPin("");
+                  setStage("login");
+                }}
+              >
+                Sign out
+              </button>
+            </div>
             <div className="mt-3 grid grid-cols-4 gap-2 text-center">
               <div className="rounded-lg bg-slate-50 p-2">
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">Due</p>
