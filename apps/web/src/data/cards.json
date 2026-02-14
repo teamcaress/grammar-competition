@@ -6692,5 +6692,2358 @@
     "correct_answer": "C",
     "explanation": "In academic writing, stating the assertion directly (C) is stronger than filtering it through \"I think\" (B) or the redundant (A).",
     "difficulty": 2
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Nonrestrictive",
+    "card_type": "revision",
+    "prompt": "Baxter who runs the 3200m for Chapel Hill High School finished with a personal record at the conference meet.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter, who runs the 3200m for Chapel Hill High School, finished with a personal record at the conference meet.",
+      "C": "Baxter, who runs the 3200m for Chapel Hill High School finished with a personal record at the conference meet.",
+      "D": "Baxter who runs the 3200m for Chapel Hill High School, finished with a personal record at the conference meet."
+    },
+    "correct_answer": "B",
+    "explanation": "Because Baxter is already identified by name, \"who runs the 3200m for Chapel Hill High School\" is nonrestrictive and must be set off by a pair of commas.",
+    "difficulty": 1,
+    "tags": [
+      "nonrestrictive_clause",
+      "comma_pair",
+      "proper_noun"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_nonrestrictive_proper_noun"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "best_choice",
+    "prompt": "Which version correctly uses a colon to introduce Lula's course load?",
+    "choices": {
+      "A": "This semester Lula is taking: Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "B": "This semester Lula is taking three courses: Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "C": "This semester: Lula is taking Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "D": "This semester Lula is taking three courses, Phonetics: Advanced Spanish Composition, and Sociolinguistics."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon must follow a complete independent clause; only choice B provides a full sentence before the colon.",
+    "difficulty": 2,
+    "tags": [
+      "colon",
+      "independent_clause_before_colon",
+      "list_introduction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_colon_list_intro"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "error_id",
+    "prompt": "During Baxter's last backpacking trip, his group's campsite was closer to the trail's summit than it's map coordinates suggested.",
+    "choices": {
+      "A": "Baxter's last",
+      "B": "group's campsite",
+      "C": "it's map coordinates",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"It's\" is a contraction of \"it is\"; the possessive form \"its\" (no apostrophe) is required here.",
+    "difficulty": 1,
+    "tags": [
+      "apostrophe",
+      "its_vs_its"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_apostrophe_its_possessive"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "Lula spent her fall break visiting three cities, Baton Rouge, Louisiana, San Antonio, Texas, and Pensacola, Florida.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Lula spent her fall break visiting three cities: Baton Rouge, Louisiana; San Antonio, Texas; and Pensacola, Florida.",
+      "C": "Lula spent her fall break visiting three cities; Baton Rouge, Louisiana, San Antonio, Texas, and Pensacola, Florida.",
+      "D": "Lula spent her fall break visiting three cities: Baton Rouge; Louisiana; San Antonio; Texas; and Pensacola; Florida."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon correctly introduces the list after a complete clause, and semicolons serve as \"super commas\" to separate items that already contain internal commas.",
+    "difficulty": 3,
+    "tags": [
+      "semicolon",
+      "colon",
+      "super_comma",
+      "complex_list"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_semicolon_super_comma_travel"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "error_id",
+    "prompt": "Baxter's favorite cycling route, a thirty-mile loop through the countryside -- attracts riders from across the county every weekend.",
+    "choices": {
+      "A": "cycling route,",
+      "B": "a thirty-mile loop",
+      "C": "the countryside --",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Punctuation marks used to set off a nonessential phrase must be paired consistently; the sentence opens with a comma but closes with a dash, creating a mismatch.",
+    "difficulty": 3,
+    "tags": [
+      "dash",
+      "comma_dash_mismatch",
+      "paired_punctuation"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_dash_comma_mismatch_id"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Unnecessary Commas",
+    "card_type": "best_choice",
+    "prompt": "Which sentence about Lula's study-abroad plans is punctuated correctly?",
+    "choices": {
+      "A": "Lula hopes, that her linguistics coursework at Tulane will prepare her for a semester in Madrid.",
+      "B": "Lula hopes that her linguistics coursework at Tulane, will prepare her for a semester in Madrid.",
+      "C": "Lula hopes that her linguistics coursework at Tulane will prepare her for a semester in Madrid.",
+      "D": "Lula hopes that, her linguistics coursework at Tulane will prepare her for a semester in Madrid."
+    },
+    "correct_answer": "C",
+    "explanation": "No comma should separate a verb from its complement clause or a subject from its verb; choice C is the only option free of unnecessary commas.",
+    "difficulty": 2,
+    "tags": [
+      "unnecessary_comma",
+      "verb_complement"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_unnecessary_comma_complement"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Structure",
+    "card_type": "revision",
+    "prompt": "Before each cross country meet, Baxter focuses on stretching his hamstrings, to hydrate properly, and visualizing the course layout.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "stretching his hamstrings, hydrating properly, and visualizing the course layout",
+      "C": "to stretch his hamstrings, hydrating properly, and visualizing the course layout",
+      "D": "stretching his hamstrings, hydrating properly, and to visualize the course layout"
+    },
+    "correct_answer": "B",
+    "explanation": "All items in a series must share the same grammatical form; choice B uses three parallel gerund phrases ('stretching,' 'hydrating,' 'visualizing').",
+    "difficulty": 1,
+    "tags": [
+      "parallelism",
+      "list_structure",
+      "gerund_consistency"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_list_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "Lula's linguistics professor explained that studying syntax is both essential for understanding sentence structure and it helps students analyze unfamiliar languages.",
+    "choices": {
+      "A": "both essential for understanding sentence structure",
+      "B": "and it helps students analyze unfamiliar languages",
+      "C": "Lula's linguistics professor",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match: after 'both' comes an adjective phrase ('essential for...'), so after 'and' there must also be an adjective phrase, such as 'helpful for analyzing unfamiliar languages,' not an independent clause.",
+    "difficulty": 2,
+    "tags": [
+      "parallelism",
+      "correlative_conjunctions",
+      "both_and"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_correlative_both_and"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best maintains parallel structure? \"Baxter finds cycling long mountain routes more demanding on his endurance than ____.\"",
+    "choices": {
+      "A": "to run the 3200m at a track meet",
+      "B": "running the 3200m at a track meet",
+      "C": "when he runs the 3200m at a track meet",
+      "D": "the 3200m at a track meet is run"
+    },
+    "correct_answer": "B",
+    "explanation": "The first side of the comparison uses a gerund phrase ('cycling long mountain routes'), so the second side must also be a gerund phrase: 'running the 3200m at a track meet.'",
+    "difficulty": 2,
+    "tags": [
+      "parallelism",
+      "comparative_structure",
+      "gerund_consistency"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_comparative_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "Lula's Spanish seminar not only improved her conversational fluency but also her understanding of regional dialects was deepened by the coursework.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only improved her conversational fluency but also deepened her understanding of regional dialects",
+      "C": "not only was improving her conversational fluency but also deepened her understanding of regional dialects",
+      "D": "not only improved her conversational fluency, and also it deepened her understanding of regional dialects"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' parallel verb phrases must follow each element; choice B pairs 'improved her conversational fluency' with 'deepened her understanding of regional dialects.'",
+    "difficulty": 1,
+    "tags": [
+      "parallelism",
+      "correlative_conjunctions",
+      "not_only_but_also"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_not_only_verb_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Series Consistency",
+    "card_type": "error_id",
+    "prompt": "When packing for a weekend backpacking trip, Baxter checks that his water filter is working, that his tent poles are intact, and his boots should be properly broken in.",
+    "choices": {
+      "A": "that his water filter is working",
+      "B": "that his tent poles are intact",
+      "C": "his boots should be properly broken in",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items use parallel 'that + subject + verb' noun clauses, so the third must follow the same pattern, such as 'that his boots are properly broken in.'",
+    "difficulty": 3,
+    "tags": [
+      "parallelism",
+      "series_consistency",
+      "clause_form_mismatch"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_series_clause_consistency"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Either...Or Structure",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence with proper parallel structure? \"After finals at Tulane, Lula plans to either fly home to see her family or ____.\"",
+    "choices": {
+      "A": "she will stay in New Orleans to work on her linguistics thesis",
+      "B": "staying in New Orleans to work on her linguistics thesis",
+      "C": "stay in New Orleans to work on her linguistics thesis",
+      "D": "New Orleans is where she will stay to work on her linguistics thesis"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structures after each word must match: after 'either' comes a base verb phrase ('fly home'), so after 'or' there must also be a base verb phrase ('stay in New Orleans').",
+    "difficulty": 2,
+    "tags": [
+      "parallelism",
+      "correlative_conjunctions",
+      "either_or"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_correlative_either_or"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. Similarly, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. However, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+      "C": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. Therefore, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+      "D": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. For example, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds."
+    },
+    "correct_answer": "B",
+    "explanation": "Baxter's goal (breaking eleven minutes) is contradicted by his actual result (11:14), so a contrast transition such as 'However' is needed; 'Similarly' incorrectly signals that the two sentences describe parallel or agreeing ideas.",
+    "difficulty": 1,
+    "tags": [
+      "transition",
+      "contrast",
+      "revision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_revision_contrast_race_day"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causal Transitions",
+    "card_type": "best_choice",
+    "prompt": "Lula's linguistics professor at Tulane assigned a semester-long project comparing phonological systems in Spanish and Haitian Creole, two languages with deep roots in New Orleans. ____, Lula spent every weekend that fall conducting interviews in the city's Tremé and Bywater neighborhoods to gather primary data.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "Consequently",
+      "C": "In contrast",
+      "D": "For instance"
+    },
+    "correct_answer": "B",
+    "explanation": "Lula's weekend fieldwork is a direct result of the professor's project assignment, making this a cause-and-effect relationship that requires a causal transition such as 'Consequently.'",
+    "difficulty": 2,
+    "tags": [
+      "transition",
+      "causation",
+      "best_choice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_cause_linguistics"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Rhetorical Synthesis",
+    "card_type": "best_choice",
+    "prompt": "A student is writing a short essay arguing that cycling infrastructure in North Carolina should be expanded to promote both fitness and tourism. The student wants to incorporate the following information:\n\n- Baxter regularly cycles mountain roads outside Chapel Hill.\n- Tourism revenue in towns along the Blue Ridge Parkway increased after new bike lanes were added.\n\nWhich choice most effectively uses this information to support the essay's argument?",
+    "choices": {
+      "A": "Baxter, a sophomore at Chapel Hill High School, enjoys cycling on mountain roads because the scenery is beautiful.",
+      "B": "After new bike lanes were installed along the Blue Ridge Parkway, tourism revenue in nearby towns rose — evidence that riders like Baxter, who regularly cycles the mountain roads outside Chapel Hill, represent a growing constituency whose needs justify further infrastructure investment.",
+      "C": "Baxter cycles on mountain roads, and some towns near the Blue Ridge Parkway have seen more tourists lately.",
+      "D": "Tourism revenue increased along the Blue Ridge Parkway, so Baxter decided to start cycling on mountain roads outside Chapel Hill."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B is the only option that synthesizes both pieces of information into a single claim directly supporting the essay's argument about expanding cycling infrastructure for fitness and tourism.",
+    "difficulty": 3,
+    "tags": [
+      "rhetorical_synthesis",
+      "evidence_integration",
+      "best_choice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_synthesis_cycling_nc"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Relevance",
+    "card_type": "error_id",
+    "prompt": "A paragraph discusses how New Orleans's musical traditions, from brass bands to jazz funerals, reflect the city's layered cultural history. The paragraph includes this sentence: 'Lula, a Tulane sophomore majoring in Linguistics and Spanish, prefers to study at coffee shops in the French Quarter.' Which best describes the problem?",
+    "choices": {
+      "A": "The sentence is too informal for an academic paragraph.",
+      "B": "The sentence introduces a personal detail unrelated to the paragraph's focus on musical traditions and should be deleted.",
+      "C": "The sentence needs a transition word at the beginning.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph's focus is on how New Orleans's musical traditions reflect cultural history; Lula's study habits, while set in New Orleans, do not support or develop that specific argument and should be removed to preserve unity.",
+    "difficulty": 2,
+    "tags": [
+      "relevance",
+      "unity",
+      "add_delete"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_error_relevance_nola_music"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Sentence Placement",
+    "card_type": "best_choice",
+    "prompt": "Read the following paragraph about Baxter's backpacking trip and determine where Sentence 4 should be placed for the best logical flow.\n\n(1) Baxter planned a three-day backpacking loop on the Art Loeb Trail in the Pisgah National Forest. (2) He packed a bear canister, a water filter, and enough dehydrated meals for the trip. (3) On the second morning, a dense fog rolled in and reduced visibility to less than twenty feet. (4) Before setting out, he checked the weather forecast, which predicted clear skies for the entire weekend. (5) Caught off guard, he relied on his compass and topographic map to navigate the remaining six miles to camp.\n\nWhere should Sentence 4 be placed?",
+    "choices": {
+      "A": "Where it is now (after Sentence 3)",
+      "B": "After Sentence 1",
+      "C": "After Sentence 2",
+      "D": "After Sentence 5"
+    },
+    "correct_answer": "C",
+    "explanation": "Sentence 4 describes a preparation step (checking the forecast) that logically follows the other preparations in Sentences 1 and 2 and must come before Sentence 3's unexpected fog so that the contrast between the forecast and the actual weather is clear.",
+    "difficulty": 3,
+    "tags": [
+      "sentence_placement",
+      "logical_flow",
+      "organization"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_placement_backpacking"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "Lula's research on loanwords from West African languages into Louisiana Creole uncovered patterns that earlier scholars had overlooked. On the contrary, her analysis of Spanish-influenced vocabulary in the same dialect revealed a parallel set of undocumented borrowings.",
+    "choices": {
+      "A": "Lula's research on loanwords",
+      "B": "On the contrary",
+      "C": "revealed a parallel set",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'On the contrary' signals opposition, but the second finding (Spanish-influenced borrowings) adds a parallel discovery to the first (West African borrowings), so a continuation transition such as 'Furthermore' or 'Moreover' is needed.",
+    "difficulty": 2,
+    "tags": [
+      "transition",
+      "continuation",
+      "contrast_misuse"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_error_contrast_for_continuation_linguistics"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "Neal stayed up until midnight grading sociology papers, Amie was across the hall building a new data dashboard for UNC's enrollment office.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Neal stayed up until midnight grading sociology papers; Amie was across the hall building a new data dashboard for UNC's enrollment office.",
+      "C": "Neal stayed up until midnight grading sociology papers Amie was across the hall building a new data dashboard for UNC's enrollment office.",
+      "D": "Neal stayed up until midnight grading sociology papers, and building a new data dashboard for UNC's enrollment office was Amie across the hall."
+    },
+    "correct_answer": "B",
+    "explanation": "Two independent clauses joined only by a comma create a comma splice; a semicolon correctly links the two related but independent clauses.",
+    "difficulty": 1,
+    "tags": [
+      "comma_splice",
+      "semicolon",
+      "independent_clauses"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_splice_semicolon_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "(A) Baxter rounded the final curve of his 3200-meter race at Chapel Hill High. (B) His legs burning and his lungs screaming for air. (C) He kicked hard down the straightaway and passed two runners. (D) NO ERROR",
+    "choices": {
+      "A": "Sentence A",
+      "B": "Sentence B",
+      "C": "Sentence C",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"His legs burning and his lungs screaming for air\" is a participial phrase with no main verb and no independent clause, making it a sentence fragment.",
+    "difficulty": 1,
+    "tags": [
+      "fragment",
+      "participial_phrase",
+      "missing_main_clause"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_fragment_participial"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-ons",
+    "card_type": "revision",
+    "prompt": "Despite Duke's claims of superiority the Tar Heels' winning record speaks for itself Neal reminds his sociology students of this fact every March during the rivalry game.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Despite Duke's claims of superiority, the Tar Heels' winning record speaks for itself, Neal reminds his sociology students of this fact every March during the rivalry game.",
+      "C": "Despite Duke's claims of superiority, the Tar Heels' winning record speaks for itself. Neal reminds his sociology students of this fact every March during the rivalry game.",
+      "D": "Despite Duke's claims of superiority the Tar Heels' winning record speaks for itself. Neal reminds his sociology students of this fact, every March during the rivalry game."
+    },
+    "correct_answer": "C",
+    "explanation": "The original is a fused run-on containing two independent clauses with no punctuation or conjunction between them; choice C correctly separates them with a period and adds the necessary comma after the introductory dependent clause.",
+    "difficulty": 2,
+    "tags": [
+      "run_on",
+      "fused_sentence",
+      "introductory_clause_comma"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_runon_fused_fix"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Lula wanted to double-major in Linguistics and Spanish at Tulane. She had always been fascinated by how language shapes identity. Which of the following best combines these two sentences?",
+    "choices": {
+      "A": "Lula wanted to double-major in Linguistics and Spanish at Tulane, she had always been fascinated by how language shapes identity.",
+      "B": "Lula wanted to double-major in Linguistics and Spanish at Tulane because she had always been fascinated by how language shapes identity.",
+      "C": "Lula wanted to double-major in Linguistics and Spanish at Tulane she had always been fascinated by how language shapes identity.",
+      "D": "Lula wanted to double-major in Linguistics and Spanish at Tulane, being that she had always been fascinated by how language shapes identity."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Because\" is the appropriate subordinating conjunction that logically connects the reason (fascination with language) to the decision (double-majoring), creating a grammatically correct complex sentence.",
+    "difficulty": 2,
+    "tags": [
+      "subordination",
+      "combining_sentences",
+      "subordinating_conjunction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_combine_subordination"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Dependent Clause Punctuation",
+    "card_type": "error_id",
+    "prompt": "(A) Although Amie's data literacy workshop at UNC drew twice as many students as Duke's equivalent program, she never bragged about it publicly. (B) She simply let the enrollment numbers do the talking. (C) Because, she believed that data should always speak louder than institutional rivalry. (D) NO ERROR",
+    "choices": {
+      "A": "Sentence A",
+      "B": "Sentence B",
+      "C": "Sentence C",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The comma after \"Because\" incorrectly separates the subordinating conjunction from its clause; \"Because she believed that data should always speak louder than institutional rivalry\" should have no internal comma after the conjunction.",
+    "difficulty": 2,
+    "tags": [
+      "dependent_clause",
+      "subordinating_conjunction",
+      "unnecessary_comma"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_dependent_clause_comma"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connection",
+    "card_type": "best_choice",
+    "prompt": "On Saturday mornings in Ironwoods, Baxter loads his mountain bike onto the car rack and heads for the trails. ______ Neal grades papers on the porch while pretending he isn't watching the Duke-UNC score on his phone.",
+    "choices": {
+      "A": "Meanwhile,",
+      "B": "Meanwhile",
+      "C": "He does this, meanwhile",
+      "D": "At the same time and"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Meanwhile\" followed by a comma is the correct conjunctive adverb usage to begin a new independent clause that describes a simultaneous action, properly punctuated as its own sentence with an introductory transition.",
+    "difficulty": 3,
+    "tags": [
+      "clause_connection",
+      "conjunctive_adverb",
+      "transition_punctuation"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "boundary_clause_connection_transition"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Comma Splices",
+    "card_type": "revision",
+    "prompt": "Baxter pushed through the final mile of the 3200m, his legs burned with every stride, but he refused to slow his pace.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter pushed through the final mile of the 3200m. His legs burned with every stride, but he refused to slow his pace.",
+      "C": "Baxter pushed through the final mile of the 3200m his legs burned with every stride, but he refused to slow his pace.",
+      "D": "Baxter pushed through the final mile of the 3200m, his legs burned with every stride but he refused to slow his pace."
+    },
+    "correct_answer": "B",
+    "explanation": "The original contains a comma splice between two independent clauses (\"Baxter pushed through the final mile\" and \"his legs burned\"); replacing the comma with a period corrects the boundary error while preserving the coordinating conjunction in the second sentence.",
+    "difficulty": 1,
+    "tags": [
+      "comma splice",
+      "period correction",
+      "independent clauses"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "fix_comma_splice"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Fragments",
+    "card_type": "error_id",
+    "prompt": "Lula spent the afternoon in the Tulane linguistics lab. (A) Analyzing spectrograms of vowel shifts in Caribbean Spanish dialects. (B) Her professor had assigned the project weeks ago, (C) but Lula waited until she could access the department's updated software. (D) NO ERROR",
+    "choices": {
+      "A": "Analyzing spectrograms of vowel shifts in Caribbean Spanish dialects.",
+      "B": "Her professor had assigned the project weeks ago,",
+      "C": "but Lula waited until she could access the department's updated software.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Part A is a sentence fragment because it is a participial phrase lacking a subject and independent verb; it should be attached to the preceding sentence or revised to include a subject and finite verb.",
+    "difficulty": 1,
+    "tags": [
+      "fragment",
+      "participial phrase",
+      "missing subject"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "identify_fragment"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Run-ons",
+    "card_type": "revision",
+    "prompt": "Baxter loaded his panniers and set out on the Blue Ridge cycling trail the elevation gain was relentless he stopped twice to refill his water bottles at mountain springs.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter loaded his panniers and set out on the Blue Ridge cycling trail; the elevation gain was relentless, and he stopped twice to refill his water bottles at mountain springs.",
+      "C": "Baxter loaded his panniers, and set out on the Blue Ridge cycling trail the elevation gain was relentless, he stopped twice to refill his water bottles at mountain springs.",
+      "D": "Baxter loaded his panniers and set out on the Blue Ridge cycling trail the elevation gain was relentless; and he stopped twice, to refill his water bottles at mountain springs."
+    },
+    "correct_answer": "B",
+    "explanation": "The original is a fused run-on containing three independent clauses with no punctuation or conjunctions between them; choice B correctly uses a semicolon after the first clause and a comma with a coordinating conjunction to join the second and third.",
+    "difficulty": 2,
+    "tags": [
+      "run-on",
+      "fused sentence",
+      "semicolon",
+      "coordinating conjunction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "fix_run_on_sentence"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Subordination",
+    "card_type": "best_choice",
+    "prompt": "Lula wanted to join a study-abroad program in Seville. She needed to complete her core linguistics requirements in New Orleans first. Which of the following best combines these two sentences?",
+    "choices": {
+      "A": "Lula wanted to join a study-abroad program in Seville, she needed to complete her core linguistics requirements in New Orleans first.",
+      "B": "Although Lula wanted to join a study-abroad program in Seville, she needed to complete her core linguistics requirements in New Orleans first.",
+      "C": "Lula wanted to join a study-abroad program in Seville she needed to complete her core linguistics requirements in New Orleans first.",
+      "D": "Lula wanted to join a study-abroad program in Seville, however she needed to complete her core linguistics requirements in New Orleans first."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B correctly uses the subordinating conjunction \"although\" to create a dependent clause that expresses the contrasting relationship between the two ideas, while the other options produce a comma splice, a run-on, or misuse a conjunctive adverb without proper punctuation.",
+    "difficulty": 2,
+    "tags": [
+      "subordination",
+      "combining sentences",
+      "subordinating conjunction",
+      "contrast"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "use_subordination_to_combine"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Dependent Clause Punctuation",
+    "card_type": "error_id",
+    "prompt": "(A) Because the cross-country course at Chapel Hill wound through heavily wooded trails, (B) Baxter trained on uneven terrain whenever he could. (C) Although he preferred flat roads for speed work he knew that trail running would strengthen his ankles. (D) NO ERROR",
+    "choices": {
+      "A": "Because the cross-country course at Chapel Hill wound through heavily wooded trails,",
+      "B": "Baxter trained on uneven terrain whenever he could.",
+      "C": "Although he preferred flat roads for speed work he knew that trail running would strengthen his ankles.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "Part C is missing a comma after the introductory dependent clause \"Although he preferred flat roads for speed work\"; a comma is required when a dependent clause beginning with a subordinating conjunction precedes the independent clause.",
+    "difficulty": 3,
+    "tags": [
+      "dependent clause",
+      "introductory clause",
+      "comma after subordinate clause"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "punctuate_dependent_clause"
+  },
+  {
+    "unit": "Sentence Boundaries",
+    "subtopic": "Clause Connection",
+    "card_type": "best_choice",
+    "prompt": "During finals week, Lula balanced her Spanish oral exam preparation with a twenty-page linguistics research paper. __________ she recorded herself practicing verb conjugations aloud; then she switched to drafting her analysis of phonological variation in New Orleans Creole French.",
+    "choices": {
+      "A": "Each evening in the library,",
+      "B": "Each evening in the library she",
+      "C": "Each evening in the library, but",
+      "D": "Each evening, in the library and"
+    },
+    "correct_answer": "A",
+    "explanation": "Choice A provides an adverbial phrase that transitions smoothly into the independent clause beginning with \"she recorded,\" creating a grammatically complete sentence; the other choices either fuse clauses without punctuation, introduce an illogical conjunction, or break the clause structure.",
+    "difficulty": 3,
+    "tags": [
+      "clause connection",
+      "transition",
+      "adverbial phrase",
+      "sentence completeness"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section V: Sentence Boundaries and Clause Architecture",
+    "skill_code": "connect_clauses_logically"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "revision",
+    "prompt": "Having trained all summer on the Chapel Hill trails, the 3200m race felt effortless to Baxter at the first cross country meet of the season.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Having trained all summer on the Chapel Hill trails, Baxter felt the 3200m race was effortless at the first cross country meet of the season.",
+      "C": "The 3200m race, having trained all summer on the Chapel Hill trails, felt effortless to Baxter at the first cross country meet of the season.",
+      "D": "Having trained all summer on the Chapel Hill trails, it felt effortless to Baxter racing the 3200m at the first cross country meet of the season."
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase 'Having trained all summer on the Chapel Hill trails' must modify the person who trained, which is Baxter, so the subject of the main clause must be Baxter.",
+    "difficulty": 1,
+    "tags": [
+      "dangling modifier",
+      "participial phrase",
+      "running"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "dangling_modifier_correction"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "error_id",
+    "prompt": "Lula [A] nearly studied [B] for six hours in the Tulane library, reviewing her phonetics notes [C] on vowel articulation before [D] the midterm exam. No error [E].",
+    "choices": {
+      "A": "A — 'nearly studied' should be 'studied nearly'",
+      "B": "B — 'for six hours' is incorrectly placed",
+      "C": "C — 'on vowel articulation' should modify 'library'",
+      "D": "No error"
+    },
+    "correct_answer": "A",
+    "explanation": "The adverb 'nearly' is misplaced: as written it modifies 'studied,' implying she almost didn't study, when the intended meaning is that she studied for nearly six hours.",
+    "difficulty": 2,
+    "tags": [
+      "misplaced modifier",
+      "adverb placement",
+      "campus life"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "misplaced_modifier_identification"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Participial Phrases",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses a participial phrase to describe Baxter's backpacking experience on the Appalachian Trail?",
+    "choices": {
+      "A": "Loaded with forty pounds of gear, the Appalachian Trail stretched endlessly before Baxter as he climbed toward Max Patch.",
+      "B": "Climbing toward Max Patch, Baxter adjusted the straps of his pack, which was loaded with forty pounds of gear.",
+      "C": "Baxter, climbing toward Max Patch and loaded with forty pounds of gear, the trail stretched endlessly before him.",
+      "D": "Loaded with forty pounds of gear and climbing toward Max Patch, the view from the trail amazed Baxter."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B correctly attaches both participial phrases to Baxter as the subject, whereas A, C, and D all create dangling or misplaced modifiers by pairing the participial phrases with 'trail' or 'view' instead of Baxter.",
+    "difficulty": 2,
+    "tags": [
+      "participial phrase",
+      "dangling modifier",
+      "backpacking",
+      "Appalachian Trail"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "participial_phrase_placement"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "revision",
+    "prompt": "Cycling steady up the hills outside Chapel Hill, Baxter built the endurance that would carry him through cross country season.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Cycling steadily up the hills outside Chapel Hill,",
+      "C": "Cycling in a steady way up the hills outside Chapel Hill,",
+      "D": "Steady cycling up the hills outside Chapel Hill,"
+    },
+    "correct_answer": "B",
+    "explanation": "The word modifying the verb 'cycling' must be the adverb 'steadily,' not the adjective 'steady,' because adverbs—not adjectives—modify verbs.",
+    "difficulty": 1,
+    "tags": [
+      "adjective",
+      "adverb",
+      "cycling",
+      "usage"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "adjective_adverb_distinction"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Modifier Clarity",
+    "card_type": "best_choice",
+    "prompt": "Lula wants to describe her weekend routine in New Orleans. Which version is clearest and free of modifier errors?",
+    "choices": {
+      "A": "Walking through the French Quarter on Saturday mornings, the sound of street musicians drifted toward Lula as she reviewed her Spanish vocabulary on flash cards.",
+      "B": "On Saturday mornings, Lula walked through the French Quarter reviewing her Spanish vocabulary on flash cards while the sound of street musicians drifted toward her.",
+      "C": "Lula, on Saturday mornings walking through the French Quarter, reviewed her Spanish vocabulary on flash cards, and the sound of street musicians drifted toward her.",
+      "D": "Reviewing her Spanish vocabulary on flash cards, Saturday mornings found Lula walking through the French Quarter as the sound of street musicians drifted toward her."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B places each modifier adjacent to what it logically modifies and keeps Lula as the clear subject, while A and D contain dangling modifiers and C awkwardly interrupts the subject and verb.",
+    "difficulty": 3,
+    "tags": [
+      "modifier clarity",
+      "sentence structure",
+      "New Orleans",
+      "campus life"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "modifier_clarity_and_precision"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adverb Scope",
+    "card_type": "error_id",
+    "prompt": "Baxter told his coach [A] that he only wanted [B] to run the 3200m at the conference meet, [C] not the 1600m, because his training on the Chapel Hill trails had prepared him [D] specifically for the longer race. No error [E].",
+    "choices": {
+      "A": "A — 'told his coach' needs a comma after it",
+      "B": "B — 'only' should be placed directly before 'the 3200m'",
+      "C": "C — the comma before 'not the 1600m' is incorrect",
+      "D": "No error"
+    },
+    "correct_answer": "B",
+    "explanation": "The limiting adverb 'only' should be placed immediately before the element it restricts; as written, 'he only wanted to run' suggests he wanted nothing else at all, when the intended meaning is that the 3200m was the sole event he wanted to run.",
+    "difficulty": 3,
+    "tags": [
+      "adverb scope",
+      "limiting modifier",
+      "only",
+      "running"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "adverb_scope_and_limiting_modifiers"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "Baxter's cross country coach asked the team to revert back to the original training schedule due to the fact that several runners had sustained injuries.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter's cross country coach asked the team to revert to the original training schedule because several runners had sustained injuries.",
+      "C": "Baxter's cross country coach asked the team to revert back to the original training schedule because of the reason that several runners had sustained injuries.",
+      "D": "Baxter's cross country coach asked the team to go back and revert to the prior original training schedule due to the fact that several runners had sustained injuries."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Revert\" already means to return to a previous state, making \"back\" redundant, and \"due to the fact that\" is a wordy substitute for \"because.\"",
+    "difficulty": 1,
+    "tags": [
+      "redundancy",
+      "circumlocution",
+      "concision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_revert_back_training"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "error_id",
+    "prompt": "Lula, who is a student that is majoring in Linguistics at Tulane, is in the process of conducting phonology research on regional dialects in New Orleans.",
+    "choices": {
+      "A": "who is a student that is majoring in Linguistics at Tulane",
+      "B": "is in the process of conducting",
+      "C": "on regional dialects",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Is in the process of conducting\" is a wordy construction that can be replaced by the concise verb \"is conducting.\"",
+    "difficulty": 2,
+    "tags": [
+      "wordiness",
+      "concision",
+      "process_of"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_process_of_conducting"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordy Phrases",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely replaces the underlined portion? \"Baxter cycles along the greenway _for the purpose of building_ endurance before the 3200-meter race.\"",
+    "choices": {
+      "A": "for the purpose of building",
+      "B": "with the goal and intention of building up",
+      "C": "to build",
+      "D": "so as to be able to build"
+    },
+    "correct_answer": "C",
+    "explanation": "\"For the purpose of building\" is a five-word circumlocution that the infinitive \"to build\" replaces in just two words without changing meaning.",
+    "difficulty": 1,
+    "tags": [
+      "wordy_phrases",
+      "concision",
+      "infinitive"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_for_purpose_of_building"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "Lula's advance planning for her semester studying abroad in Spain included reserving campus housing and registering for Spanish literature courses.",
+    "choices": {
+      "A": "advance planning",
+      "B": "studying abroad in Spain",
+      "C": "reserving campus housing",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Planning\" inherently involves looking ahead, so \"advance\" is pleonastic and should be removed.",
+    "difficulty": 2,
+    "tags": [
+      "pleonasm",
+      "concision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_advance_planning_abroad"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Economy Principle",
+    "card_type": "revision",
+    "prompt": "There are several cycling routes in the Chapel Hill area that Baxter has the ability to ride on weekends when he is not busy with his cross country commitments.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Several cycling routes in the Chapel Hill area are available for Baxter to have the ability to ride on weekends when he is not occupied or busy with his cross country commitments.",
+      "C": "Baxter can ride several Chapel Hill cycling routes on weekends free from cross country commitments.",
+      "D": "There are several cycling routes located in the area of Chapel Hill that Baxter has the ability to ride on those weekends when he does not find himself busy with his cross country commitments."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C eliminates the expletive \"there are,\" replaces \"has the ability to\" with \"can,\" and tightens the dependent clause, achieving maximum concision while preserving meaning.",
+    "difficulty": 3,
+    "tags": [
+      "economy_principle",
+      "expletive_construction",
+      "wordiness",
+      "concision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_expletive_cycling_routes"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Which option most concisely conveys the meaning? \"Lula made the decision to pursue the study of the phonological aspects of the Yucatec Maya language as a consequence of the fact that her Linguistics advisor recommended the topic.\"",
+    "choices": {
+      "A": "Lula made the decision to pursue the study of the phonological aspects of the Yucatec Maya language as a consequence of the fact that her Linguistics advisor recommended the topic.",
+      "B": "Lula decided to study Yucatec Maya phonology because her Linguistics advisor recommended the topic.",
+      "C": "Lula made the decision to pursue studying the phonological aspects of Yucatec Maya as a consequence of a recommendation from her Linguistics advisor.",
+      "D": "Due to the fact that her Linguistics advisor made a recommendation of the topic, Lula made the decision to pursue the study of phonological aspects of the Yucatec Maya language."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B replaces the nominalizations \"made the decision\" and \"the study of the phonological aspects\" with the direct verbs \"decided\" and \"study,\" and substitutes \"as a consequence of the fact that\" with \"because.\"",
+    "difficulty": 3,
+    "tags": [
+      "precision",
+      "nominalization",
+      "circumlocution",
+      "concision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "economy_precision_phonology_research"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "revision",
+    "prompt": "Baxter pushed himself to run even farther in practice, hoping the extra mileage would improve his 3200m time at the conference meet.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "further",
+      "C": "more far",
+      "D": "farthest"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Farther\" is correct because it refers to a measurable physical distance, whereas \"further\" refers to abstract or figurative advancement.",
+    "difficulty": 2,
+    "tags": [
+      "farther_further",
+      "running",
+      "measurable_distance"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "commonly_confused_farther_further"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "error_id",
+    "prompt": "Lula, who is majoring (A) in linguistics at Tulane, has become fascinated (B) by the differences (C) among Cajun French and standard Parisian French spoken (D) in New Orleans neighborhoods.",
+    "choices": {
+      "A": "in",
+      "B": "by",
+      "C": "among",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Between\" is the correct preposition when comparing exactly two things—Cajun French and Parisian French—while \"among\" is used for three or more.",
+    "difficulty": 2,
+    "tags": [
+      "between_among",
+      "idiomatic_preposition",
+      "linguistics"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "idiomatic_prep_between_among"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Confused Words",
+    "card_type": "best_choice",
+    "prompt": "The humidity in New Orleans had a noticeable ________ on Lula's ability to concentrate while studying Spanish verb conjugations on the quad.",
+    "choices": {
+      "A": "affect",
+      "B": "effect",
+      "C": "affectation",
+      "D": "effectiveness"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Effect\" is the correct noun meaning a result or impact, while \"affect\" is typically a verb meaning to influence.",
+    "difficulty": 1,
+    "tags": [
+      "affect_effect",
+      "noun_verb_confusion",
+      "studying"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "confused_words_affect_effect"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Usage",
+    "card_type": "revision",
+    "prompt": "After cycling thirty miles on the backroads outside Chapel Hill, Baxter could of used a long rest and a cold drink before starting his homework.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "could have used",
+      "C": "could had used",
+      "D": "could use of"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Could have\" is the grammatically correct modal verb phrase; \"could of\" is a common error caused by mishearing the contraction \"could've.\"",
+    "difficulty": 1,
+    "tags": [
+      "could_have_could_of",
+      "modal_verb",
+      "cycling"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "idiomatic_usage_modal_verbs"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Baxter carefully adjusted each strap on his backpack to ________ the weight evenly across his shoulders before beginning the eight-mile hike along the Appalachian Trail.",
+    "choices": {
+      "A": "distribute",
+      "B": "contribute",
+      "C": "attribute",
+      "D": "tribute"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Distribute\" precisely means to spread or apportion something across multiple points, which is the intended meaning for balancing pack weight across the shoulders.",
+    "difficulty": 2,
+    "tags": [
+      "word_precision",
+      "backpacking",
+      "context_clues"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "precision_word_choice"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "error_id",
+    "prompt": "In her research paper on creole languages, Lula argued that the linguistic traditions of New Orleans (A) are hella important to understanding (B) how French, Spanish, and African languages (C) converged to form a unique cultural (D) identity.",
+    "choices": {
+      "A": "are hella important",
+      "B": "how",
+      "C": "converged",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Hella important\" is informal slang inappropriate for the formal register of a research paper; a phrase such as \"critically important\" or \"essential\" would be appropriate.",
+    "difficulty": 3,
+    "tags": [
+      "register",
+      "formal_tone",
+      "slang",
+      "new_orleans_culture"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "register_and_tone_formal"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Appositives",
+    "card_type": "revision",
+    "prompt": "Sociology professor, Neal, reminded his UNC students that Duke's graduation rate in men's basketball is a statistical outlier worth studying.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Sociology professor Neal reminded his UNC students that Duke's graduation rate in men's basketball is a statistical outlier worth studying.",
+      "C": "Sociology professor Neal, reminded his UNC students that Duke's graduation rate in men's basketball is a statistical outlier worth studying.",
+      "D": "Sociology professor, Neal reminded his UNC students that Duke's graduation rate in men's basketball is a statistical outlier worth studying."
+    },
+    "correct_answer": "B",
+    "explanation": "Under the Name Rule, when a generic title ('sociology professor') precedes a specific name, the name is essential and should not be set off by commas.",
+    "difficulty": 2,
+    "tags": [
+      "appositive",
+      "name_rule",
+      "title_before_name"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_appositive_name_rule_title"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "error_id",
+    "prompt": "Amie's data literacy workshop covered three critical skills; cleaning messy spreadsheets, building accurate visualizations, and interpreting confidence intervals.",
+    "choices": {
+      "A": "critical skills;",
+      "B": "cleaning messy spreadsheets,",
+      "C": "accurate visualizations, and",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "A semicolon joins two independent clauses, but the material after the semicolon is a list, not an independent clause; a colon should replace the semicolon because the preceding clause introduces explanatory content.",
+    "difficulty": 2,
+    "tags": [
+      "semicolon",
+      "colon",
+      "list_introduction"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_semicolon_vs_colon_list_intro"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "best_choice",
+    "prompt": "Which sentence correctly uses dashes to set off a parenthetical aside about Baxter's race?",
+    "choices": {
+      "A": "Baxter's 3200m time -- a full twelve seconds faster than his Duke-rival counterpart's, earned him a spot at regionals.",
+      "B": "Baxter's 3200m time -- a full twelve seconds faster than his Duke-rival counterpart's -- earned him a spot at regionals.",
+      "C": "Baxter's 3200m time, a full twelve seconds faster than his Duke-rival counterpart's -- earned him a spot at regionals.",
+      "D": "Baxter's 3200m time a full twelve seconds faster -- than his Duke-rival counterpart's -- earned him a spot at regionals."
+    },
+    "correct_answer": "B",
+    "explanation": "Em dashes used to set off a parenthetical element must appear as a matched pair, one before and one after the inserted phrase.",
+    "difficulty": 2,
+    "tags": [
+      "dash",
+      "paired_dashes",
+      "parenthetical"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_dash_paired_parenthetical"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "revision",
+    "prompt": "Lula noticed that the café's menu in New Orleans listed it's po'boys alongside the chef's specials, but the restaurants' sign still bore it's original 1940's lettering.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Lula noticed that the café's menu in New Orleans listed its po'boys alongside the chef's specials, but the restaurant's sign still bore its original 1940s lettering.",
+      "C": "Lula noticed that the cafés menu in New Orleans listed its po'boys alongside the chefs specials, but the restaurant's sign still bore its original 1940s lettering.",
+      "D": "Lula noticed that the café's menu in New Orleans listed its po'boys alongside the chef's specials, but the restaurants' sign still bore it's original 1940's lettering."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Its\" (no apostrophe) is the possessive pronoun, \"restaurant's\" is the correct singular possessive, and decades like \"1940s\" do not take an apostrophe when used as simple plurals.",
+    "difficulty": 3,
+    "tags": [
+      "apostrophe",
+      "its_vs_its",
+      "plural_possessive",
+      "decade_plural"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_apostrophe_multiple_errors"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Nonrestrictive",
+    "card_type": "error_id",
+    "prompt": "During office hours, Neal told students, who had not yet submitted their research proposals, that extensions would not be granted -- not even for Duke transfer students still adjusting to a real academic environment.",
+    "choices": {
+      "A": "students, who had not yet submitted",
+      "B": "their research proposals,",
+      "C": "would not be granted",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "The clause 'who had not yet submitted their research proposals' is restrictive because it identifies which students were told about extensions, not all students; commas should not set it off.",
+    "difficulty": 3,
+    "tags": [
+      "restrictive_clause",
+      "false_nonrestrictive",
+      "comma_removal"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_restrictive_false_nonrestrictive_id"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Unnecessary Commas",
+    "card_type": "revision",
+    "prompt": "The Ironwoods neighbors agreed, that the best part of living near UNC was, the sound of the Tar Heel crowd celebrating yet another victory over Duke.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "The Ironwoods neighbors agreed that the best part of living near UNC was the sound of the Tar Heel crowd celebrating yet another victory over Duke.",
+      "C": "The Ironwoods neighbors agreed that, the best part of living near UNC was the sound of the Tar Heel crowd celebrating yet another victory over Duke.",
+      "D": "The Ironwoods neighbors, agreed that the best part of living near UNC was the sound of the Tar Heel crowd, celebrating yet another victory over Duke."
+    },
+    "correct_answer": "B",
+    "explanation": "No comma should separate a verb from its 'that' complement clause or a linking verb from its predicate noun; choice B removes both unnecessary commas.",
+    "difficulty": 1,
+    "tags": [
+      "unnecessary_comma",
+      "verb_complement",
+      "linking_verb"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_unnecessary_comma_verb_complement"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Subject-Verb Agreement",
+    "card_type": "error_id",
+    "prompt": "Neal, along with his colleagues in the UNC sociology department, teach Introduction to Social Problems every fall — a course that, unlike anything offered at Duke, actually changes how students see the world.",
+    "choices": {
+      "A": "teach",
+      "B": "every fall",
+      "C": "unlike anything",
+      "D": "changes"
+    },
+    "correct_answer": "A",
+    "explanation": "The subject is \"Neal,\" which is singular, so the verb should be \"teaches\"; the phrase \"along with his colleagues\" is a parenthetical modifier and does not make the subject plural.",
+    "difficulty": 2,
+    "tags": [
+      "intervening_phrase",
+      "subject_verb_agreement",
+      "parenthetical_modifier"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "subject_verb_with_intervening_phrase"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Agreement",
+    "card_type": "best_choice",
+    "prompt": "At the Ironwoods neighborhood cookout, every UNC fan raised ______ glass when the final score confirmed yet another Carolina victory over Duke.",
+    "choices": {
+      "A": "their",
+      "B": "his or her",
+      "C": "its",
+      "D": "our"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Every\" is a singular indefinite modifier, so the pronoun must be singular; \"his or her\" is the formally correct singular match, while \"their\" is increasingly accepted but remains the less precise choice on standardized tests.",
+    "difficulty": 2,
+    "tags": [
+      "pronoun_agreement",
+      "indefinite_modifier",
+      "singular_antecedent"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "pronoun_agreement_with_indefinite"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Verb Tense Consistency",
+    "card_type": "revision",
+    "prompt": "Baxter settled into the second interval of his 3200-meter workout, holds a 5:10 pace through the backstretch, and kicked hard over the final 200 meters.",
+    "choices": {
+      "A": "settled … holds … kicked",
+      "B": "settled … held … kicked",
+      "C": "settles … holds … kicked",
+      "D": "settled … held … kicks"
+    },
+    "correct_answer": "B",
+    "explanation": "All three verbs in the compound predicate describe a completed sequence of actions and must share the same past tense: \"settled,\" \"held,\" and \"kicked.\"",
+    "difficulty": 1,
+    "tags": [
+      "verb_tense_consistency",
+      "compound_predicate",
+      "parallel_structure"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "verb_tense_consistency_in_sequence"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Collective Nouns",
+    "card_type": "best_choice",
+    "prompt": "Amie told her Data Literacy workshop that the team of UNC researchers ______ published a study proving, with overwhelming statistical significance, that Duke's mascot is the least intimidating in the ACC.",
+    "choices": {
+      "A": "have",
+      "B": "has",
+      "C": "are having",
+      "D": "were"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Team\" is a collective noun acting as a single unit here, so it takes the singular verb \"has\" to agree with the singular subject.",
+    "difficulty": 1,
+    "tags": [
+      "collective_noun",
+      "subject_verb_agreement",
+      "singular_unit"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "collective_noun_verb_agreement"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Pronoun Clarity",
+    "card_type": "error_id",
+    "prompt": "When Lula showed her linguistics professor her analysis of Spanish syntax trees, she said she had never seen such elegant phrase-structure diagrams — a compliment that made Lula prouder than any Carolina fan watching Duke lose in overtime.",
+    "choices": {
+      "A": "she said she had",
+      "B": "such elegant",
+      "C": "a compliment that",
+      "D": "any Carolina fan"
+    },
+    "correct_answer": "A",
+    "explanation": "The pronoun \"she\" is ambiguous because it could refer to either Lula or the professor; the sentence should be revised to clarify which person spoke, such as \"the professor said she had.\"",
+    "difficulty": 3,
+    "tags": [
+      "pronoun_clarity",
+      "ambiguous_reference",
+      "two_antecedents"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "pronoun_ambiguous_reference"
+  },
+  {
+    "unit": "Agreement & Consistency",
+    "subtopic": "Indefinite Pronouns",
+    "card_type": "best_choice",
+    "prompt": "Neither the Duke point guard nor his teammates ______ able to stop the Carolina fast break, and by halftime everyone in the Ironwoods living room — Neal, Amie, Baxter, and even Lula on FaceTime from Tulane — ______ on their feet cheering.",
+    "choices": {
+      "A": "was … were",
+      "B": "were … was",
+      "C": "were … were",
+      "D": "was … was"
+    },
+    "correct_answer": "B",
+    "explanation": "With \"neither…nor,\" the verb agrees with the nearer subject (\"teammates,\" plural), requiring \"were\"; \"everyone\" is singular, so it takes \"was.\"",
+    "difficulty": 3,
+    "tags": [
+      "indefinite_pronoun",
+      "neither_nor",
+      "proximity_agreement",
+      "compound_subject"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section I: Agreement, Consistency, and Pronoun Governance",
+    "skill_code": "indefinite_pronoun_verb_agreement"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Dangling Modifiers",
+    "card_type": "error_id",
+    "prompt": "Running through Ironwoods before dawn, the trail was barely visible to Neal as he logged his morning miles.",
+    "choices": {
+      "A": "Running through Ironwoods before dawn, the trail was barely visible to Neal as he logged his morning miles.",
+      "B": "Running through Ironwoods before dawn, Neal could barely see the trail as he logged his morning miles.",
+      "C": "The trail was barely visible to Neal, running through Ironwoods before dawn as he logged his morning miles.",
+      "D": "Barely visible, Neal was running through Ironwoods before dawn as he logged his morning miles on the trail."
+    },
+    "correct_answer": "B",
+    "explanation": "The participial phrase \"Running through Ironwoods before dawn\" must modify the person actually running (Neal), not \"the trail,\" which cannot run.",
+    "difficulty": 1,
+    "tags": [
+      "dangling modifier",
+      "participial phrase",
+      "introductory phrase"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "dangling_modifier_correction"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Misplaced Modifiers",
+    "card_type": "revision",
+    "prompt": "Amie presented a visualization of enrollment trends to the UNC provost that she had built using three years of admissions data.",
+    "choices": {
+      "A": "Amie presented a visualization of enrollment trends to the UNC provost that she had built using three years of admissions data.",
+      "B": "Amie presented to the UNC provost a visualization of enrollment trends that she had built using three years of admissions data.",
+      "C": "Using three years of admissions data, Amie presented a visualization of enrollment trends, to the UNC provost, that she had built.",
+      "D": "To the UNC provost, a visualization of enrollment trends that she had built using three years of admissions data was presented by Amie."
+    },
+    "correct_answer": "B",
+    "explanation": "The relative clause \"that she had built using three years of admissions data\" must be placed directly after \"visualization of enrollment trends,\" the noun it modifies, rather than after \"provost.\"",
+    "difficulty": 2,
+    "tags": [
+      "misplaced modifier",
+      "relative clause",
+      "clarity"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "misplaced_modifier_relative_clause"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Participial Phrases",
+    "card_type": "best_choice",
+    "prompt": "________, Baxter crested the final summit on the Blue Ridge Parkway and coasted downhill for three uninterrupted miles.",
+    "choices": {
+      "A": "Having pedaled uphill for nearly an hour",
+      "B": "Pedaled uphill for nearly an hour",
+      "C": "He had been pedaling uphill for nearly an hour",
+      "D": "To pedal uphill for nearly an hour"
+    },
+    "correct_answer": "A",
+    "explanation": "A perfect participial phrase (\"Having pedaled...\") correctly modifies the subject \"Baxter\" and indicates the action was completed before the main clause's action.",
+    "difficulty": 2,
+    "tags": [
+      "participial phrase",
+      "perfect participle",
+      "introductory phrase"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "participial_phrase_usage"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adjective vs Adverb",
+    "card_type": "error_id",
+    "prompt": "Lula spoke so fluid in her Spanish linguistics seminar at Tulane that her professor assumed she had grown up in a Spanish-speaking country.",
+    "choices": {
+      "A": "fluid",
+      "B": "fluently",
+      "C": "with fluidity",
+      "D": "in a fluid manner"
+    },
+    "correct_answer": "B",
+    "explanation": "The word must modify the verb \"spoke,\" so the adverb \"fluently\" is required rather than the adjective \"fluid.\"",
+    "difficulty": 1,
+    "tags": [
+      "adjective vs adverb",
+      "adverb form",
+      "verb modification"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "adjective_adverb_distinction"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Modifier Clarity",
+    "card_type": "best_choice",
+    "prompt": "Neal's latest sociology study found that neighborhoods with concentrated poverty only affect residents' health outcomes when public infrastructure is also neglected. Which revision most clearly states the intended meaning?",
+    "choices": {
+      "A": "neighborhoods with concentrated poverty only affect residents' health outcomes when public infrastructure is also neglected.",
+      "B": "neighborhoods with concentrated poverty affect only residents' health outcomes when public infrastructure is also neglected.",
+      "C": "neighborhoods with concentrated poverty affect residents' health outcomes only when public infrastructure is also neglected.",
+      "D": "only neighborhoods with concentrated poverty affect residents' health outcomes when public infrastructure is also neglected."
+    },
+    "correct_answer": "C",
+    "explanation": "Placing \"only\" directly before \"when public infrastructure is also neglected\" makes clear that the limiting condition is the neglect of infrastructure, not some other element of the sentence.",
+    "difficulty": 3,
+    "tags": [
+      "modifier clarity",
+      "only placement",
+      "squinting modifier"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "modifier_clarity_only_placement"
+  },
+  {
+    "unit": "Modifiers",
+    "subtopic": "Adverb Scope",
+    "card_type": "revision",
+    "prompt": "Overrated and overfunded, the sportscasters almost praised every aspect of Duke's basketball program, ignoring the Blue Devils' early-round tournament exits that any true UNC fan could have predicted.",
+    "choices": {
+      "A": "the sportscasters almost praised every aspect of Duke's basketball program",
+      "B": "the sportscasters praised almost every aspect of Duke's basketball program",
+      "C": "almost the sportscasters praised every aspect of Duke's basketball program",
+      "D": "the sportscasters praised every aspect of Duke's almost basketball program"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Almost\" should modify \"every aspect\" to convey that the sportscasters praised nearly all aspects; placed before \"praised,\" it incorrectly suggests they nearly praised but did not.",
+    "difficulty": 3,
+    "tags": [
+      "adverb scope",
+      "almost placement",
+      "modifier precision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section II: Modifier Placement and Scope",
+    "skill_code": "adverb_scope_placement"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Structure",
+    "card_type": "revision",
+    "prompt": "Baxter's weekly training regimen at Chapel Hill High includes running hill repeats on Monday, completing tempo runs on Wednesday, and __________ long trail runs on Saturday to prepare for the 3200m at the conference meet.",
+    "choices": {
+      "A": "he does",
+      "B": "doing",
+      "C": "to do",
+      "D": "completing"
+    },
+    "correct_answer": "B",
+    "explanation": "Each item in the list must follow the same grammatical form: running, completing, and doing — all present participles serving as objects of the verb 'includes.'",
+    "difficulty": 1,
+    "tags": [
+      "parallel_lists",
+      "gerunds",
+      "series_of_three"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_list_gerunds"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "Neal argues that the UNC-Duke rivalry is fueled neither by genuine academic disagreement nor (A) because of (B) deep cultural divisions but rather by decades of basketball proximity, intense recruiting battles, and (C) overlapping (D) alumni networks across the Triangle.",
+    "choices": {
+      "A": "because of",
+      "B": "by",
+      "C": "overlapping",
+      "D": "No error"
+    },
+    "correct_answer": "A",
+    "explanation": "The correlative pair 'neither...nor' requires parallel structures after each word; 'neither by genuine academic disagreement' must be matched with 'nor by deep cultural divisions,' not 'nor because of.'",
+    "difficulty": 2,
+    "tags": [
+      "correlative_conjunctions",
+      "neither_nor",
+      "preposition_matching"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "correlative_conj_neither_nor"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "best_choice",
+    "prompt": "Amie's data literacy curriculum not only teaches UNC students to interpret complex visualizations but also __________.",
+    "choices": {
+      "A": "the ability to construct original datasets is developed by them",
+      "B": "helps them construct original datasets",
+      "C": "constructing original datasets",
+      "D": "she helps them to construct original datasets"
+    },
+    "correct_answer": "B",
+    "explanation": "The structure 'not only teaches...but also helps' maintains parallel verb forms with the same subject, ensuring grammatical balance on both sides of the correlative pair.",
+    "difficulty": 2,
+    "tags": [
+      "not_only_but_also",
+      "verb_parallelism",
+      "correlative_conjunctions"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "correlative_conj_not_only_but_also"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "revision",
+    "prompt": "Lula has found that studying regional Spanish dialects in her Tulane linguistics courses is more rewarding than __________.",
+    "choices": {
+      "A": "to memorize vocabulary lists in isolation",
+      "B": "memorizing vocabulary lists in isolation",
+      "C": "when she memorizes vocabulary lists in isolation",
+      "D": "if you memorize vocabulary lists in isolation"
+    },
+    "correct_answer": "B",
+    "explanation": "A comparison using 'more...than' must compare parallel structures; since the first element is a gerund phrase ('studying regional Spanish dialects'), the second must also be a gerund phrase ('memorizing vocabulary lists').",
+    "difficulty": 2,
+    "tags": [
+      "comparative_parallelism",
+      "gerund_matching",
+      "than_clause"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "comparative_parallel_gerunds"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Either...Or Structure",
+    "card_type": "best_choice",
+    "prompt": "On fall Saturdays the Carens either tailgate at Kenan Stadium to cheer for UNC __________ hike the trails near their Ironwoods neighborhood before watching the game at home.",
+    "choices": {
+      "A": "or they",
+      "B": "or",
+      "C": "or else they will",
+      "D": "or, alternatively, they"
+    },
+    "correct_answer": "B",
+    "explanation": "When 'either' is placed before the first verb phrase, 'or' must introduce a structurally parallel verb phrase without an additional subject, yielding 'either tailgate...or hike.'",
+    "difficulty": 1,
+    "tags": [
+      "either_or",
+      "correlative_conjunctions",
+      "verb_phrase_parallelism"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "correlative_conj_either_or"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Series Consistency",
+    "card_type": "error_id",
+    "prompt": "In his sociology seminar, Neal asks students to examine how the UNC-Duke rivalry (A) shapes local identity, (B) reinforces class narratives, and (C) is a factor in sustaining (D) regional economic competition.",
+    "choices": {
+      "A": "shapes local identity",
+      "B": "reinforces class narratives",
+      "C": "is a factor in sustaining",
+      "D": "No error"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items in the series use concise transitive-verb-plus-object structures ('shapes local identity,' 'reinforces class narratives'), so the third should follow the same pattern — such as 'sustains regional economic competition' — rather than shifting to the wordy construction 'is a factor in sustaining.'",
+    "difficulty": 3,
+    "tags": [
+      "series_consistency",
+      "verb_form_matching",
+      "wordiness_in_series"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "series_verb_consistency"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "Neal's sociology lecture on residential segregation emphasized that neighborhoods like Ironwoods were originally marketed as inclusive, mixed-income communities. Moreover, county tax records show that restrictive covenants quietly excluded Black families from purchasing homes there until the late 1960s.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Neal's sociology lecture on residential segregation emphasized that neighborhoods like Ironwoods were originally marketed as inclusive, mixed-income communities. However, county tax records show that restrictive covenants quietly excluded Black families from purchasing homes there until the late 1960s.",
+      "C": "Neal's sociology lecture on residential segregation emphasized that neighborhoods like Ironwoods were originally marketed as inclusive, mixed-income communities. Therefore, county tax records show that restrictive covenants quietly excluded Black families from purchasing homes there until the late 1960s.",
+      "D": "Neal's sociology lecture on residential segregation emphasized that neighborhoods like Ironwoods were originally marketed as inclusive, mixed-income communities. For instance, county tax records show that restrictive covenants quietly excluded Black families from purchasing homes there until the late 1960s."
+    },
+    "correct_answer": "B",
+    "explanation": "The marketing claim (inclusive communities) directly contradicts the historical reality (restrictive covenants excluding Black families), so a contrast transition such as 'However' is needed; 'Moreover' incorrectly signals that the second sentence merely adds to the first.",
+    "difficulty": 2,
+    "tags": [
+      "transition",
+      "contrast",
+      "revision"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_revision_contrast_ironwoods"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causal Transitions",
+    "card_type": "error_id",
+    "prompt": "Amie's data-literacy report revealed that 40 percent of incoming UNC first-years could not distinguish between a median and a mean on a diagnostic quiz. On the other hand, the provost approved funding for a required quantitative-reasoning module in the first-year seminar.",
+    "choices": {
+      "A": "Amie's data-literacy report",
+      "B": "On the other hand",
+      "C": "approved funding for",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'On the other hand' signals contrast, but the provost's funding decision is a direct consequence of the troubling quiz results Amie's report uncovered, so a causal transition such as 'As a result' or 'Consequently' is needed.",
+    "difficulty": 2,
+    "tags": [
+      "transition",
+      "causation",
+      "contrast_misuse"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_error_contrast_for_cause_data_literacy"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Rhetorical Synthesis",
+    "card_type": "best_choice",
+    "prompt": "A student is writing a research paper arguing that public universities inflate their national rankings by manipulating enrollment statistics. The student wants to incorporate the following two pieces of information:\n\n- Duke's admissions office reported a record 49,000 applications last cycle, yielding a 5.8 percent acceptance rate.\n- UNC's state-mandated admissions data, which is publicly auditable, showed a 17 percent acceptance rate over the same period.\n\nWhich choice most effectively uses this information to support the paper's argument?",
+    "choices": {
+      "A": "Duke received 49,000 applications and accepted 5.8 percent of them, while UNC accepted 17 percent of its applicants.",
+      "B": "Because Duke is a private university, it received more applications than UNC, which is a public school with a higher acceptance rate.",
+      "C": "Unlike UNC, whose state-mandated data is publicly auditable, private institutions such as Duke self-report application totals that are difficult to verify independently — a gap that makes enrollment padding harder to detect and easier to exploit for rankings purposes.",
+      "D": "Duke's 5.8 percent acceptance rate proves that it pads its enrollment numbers, whereas UNC's 17 percent rate shows that public universities are more honest."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C is the only option that synthesizes both data points into an analytical claim directly supporting the paper's argument about enrollment manipulation and the transparency gap between public and private universities.",
+    "difficulty": 3,
+    "tags": [
+      "rhetorical_synthesis",
+      "evidence_integration",
+      "best_choice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_synthesis_enrollment_padding"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Relevance",
+    "card_type": "best_choice",
+    "prompt": "A paragraph in Baxter's race-strategy journal analyzes how pacing in the first 800 meters affects his finishing time in the 3200m. The journal entry includes this sentence: 'My sister Lula texted from Tulane to wish me luck before the conference meet.' Should the writer keep or delete this sentence?",
+    "choices": {
+      "A": "Keep it, because it shows that Baxter has family support, which is relevant to athletic performance.",
+      "B": "Keep it, because it provides a transition between the first and second halves of the race analysis.",
+      "C": "Delete it, because it introduces a personal detail unrelated to the paragraph's analysis of pacing strategy.",
+      "D": "Delete it, because readers would not know who Lula is without further context."
+    },
+    "correct_answer": "C",
+    "explanation": "The paragraph's focus is the relationship between opening-800m pace and final 3200m time; a text message from a sibling, however warm, does not develop that analytical focus and should be removed to maintain paragraph unity.",
+    "difficulty": 1,
+    "tags": [
+      "relevance",
+      "unity",
+      "add_delete"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_relevance_pacing_journal"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Sentence Placement",
+    "card_type": "best_choice",
+    "prompt": "Read the following paragraph from Neal's sociology syllabus overview and determine where Sentence 4 should be placed for the best logical flow.\n\n(1) This semester's unit on higher-education access will compare admissions practices at public and private universities in North Carolina. (2) Students will analyze UNC's legislatively mandated in-state enrollment targets. (3) They will also examine Duke's discretionary financial-aid packaging, which critics argue favors legacy applicants. (4) The unit opens with a statistical primer on acceptance rates, yield rates, and enrollment padding — terms students must understand before evaluating any institution's data. (5) A final project will ask each student to audit one university's publicly available admissions report.\n\nWhere should Sentence 4 be placed?",
+    "choices": {
+      "A": "Where it is now (after Sentence 3)",
+      "B": "After Sentence 1",
+      "C": "After Sentence 5",
+      "D": "Before Sentence 1"
+    },
+    "correct_answer": "B",
+    "explanation": "Sentence 4 introduces foundational terminology that students need before diving into the specific analyses described in Sentences 2 and 3, so it belongs immediately after the unit's general introduction in Sentence 1.",
+    "difficulty": 3,
+    "tags": [
+      "sentence_placement",
+      "logical_flow",
+      "organization"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_placement_sociology_syllabus"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "best_choice",
+    "prompt": "Lula's fieldwork in New Orleans documented that older Creole speakers in Tremé preserve verb serialization patterns borrowed from West African languages. ____, her interviews with younger bilingual speakers in the same neighborhood revealed that Spanish loanwords are entering the Creole lexicon at an accelerating rate.",
+    "choices": {
+      "A": "However",
+      "B": "As a result",
+      "C": "Furthermore",
+      "D": "In other words"
+    },
+    "correct_answer": "C",
+    "explanation": "The second sentence adds a separate but parallel finding from the same fieldwork; 'Furthermore' correctly signals this continuation, whereas 'However' incorrectly implies contrast, 'As a result' incorrectly implies causation, and 'In other words' incorrectly implies restatement.",
+    "difficulty": 1,
+    "tags": [
+      "transition",
+      "continuation",
+      "best_choice"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_continuation_fieldwork"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Redundancy",
+    "card_type": "revision",
+    "prompt": "In his grant proposal, Neal wrote that the sociology department at UNC-Chapel Hill would \"collaborate together with community partners\" to study housing patterns in Ironwoods.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "collaborate with community partners",
+      "C": "work in collaboration together alongside community partners",
+      "D": "collaborate jointly with community partners"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Collaborate\" already means to work together, so \"together\" is redundant and should be removed.",
+    "difficulty": 1,
+    "tags": [
+      "redundancy",
+      "word-pair",
+      "grant-writing"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "eliminate_redundant_modifier"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordy Phrases",
+    "card_type": "best_choice",
+    "prompt": "Which choice most effectively conveys Amie's update to the data literacy team? \"Due to the fact that the enrollment dashboard contained a number of metrics that were not necessary, Amie removed them in order to improve clarity.\"",
+    "choices": {
+      "A": "Due to the fact that the enrollment dashboard contained a number of metrics that were not necessary, Amie removed them in order to improve clarity.",
+      "B": "Because the enrollment dashboard contained unnecessary metrics, Amie removed them to improve clarity.",
+      "C": "Owing to the fact that the dashboard had metrics that were not needed, Amie took steps to remove them for the purpose of improving clarity.",
+      "D": "Since it was the case that the dashboard had a number of metrics that were unnecessary in nature, Amie removed them in order to improve clarity."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B replaces three wordy phrases — \"due to the fact that\" with \"because,\" \"that were not necessary\" with \"unnecessary,\" and \"in order to\" with \"to\" — producing the most concise version.",
+    "difficulty": 2,
+    "tags": [
+      "wordy-phrases",
+      "clause-reduction",
+      "dashboard"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "replace_wordy_phrases"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Pleonasm",
+    "card_type": "error_id",
+    "prompt": "Baxter's cross-country recap read: \"At the state meet, I ran the 3200 meters in a time duration of 9:42, which was a new personal record never before achieved by me, and I finished in the top ten of all the runners competing in the race.\"",
+    "choices": {
+      "A": "a time duration of 9:42",
+      "B": "a new personal record never before achieved by me",
+      "C": "in the top ten of all the runners competing in the race",
+      "D": "All of the above contain pleonastic phrasing"
+    },
+    "correct_answer": "D",
+    "explanation": "All three phrases are pleonastic: \"time duration\" is redundant, \"new personal record never before achieved by me\" repeats the meaning of \"personal record,\" and \"all the runners competing in the race\" can be cut to \"the top ten.\"",
+    "difficulty": 3,
+    "tags": [
+      "pleonasm",
+      "multiple-errors",
+      "race-recap"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "identify_pleonasm"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "In her linguistics thesis draft, Lula wrote: \"The speakers of Spanish who are native and who reside in areas that are predominantly bilingual in nature tend to engage in the act of code-switching.\"",
+    "choices": {
+      "A": "The speakers of Spanish who are native and who reside in areas that are predominantly bilingual in nature tend to engage in the act of code-switching.",
+      "B": "Native Spanish speakers in predominantly bilingual areas tend to code-switch.",
+      "C": "Those people who natively speak the Spanish language and who live in bilingual-type areas often do code-switching.",
+      "D": "Speakers who are native to the language of Spanish and reside in areas that are bilingual tend to engage in code-switching behavior."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B is the most precise and concise, converting wordy relative clauses into compact modifiers and replacing \"engage in the act of code-switching\" with the direct verb \"code-switch.\"",
+    "difficulty": 2,
+    "tags": [
+      "precision",
+      "clause-reduction",
+      "academic-writing"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "reduce_clauses_to_modifiers"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Wordiness",
+    "card_type": "revision",
+    "prompt": "The rival school's alumni magazine boasted: \"The university that is officially known as Duke University, which is located in the city of Durham, North Carolina, has a basketball program that is considered to be among the most elite programs in the entire nation.\"",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Duke University, which is a university located in Durham, North Carolina, has what many consider to be one of the most elite basketball programs in the country.",
+      "C": "Duke University, located in Durham, North Carolina, has one of the nation's most elite basketball programs.",
+      "D": "The university known as Duke University, in the city of Durham in the state of North Carolina, is home to a basketball program widely regarded as being among the most elite of all programs nationally."
+    },
+    "correct_answer": "C",
+    "explanation": "Choice C eliminates the unnecessarily long identification of Duke, reduces the relative clause to a participial phrase, and trims the predicate to its essential claim.",
+    "difficulty": 2,
+    "tags": [
+      "wordiness",
+      "unnecessary-modifiers",
+      "rivalry"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "eliminate_unnecessary_words"
+  },
+  {
+    "unit": "Concision / Economy",
+    "subtopic": "Economy Principle",
+    "card_type": "revision",
+    "prompt": "Neal's proposal draft continued: \"It is essential and important that the researchers who are conducting the study take into consideration the various different socioeconomic factors that exist and are present in the Ironwoods neighborhood at the present time.\"",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "It is essential that the researchers conducting the study consider the various socioeconomic factors present in Ironwoods at this time.",
+      "C": "The researchers must consider Ironwoods' current socioeconomic factors.",
+      "D": "It is important and essential for those researchers who are doing the conducting of the study to take into consideration all the different and various socioeconomic factors in Ironwoods at the present time."
+    },
+    "correct_answer": "C",
+    "explanation": "The economy principle holds that the fewest words capable of conveying the full meaning should be used; choice C cuts the 33-word original to 9 words without losing any necessary information.",
+    "difficulty": 3,
+    "tags": [
+      "economy-principle",
+      "heavy-reduction",
+      "grant-writing"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section VII: Concision, Economy, and Precision",
+    "skill_code": "apply_economy_principle"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Commonly Confused Words",
+    "card_type": "error_id",
+    "prompt": "Neal's latest sociology publication on rural communities in Ironwoods had a profound affect on how UNC colleagues approached their own research on neighborhood inequality.",
+    "choices": {
+      "A": "Change \"affect\" to \"effect\"",
+      "B": "Change \"approached\" to \"approaching\"",
+      "C": "Change \"their\" to \"they're\"",
+      "D": "No change needed"
+    },
+    "correct_answer": "A",
+    "explanation": "The noun form meaning \"result\" or \"impact\" is \"effect\"; \"affect\" is typically a verb meaning \"to influence.\"",
+    "difficulty": 1,
+    "tags": [
+      "affect_effect",
+      "noun_verb_confusion",
+      "unc"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "commonly_confused_affect_effect"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Prepositions",
+    "card_type": "best_choice",
+    "prompt": "Baxter pushed himself to run _______ than he had in any previous cross-country meet, adding a full half-mile to his after-practice route through Chapel Hill.",
+    "choices": {
+      "A": "farther",
+      "B": "further",
+      "C": "more far",
+      "D": "farthest"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Farther\" refers to measurable physical distance, while \"further\" refers to metaphorical or abstract degree; since Baxter is covering additional literal mileage, \"farther\" is correct.",
+    "difficulty": 2,
+    "tags": [
+      "farther_further",
+      "physical_distance",
+      "cross_country"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "confused_words_farther_further"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Idiomatic Usage",
+    "card_type": "revision",
+    "prompt": "Lula, whom studies both Linguistics and Spanish at Tulane, observed that many English idioms have no direct equivalent in Spanish, a fact that fascinates her bilingual classmates.",
+    "choices": {
+      "A": "Change \"whom\" to \"who\"",
+      "B": "Change \"both\" to \"each\"",
+      "C": "Change \"fascinates\" to \"fascinate\"",
+      "D": "No change needed"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Who\" is correct here because it serves as the subject of the verb \"studies\"; \"whom\" is used only as an object.",
+    "difficulty": 2,
+    "tags": [
+      "who_whom",
+      "subject_object",
+      "tulane",
+      "bilingual"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "idiomatic_who_whom"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Precision",
+    "card_type": "best_choice",
+    "prompt": "Amie's presentation on data literacy revealed that _______ students than expected struggled to interpret basic statistical graphs, prompting UNC to expand its workshop offerings.",
+    "choices": {
+      "A": "less",
+      "B": "fewer",
+      "C": "lesser",
+      "D": "a smaller amount of"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Fewer\" is used with countable nouns such as \"students,\" while \"less\" is reserved for uncountable quantities.",
+    "difficulty": 1,
+    "tags": [
+      "fewer_less",
+      "countable_nouns",
+      "data_literacy",
+      "unc"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "precision_fewer_less"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Confused Words",
+    "card_type": "error_id",
+    "prompt": "After Duke lost to UNC in overtime, a group of Blue Devil fans posted on social media that \"there team was robbed,\" proving once again that rivalry emotions cloud even basic grammar.",
+    "choices": {
+      "A": "Change \"there\" to \"their\"",
+      "B": "Change \"there\" to \"they're\"",
+      "C": "Change \"emotions\" to \"emotion\"",
+      "D": "No change needed"
+    },
+    "correct_answer": "A",
+    "explanation": "The possessive form \"their\" is needed to show ownership of \"team\"; \"there\" indicates a place, and \"they're\" is a contraction of \"they are.\"",
+    "difficulty": 1,
+    "tags": [
+      "their_there_theyre",
+      "homophones",
+      "duke_rivalry"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "confused_words_their_there"
+  },
+  {
+    "unit": "Diction & Idioms",
+    "subtopic": "Register and Tone",
+    "card_type": "revision",
+    "prompt": "After his grueling 3200-meter race, Baxter was totally dead and just wanted to lay down on the infield grass until his legs stopped aching, but his coach insisted he walk a cooldown lap.",
+    "choices": {
+      "A": "Change \"lay\" to \"lie\" and remove \"totally dead\" in favor of \"exhausted\"",
+      "B": "Change only \"lay\" to \"lie\"",
+      "C": "Change only \"totally dead\" to \"exhausted\"",
+      "D": "No change needed"
+    },
+    "correct_answer": "A",
+    "explanation": "Both errors must be fixed: \"lie\" is the correct intransitive verb meaning to recline (\"lay\" requires a direct object), and the informal slang \"totally dead\" should be replaced with the precise term \"exhausted\" to maintain an appropriate written register.",
+    "difficulty": 3,
+    "tags": [
+      "lie_lay",
+      "register",
+      "informal_to_formal",
+      "cross_country"
+    ],
+    "exam_targets": [
+      "SAT",
+      "ACT"
+    ],
+    "source_section": "Section IV: Diction, Idiom, and Register",
+    "skill_code": "register_and_lie_lay"
   }
 ]

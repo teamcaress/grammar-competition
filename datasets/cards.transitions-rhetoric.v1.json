@@ -549,5 +549,119 @@
     "exam_targets": ["SAT", "ACT"],
     "source_section": "Section X: Rhetorical Logic and Transitions",
     "skill_code": "rhetoric_best_placement_library"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Contrast Transitions",
+    "card_type": "revision",
+    "prompt": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. Similarly, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. However, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+      "C": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. Therefore, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds.",
+      "D": "Baxter trained all summer to break eleven minutes in the 3200m at his Chapel Hill High School cross country meet. For example, he crossed the finish line in 11:14, falling short of his goal by fourteen seconds."
+    },
+    "correct_answer": "B",
+    "explanation": "Baxter's goal (breaking eleven minutes) is contradicted by his actual result (11:14), so a contrast transition such as 'However' is needed; 'Similarly' incorrectly signals that the two sentences describe parallel or agreeing ideas.",
+    "difficulty": 1,
+    "tags": ["transition", "contrast", "revision"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_revision_contrast_race_day"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Causal Transitions",
+    "card_type": "best_choice",
+    "prompt": "Lula's linguistics professor at Tulane assigned a semester-long project comparing phonological systems in Spanish and Haitian Creole, two languages with deep roots in New Orleans. ____, Lula spent every weekend that fall conducting interviews in the city's Tremé and Bywater neighborhoods to gather primary data.",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "Consequently",
+      "C": "In contrast",
+      "D": "For instance"
+    },
+    "correct_answer": "B",
+    "explanation": "Lula's weekend fieldwork is a direct result of the professor's project assignment, making this a cause-and-effect relationship that requires a causal transition such as 'Consequently.'",
+    "difficulty": 2,
+    "tags": ["transition", "causation", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_cause_linguistics"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Rhetorical Synthesis",
+    "card_type": "best_choice",
+    "prompt": "A student is writing a short essay arguing that cycling infrastructure in North Carolina should be expanded to promote both fitness and tourism. The student wants to incorporate the following information:\n\n- Baxter regularly cycles mountain roads outside Chapel Hill.\n- Tourism revenue in towns along the Blue Ridge Parkway increased after new bike lanes were added.\n\nWhich choice most effectively uses this information to support the essay's argument?",
+    "choices": {
+      "A": "Baxter, a sophomore at Chapel Hill High School, enjoys cycling on mountain roads because the scenery is beautiful.",
+      "B": "After new bike lanes were installed along the Blue Ridge Parkway, tourism revenue in nearby towns rose — evidence that riders like Baxter, who regularly cycles the mountain roads outside Chapel Hill, represent a growing constituency whose needs justify further infrastructure investment.",
+      "C": "Baxter cycles on mountain roads, and some towns near the Blue Ridge Parkway have seen more tourists lately.",
+      "D": "Tourism revenue increased along the Blue Ridge Parkway, so Baxter decided to start cycling on mountain roads outside Chapel Hill."
+    },
+    "correct_answer": "B",
+    "explanation": "Choice B is the only option that synthesizes both pieces of information into a single claim directly supporting the essay's argument about expanding cycling infrastructure for fitness and tourism.",
+    "difficulty": 3,
+    "tags": ["rhetorical_synthesis", "evidence_integration", "best_choice"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_synthesis_cycling_nc"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Relevance",
+    "card_type": "error_id",
+    "prompt": "A paragraph discusses how New Orleans's musical traditions, from brass bands to jazz funerals, reflect the city's layered cultural history. The paragraph includes this sentence: 'Lula, a Tulane sophomore majoring in Linguistics and Spanish, prefers to study at coffee shops in the French Quarter.' Which best describes the problem?",
+    "choices": {
+      "A": "The sentence is too informal for an academic paragraph.",
+      "B": "The sentence introduces a personal detail unrelated to the paragraph's focus on musical traditions and should be deleted.",
+      "C": "The sentence needs a transition word at the beginning.",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "The paragraph's focus is on how New Orleans's musical traditions reflect cultural history; Lula's study habits, while set in New Orleans, do not support or develop that specific argument and should be removed to preserve unity.",
+    "difficulty": 2,
+    "tags": ["relevance", "unity", "add_delete"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_error_relevance_nola_music"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Sentence Placement",
+    "card_type": "best_choice",
+    "prompt": "Read the following paragraph about Baxter's backpacking trip and determine where Sentence 4 should be placed for the best logical flow.\n\n(1) Baxter planned a three-day backpacking loop on the Art Loeb Trail in the Pisgah National Forest. (2) He packed a bear canister, a water filter, and enough dehydrated meals for the trip. (3) On the second morning, a dense fog rolled in and reduced visibility to less than twenty feet. (4) Before setting out, he checked the weather forecast, which predicted clear skies for the entire weekend. (5) Caught off guard, he relied on his compass and topographic map to navigate the remaining six miles to camp.\n\nWhere should Sentence 4 be placed?",
+    "choices": {
+      "A": "Where it is now (after Sentence 3)",
+      "B": "After Sentence 1",
+      "C": "After Sentence 2",
+      "D": "After Sentence 5"
+    },
+    "correct_answer": "C",
+    "explanation": "Sentence 4 describes a preparation step (checking the forecast) that logically follows the other preparations in Sentences 1 and 2 and must come before Sentence 3's unexpected fog so that the contrast between the forecast and the actual weather is clear.",
+    "difficulty": 3,
+    "tags": ["sentence_placement", "logical_flow", "organization"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_best_placement_backpacking"
+  },
+  {
+    "unit": "Transitions & Rhetoric",
+    "subtopic": "Continuation Transitions",
+    "card_type": "error_id",
+    "prompt": "Lula's research on loanwords from West African languages into Louisiana Creole uncovered patterns that earlier scholars had overlooked. On the contrary, her analysis of Spanish-influenced vocabulary in the same dialect revealed a parallel set of undocumented borrowings.",
+    "choices": {
+      "A": "Lula's research on loanwords",
+      "B": "On the contrary",
+      "C": "revealed a parallel set",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "'On the contrary' signals opposition, but the second finding (Spanish-influenced borrowings) adds a parallel discovery to the first (West African borrowings), so a continuation transition such as 'Furthermore' or 'Moreover' is needed.",
+    "difficulty": 2,
+    "tags": ["transition", "continuation", "contrast_misuse"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VIII: Transitions, Organization, and Rhetorical Synthesis",
+    "skill_code": "rhetoric_error_contrast_for_continuation_linguistics"
   }
 ]

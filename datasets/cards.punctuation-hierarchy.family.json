@@ -1,0 +1,116 @@
+[
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Restrictive vs Nonrestrictive",
+    "card_type": "revision",
+    "prompt": "Baxter who runs the 3200m for Chapel Hill High School finished with a personal record at the conference meet.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Baxter, who runs the 3200m for Chapel Hill High School, finished with a personal record at the conference meet.",
+      "C": "Baxter, who runs the 3200m for Chapel Hill High School finished with a personal record at the conference meet.",
+      "D": "Baxter who runs the 3200m for Chapel Hill High School, finished with a personal record at the conference meet."
+    },
+    "correct_answer": "B",
+    "explanation": "Because Baxter is already identified by name, \"who runs the 3200m for Chapel Hill High School\" is nonrestrictive and must be set off by a pair of commas.",
+    "difficulty": 1,
+    "tags": ["nonrestrictive_clause", "comma_pair", "proper_noun"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_nonrestrictive_proper_noun"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Colons",
+    "card_type": "best_choice",
+    "prompt": "Which version correctly uses a colon to introduce Lula's course load?",
+    "choices": {
+      "A": "This semester Lula is taking: Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "B": "This semester Lula is taking three courses: Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "C": "This semester: Lula is taking Phonetics, Advanced Spanish Composition, and Sociolinguistics.",
+      "D": "This semester Lula is taking three courses, Phonetics: Advanced Spanish Composition, and Sociolinguistics."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon must follow a complete independent clause; only choice B provides a full sentence before the colon.",
+    "difficulty": 2,
+    "tags": ["colon", "independent_clause_before_colon", "list_introduction"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_colon_list_intro"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Apostrophes",
+    "card_type": "error_id",
+    "prompt": "During Baxter's last backpacking trip, his group's campsite was closer to the trail's summit than it's map coordinates suggested.",
+    "choices": {
+      "A": "Baxter's last",
+      "B": "group's campsite",
+      "C": "it's map coordinates",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "\"It's\" is a contraction of \"it is\"; the possessive form \"its\" (no apostrophe) is required here.",
+    "difficulty": 1,
+    "tags": ["apostrophe", "its_vs_its"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_apostrophe_its_possessive"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Semicolons",
+    "card_type": "revision",
+    "prompt": "Lula spent her fall break visiting three cities, Baton Rouge, Louisiana, San Antonio, Texas, and Pensacola, Florida.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "Lula spent her fall break visiting three cities: Baton Rouge, Louisiana; San Antonio, Texas; and Pensacola, Florida.",
+      "C": "Lula spent her fall break visiting three cities; Baton Rouge, Louisiana, San Antonio, Texas, and Pensacola, Florida.",
+      "D": "Lula spent her fall break visiting three cities: Baton Rouge; Louisiana; San Antonio; Texas; and Pensacola; Florida."
+    },
+    "correct_answer": "B",
+    "explanation": "A colon correctly introduces the list after a complete clause, and semicolons serve as \"super commas\" to separate items that already contain internal commas.",
+    "difficulty": 3,
+    "tags": ["semicolon", "colon", "super_comma", "complex_list"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_semicolon_super_comma_travel"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Dashes",
+    "card_type": "error_id",
+    "prompt": "Baxter's favorite cycling route, a thirty-mile loop through the countryside -- attracts riders from across the county every weekend.",
+    "choices": {
+      "A": "cycling route,",
+      "B": "a thirty-mile loop",
+      "C": "the countryside --",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "A",
+    "explanation": "Punctuation marks used to set off a nonessential phrase must be paired consistently; the sentence opens with a comma but closes with a dash, creating a mismatch.",
+    "difficulty": 3,
+    "tags": ["dash", "comma_dash_mismatch", "paired_punctuation"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_dash_comma_mismatch_id"
+  },
+  {
+    "unit": "Punctuation Hierarchy",
+    "subtopic": "Unnecessary Commas",
+    "card_type": "best_choice",
+    "prompt": "Which sentence about Lula's study-abroad plans is punctuated correctly?",
+    "choices": {
+      "A": "Lula hopes, that her linguistics coursework at Tulane will prepare her for a semester in Madrid.",
+      "B": "Lula hopes that her linguistics coursework at Tulane, will prepare her for a semester in Madrid.",
+      "C": "Lula hopes that her linguistics coursework at Tulane will prepare her for a semester in Madrid.",
+      "D": "Lula hopes that, her linguistics coursework at Tulane will prepare her for a semester in Madrid."
+    },
+    "correct_answer": "C",
+    "explanation": "No comma should separate a verb from its complement clause or a subject from its verb; choice C is the only option free of unnecessary commas.",
+    "difficulty": 2,
+    "tags": ["unnecessary_comma", "verb_complement"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section VI: Punctuation Hierarchy and Conventional Usage",
+    "skill_code": "punct_unnecessary_comma_complement"
+  }
+]

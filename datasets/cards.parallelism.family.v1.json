@@ -1,0 +1,116 @@
+[
+  {
+    "unit": "Parallelism",
+    "subtopic": "List Structure",
+    "card_type": "revision",
+    "prompt": "Before each cross country meet, Baxter focuses on stretching his hamstrings, to hydrate properly, and visualizing the course layout.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "stretching his hamstrings, hydrating properly, and visualizing the course layout",
+      "C": "to stretch his hamstrings, hydrating properly, and visualizing the course layout",
+      "D": "stretching his hamstrings, hydrating properly, and to visualize the course layout"
+    },
+    "correct_answer": "B",
+    "explanation": "All items in a series must share the same grammatical form; choice B uses three parallel gerund phrases ('stretching,' 'hydrating,' 'visualizing').",
+    "difficulty": 1,
+    "tags": ["parallelism", "list_structure", "gerund_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_list_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Correlative Conjunctions",
+    "card_type": "error_id",
+    "prompt": "Lula's linguistics professor explained that studying syntax is both essential for understanding sentence structure and it helps students analyze unfamiliar languages.",
+    "choices": {
+      "A": "both essential for understanding sentence structure",
+      "B": "and it helps students analyze unfamiliar languages",
+      "C": "Lula's linguistics professor",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'both...and,' the structures must match: after 'both' comes an adjective phrase ('essential for...'), so after 'and' there must also be an adjective phrase, such as 'helpful for analyzing unfamiliar languages,' not an independent clause.",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "both_and"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_correlative_both_and"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Comparative Parallelism",
+    "card_type": "best_choice",
+    "prompt": "Which choice best maintains parallel structure? \"Baxter finds cycling long mountain routes more demanding on his endurance than ____.\"",
+    "choices": {
+      "A": "to run the 3200m at a track meet",
+      "B": "running the 3200m at a track meet",
+      "C": "when he runs the 3200m at a track meet",
+      "D": "the 3200m at a track meet is run"
+    },
+    "correct_answer": "B",
+    "explanation": "The first side of the comparison uses a gerund phrase ('cycling long mountain routes'), so the second side must also be a gerund phrase: 'running the 3200m at a track meet.'",
+    "difficulty": 2,
+    "tags": ["parallelism", "comparative_structure", "gerund_consistency"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_comparative_gerund"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Not Only...But Also",
+    "card_type": "revision",
+    "prompt": "Lula's Spanish seminar not only improved her conversational fluency but also her understanding of regional dialects was deepened by the coursework.",
+    "choices": {
+      "A": "NO CHANGE",
+      "B": "not only improved her conversational fluency but also deepened her understanding of regional dialects",
+      "C": "not only was improving her conversational fluency but also deepened her understanding of regional dialects",
+      "D": "not only improved her conversational fluency, and also it deepened her understanding of regional dialects"
+    },
+    "correct_answer": "B",
+    "explanation": "With 'not only...but also,' parallel verb phrases must follow each element; choice B pairs 'improved her conversational fluency' with 'deepened her understanding of regional dialects.'",
+    "difficulty": 1,
+    "tags": ["parallelism", "correlative_conjunctions", "not_only_but_also"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_not_only_verb_revision"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Series Consistency",
+    "card_type": "error_id",
+    "prompt": "When packing for a weekend backpacking trip, Baxter checks that his water filter is working, that his tent poles are intact, and his boots should be properly broken in.",
+    "choices": {
+      "A": "that his water filter is working",
+      "B": "that his tent poles are intact",
+      "C": "his boots should be properly broken in",
+      "D": "NO ERROR"
+    },
+    "correct_answer": "C",
+    "explanation": "The first two items use parallel 'that + subject + verb' noun clauses, so the third must follow the same pattern, such as 'that his boots are properly broken in.'",
+    "difficulty": 3,
+    "tags": ["parallelism", "series_consistency", "clause_form_mismatch"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_series_clause_consistency"
+  },
+  {
+    "unit": "Parallelism",
+    "subtopic": "Either...Or Structure",
+    "card_type": "best_choice",
+    "prompt": "Which choice best completes the sentence with proper parallel structure? \"After finals at Tulane, Lula plans to either fly home to see her family or ____.\"",
+    "choices": {
+      "A": "she will stay in New Orleans to work on her linguistics thesis",
+      "B": "staying in New Orleans to work on her linguistics thesis",
+      "C": "stay in New Orleans to work on her linguistics thesis",
+      "D": "New Orleans is where she will stay to work on her linguistics thesis"
+    },
+    "correct_answer": "C",
+    "explanation": "With 'either...or,' the structures after each word must match: after 'either' comes a base verb phrase ('fly home'), so after 'or' there must also be a base verb phrase ('stay in New Orleans').",
+    "difficulty": 2,
+    "tags": ["parallelism", "correlative_conjunctions", "either_or"],
+    "exam_targets": ["SAT", "ACT"],
+    "source_section": "Section III: Parallel Structure and List Architecture",
+    "skill_code": "parallel_correlative_either_or"
+  }
+]
