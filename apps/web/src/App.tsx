@@ -74,7 +74,6 @@ export function App() {
   const [stage, setStage] = useState<AppStage>("login");
   const [userName, setUserName] = useState<string | null>(null);
   const [cardsReady, setCardsReady] = useState(false);
-  const [sessionSize, setSessionSize] = useState(10);
   const [globalError, setGlobalError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -121,7 +120,7 @@ export function App() {
     [pctCorrect, totalAnswered]
   );
 
-  // Pacing estimate: cards left to finish + days until May 1
+  // Pacing estimate: sessions per day needed to finish by May 1
   const pacingEstimate = useMemo(() => {
     if (!dashboard?.unit_mastery?.length) return null;
     const cardsLeft = dashboard.unit_mastery.reduce(
@@ -130,12 +129,12 @@ export function App() {
     );
     const target = new Date(Date.UTC(2026, 4, 1)); // May 1, 2026
     const daysLeft = Math.max(0, Math.ceil((target.getTime() - Date.now()) / 86_400_000));
-    // Each card needs ~3 correct answers over ~11 days to reach level 4.
-    // A rough daily target: new cards to introduce per day, leaving 10 days
-    // for the last batch to mature through the review intervals.
-    const effectiveDays = Math.max(1, daysLeft - 10);
-    const cardsPerDay = cardsLeft > 0 ? Math.ceil(cardsLeft / effectiveDays) : 0;
-    return { cardsLeft, daysLeft, cardsPerDay };
+    if (daysLeft === 0) return { cardsLeft, daysLeft, sessionsPerDay: 0 };
+    // Each 10-card session introduces ~2 new cards on average (rest are reviews).
+    // Calculate sessions needed: cards ÷ days ÷ 2 cards per session, minimum 1/day.
+    const cardsPerDay = cardsLeft / daysLeft;
+    const sessionsPerDay = Math.max(1, Math.ceil(cardsPerDay / 2));
+    return { cardsLeft, daysLeft, sessionsPerDay };
   }, [dashboard]);
 
   // Fire confetti when entering the summary stage
@@ -255,7 +254,7 @@ export function App() {
 
   function startPractice(sizeOverride?: number) {
     setGlobalError(null);
-    const size = sizeOverride ?? sessionSize;
+    const size = sizeOverride ?? 10;
     const pool = selectedUnit
       ? getCards().filter((c) => c.unit === selectedUnit)
       : getCards();
@@ -750,12 +749,13 @@ export function App() {
 
           {pacingEstimate && pacingEstimate.cardsLeft > 0 ? (
             <div className="rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-200">
-              <p className="text-sm text-sky-900">
-                <span className="font-semibold">{pacingEstimate.cardsLeft} cards to go</span>
-                {" "}· {pacingEstimate.daysLeft} days until May 1
+              <p className="text-sm font-semibold text-sky-900">
+                {pacingEstimate.sessionsPerDay === 1
+                  ? "Aim for 1 session per day to stay on track"
+                  : `Aim for ${pacingEstimate.sessionsPerDay} sessions per day to catch up`}
               </p>
               <p className="mt-1 text-xs text-sky-700">
-                Aim for about {pacingEstimate.cardsPerDay} new card{pacingEstimate.cardsPerDay === 1 ? "" : "s"} per day to stay on track.
+                {pacingEstimate.cardsLeft} cards to go · {pacingEstimate.daysLeft} days until May 1
               </p>
             </div>
           ) : pacingEstimate && pacingEstimate.cardsLeft === 0 ? (
@@ -782,26 +782,6 @@ export function App() {
                 ))}
               </select>
             </label>
-
-            <div className="mt-2">
-              <span className="mb-1 block text-xs font-medium text-slate-600">Session Size</span>
-              <div className="grid grid-cols-3 gap-2">
-                {[5, 10, 15].map((n) => (
-                  <button
-                    key={n}
-                    type="button"
-                    onClick={() => setSessionSize(n)}
-                    className={`rounded-lg px-2 py-2 text-sm font-semibold ${
-                      sessionSize === n
-                        ? "bg-ink text-white"
-                        : "bg-slate-100 text-slate-700"
-                    }`}
-                  >
-                    {n}
-                  </button>
-                ))}
-              </div>
-            </div>
 
             <div className="mt-2 flex items-center justify-between">
               <span className="text-xs font-medium text-slate-600">Speed Round</span>
