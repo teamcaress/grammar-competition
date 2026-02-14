@@ -34,8 +34,11 @@ export type AnswerResult = {
   answers_today: number;
 };
 
-/** Number of cards at box 4 needed to "complete" a unit */
-export const UNIT_COMPLETION_THRESHOLD = 15;
+/** Number of cards at box 4 needed to "master" a subtopic */
+export const SUBTOPIC_MASTERY_THRESHOLD = 3;
+
+/** Percentage of subtopics needed to "complete" a unit */
+export const UNIT_COMPLETION_PERCENT = 0.8; // 80%
 
 export type DashboardData = {
   due_count: number;
@@ -44,8 +47,8 @@ export type DashboardData = {
   unit_mastery: Array<{
     unit_id: string;
     total_cards: number;
-    seen_cards: number;
-    mastered_cards: number;
+    total_subtopics: number;
+    mastered_subtopics: number;
     mastery_ratio: number;
     completed: boolean;
   }>;
@@ -217,38 +220,56 @@ export function computeDashboard(
     if (state.due_date <= now) dueCount++;
   }
 
-  // Unit mastery
-  const unitMap = new Map<
+  // Subtopic-based mastery tracking
+  const unitSubtopicMap = new Map<
     string,
-    { total: number; seen: number; mastered: number }
+    Map<string, { total: number; masteredCount: number }>
   >();
 
+  // Count cards per subtopic and how many are mastered
   for (const card of allCards) {
-    let entry = unitMap.get(card.unit);
-    if (!entry) {
-      entry = { total: 0, seen: 0, mastered: 0 };
-      unitMap.set(card.unit, entry);
+    let subtopicMap = unitSubtopicMap.get(card.unit);
+    if (!subtopicMap) {
+      subtopicMap = new Map();
+      unitSubtopicMap.set(card.unit, subtopicMap);
     }
-    entry.total++;
+
+    let subtopicData = subtopicMap.get(card.subtopic);
+    if (!subtopicData) {
+      subtopicData = { total: 0, masteredCount: 0 };
+      subtopicMap.set(card.subtopic, subtopicData);
+    }
+
+    subtopicData.total++;
     const state = cardStates.get(card.id);
-    if (state) {
-      entry.seen++;
-      if (state.box === 4) entry.mastered++;
+    if (state && state.box === 4) {
+      subtopicData.masteredCount++;
     }
   }
 
-  const unitMastery = [...unitMap.entries()]
-    .map(([unit_id, e]) => ({
-      unit_id,
-      total_cards: e.total,
-      seen_cards: e.seen,
-      mastered_cards: e.mastered,
-      mastery_ratio:
-        UNIT_COMPLETION_THRESHOLD > 0
-          ? Math.min(1, e.mastered / UNIT_COMPLETION_THRESHOLD)
-          : 0,
-      completed: e.mastered >= UNIT_COMPLETION_THRESHOLD,
-    }))
+  // Calculate unit mastery based on subtopics
+  const unitMastery = [...unitSubtopicMap.entries()]
+    .map(([unit_id, subtopicMap]) => {
+      const totalCards = [...subtopicMap.values()].reduce((sum, s) => sum + s.total, 0);
+      const totalSubtopics = subtopicMap.size;
+
+      // A subtopic is "mastered" if >= SUBTOPIC_MASTERY_THRESHOLD cards are at box 4
+      const masteredSubtopics = [...subtopicMap.values()].filter(
+        (s) => s.masteredCount >= SUBTOPIC_MASTERY_THRESHOLD
+      ).length;
+
+      const masteryRatio = totalSubtopics > 0 ? masteredSubtopics / totalSubtopics : 0;
+      const completed = masteryRatio >= UNIT_COMPLETION_PERCENT;
+
+      return {
+        unit_id,
+        total_cards: totalCards,
+        total_subtopics: totalSubtopics,
+        mastered_subtopics: masteredSubtopics,
+        mastery_ratio: masteryRatio,
+        completed,
+      };
+    })
     .sort((a, b) => a.unit_id.localeCompare(b.unit_id));
 
   return {

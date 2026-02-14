@@ -6,7 +6,8 @@ import {
   selectChallengeCards,
   processAnswer,
   computeDashboard,
-  UNIT_COMPLETION_THRESHOLD,
+  SUBTOPIC_MASTERY_THRESHOLD,
+  UNIT_COMPLETION_PERCENT,
   type CardState,
   type DailyScore,
   type SessionCard,
@@ -123,13 +124,20 @@ export function App() {
   // Pacing estimate: sessions per day needed to finish by May 1
   const pacingEstimate = useMemo(() => {
     if (!dashboard?.unit_mastery?.length) return null;
-    const cardsLeft = dashboard.unit_mastery.reduce(
-      (sum, u) => sum + Math.max(0, UNIT_COMPLETION_THRESHOLD - u.mastered_cards),
-      0
-    );
+
+    // Calculate subtopics remaining across all units
+    const subtopicsNeeded = dashboard.unit_mastery.reduce((sum, u) => {
+      const subtopicsForCompletion = Math.ceil(u.total_subtopics * UNIT_COMPLETION_PERCENT);
+      return sum + Math.max(0, subtopicsForCompletion - u.mastered_subtopics);
+    }, 0);
+
+    // Each subtopic needs ~3 cards to master
+    const cardsLeft = subtopicsNeeded * SUBTOPIC_MASTERY_THRESHOLD;
+
     const target = new Date(Date.UTC(2026, 4, 1)); // May 1, 2026
     const daysLeft = Math.max(0, Math.ceil((target.getTime() - Date.now()) / 86_400_000));
     if (daysLeft === 0) return { cardsLeft, daysLeft, sessionsPerDay: 0 };
+
     // Each 10-card session introduces ~2 new cards on average (rest are reviews).
     // Calculate sessions needed: cards ÷ days ÷ 2 cards per session, minimum 1/day.
     const cardsPerDay = cardsLeft / daysLeft;
@@ -676,7 +684,7 @@ export function App() {
                 <span className="font-semibold">How it works:</span> Answer multiple-choice questions. Cards you get right advance through 4 levels over increasing intervals (1, 3, 7, and 21 days). Cards you miss reset to level 1 for more practice.
               </li>
               <li>
-                <span className="font-semibold">How long:</span> There are 8 independent skill areas. To complete each one, get {UNIT_COMPLETION_THRESHOLD} cards to level 4. With one session a day, plan on about 2-3 weeks per skill area. You can work on any area in any order.
+                <span className="font-semibold">How long:</span> There are 8 independent skill areas, each with multiple concepts. To complete a skill area, master 80% of its concepts by getting {SUBTOPIC_MASTERY_THRESHOLD} cards per concept to level 4. With one session a day, plan on about 2-3 weeks per skill area. You can work on any area in any order.
               </li>
               <li>
                 <span className="font-semibold">Your first session:</span> We'll start you off with a quick 5-card warm-up so you can get the feel for it.
@@ -862,7 +870,7 @@ export function App() {
                         {unit.unit_id}
                       </span>
                       <span>
-                        {Math.min(unit.mastered_cards, UNIT_COMPLETION_THRESHOLD)}/{UNIT_COMPLETION_THRESHOLD}
+                        {unit.mastered_subtopics}/{unit.total_subtopics} concepts
                       </span>
                     </div>
                     <div className="mt-1 h-1.5 rounded bg-slate-100">
