@@ -905,47 +905,6 @@ export function App() {
         </section>
       ) : null}
 
-      {stage === "challenge-pick" ? (
-        <section className="mt-4 space-y-3">
-          <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <h2 className="text-base font-semibold">Pick Your Opponent</h2>
-            <div className="mt-3 space-y-2">
-              {playerNames
-                .filter((n) => n.toLowerCase() !== userName?.toLowerCase())
-                .map((name) => (
-                  <button
-                    key={name}
-                    type="button"
-                    onClick={() => setChallengeOpponent(name)}
-                    className={`w-full rounded-lg px-3 py-3 text-left text-sm font-semibold ring-1 ${
-                      challengeOpponent === name
-                        ? "bg-amber-50 ring-amber-400 text-amber-800"
-                        : "bg-white ring-slate-200 text-slate-700"
-                    }`}
-                  >
-                    {name}
-                  </button>
-                ))}
-            </div>
-            <button
-              className="mt-3 w-full rounded-lg bg-amber-500 px-3 py-2 text-sm font-semibold text-white disabled:opacity-50"
-              type="button"
-              disabled={!challengeOpponent || isLoading}
-              onClick={() => void startChallenge()}
-            >
-              {isLoading ? "Creating..." : "Start Challenge"}
-            </button>
-            <button
-              className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700"
-              type="button"
-              onClick={() => setStage("home")}
-            >
-              Cancel
-            </button>
-          </div>
-        </section>
-      ) : null}
-
       {stage === "practice" && currentCard ? (
         <section className="mt-4 space-y-3">
           {activeChallenge ? (
