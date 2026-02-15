@@ -1317,6 +1317,69 @@ export function App() {
               )}
             </div>
           </div>
+
+          <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+            <h2 className="text-base font-semibold">Challenge History</h2>
+
+            {completedChallenges.length === 0 ? (
+              <p className="mt-3 text-sm text-slate-600">No challenge history yet</p>
+            ) : (
+              <div className="mt-3 space-y-3">
+                {completedChallenges
+                  .sort((a, b) => b.created_at.localeCompare(a.created_at))
+                  .map((ch) => {
+                    if (!userName) return null;
+                    const result = determineWinner(ch, userName);
+                    const isCreator = ch.creator.toLowerCase() === userName.toLowerCase();
+                    const opponentName = isCreator ? ch.opponent : ch.creator;
+                    const userCorrect = isCreator ? ch.creator_correct : ch.opponent_correct;
+                    const userScore = isCreator ? ch.creator_score : ch.opponent_score;
+                    const opponentCorrect = isCreator ? ch.opponent_correct : ch.creator_correct;
+                    const opponentScore = isCreator ? ch.opponent_score : ch.creator_score;
+
+                    const userClasses = result === "won"
+                      ? "bg-green-50 ring-2 ring-green-500"
+                      : result === "tie"
+                      ? "bg-amber-50 ring-2 ring-amber-400"
+                      : "bg-slate-50 ring-1 ring-slate-200";
+
+                    const opponentClasses = result === "lost"
+                      ? "bg-green-50 ring-2 ring-green-500"
+                      : result === "tie"
+                      ? "bg-amber-50 ring-2 ring-amber-400"
+                      : "bg-slate-50 ring-1 ring-slate-200";
+
+                    return (
+                      <div key={ch.challenge_id} className="rounded-xl bg-slate-50 p-3 ring-1 ring-slate-200">
+                        <p className="text-sm font-semibold text-slate-700">
+                          vs {opponentName} · {new Date(ch.created_at).toLocaleDateString()}
+                        </p>
+                        <div className="mt-2 grid grid-cols-2 gap-2">
+                          <div className={`rounded-lg p-3 ${userClasses}`}>
+                            <p className="text-xs text-slate-500">You</p>
+                            <p className="text-lg font-bold text-slate-800">{userCorrect}/10</p>
+                            <p className="text-xs text-slate-600">{userScore} pts</p>
+                          </div>
+                          <div className={`rounded-lg p-3 ${opponentClasses}`}>
+                            <p className="text-xs text-slate-500">{opponentName}</p>
+                            <p className="text-lg font-bold text-slate-800">{opponentCorrect}/10</p>
+                            <p className="text-xs text-slate-600">{opponentScore} pts</p>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            )}
+          </div>
+
+          <button
+            className="w-full rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-white"
+            type="button"
+            onClick={() => setStage("home")}
+          >
+            Back to Home
+          </button>
         </section>
       ) : null}
     </main>
