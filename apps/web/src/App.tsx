@@ -71,6 +71,28 @@ function getSummaryMessage(pct: number, isFirstSession: boolean): string {
   return "Tough round — but showing up is what matters. Keep at it!";
 }
 
+function determineWinner(
+  challenge: Challenge,
+  userName: string
+): "won" | "lost" | "tie" {
+  const isCreator = challenge.creator.toLowerCase() === userName.toLowerCase();
+
+  const userCorrect = isCreator ? challenge.creator_correct : challenge.opponent_correct;
+  const opponentCorrect = isCreator ? challenge.opponent_correct : challenge.creator_correct;
+  const userScore = isCreator ? challenge.creator_score : challenge.opponent_score;
+  const opponentScore = isCreator ? challenge.opponent_score : challenge.creator_score;
+
+  // Compare correct answers first
+  if (userCorrect > opponentCorrect) return "won";
+  if (userCorrect < opponentCorrect) return "lost";
+
+  // If tied on correct, compare points
+  if (userScore > opponentScore) return "won";
+  if (userScore < opponentScore) return "lost";
+
+  return "tie";
+}
+
 export function App() {
   const [stage, setStage] = useState<AppStage>("login");
   const [userName, setUserName] = useState<string | null>(null);
