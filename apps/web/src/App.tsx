@@ -28,7 +28,7 @@ import {
   type Challenge,
 } from "./sheets-api";
 
-type AppStage = "login" | "welcome" | "home" | "practice" | "summary" | "leaderboard" | "challenge-pick";
+type AppStage = "login" | "welcome" | "home" | "practice" | "summary" | "leaderboard" | "challenges";
 
 type ChoiceKey = "A" | "B" | "C" | "D";
 
@@ -101,7 +101,8 @@ export function App() {
 
   const [activeChallenge, setActiveChallenge] = useState<Challenge | null>(null);
   const [pendingChallenges, setPendingChallenges] = useState<Challenge[]>([]);
-  const [challengeOpponent, setChallengeOpponent] = useState("");
+  const [sentChallenges, setSentChallenges] = useState<Challenge[]>([]);
+  const [completedChallenges, setCompletedChallenges] = useState<Challenge[]>([]);
 
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
@@ -716,7 +717,7 @@ export function App() {
                 Signed in as <span className="font-semibold">{userName}</span>
               </p>
               <button
-                className="text-xs text-slate-400 hover:text-slate-600"
+                className="text-sm text-slate-600 hover:text-slate-900 hover:underline"
                 onClick={() => {
                   try { localStorage.removeItem("grammar_saved_user"); } catch {}
                   setUserName(null);
@@ -1165,22 +1166,52 @@ export function App() {
               <p className="mt-3 text-sm text-slate-600">No scores yet.</p>
             ) : (
               <ul className="mt-3 space-y-2">
-                {leaderboardRows.map((row, index) => (
-                  <li
-                    key={`${row.display_name}-${index}`}
-                    className="rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-200"
-                  >
-                    <div className="flex items-center justify-between">
-                      <p className="text-sm font-semibold text-slate-800">
-                        #{index + 1} {row.display_name}
+                {leaderboardRows.map((row, index) => {
+                  // Calculate rank with tie handling
+                  let rank = 1;
+                  if (index > 0) {
+                    const prev = leaderboardRows[index - 1];
+                    if (
+                      row.points === prev.points &&
+                      row.mastered === prev.mastered &&
+                      row.streak === prev.streak
+                    ) {
+                      // Tied with previous - find their rank
+                      rank = 1;
+                      for (let i = index - 1; i >= 0; i--) {
+                        const p = leaderboardRows[i];
+                        if (
+                          p.points === row.points &&
+                          p.mastered === row.mastered &&
+                          p.streak === row.streak
+                        ) {
+                          continue;
+                        }
+                        rank = i + 2;
+                        break;
+                      }
+                    } else {
+                      rank = index + 1;
+                    }
+                  }
+
+                  return (
+                    <li
+                      key={`${row.display_name}-${index}`}
+                      className="rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-200"
+                    >
+                      <div className="flex items-center justify-between">
+                        <p className="text-sm font-semibold text-slate-800">
+                          #{rank} {row.display_name}
+                        </p>
+                        <p className="text-sm font-semibold text-slate-900">{row.points} pts</p>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-600">
+                        Completed: {row.mastered} · Streak: {row.streak}
                       </p>
-                      <p className="text-sm font-semibold text-slate-900">{row.points} pts</p>
-                    </div>
-                    <p className="mt-1 text-xs text-slate-600">
-                      Completed: {row.mastered} · Streak: {row.streak}
-                    </p>
-                  </li>
-                ))}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>
