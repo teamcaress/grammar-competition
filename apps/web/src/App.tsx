@@ -232,7 +232,14 @@ export function App() {
       setDailyScore(score);
       setStreak(userStreak);
       refreshDashboard(states, score);
-      getUserChallenges(user).then(({ pending }) => setPendingChallenges(pending)).catch(() => {});
+      getUserChallenges(user).then(({ pending, completed }) => {
+        setPendingChallenges(pending);
+        setCompletedChallenges(completed ?? []);
+        // Filter sent challenges on frontend
+        const sent = (completed ?? [])
+          .filter(ch => ch.creator.toLowerCase() === user.toLowerCase() && ch.status === "open");
+        setSentChallenges(sent);
+      }).catch(() => {});
       isFirstSession.current = states.size === 0;
       try { localStorage.setItem("grammar_saved_user", JSON.stringify({ name: user, pin })); } catch {}
       setStage(states.size === 0 ? "welcome" : "home");
@@ -495,7 +502,13 @@ export function App() {
     }
     refreshDashboard(cardStates, dailyScore);
     if (userName) {
-      getUserChallenges(userName).then(({ pending }) => setPendingChallenges(pending)).catch(() => {});
+      getUserChallenges(userName).then(({ pending, completed }) => {
+        setPendingChallenges(pending);
+        setCompletedChallenges(completed ?? []);
+        const sent = (completed ?? [])
+          .filter(ch => ch.creator.toLowerCase() === userName.toLowerCase() && ch.status === "open");
+        setSentChallenges(sent);
+      }).catch(() => {});
     }
     setStage("home");
   }
