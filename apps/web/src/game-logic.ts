@@ -106,7 +106,7 @@ export function selectSessionCards(
       });
     }
   }
-  dueCards.sort((a, b) => (a.due_date ?? "").localeCompare(b.due_date ?? ""));
+  dueCards.sort(() => Math.random() - 0.5);
   result.push(...dueCards.slice(0, size));
 
   if (result.length >= size) return result.slice(0, size);
@@ -125,7 +125,7 @@ export function selectSessionCards(
       });
     }
   }
-  newCards.sort((a, b) => a.difficulty - b.difficulty || a.id.localeCompare(b.id));
+  newCards.sort(() => Math.random() - 0.5);
   result.push(...newCards.slice(0, newLimit));
 
   if (result.length >= size) return result.slice(0, size);
@@ -146,7 +146,7 @@ export function selectSessionCards(
       });
     }
   }
-  nearDue.sort((a, b) => (a.due_date ?? "").localeCompare(b.due_date ?? ""));
+  nearDue.sort(() => Math.random() - 0.5);
   result.push(...nearDue.slice(0, remainingAfterNew));
 
   return result.slice(0, size);
