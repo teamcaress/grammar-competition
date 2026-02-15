@@ -126,6 +126,9 @@ export function App() {
   const [sentChallenges, setSentChallenges] = useState<Challenge[]>([]);
   const [completedChallenges, setCompletedChallenges] = useState<Challenge[]>([]);
 
+  const [showOpponentPicker, setShowOpponentPicker] = useState(false);
+  const [selectedOpponent, setSelectedOpponent] = useState("");
+
   const [leaderboardRange, setLeaderboardRange] = useState<LeaderboardRange>("today");
   const [leaderboardRows, setLeaderboardRows] = useState<LeaderboardRow[]>([]);
   const [isLeaderboardLoading, setIsLeaderboardLoading] = useState(false);
@@ -326,22 +329,19 @@ export function App() {
       .filter((c): c is SessionCard => c !== null);
   }
 
-  async function startChallenge() {
-    if (!userName || !challengeOpponent) return;
+  async function startChallengeInline() {
+    if (!userName || !selectedOpponent) return;
     setIsLoading(true);
     setGlobalError(null);
     try {
       const cardIds = selectChallengeCards(getCards(), cardStates, 10);
-      const { challenge_id } = await createChallenge(userName, challengeOpponent, cardIds);
-      const challengeCards = buildChallengeQueue(cardIds);
-      if (challengeCards.length === 0) {
-        setGlobalError("Could not build challenge cards.");
-        return;
-      }
-      setActiveChallenge({
+      const { challenge_id } = await createChallenge(userName, selectedOpponent, cardIds);
+
+      // Add to sent challenges immediately
+      const newChallenge: Challenge = {
         challenge_id,
         creator: userName,
-        opponent: challengeOpponent,
+        opponent: selectedOpponent,
         card_ids: cardIds,
         creator_score: 0,
         creator_correct: 0,
@@ -349,13 +349,12 @@ export function App() {
         opponent_correct: 0,
         status: "open",
         created_at: new Date().toISOString(),
-      });
-      setQueue(challengeCards);
-      setHistory([]);
-      setPendingAnswer(null);
-      setSelectedChoice(null);
-      setCardStartedAtMs(Date.now());
-      setStage("practice");
+      };
+      setSentChallenges([...sentChallenges, newChallenge]);
+
+      // Reset picker
+      setShowOpponentPicker(false);
+      setSelectedOpponent("");
     } catch (error) {
       setGlobalError(error instanceof Error ? error.message : "Could not create challenge.");
     } finally {
