@@ -397,9 +397,11 @@ function handleLogin(body) {
   if (!sheet) return { error: "Users sheet not found" };
 
   var data = sheet.getDataRange().getValues();
+  var pinNum = Number(pin);
   for (var i = 1; i < data.length; i++) {
+    var sheetPin = Number(data[i][1].toString().trim());
     if (data[i][0].toString().trim().toLowerCase() === name.toLowerCase() &&
-        data[i][1].toString().trim() === pin) {
+        sheetPin === pinNum) {
       return { ok: true, user: data[i][0].toString().trim() };
     }
   }
@@ -427,7 +429,8 @@ function handleJoinGame(body) {
     }
   }
 
-  sheet.appendRow([name, pin]);
+  // Use appendRowAsText to try preserving PIN as text (though Sheets may still convert)
+  appendRowAsText(sheet, [name, pin]);
   return { ok: true, user: name };
 }
 
