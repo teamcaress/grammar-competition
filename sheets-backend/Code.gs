@@ -120,7 +120,7 @@ function setRowAsText(sheet, row, startCol, values) {
 
 function shiftDateKey(dateKey, delta) {
   var parts = dateKey.split("-");
-  var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2]));
+  var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2], 12));
   d.setUTCDate(d.getUTCDate() + delta);
   // Format in America/New_York timezone
   return Utilities.formatDate(d, 'America/New_York', 'yyyy-MM-dd');

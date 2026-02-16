@@ -84,7 +84,7 @@ function addDaysIso(base: Date, days: number): string {
 
 function shiftDateKey(dateKey: string, deltaDays: number): string {
   const [year, month, day] = dateKey.split("-").map(Number);
-  const d = new Date(Date.UTC(year, month - 1, day));
+  const d = new Date(Date.UTC(year, month - 1, day, 12));
   d.setUTCDate(d.getUTCDate() + deltaDays);
   return etDateString(d);
 }
