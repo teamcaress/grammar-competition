@@ -72,10 +72,8 @@ function getSheet(name) {
 
 function todayKey() {
   var d = new Date();
-  var y = d.getUTCFullYear();
-  var m = ("0" + (d.getUTCMonth() + 1)).slice(-2);
-  var day = ("0" + d.getUTCDate()).slice(-2);
-  return y + "-" + m + "-" + day;
+  // Format date in America/New_York timezone
+  return Utilities.formatDate(d, 'America/New_York', 'yyyy-MM-dd');
 }
 
 /** Convert a cell value (possibly a Date object) to "YYYY-MM-DD" string (UTC). */
@@ -124,10 +122,8 @@ function shiftDateKey(dateKey, delta) {
   var parts = dateKey.split("-");
   var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2]));
   d.setUTCDate(d.getUTCDate() + delta);
-  var y = d.getUTCFullYear();
-  var m = ("0" + (d.getUTCMonth() + 1)).slice(-2);
-  var day = ("0" + d.getUTCDate()).slice(-2);
-  return y + "-" + m + "-" + day;
+  // Format in America/New_York timezone
+  return Utilities.formatDate(d, 'America/New_York', 'yyyy-MM-dd');
 }
 
 /* ------------------------------------------------------------------ */

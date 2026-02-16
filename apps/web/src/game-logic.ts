@@ -61,11 +61,19 @@ const LEITNER_INTERVAL_DAYS: Record<number, number> = {
   4: 21,
 };
 
-function utcDateString(date: Date): string {
-  const y = date.getUTCFullYear();
-  const m = String(date.getUTCMonth() + 1).padStart(2, "0");
-  const d = String(date.getUTCDate()).padStart(2, "0");
-  return `${y}-${m}-${d}`;
+function etDateString(date: Date): string {
+  // Get date in America/New_York timezone
+  const formatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+  const parts = formatter.formatToParts(date);
+  const year = parts.find(p => p.type === 'year')!.value;
+  const month = parts.find(p => p.type === 'month')!.value;
+  const day = parts.find(p => p.type === 'day')!.value;
+  return `${year}-${month}-${day}`;
 }
 
 function addDaysIso(base: Date, days: number): string {
@@ -78,11 +86,11 @@ function shiftDateKey(dateKey: string, deltaDays: number): string {
   const [year, month, day] = dateKey.split("-").map(Number);
   const d = new Date(Date.UTC(year, month - 1, day));
   d.setUTCDate(d.getUTCDate() + deltaDays);
-  return utcDateString(d);
+  return etDateString(d);
 }
 
 export function todayKey(): string {
-  return utcDateString(new Date());
+  return etDateString(new Date());
 }
 
 export function selectSessionCards(
