@@ -136,6 +136,60 @@ export function App() {
   const isFirstSession = useRef(false);
 
   const currentCard = queue[0] ?? null;
+
+  // Shuffle choice display order per card so correct answers aren't always B.
+  // "NO CHANGE" style options are pinned to position A.
+  const choiceShuffle = useMemo(() => {
+    if (!currentCard) return null;
+    const keys: ChoiceKey[] = ["A", "B", "C", "D"];
+
+    // Find any "NO CHANGE" option
+    const noChangeKey = keys.find((k) => {
+      const v = currentCard.choices[k];
+      return v && (v.toUpperCase().includes("NO CHANGE") || v.toLowerCase().includes("no change needed"));
+    });
+
+    // Fisher-Yates shuffle
+    const shuffleArray = <T,>(arr: T[]): T[] => {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    };
+
+    let displayToOriginal: Record<ChoiceKey, ChoiceKey>;
+    if (noChangeKey) {
+      // Pin NO CHANGE to A, shuffle the rest into B/C/D
+      const others = keys.filter((k) => k !== noChangeKey);
+      const shuffledOthers = shuffleArray(others);
+      displayToOriginal = {
+        A: noChangeKey,
+        B: shuffledOthers[0],
+        C: shuffledOthers[1],
+        D: shuffledOthers[2],
+      };
+    } else {
+      const shuffled = shuffleArray(keys);
+      displayToOriginal = {
+        A: shuffled[0],
+        B: shuffled[1],
+        C: shuffled[2],
+        D: shuffled[3],
+      };
+    }
+
+    // Reverse mapping: original key → display key
+    const originalToDisplay = {} as Record<ChoiceKey, ChoiceKey>;
+    for (const dk of keys) {
+      originalToDisplay[displayToOriginal[dk]] = dk;
+    }
+
+    return { displayToOriginal, originalToDisplay };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentCard?.id]);
+
   const totalAnswered = history.length;
   const totalCorrect = history.filter((item) => item.correct).length;
   const pctCorrect = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
@@ -377,17 +431,19 @@ export function App() {
     setStage("practice");
   }
 
-  function submitAnswer(choice: ChoiceKey) {
-    if (!currentCard || pendingAnswer) return;
+  function submitAnswer(displayChoice: ChoiceKey) {
+    if (!currentCard || pendingAnswer || !choiceShuffle) return;
 
     const card = getCardById(currentCard.id);
     if (!card) return;
 
-    setSelectedChoice(choice);
+    // Map the display key back to the original key for scoring
+    const originalChoice = choiceShuffle.displayToOriginal[displayChoice];
+    setSelectedChoice(displayChoice);
 
     const { answerResult, newCardState, newDailyScore } = processAnswer(
       card,
-      choice,
+      originalChoice,
       cardStates,
       dailyScore
     );
@@ -955,7 +1011,7 @@ export function App() {
               </div>
               {!pendingAnswer.correct ? (
                 <p className="mt-1 text-xs font-semibold">
-                  Answer: {currentCard.correct_answer}. {currentCard.choices[currentCard.correct_answer as ChoiceKey]}
+                  Answer: {choiceShuffle?.originalToDisplay[currentCard.correct_answer as ChoiceKey] ?? currentCard.correct_answer}. {currentCard.choices[currentCard.correct_answer as ChoiceKey]}
                 </p>
               ) : null}
               <p className="mt-1 text-sm">{pendingAnswer.explanation}</p>
@@ -1009,24 +1065,26 @@ export function App() {
           )}
 
           <div className="space-y-2">
-            {(["A", "B", "C", "D"] as ChoiceKey[]).map((key) => {
-              const isCorrectKey = pendingAnswer && key === currentCard.correct_answer;
-              const isSelectedWrong = pendingAnswer && !pendingAnswer.correct && key === selectedChoice;
+            {(["A", "B", "C", "D"] as ChoiceKey[]).map((displayKey) => {
+              const originalKey = choiceShuffle?.displayToOriginal[displayKey] ?? displayKey;
+              const displayCorrectKey = choiceShuffle?.originalToDisplay[currentCard.correct_answer as ChoiceKey] ?? currentCard.correct_answer;
+              const isCorrectKey = pendingAnswer && displayKey === displayCorrectKey;
+              const isSelectedWrong = pendingAnswer && !pendingAnswer.correct && displayKey === selectedChoice;
               let ringClass = "bg-white ring-slate-200 hover:ring-slate-300";
               if (isCorrectKey) ringClass = "bg-emerald-50 ring-emerald-400";
               else if (isSelectedWrong) ringClass = "bg-rose-50 ring-rose-400";
-              else if (selectedChoice === key) ringClass = "bg-sky-50 ring-sky-300";
+              else if (selectedChoice === displayKey) ringClass = "bg-sky-50 ring-sky-300";
 
               return (
                 <button
-                  key={key}
+                  key={displayKey}
                   type="button"
-                  onClick={() => submitAnswer(key)}
+                  onClick={() => submitAnswer(displayKey)}
                   disabled={Boolean(pendingAnswer) || isLoading}
                   className={`w-full rounded-xl px-3 py-3 text-left text-sm ring-1 transition ${ringClass} disabled:opacity-70`}
                 >
-                  <span className="mr-2 font-semibold">{key}.</span>
-                  <span>{currentCard.choices[key]}</span>
+                  <span className="mr-2 font-semibold">{displayKey}.</span>
+                  <span>{currentCard.choices[originalKey]}</span>
                 </button>
               );
             })}
